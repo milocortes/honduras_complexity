@@ -18,6 +18,11 @@ def _():
 
     ## Cargamos datos
     dee = pl.read_parquet("datos/BASE-DEE-2024.parquet")
+
+    ## Creamos llave cod.municipio y municipio
+    dee = dee.with_columns(
+        municipio = pl.col("cod._municipio").cast(str) + "-" +pl.col("municipio").cast(str)
+    )
     dee
     return dee, math, np, pl
 
@@ -104,7 +109,7 @@ def _(datos_rca, pl):
 
     datos_rca_m = datos_rca.with_columns(
         M = pl.when(
-            pl.col("conteo")>= rca_umbral   
+            pl.col("rca")>= rca_umbral   
         ).then(
             pl.lit(1)
         ).otherwise(
