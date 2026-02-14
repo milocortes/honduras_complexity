@@ -5,9 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "ipython>=9.10.0",
+    "ipython==7.23.1",
+    "keybert>=0.9.0",
     "marimo>=0.19.7",
+    "networkx>=3.6.1",
+    "notebook>=7.5.3",
     "polars[all]>=1.37.1",
+    "py2cytoscape>=0.7.1",
+    "transformers[torch]>=5.1.0",
     "unicode>=2.9",
     "unidecode>=1.4.0",
 ]
