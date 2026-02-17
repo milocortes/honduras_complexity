@@ -176,6 +176,11 @@ def _(requests):
 
 
 @app.cell
+def _():
+    return
+
+
+@app.cell
 def _(BASE, HEADERS, cytoscape_network, json, requests):
     res1 = requests.post(BASE + 'networks', data=json.dumps(cytoscape_network), headers=HEADERS)
     res1_dict = res1.json()
@@ -295,6 +300,12 @@ def _(codificacion):
 
 
 @app.cell
+def _(codificacion):
+    codificacion.query("clasificador=='ciiu_rev_4'")
+    return
+
+
+@app.cell
 def _(pd):
     ### Agregamos nombres de actividades
     scian_2023_nombres = pd.read_csv("datos/cw/scian_2023_nombres_actividades.csv")
@@ -337,7 +348,7 @@ def _(doc, kw_model):
     return
 
 
-@app.cell
+@app.cell(disabled=True)
 def _(KeyBERT, codificacion):
     for codigo_nuevo in codificacion["codigo_nuevo"].unique():
         doc_ = ", ".join(codificacion.query(f"clasificador == 'scian' and codigo_nuevo == {codigo_nuevo}")["nombre_actividad"])
@@ -352,7 +363,7 @@ def _(KeyBERT, codificacion):
 
 @app.cell
 def _(codificacion):
-    codificacion
+    codificacion.to_csv("datos/recodificacion/recodificacion.csv", index = False)
     return
 
 
