@@ -1,0 +1,232 @@
+Test file for the module bicm
+================================================================================
+
+Created on Tue Apr 4, 2016
+
+Author:
+    Mika Straka
+
+Description:
+    This file contains the doctest test cases for the functions and methods
+    defined in bicm.py.
+
+Usage:
+    To run the test, execute
+        $ python -m doctest bicm_tests.txt
+    in the command line. If you want to run the tests in verbose mode, use
+        $ python -m doctest -v bicm_tests.txt
+
+    Note that bicm.py and bicm_tests.txt have to be in the same directory.
+
+################################################################################
+# Tests
+################################################################################
+
+    >>> import numpy as np
+    >>> from bicm import BiCM
+
+# BiCM.make_bicm() -------------------------------------------------------------
+
+    >>> td = np.array([[1, 0], [1, 1], [1, 1]])
+    >>> cm = BiCM(td)
+    >>> cm.make_bicm()
+    >>> np.around(cm.adj_matrix, decimals=1)
+    array([[ 1.,  0.],
+           [ 1.,  1.],
+           [ 1.,  1.]])
+    >>> td = np.array([[1, 0], [0, 1]])
+    >>> cm = BiCM(td)
+    >>> cm.make_bicm()
+    >>> np.around(cm.adj_matrix, decimals=1)
+    array([[ 0.5,  0.5],
+           [ 0.5,  0.5]])
+    >>> td = np.array([[1, 1, 0, 0], [0, 0, 1, 1]])
+    >>> cm = BiCM(td)
+    >>> cm.make_bicm()
+    >>> np.around(cm.adj_matrix, decimals=2)
+    array([[ 0.5,  0.5,  0.5,  0.5],
+           [ 0.5,  0.5,  0.5,  0.5]])
+
+# BiCM.solve_equations ---------------------------------------------------------
+
+    >>> cm = BiCM(np.array([[1, 0, 1], [1, 1, 1]]))
+    >>> sol = cm.solve_equations(cm.equations, cm.jacobian)
+    >>> np.around(cm.get_biadjacency_matrix(sol.x), decimals=1)
+    array([[ 1.,  0.,  1.],
+           [ 1.,  1.,  1.]])
+
+# BiCM.equation ----------------------------------------------------------------
+
+    Test equations:
+    >>> cm = BiCM(np.array([[1, 0, 1], [1, 1, 1]]))
+    >>> cm.equations((np.array([0.1, 0.2, 0.4, 0.5, 0.8])))
+    array([-1.83984534, -2.6970858 , -1.88746439, -0.86147186, -1.78799489])
+
+# BiCM.jacobian ----------------------------------------------------------------
+
+    Test Jacobian:
+    >>> cm = BiCM(np.array([[1, 0, 1], [1, 1, 1]]))
+    >>> np.around(cm.jacobian((np.array([0.1, 0.2, 0.4, 0.5, 0.8]))),
+    ... decimals=2)
+    array([[ 1.51,  0.  ,  0.09,  0.09,  0.09],
+           [ 0.  ,  1.35,  0.17,  0.17,  0.15],
+           [ 0.37,  0.34,  0.26,  0.  ,  0.  ],
+           [ 0.45,  0.41,  0.  ,  0.26,  0.  ],
+           [ 0.69,  0.59,  0.  ,  0.  ,  0.23]])
+
+# BiCM.get_biadjacency_matrix --------------------------------------------------
+
+    >>> cm = BiCM(np.array([[1, 0, 1], [1, 1, 1]]))
+    >>> cm.get_biadjacency_matrix((np.array([0.1, 0.2, 0.4, 0.5, 0.8])))
+    array([[ 0.03846154,  0.04761905,  0.07407407],
+           [ 0.07407407,  0.09090909,  0.13793103]])
+
+# BiCM.get_triup_dim -----------------------------------------------------------
+
+    >>> cm = BiCM(np.array([[1, 0, 1], [1, 1, 1]]))
+    >>> cm.get_triup_dim(False)
+    3
+    >>> cm.get_triup_dim(True)
+    1
+
+
+# BiCM.get_lambda_motif_block --------------------------------------------------
+
+    >>> binmat = np.array([[1, 1, 0], [1, 1, 1]]).T
+    >>> bb = BiCM(binmat)
+
+    Lambda motifs of countries:
+    >>> bb.get_lambda_motif_block(binmat, 0, 2)
+    array([ 2.,  1.,  1.])
+
+# BiCM.get_pvalues -------------------------------------------------------------
+
+    >>> p = [0.1, 0.5, 0.7]
+    >>> plambm = np.array([[p, p, p], [p, p, p], [p, p, p]])
+    >>> nlambm = np.array([2, 1, 1])
+    >>> bb.get_pvalues_q(plambm[0], nlambm, parallel=False, k1=0, k2=3)
+    array([ 0.4  ,  0.865,  0.865])
+
+#    Check that seqential and parallel processing obtain the same results:
+    >>> pv_seq = bb.get_pvalues_q(plambm[0], nlambm, parallel=False, k1=0, k2=3)
+    >>> pv_par = bb.get_pvalues_q(plambm[0], nlambm, parallel=True, k1=0, k2=3)
+    >>> np.all(pv_seq == pv_par)
+    True
+
+# BiCM.trium2flat_idx ----------------------------------------------------------
+# BiCM.flat2triumat_idx --------------------------------------------------------
+
+    >>> td = np.array([[1, 0], [0, 1], [0, 1]])
+    >>> bb = BiCM(td)
+    >>> bb.triumat2flat_idx(3, 5, 8)
+    19
+    >>> for k in range(45):
+    ...     ij = bb.flat2triumat_idx(k, 10)
+    ...     assert bb.triumat2flat_idx(ij[0], ij[1], 10) == k
+    >>> for i in range(10):
+    ...     for j in range(i + 1, 10):
+    ...         k = bb.triumat2flat_idx(i, j, 10)
+    ...         assert (i, j) == bb.flat2triumat_idx(k, 10)
+
+# BiCM.get_triup_dim -----------------------------------------------------------
+
+    >>> td = np.random.randint(low=0, high=2, size=50).reshape(5, 10)
+    >>> bb = BiCM(td)
+    >>> n = bb.get_triup_dim(True)
+    >>> assert n == td.shape[0] * (td.shape[0] - 1) / 2
+    >>> n = bb.get_triup_dim(False)
+    >>> assert n == td.shape[1] * (td.shape[1] - 1) / 2
+
+# BiCM.split_range -------------------------------------------------------------
+
+    >>> td = np.random.randint(low=0, high=2, size=50).reshape(5, 10)
+    >>> bb = BiCM(td)
+    >>> n1 = bb.bin_mat.shape[0]
+    >>> n = bb.get_triup_dim(True)
+    >>> assert n == td.shape[0] * (td.shape[0] - 1) / 2
+    >>> kk = bb.split_range(n, m=5)
+    >>> assert kk == [i * n / 5 for i in range(5)]
+
+# BiCM.get_lambda_motif_block --------------------------------------------------
+
+    >>> td = np.random.randint(low=0, high=2, size=123000).reshape(123, 1000)
+    >>> bb = BiCM(td)
+    >>> n = bb.get_triup_dim(True)
+    >>> nl = np.dot(td, td.T)[np.triu_indices(n=td.shape[0], k=1)]
+    >>> k1 = np.random.randint(low=0, high=n/2)
+    >>> k2 = np.random.randint(low=n/2, high=n)
+    >>> nl2 = bb.get_lambda_motif_block(bb.bin_mat, k1, k2)
+    >>> assert np.all((nl[k1:k2] == nl2))
+    >>> k1 = 0
+    >>> k2 = n - 1
+    >>> nl3 = bb.get_lambda_motif_block(bb.bin_mat, k1, k2)
+    >>> if not len(nl) ==  len(nl3):
+    ...     print n, len(nl),  len(nl3)
+    >>> assert np.all(nl[k1:k2] == nl3[k1:k2])
+
+    >>> k1 = np.random.randint(low=0, high=n - 1)
+    >>> k2 = n - 1
+    >>> nl3 = bb.get_lambda_motif_block(bb.bin_mat, k1, k2)
+    >>> if not np.all(nl[k1:] == nl3):
+    ...     print k1, k2, len(nl[k1:]), len(nl3)
+
+    >>> r = np.random.randint(low=10, high=500)
+    >>> c = np.random.randint(low=100, high=5000)
+    >>> td = np.random.randint(low=0, high=2, size=r * c).reshape(r, c)
+    >>> bb = BiCM(td)
+    >>> n = bb.get_triup_dim(True)
+    >>> nl = np.dot(td, td.T)[np.triu_indices(n=td.shape[0], k=1)]
+    >>> k1 = np.random.randint(low=0, high=n/2)
+    >>> k2 = np.random.randint(low=n/2, high=n)
+    >>> nl2 = bb.get_lambda_motif_block(bb.bin_mat, k1, k2)
+    >>> assert np.all((nl[k1:k2] == nl2))
+
+# BiCM.get_plambda_block -------------------------------------------------------
+
+    >>> td = np.random.randint(low=0, high=2, size=50).reshape(5, 10)
+    >>> adj = np.random.random(size=td.size).reshape(td.shape)
+    >>> bb = BiCM(td)
+    >>> n = bb.get_triup_dim(True)
+    >>> plam = np.ones(shape=(n, bb.bin_mat.shape[1])) * (99)
+    >>> m = 0;
+    >>> for i in range(adj.shape[0]):
+    ...     for j in range(i + 1, adj.shape[0]):
+    ...         plam[m, :] = adj[i, :] * adj[j, :]
+    ...         m += 1
+    >>> k1 = 0 #np.random.randint(low=0, high=n/2)
+    >>> k2 = 4 #np.random.randint(low=n/2, high=n)
+    >>> pl = bb.get_plambda_block(adj, k1, k2)
+    >>> assert np.all(plam[k1:k2] == pl)
+
+    >>> k1 = np.random.randint(low=0, high=n/2)
+    >>> k2 = np.random.randint(low=n/2, high=n - 1)
+    >>> pl = bb.get_plambda_block(adj, k1, k2)
+    >>> assert np.all(plam[k1:k2] == pl)
+
+    >>> k1 = 0
+    >>> k2 = n - 1
+    >>> pl = bb.get_plambda_block(adj, k1, k2)
+    >>> assert np.all(plam[k1:] == pl)
+
+    >>> k1 = np.random.randint(low=0, high=n/2)
+    >>> k2 = n - 1
+    >>> pl = bb.get_plambda_block(adj, k1, k2)
+    >>> assert np.all(plam[k1:] == pl)
+
+    >>> r = np.random.randint(low=5, high=15)
+    >>> c = np.random.randint(low=10, high=100)
+    >>> td = np.random.randint(low=0, high=2, size=r * c).reshape(r, c)
+    >>> adj = np.random.random(size=td.size).reshape(td.shape)
+    >>> bb = BiCM(td)
+    >>> n = bb.get_triup_dim(True)
+    >>> plam = np.ones(shape=(n, bb.bin_mat.shape[1])) * (99)
+    >>> m = 0;
+    >>> for i in range(adj.shape[0]):
+    ...     for j in range(i + 1, adj.shape[0]):
+    ...         plam[m, :] = adj[i, :] * adj[j, :]
+    ...         m += 1
+    >>> k1 = np.random.randint(low=0, high=n/2)
+    >>> k2 = np.random.randint(low=n/2, high=n - 1)
+    >>> pl = bb.get_plambda_block(adj, k1, k2)
+    >>> assert np.all(plam[k1:k2] == pl)
+
