@@ -26,6 +26,7 @@ def _(mo):
 @app.cell
 def _():
     import polars as pl
+    import numpy as np
     import networkx as nx
     import matplotlib.pyplot as plt
     import numpy as np
