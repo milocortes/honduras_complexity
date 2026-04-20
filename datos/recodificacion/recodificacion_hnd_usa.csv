@@ -1,0 +1,1433 @@
+codigo,codigo_nuevo,clasificador,nombre_actividad
+459930,0,naics_2022,Manufactured (Mobile) Home Dealers
+459140,0,naics_2022,Musical Instrument and Supplies Retailers
+9529,0,ciiu_rev_4,Reparación de otros efectos personales y enseres domésticos
+459410,0,naics_2022,Office Supplies and Stationery Retailers
+459120,0,naics_2022,"Hobby, Toy, and Game Retailers"
+444180,0,naics_2022,Other Building Material Dealers
+4774,0,ciiu_rev_4,Venta al por menor de artículos de segunda mano
+444110,0,naics_2022,Home Centers
+445291,0,naics_2022,Baked Goods Retailers 
+459991,0,naics_2022,"Tobacco, Electronic Cigarette, and Other Smoking Supplies Retailers"
+4773,0,ciiu_rev_4,Venta al por menor de otros productos nuevos en comercios especializados
+441330,0,naics_2022,Automotive Parts and Accessories Retailers
+449110,0,naics_2022,Furniture Retailers
+458310,0,naics_2022,Jewelry Retailers
+445132,0,naics_2022,Vending Machine Operators
+459999,0,naics_2022,All Other Miscellaneous Retailers
+449121,0,naics_2022,Floor Covering Retailers
+457210,0,naics_2022,Fuel Dealers
+459910,0,naics_2022,Pet and Pet Supplies Retailers
+445250,0,naics_2022,Fish and Seafood Retailers
+445292,0,naics_2022,Confectionery and Nut Retailers   
+444120,0,naics_2022,Paint and Wallpaper Retailers  
+459310,0,naics_2022,Florists
+4753,0,ciiu_rev_4,"Venta al por menor de tapices, alfombras y cubrimientos para paredes y pisos en comercios especializados"
+4741,0,ciiu_rev_4,"Venta al por menor de ordenadores (computadoras), equipo periférico, programas de informática y equipo de telecomunicaciones en comercios especializados"
+4762,0,ciiu_rev_4,Venta al por menor de grabaciones de música y de video en comercios especializados
+444230,0,naics_2022,Outdoor Power Equipment Retailers
+4723,0,ciiu_rev_4,Venta al por menor de productos de tabaco en comercios especializados
+455110,0,naics_2022,Department Stores
+4789,0,ciiu_rev_4,Venta al por menor de otros productos en puestos de venta y mercados
+4772,0,ciiu_rev_4,"Venta al por menor de productos farmacéuticos y médicos, cosméticos y artículos de tocador en comercios especializados"
+456130,0,naics_2022,Optical Goods Retailers
+456191,0,naics_2022,Food (Health) Supplement Retailers
+4722,0,ciiu_rev_4,Venta al por menor de bebidas en comercios especializados
+445230,0,naics_2022,Fruit and Vegetable Retailers
+458210,0,naics_2022,Shoe Retailers
+4764,0,ciiu_rev_4,Venta al por menor de juegos y juguetes en comercios especializados
+456110,0,naics_2022,Pharmacies and Drug Retailers
+458110,0,naics_2022,Clothing and Clothing Accessories Retailers
+4781,0,ciiu_rev_4,"Venta al por menor de alimentos, bebidas y tabaco en puestos de venta y mercados"
+4752,0,ciiu_rev_4,"Venta al por menor de artículos de ferretería, pinturas y productos de vidrio en comercios especializados"
+4771,0,ciiu_rev_4,"Venta al por menor de prendas de vestir, calzado y artículos de cuero en comercios especializados"
+458320,0,naics_2022,Luggage and Leather Goods Retailers
+4761,0,ciiu_rev_4,"Venta al por menor de libros, periódicos y artículos de papelería en comercios especializados"
+4759,0,ciiu_rev_4,"Venta al por menor de aparatos eléctricos de uso doméstico, muebles, equipo de iluminación y otros enseres domésticos en comercios especializados"
+459510,0,naics_2022,Used Merchandise Retailers
+4751,0,ciiu_rev_4,Venta al por menor de productos textiles en comercios especializados
+459210,0,naics_2022,Book Retailers and News Dealers
+4799,0,ciiu_rev_4,"Otras actividades de venta al por menor no realizadas en comercios, puestos de venta o mercados"
+4742,0,ciiu_rev_4,Venta al por menor de equipo de sonido y de video en comercios especializados
+444240,0,naics_2022,"Nursery, Garden Center, and Farm Supply Retailers"
+445320,0,naics_2022,"Beer, Wine, and Liquor Retailers"
+459920,0,naics_2022,Art Dealers
+459420,0,naics_2022,"Gift, Novelty, and Souvenir Retailers"
+459130,0,naics_2022,"Sewing, Needlework, and Piece Goods Retailers"
+456120,0,naics_2022,"Cosmetics, Beauty Supplies, and Perfume Retailers"
+455219,0,naics_2022,All Other General Merchandise Retailers
+449210,0,naics_2022,Electronics and Appliance Retailers
+456199,0,naics_2022,All Other Health and Personal Care Retailers
+449129,0,naics_2022,All Other Home Furnishings Retailers
+445240,0,naics_2022,Meat Retailers
+455211,0,naics_2022,Warehouse Clubs and Supercenters
+444140,0,naics_2022,Hardware Retailers
+449122,0,naics_2022,Window Treatment Retailers
+4791,0,ciiu_rev_4,Venta al por menor por correo y por Internet
+4719,0,ciiu_rev_4,Otras actividades de venta al por menor en comercios no especializados
+445298,0,naics_2022,All Other Specialty Food Retailers
+445131,0,naics_2022,Convenience Retailers
+4782,0,ciiu_rev_4,"Venta al por menor de productos textiles, prendas de vestir y calzado en puestos de venta y mercados"
+459110,0,naics_2022,Sporting Goods Retailers
+4721,0,ciiu_rev_4,Venta al por menor de alimentos en comercios especializados
+336213,1,naics_2022,Motor Home Manufacturing
+336999,1,naics_2022,All Other Transportation Equipment Manufacturing
+336310,1,naics_2022,Motor Vehicle Gasoline Engine and Engine Parts Manufacturing
+336211,1,naics_2022,Motor Vehicle Body Manufacturing
+336120,1,naics_2022,Heavy Duty Truck Manufacturing
+333924,1,naics_2022,"Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing"
+2930,1,ciiu_rev_4,"Fabricación de partes, piezas y accesorios para vehículos automotores"
+336330,1,naics_2022,Motor Vehicle Steering and Suspension Components (except Spring) Manufacturing
+336110,1,naics_2022,Automobile and Light Duty Motor Vehicle Manufacturing
+331222,1,naics_2022,Steel Wire Drawing
+332911,1,naics_2022,Industrial Valve Manufacturing
+336320,1,naics_2022,Motor Vehicle Electrical and Electronic Equipment Manufacturing
+2816,1,ciiu_rev_4,Fabricación de equipo de elevación y manipulación
+3099,1,ciiu_rev_4,Fabricación de otros tipos de equipo de transporte n.c.p.
+2813,1,ciiu_rev_4,"Fabricación de otras bombas, compresores, grifos y válvulas"
+2910,1,ciiu_rev_4,Fabricación de vehículos automotores
+333914,1,naics_2022,"Measuring, Dispensing, and Other Pumping Equipment Manufacturing"
+336390,1,naics_2022,Other Motor Vehicle Parts Manufacturing
+333112,1,naics_2022,Lawn and Garden Tractor and Home Lawn and Garden Equipment Manufacturing
+336340,1,naics_2022,Motor Vehicle Brake System Manufacturing
+333921,1,naics_2022,Elevator and Moving Stairway Manufacturing
+311930,2,naics_2022,Flavoring Syrup and Concentrate Manufacturing
+311920,2,naics_2022,Coffee and Tea Manufacturing
+311513,2,naics_2022,Cheese Manufacturing
+311421,2,naics_2022,Fruit and Vegetable Canning
+1030,2,ciiu_rev_4,"Elaboración y conservación de frutas, legumbres y hortalizas"
+311612,2,naics_2022,Meat Processed From Carcasses
+311999,2,naics_2022,All Other Miscellaneous Food Manufacturing
+311514,2,naics_2022,"Dry, Condensed, and Evaporated Dairy Product Manufacturing"
+311911,2,naics_2022,Roasted Nuts and Peanut Butter Manufacturing
+1079,2,ciiu_rev_4,Elaboración de otros productos alimenticios n.c.p.
+311411,2,naics_2022,"Frozen Fruit, Juice, and Vegetable Manufacturing"
+311991,2,naics_2022,Perishable Prepared Food Manufacturing
+311423,2,naics_2022,Dried and Dehydrated Food Manufacturing
+311512,2,naics_2022,Creamery Butter Manufacturing
+1050,2,ciiu_rev_4,Elaboración de productos lácteos
+311941,2,naics_2022,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing"
+311511,2,naics_2022,Fluid Milk Manufacturing
+311520,2,naics_2022,Ice Cream and Frozen Dessert Manufacturing
+311942,2,naics_2022,Spice and Extract Manufacturing
+326191,3,naics_2022,Plastics Plumbing Fixture Manufacturing
+337920,3,naics_2022,Blind and Shade Manufacturing
+326130,3,naics_2022,"Laminated Plastics Plate, Sheet (except Packaging), and Shape Manufacturing"
+326150,3,naics_2022,Urethane and Other Foam Product (except Polystyrene) Manufacturing
+326140,3,naics_2022,Polystyrene Foam Product Manufacturing
+326111,3,naics_2022,Plastics Bag and Pouch Manufacturing 
+326112,3,naics_2022,Plastics Packaging Film and Sheet (including Laminated) Manufacturing
+336360,3,naics_2022,Motor Vehicle Seating and Interior Trim Manufacturing
+326122,3,naics_2022,Plastics Pipe and Pipe Fitting Manufacturing
+332913,3,naics_2022,Plumbing Fixture Fitting and Trim Manufacturing
+326113,3,naics_2022,Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing
+326121,3,naics_2022,Unlaminated Plastics Profile Shape Manufacturing
+1392,3,ciiu_rev_4,"Fabricación de artículos confeccionados de materiales textiles, excepto prendas de vestir"
+314910,3,naics_2022,Textile Bag and Canvas Mills
+314120,3,naics_2022,Curtain and Linen Mills
+326160,3,naics_2022,Plastics Bottle Manufacturing
+2220,3,ciiu_rev_4,Fabricación de productos de plástico
+326220,3,naics_2022,Rubber and Plastics Hoses and Belting Manufacturing
+8690,4,ciiu_rev_4,Otras actividades de atención de la salud humana
+621340,4,naics_2022,"Offices of Physical, Occupational and Speech Therapists, and Audiologists"
+621910,4,naics_2022,Ambulance Services
+621399,4,naics_2022,Offices of All Other Miscellaneous Health Practitioners
+621991,4,naics_2022,Blood and Organ Banks
+621420,4,naics_2022,Outpatient Mental Health and Substance Abuse Centers
+621330,4,naics_2022,Offices of Mental Health Practitioners (except Physicians)
+621492,4,naics_2022,Kidney Dialysis Centers
+621512,4,naics_2022,Diagnostic Imaging Centers
+621610,4,naics_2022,Home Health Care Services
+621320,4,naics_2022,Offices of Optometrists
+621310,4,naics_2022,Offices of Chiropractors
+621511,4,naics_2022,Medical Laboratories
+621999,4,naics_2022,All Other Miscellaneous Ambulatory Health Care Services
+621391,4,naics_2022,Offices of Podiatrists
+892,5,ciiu_rev_4,Extracción de turba
+212321,5,naics_2022,Construction Sand and Gravel Mining
+212311,5,naics_2022,Dimension Stone Mining and Quarrying
+891,5,ciiu_rev_4,Extracción de minerales para la fabricación de abonos y productos químicos
+899,5,ciiu_rev_4,Explotación de otras minas y canteras n.c.p.
+212313,5,naics_2022,Crushed and Broken Granite Mining and Quarrying
+212319,5,naics_2022,Other Crushed and Broken Stone Mining and Quarrying
+212312,5,naics_2022,Crushed and Broken Limestone Mining and Quarrying
+810,5,ciiu_rev_4,"Extracción de piedra de cantera, arena y arcilla"
+212322,5,naics_2022,Industrial Sand Mining
+212323,5,naics_2022,"Kaolin, Clay, and Ceramic and Refractory Minerals Mining"
+893,5,ciiu_rev_4,Extracción de sal
+212390,5,naics_2022,Other Nonmetallic Mineral Mining and Quarrying
+424410,6,naics_2022,General Line Grocery Merchant Wholesalers
+424470,6,naics_2022,Meat and Meat Product Merchant Wholesalers 
+424420,6,naics_2022,Packaged Frozen Food Merchant Wholesalers
+424590,6,naics_2022,Other Farm Product Raw Material Merchant Wholesalers
+424460,6,naics_2022,Fish and Seafood Merchant Wholesalers
+424430,6,naics_2022,Dairy Product (except Dried or Canned) Merchant Wholesalers
+424810,6,naics_2022,Beer and Ale Merchant Wholesalers
+424820,6,naics_2022,Wine and Distilled Alcoholic Beverage Merchant Wholesalers
+424940,6,naics_2022,Tobacco Product and Electronic Cigarette Merchant Wholesalers 
+424440,6,naics_2022,Poultry and Poultry Product Merchant Wholesalers
+424480,6,naics_2022,Fresh Fruit and Vegetable Merchant Wholesalers
+424450,6,naics_2022,Confectionery Merchant Wholesalers
+4630,6,ciiu_rev_4,"Venta al por mayor de alimentos, bebidas y tabaco"
+424950,7,naics_2022,"Paint, Varnish, and Supplies Merchant Wholesalers"
+423310,7,naics_2022,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"
+4663,7,ciiu_rev_4,"Venta al por mayor de materiales de construcción, artículos de ferretería y equipo y materiales de fontanería y calefacción"
+423390,7,naics_2022,Other Construction Material Merchant Wholesalers 
+423730,7,naics_2022,Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers
+423710,7,naics_2022,Hardware Merchant Wholesalers
+423330,7,naics_2022,"Roofing, Siding, and Insulation Material Merchant Wholesalers"
+423720,7,naics_2022,Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers 
+423830,7,naics_2022,Industrial Machinery and Equipment Merchant Wholesalers
+423320,7,naics_2022,"Brick, Stone, and Related Construction Material Merchant Wholesalers"
+423220,7,naics_2022,Home Furnishing Merchant Wholesalers
+423910,7,naics_2022,Sporting and Recreational Goods and Supplies Merchant Wholesalers
+423420,8,naics_2022,Office Equipment Merchant Wholesalers
+423450,8,naics_2022,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers"
+423210,8,naics_2022,Furniture Merchant Wholesalers
+423740,8,naics_2022,Refrigeration Equipment and Supplies Merchant Wholesalers
+4659,8,ciiu_rev_4,Venta al por mayor de otros tipos de maquinaria y equipo
+423440,8,naics_2022,Other Commercial Equipment Merchant Wholesalers
+423490,8,naics_2022,Other Professional Equipment and Supplies Merchant Wholesalers 
+423850,8,naics_2022,Service Establishment Equipment and Supplies Merchant Wholesalers
+423610,8,naics_2022,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers"
+423410,8,naics_2022,Photographic Equipment and Supplies Merchant Wholesalers
+423860,8,naics_2022,Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers 
+423810,8,naics_2022,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers
+3510,9,ciiu_rev_4,"Generación, transmisión y distribución de energía eléctrica"
+221117,9,naics_2022,Biomass Electric Power Generation
+221122,9,naics_2022,Electric Power Distribution
+221116,9,naics_2022,Geothermal Electric Power Generation
+221114,9,naics_2022,Solar Electric Power Generation
+221118,9,naics_2022,Other Electric Power Generation
+221111,9,naics_2022,Hydroelectric Power Generation
+221113,9,naics_2022,Nuclear Electric Power Generation
+221112,9,naics_2022,Fossil Fuel Electric Power Generation
+221115,9,naics_2022,Wind Electric Power Generation
+221121,9,naics_2022,Electric Bulk Power Transmission and Control
+238160,10,naics_2022,Roofing Contractors
+238170,10,naics_2022,Siding Contractors
+238110,10,naics_2022,Poured Concrete Foundation and Structure Contractors
+238140,10,naics_2022,Masonry Contractors
+238120,10,naics_2022,Structural Steel and Precast Concrete Contractors
+236210,10,naics_2022,Industrial Building Construction
+238190,10,naics_2022,"Other Foundation, Structure, and Building Exterior Contractors"
+238130,10,naics_2022,Framing Contractors
+238310,10,naics_2022,Drywall and Insulation Contractors
+4390,10,ciiu_rev_4,Otras actividades especializadas de construcción
+561790,10,naics_2022,Other Services to Buildings and Dwellings
+922190,11,naics_2022,"Other Justice, Public Order, and Safety Activities"
+922140,11,naics_2022,Correctional Institutions
+922150,11,naics_2022,Parole Offices and Probation Offices
+922110,11,naics_2022,Courts
+924120,11,naics_2022,Administration of Conservation Programs
+922130,11,naics_2022,Legal Counsel and Prosecution
+922120,11,naics_2022,Police Protection
+922160,11,naics_2022,Fire Protection
+921150,11,naics_2022,American Indian and Alaska Native Tribal Governments
+8423,11,ciiu_rev_4,Actividades de mantenimiento del orden público y de seguridad
+926120,11,naics_2022,Regulation and Administration of Transportation Programs
+111140,12,naics_2022,Wheat Farming
+111191,12,naics_2022,Oilseed and Grain Combination Farming
+111199,12,naics_2022,All Other Grain Farming
+111,12,ciiu_rev_4,"Cultivo de cereales (excepto arroz), leguminosas y semillas oleaginosas"
+111150,12,naics_2022,Corn Farming
+111120,12,naics_2022,Oilseed (except Soybean) Farming
+111110,12,naics_2022,Soybean Farming
+111130,12,naics_2022,Dry Pea and Bean Farming
+111998,12,naics_2022,All Other Miscellaneous Crop Farming
+111992,12,naics_2022,Peanut Farming
+331491,13,naics_2022,"Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding"
+332322,13,naics_2022,Sheet Metal Work Manufacturing
+332431,13,naics_2022,Metal Can Manufacturing
+332721,13,naics_2022,Precision Turned Product Manufacturing
+339993,13,naics_2022,"Fastener, Button, Needle, and Pin Manufacturing"
+332722,13,naics_2022,"Bolt, Nut, Screw, Rivet, and Washer Manufacturing"
+332613,13,naics_2022,Spring Manufacturing
+2599,13,ciiu_rev_4,Fabricación de otros productos elaborados de metal n.c.p.
+332119,13,naics_2022,"Metal Crown, Closure, and Other Metal Stamping (except Automotive) "
+322220,13,naics_2022,Paper Bag and Coated and Treated Paper Manufacturing
+337212,14,naics_2022,Custom Architectural Woodwork and Millwork Manufacturing
+337122,14,naics_2022,Nonupholstered Wood Household Furniture Manufacturing
+3100,14,ciiu_rev_4,Fabricación de muebles
+337910,14,naics_2022,Mattress Manufacturing
+337110,14,naics_2022,Wood Kitchen Cabinet and Countertop Manufacturing
+337126,14,naics_2022,Household Furniture (except Wood and Upholstered) Manufacturing
+337211,14,naics_2022,Wood Office Furniture Manufacturing
+337121,14,naics_2022,Upholstered Household Furniture Manufacturing
+326199,14,naics_2022,All Other Plastics Product Manufacturing
+337214,14,naics_2022,Office Furniture (except Wood) Manufacturing
+4540,15,ciiu_rev_4,"Venta, mantenimiento y reparación de motocicletas y sus partes, piezas y accesorios"
+423140,15,naics_2022,Motor Vehicle Parts (Used) Merchant Wholesalers 
+4530,15,ciiu_rev_4,"Venta de partes, piezas y accesorios para vehículos automotores"
+423110,15,naics_2022,Automobile and Other Motor Vehicle Merchant Wholesalers
+441210,15,naics_2022,Recreational Vehicle Dealers
+4610,15,ciiu_rev_4,Venta al por mayor a cambio de una retribución o por contrato
+425120,15,naics_2022,Wholesale Trade Agents and Brokers
+423120,15,naics_2022,Motor Vehicle Supplies and New Parts Merchant Wholesalers 
+423130,15,naics_2022,Tire and Tube Merchant Wholesalers 
+441340,15,naics_2022,Tire Dealers
+423940,16,naics_2022,"Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers "
+4669,16,ciiu_rev_4,"Venta al por mayor de desperdicios, desechos y chatarra y otros productos n.c.p."
+423930,16,naics_2022,Recyclable Material Merchant Wholesalers
+424610,16,naics_2022,Plastics Materials and Basic Forms and Shapes Merchant Wholesalers
+424130,16,naics_2022,Industrial and Personal Service Paper Merchant Wholesalers
+423840,16,naics_2022,Industrial Supplies Merchant Wholesalers 
+424110,16,naics_2022,Printing and Writing Paper Merchant Wholesalers 
+424690,16,naics_2022,Other Chemical and Allied Products Merchant Wholesalers 
+424910,16,naics_2022,Farm Supplies Merchant Wholesalers 
+424490,16,naics_2022,Other Grocery and Related Products Merchant Wholesalers 
+624229,17,naics_2022,Other Community Housing Services
+624221,17,naics_2022,Temporary Shelters
+624210,17,naics_2022,Community Food Services
+8890,17,ciiu_rev_4,Otras actividades de asistencia social sin alojamiento
+624310,17,naics_2022,Vocational Rehabilitation Services
+624410,17,naics_2022,Child Care Services 
+624230,17,naics_2022,Emergency and Other Relief Services
+621410,17,naics_2022,Family Planning Centers
+624110,17,naics_2022,Child and Youth Services
+624190,17,naics_2022,Other Individual and Family Services
+334516,18,naics_2022,Analytical Laboratory Instrument Manufacturing
+334513,18,naics_2022,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables"
+2652,18,ciiu_rev_4,Fabricación de relojes
+2651,18,ciiu_rev_4,"Fabricación de equipo de medición, prueba, navegación y control"
+334511,18,naics_2022,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing"
+334515,18,naics_2022,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals
+334514,18,naics_2022,Totalizing Fluid Meter and Counting Device Manufacturing
+334512,18,naics_2022,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use"
+334519,18,naics_2022,Other Measuring and Controlling Device Manufacturing 
+4311,19,ciiu_rev_4,Demolición
+213115,19,naics_2022,Support Activities for Nonmetallic Minerals (except Fuels) Mining
+4312,19,ciiu_rev_4,Preparación del terreno
+990,19,ciiu_rev_4,Actividades de apoyo para otras actividades de explotación de minas y canteras
+213113,19,naics_2022,Support Activities for Coal Mining
+213114,19,naics_2022,Support Activities for Metal Mining
+237990,19,naics_2022,Other Heavy and Civil Engineering Construction
+238910,19,naics_2022,Site Preparation Contractors
+321215,20,naics_2022,Engineered Wood Member Manufacturing
+1622,20,ciiu_rev_4,Fabricación de partes y piezas de carpintería para edificios y construcciones
+321991,20,naics_2022,Manufactured Home (Mobile Home) Manufacturing
+321113,20,naics_2022,Sawmills
+321992,20,naics_2022,Prefabricated Wood Building Manufacturing
+321918,20,naics_2022,Other Millwork (including Flooring)
+337215,20,naics_2022,"Showcase, Partition, Shelving, and Locker Manufacturing"
+321911,20,naics_2022,Wood Window and Door Manufacturing
+333519,21,naics_2022,Rolling Mill and Other Metalworking Machinery Manufacturing 
+2823,21,ciiu_rev_4,Fabricación de maquinaria metalúrgica
+333517,21,naics_2022,Machine Tool Manufacturing 
+2826,21,ciiu_rev_4,"Fabricación de maquinaria para la elaboración de productos textiles, prendas de vestir y cueros"
+333248,21,naics_2022,All Other Industrial Machinery Manufacturing
+2822,21,ciiu_rev_4,Fabricación de maquinaria para la conformación de metales y de máquinas herramienta
+333514,21,naics_2022,"Special Die and Tool, Die Set, Jig, and Fixture Manufacturing"
+331511,21,naics_2022,Iron Foundries
+332439,22,naics_2022,Other Metal Container Manufacturing
+811121,22,naics_2022,"Automotive Body, Paint, and Interior Repair and Maintenance "
+336212,22,naics_2022,Truck Trailer Manufacturing
+336214,22,naics_2022,Travel Trailer and Camper Manufacturing
+2920,22,ciiu_rev_4,Fabricación de carrocerías para vehículos automotores; fabricación de remolques y semirremolques
+333414,22,naics_2022,Heating Equipment (except Warm Air Furnaces) Manufacturing
+332420,22,naics_2022,Metal Tank (Heavy Gauge) Manufacturing
+2512,22,ciiu_rev_4,"Fabricación de tanques, depósitos y recipientes de metal"
+339910,23,naics_2022,Jewelry and Silverware Manufacturing 
+332710,23,naics_2022,Machine Shops
+2592,23,ciiu_rev_4,Tratamiento y revestimiento de metales; maquinado
+332811,23,naics_2022,Metal Heat Treating
+3212,23,ciiu_rev_4,Fabricación de bisutería y artículos conexos
+332813,23,naics_2022,"Electroplating, Plating, Polishing, Anodizing, and Coloring"
+3211,23,ciiu_rev_4,Fabricación de joyas y artículos conexos
+332812,23,naics_2022,"Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers"
+336414,24,naics_2022,Guided Missile and Space Vehicle Manufacturing
+336419,24,naics_2022,Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing
+336411,24,naics_2022,Aircraft Manufacturing
+336412,24,naics_2022,Aircraft Engine and Engine Parts Manufacturing
+334220,24,naics_2022,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing
+336413,24,naics_2022,Other Aircraft Part and Auxiliary Equipment Manufacturing
+336415,24,naics_2022,Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing
+3030,24,ciiu_rev_4,"Fabricación de aeronaves, naves espaciales y maquinaria conexa"
+485320,25,naics_2022,Limousine Service
+4922,25,ciiu_rev_4,Otras actividades de transporte por vía terrestre
+485999,25,naics_2022,All Other Transit and Ground Passenger Transportation
+713920,25,naics_2022,Skiing Facilities
+485210,25,naics_2022,Interurban and Rural Bus Transportation
+485510,25,naics_2022,Charter Bus Industry
+485410,25,naics_2022,School and Employee Bus Transportation
+485991,25,naics_2022,Special Needs Transportation
+541320,26,naics_2022,Landscape Architectural Services
+541340,26,naics_2022,Drafting Services
+541310,26,naics_2022,Architectural Services
+541350,26,naics_2022,Building Inspection Services
+541330,26,naics_2022,Engineering Services
+541360,26,naics_2022,Geophysical Surveying and Mapping Services
+7110,26,ciiu_rev_4,Actividades de arquitectura e ingeniería y actividades conexas de consultoría técnica
+541370,26,naics_2022,Surveying and Mapping (except Geophysical) Services
+541870,27,naics_2022,Advertising Material Distribution Services
+541860,27,naics_2022,Direct Mail Advertising
+541840,27,naics_2022,Media Representatives
+541850,27,naics_2022,Indoor and Outdoor Display Advertising
+541810,27,naics_2022,Advertising Agencies
+7310,27,ciiu_rev_4,Publicidad
+541890,27,naics_2022,Other Services Related to Advertising
+541830,27,naics_2022,Media Buying Agencies
+923120,28,naics_2022,Administration of Public Health Programs
+8411,28,ciiu_rev_4,Actividades de la administración pública en general
+921110,28,naics_2022,Executive Offices 
+921120,28,naics_2022,Legislative Bodies
+561440,28,naics_2022,Collection Agencies
+921130,28,naics_2022,Public Finance Activities
+921140,28,naics_2022,"Executive and Legislative Offices, Combined "
+921190,28,naics_2022,Other General Government Support
+813312,29,naics_2022,"Environment, Conservation and Wildlife Organizations"
+813219,29,naics_2022,Other Grantmaking and Giving Services
+813319,29,naics_2022,Other Social Advocacy Organizations
+813211,29,naics_2022,Grantmaking Foundations
+813410,29,naics_2022,Civic and Social Organizations
+813311,29,naics_2022,Human Rights Organizations
+9499,29,ciiu_rev_4,Actividades de otras asociaciones n.c.p.
+813212,29,naics_2022,Voluntary Health Organizations
+311710,30,naics_2022,Seafood Product Preparation and Packaging
+114119,30,naics_2022,Other Marine Fishing
+114111,30,naics_2022,Finfish Fishing
+114112,30,naics_2022,Shellfish Fishing
+311,30,ciiu_rev_4,Pesca marítima
+1020,30,ciiu_rev_4,"Elaboración y conservación de pescado, crustáceos y moluscos"
+312,30,ciiu_rev_4,Pesca de agua dulce
+311821,31,naics_2022,Cookie and Cracker Manufacturing
+311812,31,naics_2022,Commercial Bakeries
+311811,31,naics_2022,Retail Bakeries
+311919,31,naics_2022,Other Snack Food Manufacturing
+1071,31,ciiu_rev_4,Elaboración de productos de panadería
+311813,31,naics_2022,"Frozen Cakes, Pies, and Other Pastries Manufacturing"
+311830,31,naics_2022,Tortilla Manufacturing
+711510,32,naics_2022,"Independent Artists, Writers, and Performers"
+339940,32,naics_2022,Office Supplies (except Paper) Manufacturing
+332618,32,naics_2022,Other Fabricated Wire Product Manufacturing
+332215,32,naics_2022,"Metal Kitchen Cookware, Utensil, Cutlery, and Flatware (except Precious) Manufacturing "
+339994,32,naics_2022,"Broom, Brush, and Mop Manufacturing"
+339995,32,naics_2022,Burial Casket Manufacturing
+3290,32,ciiu_rev_4,Otras industrias manufactureras n.c.p.
+324121,33,naics_2022,Asphalt Paving Mixture and Block Manufacturing
+324122,33,naics_2022,Asphalt Shingle and Coating Materials Manufacturing
+322120,33,naics_2022,Paper Mills
+2399,33,ciiu_rev_4,Fabricación de otros productos minerales no metálicos n.c.p.
+327910,33,naics_2022,Abrasive Product Manufacturing
+336350,33,naics_2022,Motor Vehicle Transmission and Power Train Parts Manufacturing
+327992,33,naics_2022,Ground or Treated Mineral and Earth Manufacturing
+325413,34,naics_2022,In-Vitro Diagnostic Substance Manufacturing
+2100,34,ciiu_rev_4,"Fabricación de productos farmacéuticos, sustancias químicas medicinales y productos botánicos de uso farmacéutico"
+325411,34,naics_2022,Medicinal and Botanical Manufacturing
+325412,34,naics_2022,Pharmaceutical Preparation Manufacturing
+339113,34,naics_2022,Surgical Appliance and Supplies Manufacturing
+325414,34,naics_2022,Biological Product (except Diagnostic) Manufacturing
+325199,34,naics_2022,All Other Basic Organic Chemical Manufacturing
+333912,35,naics_2022,Air and Gas Compressor Manufacturing
+2819,35,ciiu_rev_4,Fabricación de otros tipos de maquinaria de uso general
+333415,35,naics_2022,Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing
+333413,35,naics_2022,Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing 
+332919,35,naics_2022,Other Metal Valve and Pipe Fitting Manufacturing
+333992,35,naics_2022,Welding and Soldering Equipment Manufacturing
+333993,35,naics_2022,Packaging Machinery Manufacturing
+3250,36,ciiu_rev_4,Fabricación de instrumentos y materiales médicos y odontológicos
+333998,36,naics_2022,All Other Miscellaneous General Purpose Machinery Manufacturing
+337127,36,naics_2022,Institutional Furniture Manufacturing
+339114,36,naics_2022,Dental Equipment and Supplies Manufacturing
+339112,36,naics_2022,Surgical and Medical Instrument Manufacturing
+339116,36,naics_2022,Dental Laboratories
+339115,36,naics_2022,Ophthalmic Goods Manufacturing
+2610,37,ciiu_rev_4,Fabricación de componentes y tableros electrónicos
+334416,37,naics_2022,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing "
+334418,37,naics_2022,Printed Circuit Assembly (Electronic Assembly) Manufacturing
+334419,37,naics_2022,Other Electronic Component Manufacturing 
+334413,37,naics_2022,Semiconductor and Related Device Manufacturing
+334412,37,naics_2022,Bare Printed Circuit Board Manufacturing
+334417,37,naics_2022,Electronic Connector Manufacturing
+811490,38,naics_2022,Other Personal and Household Goods Repair and Maintenance
+3312,38,ciiu_rev_4,Reparación de maquinaria
+3319,38,ciiu_rev_4,Reparación de otros tipos de equipo
+3314,38,ciiu_rev_4,Reparación de equipo eléctrico
+811310,38,naics_2022,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance
+3311,38,ciiu_rev_4,Reparación de productos elaborados de metal
+3315,38,ciiu_rev_4,"Reparación de equipo de transporte, excepto vehículos automotores"
+488320,39,naics_2022,Marine Cargo Handling
+8129,39,ciiu_rev_4,Otras actividades de limpieza de edificios y de instalaciones industriales
+561710,39,naics_2022,Exterminating and Pest Control Services
+488210,39,naics_2022,Support Activities for Rail Transportation
+488490,39,naics_2022,Other Support Activities for Road Transportation
+5224,39,ciiu_rev_4,Manipulación de la carga
+488119,39,naics_2022,Other Airport Operations
+238340,40,naics_2022,Tile and Terrazzo Contractors
+238330,40,naics_2022,Flooring Contractors
+4330,40,ciiu_rev_4,Terminación y acabado de edificios
+238320,40,naics_2022,Painting and Wall Covering Contractors
+238390,40,naics_2022,Other Building Finishing Contractors
+238350,40,naics_2022,Finish Carpentry Contractors
+238150,40,naics_2022,Glass and Glazing Contractors
+811111,41,naics_2022,General Automotive Repair
+811122,41,naics_2022,Automotive Glass Replacement Shops 
+811191,41,naics_2022,Automotive Oil Change and Lubrication Shops
+811192,41,naics_2022,Car Washes 
+811198,41,naics_2022,All Other Automotive Repair and Maintenance
+811114,41,naics_2022,Specialized Automotive Repair
+4520,41,ciiu_rev_4,Mantenimiento y reparación de vehículos automotores
+423620,42,naics_2022,"Household Appliances, Electric Housewares, and Consumer Electronics Merchant Wholesalers "
+424920,42,naics_2022,"Book, Periodical, and Newspaper Merchant Wholesalers"
+423920,42,naics_2022,Toy and Hobby Goods and Supplies Merchant Wholesalers
+424120,42,naics_2022,Stationery and Office Supplies Merchant Wholesalers 
+4649,42,ciiu_rev_4,Venta al por mayor de otros enseres domésticos
+423460,42,naics_2022,Ophthalmic Goods Merchant Wholesalers
+424210,42,naics_2022,Drugs and Druggists' Sundries Merchant Wholesalers 
+484110,43,naics_2022,"General Freight Trucking, Local"
+484230,43,naics_2022,"Specialized Freight (except Used Goods) Trucking, Long-Distance"
+484210,43,naics_2022,Used Household and Office Goods Moving
+484121,43,naics_2022,"General Freight Trucking, Long-Distance, Truckload"
+484122,43,naics_2022,"General Freight Trucking, Long-Distance, Less Than Truckload"
+484220,43,naics_2022,"Specialized Freight (except Used Goods) Trucking, Local"
+4923,43,ciiu_rev_4,Transporte de carga por carretera
+711410,44,naics_2022,"Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures"
+541620,44,naics_2022,Environmental Consulting Services
+541930,44,naics_2022,Translation and Interpretation Services
+7490,44,ciiu_rev_4,"Otras actividades profesionales, científicas y técnicas n.c.p."
+541690,44,naics_2022,Other Scientific and Technical Consulting Services
+541618,44,naics_2022,Other Management Consulting Services
+541614,44,naics_2022,"Process, Physical Distribution, and Logistics Consulting Services"
+621493,45,naics_2022,Freestanding Ambulatory Surgical and Emergency Centers
+621210,45,naics_2022,Offices of Dentists
+621111,45,naics_2022,Offices of Physicians (except Mental Health Specialists)
+621491,45,naics_2022,HMO Medical Centers
+621498,45,naics_2022,All Other Outpatient Care Centers
+621112,45,naics_2022,"Offices of Physicians, Mental Health Specialists"
+8620,45,ciiu_rev_4,Actividades de médicos y odontólogos
+112310,46,naics_2022,Chicken Egg Production
+112320,46,naics_2022,Broilers and Other Meat Type Chicken Production
+112340,46,naics_2022,Poultry Hatcheries
+112330,46,naics_2022,Turkey Production
+112390,46,naics_2022,Other Poultry Production
+146,46,ciiu_rev_4,Cría de aves de corral
+2219,47,ciiu_rev_4,Fabricación de otros productos de caucho
+315990,47,naics_2022,Apparel Accessories and Other Apparel Manufacturing
+326291,47,naics_2022,Rubber Product Manufacturing for Mechanical Use
+326299,47,naics_2022,All Other Rubber Product Manufacturing
+326211,47,naics_2022,Tire Manufacturing (except Retreading)
+313320,47,naics_2022,Fabric Coating Mills
+325612,48,naics_2022,Polish and Other Sanitation Good Manufacturing
+325613,48,naics_2022,Surface Active Agent Manufacturing
+332993,48,naics_2022,Ammunition (except Small Arms) Manufacturing
+2029,48,ciiu_rev_4,Fabricación de otros productos químicos n.c.p.
+325520,48,naics_2022,Adhesive Manufacturing
+325920,48,naics_2022,Explosives Manufacturing
+327213,49,naics_2022,Glass Container Manufacturing
+2310,49,ciiu_rev_4,Fabricación de vidrio y productos de vidrio
+327211,49,naics_2022,Flat Glass Manufacturing
+327215,49,naics_2022,Glass Product Manufacturing Made of Purchased Glass
+327212,49,naics_2022,Other Pressed and Blown Glass and Glassware Manufacturing
+327993,49,naics_2022,Mineral Wool Manufacturing
+327390,50,naics_2022,Other Concrete Product Manufacturing
+327999,50,naics_2022,All Other Miscellaneous Nonmetallic Mineral Product Manufacturing
+2395,50,ciiu_rev_4,"Fabricación de artículos de hormigón, cemento y yeso"
+327320,50,naics_2022,Ready-Mix Concrete Manufacturing
+327332,50,naics_2022,Concrete Pipe Manufacturing
+327331,50,naics_2022,Concrete Block and Brick Manufacturing
+2420,51,ciiu_rev_4,Fabricación de metales preciosos básicos y de otros metales no ferrosos
+331315,51,naics_2022,"Aluminum Sheet, Plate, and Foil Manufacturing"
+331410,51,naics_2022,Nonferrous Metal (except Aluminum) Smelting and Refining
+331314,51,naics_2022,Secondary Smelting and Alloying of Aluminum
+331492,51,naics_2022,"Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum)"
+331313,51,naics_2022,Alumina Refining and Primary Aluminum Production 
+336370,52,naics_2022,Motor Vehicle Metal Stamping
+2591,52,ciiu_rev_4,"Forja, prensado, estampado y laminado de metales; pulvimetalurgia"
+332117,52,naics_2022,Powder Metallurgy Part Manufacturing
+332112,52,naics_2022,Nonferrous Forging
+332111,52,naics_2022,Iron and Steel Forging
+332114,52,naics_2022,Custom Roll Forming
+236116,53,naics_2022,New Multifamily Housing Construction (except For-Sale Builders)
+236115,53,naics_2022,New Single-Family Housing Construction (except For-Sale Builders)
+4100,53,ciiu_rev_4,Construcción de edificios
+236117,53,naics_2022,New Housing For-Sale Builders
+236220,53,naics_2022,Commercial and Institutional Building Construction
+236118,53,naics_2022,Residential Remodelers
+812990,54,naics_2022,All Other Personal Services
+517810,54,naics_2022,All Other Telecommunications
+517410,54,naics_2022,Satellite Telecommunications
+6190,54,ciiu_rev_4,Otras actividades de telecomunicaciones
+517121,54,naics_2022,Telecommunications Resellers
+517122,54,naics_2022,Agents for Wireless Telecommunications Services
+525120,55,naics_2022,Health and Welfare Funds
+525990,55,naics_2022,Other Financial Vehicles
+525910,55,naics_2022,Open-End Investment Funds
+525920,55,naics_2022,"Trusts, Estates, and Agency Accounts"
+525190,55,naics_2022,Other Insurance Funds
+6430,55,ciiu_rev_4,Fondos y sociedades de inversión y entidades financieras similares
+6810,56,ciiu_rev_4,Actividades inmobiliarias realizadas con bienes propios o arrendados
+531110,56,naics_2022,Lessors of Residential Buildings and Dwellings
+531120,56,naics_2022,Lessors of Nonresidential Buildings (except Miniwarehouses)
+531190,56,naics_2022,Lessors of Other Real Estate Property
+531130,56,naics_2022,Lessors of Miniwarehouses and Self-Storage Units
+523910,56,naics_2022,Miscellaneous Intermediation
+531311,57,naics_2022,Residential Property Managers
+531320,57,naics_2022,Offices of Real Estate Appraisers
+531210,57,naics_2022,Offices of Real Estate Agents and Brokers
+6820,57,ciiu_rev_4,Actividades inmobiliarias realizadas a cambio de una retribución o por contrato
+531390,57,naics_2022,Other Activities Related to Real Estate
+531312,57,naics_2022,Nonresidential Property Managers
+541990,58,naics_2022,"All Other Professional, Scientific, and Technical Services"
+541191,58,naics_2022,Title Abstract and Settlement Offices
+6910,58,ciiu_rev_4,Actividades jurídicas
+541199,58,naics_2022,All Other Legal Services
+541120,58,naics_2022,Offices of Notaries
+541110,58,naics_2022,Offices of Lawyers
+532281,59,naics_2022,Formal Wear and Costume Rental
+532283,59,naics_2022,Home Health Equipment Rental
+532210,59,naics_2022,Consumer Electronics and Appliances Rental
+532289,59,naics_2022,All Other Consumer Goods Rental
+7729,59,ciiu_rev_4,Alquiler y arrendamiento de otros efectos personales y enseres domésticos
+532310,59,naics_2022,General Rental Centers
+713930,60,naics_2022,Marinas
+713120,60,naics_2022,Amusement Arcades
+711310,60,naics_2022,"Promoters of Performing Arts, Sports, and Similar Events with Facilities"
+9329,60,ciiu_rev_4,Otras actividades de esparcimiento y recreativas n.c.p.
+711190,60,naics_2022,Other Performing Arts Companies
+713990,60,naics_2022,All Other Amusement and Recreation Industries
+611692,61,naics_2022,Automobile Driving Schools
+611430,61,naics_2022,Professional and Management Development Training
+611512,61,naics_2022,Flight Training
+611630,61,naics_2022,Language Schools
+8549,61,ciiu_rev_4,Otros tipos de enseñanza n.c.p.
+611420,61,naics_2022,Computer Training
+812320,62,naics_2022,Drycleaning and Laundry Services (except Coin-Operated)
+812331,62,naics_2022,Linen Supply
+561740,62,naics_2022,Carpet and Upholstery Cleaning Services
+812310,62,naics_2022,Coin-Operated Laundries and Drycleaners
+812332,62,naics_2022,Industrial Launderers
+9601,62,ciiu_rev_4,"Lavado y limpieza, incluida la limpieza en seco, de productos textiles y de piel"
+112130,63,naics_2022,Dual-Purpose Cattle Ranching and Farming
+112111,63,naics_2022,Beef Cattle Ranching and Farming
+112112,63,naics_2022,Cattle Feedlots
+112120,63,naics_2022,Dairy Cattle and Milk Production
+141,63,ciiu_rev_4,Cría de ganado bovino y búfalos
+161,64,ciiu_rev_4,Actividades de apoyo a la agricultura
+115115,64,naics_2022,Farm Labor Contractors and Crew Leaders
+115116,64,naics_2022,Farm Management Services
+115112,64,naics_2022,"Soil Preparation, Planting, and Cultivating"
+115113,64,naics_2022,"Crop Harvesting, Primarily by Machine"
+112512,65,naics_2022,Shellfish Farming
+321,65,ciiu_rev_4,Acuicultura marina
+322,65,ciiu_rev_4,Acuicultura de agua dulce
+112511,65,naics_2022,Finfish Farming and Fish Hatcheries
+112519,65,naics_2022,Other Aquaculture
+311221,66,naics_2022,Wet Corn Milling and Starch Manufacturing
+1040,66,ciiu_rev_4,Elaboración de aceites y grasas de origen vegetal y animal
+1062,66,ciiu_rev_4,Elaboración de almidones y productos derivados del almidón
+311225,66,naics_2022,Fats and Oils Refining and Blending
+311224,66,naics_2022,Soybean and Other Oilseed Processing
+311412,67,naics_2022,Frozen Specialty Food Manufacturing
+1075,67,ciiu_rev_4,Elaboración de comidas y platos preparados
+311422,67,naics_2022,Specialty Canning
+1074,67,ciiu_rev_4,"Elaboración de macarrones, fideos, alcuzcuz y productos farináceos similares"
+311824,67,naics_2022,"Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour"
+324199,68,naics_2022,All Other Petroleum and Coal Products Manufacturing
+325110,68,naics_2022,Petrochemical Manufacturing
+1920,68,ciiu_rev_4,Fabricación de productos de la refinación del petróleo
+324110,68,naics_2022,Petroleum Refineries
+324191,68,naics_2022,Petroleum Lubricating Oil and Grease Manufacturing
+322230,69,naics_2022,Stationery Product Manufacturing
+322291,69,naics_2022,Sanitary Paper Product Manufacturing
+322130,69,naics_2022,Paperboard Mills
+332992,69,naics_2022,Small Arms Ammunition Manufacturing
+1709,69,ciiu_rev_4,Fabricación de otros artículos de papel y cartón
+561439,70,naics_2022,Other Business Service Centers (including Copy Shops)
+8219,70,ciiu_rev_4,"Fotocopiado, preparación de documentos y otras actividades especializadas de apoyo de oficina"
+561431,70,naics_2022,Private Mail Centers
+561410,70,naics_2022,Document Preparation Services
+323111,70,naics_2022,Commercial Printing (except Screen and Books)
+325130,71,naics_2022,Synthetic Dye and Pigment Manufacturing
+325193,71,naics_2022,Ethyl Alcohol Manufacturing
+325998,71,naics_2022,All Other Miscellaneous Chemical Product and Preparation Manufacturing
+2011,71,ciiu_rev_4,Fabricación de sustancias químicas básicas
+325120,71,naics_2022,Industrial Gas Manufacturing
+325311,72,naics_2022,Nitrogenous Fertilizer Manufacturing
+325314,72,naics_2022,Fertilizer (Mixing Only) Manufacturing
+325180,72,naics_2022,Other Basic Inorganic Chemical Manufacturing
+2012,72,ciiu_rev_4,Fabricación de abonos y compuestos de nitrógeno
+325312,72,naics_2022,Phosphatic Fertilizer Manufacturing
+3240,73,ciiu_rev_4,Fabricación de juegos y juguetes
+339930,73,naics_2022,"Doll, Toy, and Game Manufacturing"
+3092,73,ciiu_rev_4,Fabricación de bicicletas y vehículos de transporte para personas con discapacidad física
+3230,73,ciiu_rev_4,Fabricación de artículos de deporte
+339920,73,naics_2022,Sporting and Athletic Goods Manufacturing
+335312,74,naics_2022,Motor and Generator Manufacturing
+2710,74,ciiu_rev_4,"Fabricación de motores, generadores y transformadores eléctricos y aparatos de distribución y control de la energía eléctrica"
+335311,74,naics_2022,"Power, Distribution, and Specialty Transformer Manufacturing"
+335313,74,naics_2022,Switchgear and Switchboard Apparatus Manufacturing
+335314,74,naics_2022,Relay and Industrial Control Manufacturing
+9512,75,ciiu_rev_4,Reparación de equipo de comunicaciones
+9511,75,ciiu_rev_4,Reparación de ordenadores (computadoras) y equipo periférico
+9521,75,ciiu_rev_4,Reparación de aparatos electrónicos de consumo
+3313,75,ciiu_rev_4,Reparación de equipo electrónico y óptico
+811210,75,naics_2022,Electronic and Precision Equipment Repair and Maintenance
+562219,76,naics_2022,Other Nonhazardous Waste Treatment and Disposal
+562213,76,naics_2022,Solid Waste Combustors and Incinerators
+3821,76,ciiu_rev_4,Tratamiento y eliminación de desechos no peligrosos
+325315,76,naics_2022,Compost Manufacturing
+562212,76,naics_2022,Solid Waste Landfill
+424930,77,naics_2022,"Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers"
+424520,77,naics_2022,Livestock Merchant Wholesalers
+424510,77,naics_2022,Grain and Field Bean Merchant Wholesalers
+424990,77,naics_2022,Other Miscellaneous Nondurable Goods Merchant Wholesalers
+4620,77,ciiu_rev_4,Venta al por mayor de materias primas agropecuarias y animales vivos
+485111,78,naics_2022,Mixed Mode Transit Systems
+485112,78,naics_2022,Commuter Rail Systems
+485119,78,naics_2022,Other Urban Transit Systems
+4921,78,ciiu_rev_4,Transporte urbano y suburbano de pasajeros por vía terrestre
+485113,78,naics_2022,Bus and Other Motor Vehicle Transit Systems
+481111,79,naics_2022,Scheduled Passenger Air Transportation
+481211,79,naics_2022,Nonscheduled Chartered Passenger Air Transportation
+481219,79,naics_2022,Other Nonscheduled Air Transportation
+487990,79,naics_2022,"Scenic and Sightseeing Transportation, Other"
+5110,79,ciiu_rev_4,Transporte de pasajeros por vía aérea
+486910,80,naics_2022,Pipeline Transportation of Refined Petroleum Products
+486110,80,naics_2022,Pipeline Transportation of Crude Oil
+486990,80,naics_2022,All Other Pipeline Transportation
+4930,80,ciiu_rev_4,Transporte por tuberías
+486210,80,naics_2022,Pipeline Transportation of Natural Gas
+493190,81,naics_2022,Other Warehousing and Storage
+493130,81,naics_2022,Farm Product Warehousing and Storage
+493120,81,naics_2022,Refrigerated Warehousing and Storage
+5210,81,ciiu_rev_4,Almacenamiento y depósito
+493110,81,naics_2022,General Warehousing and Storage
+722515,82,naics_2022,Snack and Nonalcoholic Beverage Bars 
+722514,82,naics_2022,"Cafeterias, Grill Buffets, and Buffets "
+722513,82,naics_2022,Limited-Service Restaurants 
+5610,82,ciiu_rev_4,Actividades de restaurantes y de servicio móvil de comidas
+722511,82,naics_2022,Full-Service Restaurants 
+512230,83,naics_2022,Music Publishers
+512250,83,naics_2022,Record Production and Distribution
+512240,83,naics_2022,Sound Recording Studios
+512290,83,naics_2022,Other Sound Recording Industries
+5920,83,ciiu_rev_4,Actividades de grabación de sonido y edición de música
+516210,84,naics_2022,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers"
+6391,84,ciiu_rev_4,Actividades de agencias de noticias
+6020,84,ciiu_rev_4,Programación y transmisiones de televisión
+6110,84,ciiu_rev_4,Actividades de telecomunicaciones alámbricas
+6010,84,ciiu_rev_4,Transmisiones de radio
+519210,85,naics_2022,Libraries and Archives 
+519290,85,naics_2022,Web Search Portals and All Other Information Services
+6312,85,ciiu_rev_4,Portales web
+6399,85,ciiu_rev_4,Otras actividades de servicios de información n.c.p.
+9101,85,ciiu_rev_4,Actividades de librerías y archivos
+522180,86,naics_2022,Savings Institutions and Other Depository Credit Intermediation
+6419,86,ciiu_rev_4,Otros tipos de intermediación monetaria
+522130,86,naics_2022,Credit Unions
+522390,86,naics_2022,Other Activities Related to Credit Intermediation
+522110,86,naics_2022,Commercial Banking
+523160,87,naics_2022,Commodity Contracts Intermediation
+6612,87,ciiu_rev_4,Corretaje de valores y de contratos de productos básicos
+523150,87,naics_2022,Investment Banking and Securities Intermediation
+6499,87,ciiu_rev_4,"Otras actividades de servicios financieros, excepto las de seguros y fondos de pensiones, n.c.p."
+523999,87,naics_2022,Miscellaneous Financial Investment Activities
+524128,88,naics_2022,"Other Direct Insurance (except Life, Health, and Medical) Carriers"
+6512,88,ciiu_rev_4,Seguros generales
+524126,88,naics_2022,Direct Property and Causality Insurance Carriers
+524127,88,naics_2022,Direct Title Insurance Carriers
+524114,88,naics_2022,Direct Health and Medical Insurance Carriers
+541219,89,naics_2022,Other Accounting Services
+541213,89,naics_2022,Tax Preparation Services
+6920,89,ciiu_rev_4,"Actividades de contabilidad, teneduría de libros y auditoría; consultoría fiscal"
+541214,89,naics_2022,Payroll Services
+541211,89,naics_2022,Offices of Certified Public Accountants
+541490,90,naics_2022,Other Specialized Design Services
+541430,90,naics_2022,Graphic Design Services
+541410,90,naics_2022,Interior Design Services
+7410,90,ciiu_rev_4,Actividades especializadas de diseño
+541420,90,naics_2022,Industrial Design Services
+812921,91,naics_2022,Photofinishing Laboratories (except One-Hour)
+7420,91,ciiu_rev_4,Actividades de fotografía
+541921,91,naics_2022,"Photography Studios, Portrait"
+541922,91,naics_2022,Commercial Photography
+812922,91,naics_2022,One-Hour Photofinishing
+7730,92,ciiu_rev_4,"Alquiler y arrendamiento de otros tipos de maquinaria, equipo y bienes tangibles"
+532420,92,naics_2022,Office Machinery and Equipment Rental and Leasing
+532411,92,naics_2022,"Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing"
+532412,92,naics_2022,"Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing"
+532490,92,naics_2022,Other Commercial and Industrial Machinery and Equipment Rental and Leasing
+561990,93,naics_2022,All Other Support Services
+561491,93,naics_2022,Repossession Services
+561492,93,naics_2022,Court Reporting and Stenotype Services
+561499,93,naics_2022,All Other Business Support Services
+8299,93,ciiu_rev_4,Otras actividades de servicios de apoyo a las empresas n.c.p.
+925110,94,naics_2022,Administration of Housing Programs
+923140,94,naics_2022,Administration of Veterans' Affairs
+8412,94,ciiu_rev_4,"Regulación de las actividades de organismos que prestan servicios sanitarios, educativos, culturales y otros servicios sociales, excepto servicios de seguridad social"
+924110,94,naics_2022,Administration of Air and Water Resource and Solid Waste Management Programs
+923110,94,naics_2022,Administration of Education Programs 
+926150,95,naics_2022,"Regulation, Licensing, and Inspection of Miscellaneous Commercial Sectors "
+8413,95,ciiu_rev_4,Regulación y facilitación de la actividad económica
+926130,95,naics_2022,"Regulation and Administration of Communications, Electric, Gas, and Other Utilities"
+926140,95,naics_2022,Regulation of Agricultural Marketing and Commodities
+925120,95,naics_2022,Administration of Urban Planning and Community and Rural Development 
+611519,96,naics_2022,Other Technical and Trade Schools
+611410,96,naics_2022,Business and Secretarial Schools
+611513,96,naics_2022,Apprenticeship Training
+8522,96,ciiu_rev_4,Enseñanza secundaria técnica y vocacional
+611511,96,naics_2022,Cosmetology and Barber Schools
+9000,97,ciiu_rev_4,"Actividades creativas, artísticas y de entretenimiento"
+711320,97,naics_2022,"Promoters of Performing Arts, Sports, and Similar Events without Facilities"
+711120,97,naics_2022,Dance Companies
+711130,97,naics_2022,Musical Groups and Artists
+711110,97,naics_2022,Theater Companies and Dinner Theaters
+713940,98,naics_2022,Fitness and Recreational Sports Centers
+711212,98,naics_2022,Racetracks
+713910,98,naics_2022,Golf Courses and Country Clubs
+9311,98,ciiu_rev_4,Gestión de instalaciones deportivas
+713950,98,naics_2022,Bowling Centers
+111211,99,naics_2022,Potato Farming
+113,99,ciiu_rev_4,"Cultivo de hortalizas y melones, raíces y tubérculos"
+111411,99,naics_2022,Mushroom Production
+111991,99,naics_2022,Sugar Beet Farming
+111219,100,naics_2022,Other Vegetable (except Potato) and Melon Farming
+111940,100,naics_2022,Hay Farming
+119,100,ciiu_rev_4,Cultivo de otros productos agrícolas no perennes
+111422,100,naics_2022,Floriculture Production
+150,101,ciiu_rev_4,Cultivo de productos agrícolas en combinación con la cría de animales (explotación mixta)
+143,101,ciiu_rev_4,Cría de camellos y otros camélidos
+112990,101,naics_2022,All Other Animal Production
+14,101,ciiu_rev_4,14
+163,102,ciiu_rev_4,Actividades poscosecha
+115111,102,naics_2022,Cotton Ginning
+164,102,ciiu_rev_4,Tratamiento de semillas para propagación
+115114,102,naics_2022,Postharvest Crop Activities (except Cotton Ginning)
+230,103,ciiu_rev_4,Recolección de productos forestales distintos de la madera
+113110,103,naics_2022,Timber Tract Operations
+210,103,ciiu_rev_4,Silvicultura y otras actividades forestales
+113210,103,naics_2022,Forest Nurseries and Gathering of Forest Products
+212115,104,naics_2022,Underground Coal Mining
+212114,104,naics_2022,Surface Coal Mining
+520,104,ciiu_rev_4,Extracción de lignito
+510,104,ciiu_rev_4,Extracción de hulla
+213111,105,naics_2022,Drilling Oil and Gas Wells
+488999,105,naics_2022,All Other Support Activities for Transportation
+910,105,ciiu_rev_4,Actividades de apoyo para la extracción de petróleo y gas natural
+213112,105,naics_2022,Support Activities for Oil and Gas Operations
+1010,106,ciiu_rev_4,Elaboración y conservación de carne
+311611,106,naics_2022,Animal (except Poultry) Slaughtering
+311613,106,naics_2022,Rendering and Meat Byproduct Processing
+311615,106,naics_2022,Poultry Processing
+311211,107,naics_2022,Flour Milling
+1061,107,ciiu_rev_4,Elaboración de productos de molienda
+311230,107,naics_2022,Breakfast Cereal Manufacturing
+311212,107,naics_2022,Rice Milling
+311351,108,naics_2022,Chocolate and Confectionery Manufacturing from Cacao Beans
+1073,108,ciiu_rev_4,Elaboración de cacao y chocolate y de productos de confitería
+311352,108,naics_2022,Confectionery Manufacturing from Purchased Chocolate
+311340,108,naics_2022,Nonchocolate Confectionery Manufacturing
+313230,109,naics_2022,Nonwoven Fabric Mills
+339991,109,naics_2022,"Gasket, Packing, and Sealing Device Manufacturing"
+313220,109,naics_2022,Narrow Fabric Mills and Schiffli Machine Embroidery
+1399,109,ciiu_rev_4,Fabricación de otros productos textiles n.c.p.
+335991,110,naics_2022,Carbon and Graphite Product Manufacturing
+335139,110,naics_2022,Electric Lamp Bulb and Other Lighting Equipment Manufacturing
+2790,110,ciiu_rev_4,Fabricación de otros tipos de equipo eléctrico
+335999,110,naics_2022,All Other Miscellaneous Electrical Equipment and Component Manufacturing
+321211,111,naics_2022,Hardwood Veneer and Plywood Manufacturing
+321219,111,naics_2022,Reconstituted Wood Product Manufacturing
+321212,111,naics_2022,Softwood Veneer and Plywood Manufacturing
+1621,111,ciiu_rev_4,Fabricación de hojas de madera para enchapado y tableros a base de madera
+322211,112,naics_2022,Corrugated and Solid Fiber Box Manufacturing
+322219,112,naics_2022,Other Paperboard Container Manufacturing 
+1702,112,ciiu_rev_4,Fabricación de papel y cartón ondulado y de envases de papel y cartón
+322212,112,naics_2022,Folding Paperboard Box Manufacturing
+325212,113,naics_2022,Synthetic Rubber Manufacturing
+2013,113,ciiu_rev_4,Fabricación de plásticos y caucho sintético en formas primarias
+325991,113,naics_2022,Custom Compounding of Purchased Resins
+325211,113,naics_2022,Plastics Material and Resin Manufacturing
+332999,114,naics_2022,All Other Miscellaneous Fabricated Metal Product Manufacturing 
+325620,114,naics_2022,Toilet Preparation Manufacturing
+325611,114,naics_2022,Soap and Other Detergent Manufacturing
+2023,114,ciiu_rev_4,"Fabricación de jabones y detergentes, preparados para limpiar y pulir, perfumes y preparados de tocador"
+2670,115,ciiu_rev_4,Fabricación de instrumentos ópticos y equipo fotográfico
+325992,115,naics_2022,"Photographic Film, Paper, Plate, Chemical, and Copy Toner Manufacturing"
+333310,115,naics_2022,Commercial and Service Industry Machinery Manufacturing
+2817,115,ciiu_rev_4,Fabricación de maquinaria y equipo de oficina [excepto ordenadores (computadoras) y equipo periférico]
+2394,116,ciiu_rev_4,"Fabricación de cemento, cal y yeso"
+327420,116,naics_2022,Gypsum Product Manufacturing
+327410,116,naics_2022,Lime Manufacturing
+327310,116,naics_2022,Cement Manufacturing
+331110,117,naics_2022,Iron and Steel Mills and Ferroalloy Manufacturing 
+2410,117,ciiu_rev_4,Industrias básicas de hierro y acero
+332996,117,naics_2022,Fabricated Pipe and Pipe Fitting Manufacturing
+331221,117,naics_2022,Rolled Steel Shape Manufacturing
+333996,118,naics_2022,Fluid Power Pump and Motor Manufacturing
+332912,118,naics_2022,Fluid Power Valve and Hose Fitting Manufacturing
+2812,118,ciiu_rev_4,Fabricación de equipo de propulsión de fluidos
+333995,118,naics_2022,Fluid Power Cylinder and Actuator Manufacturing
+2732,119,ciiu_rev_4,Fabricación de otros hilos y cables eléctricos
+331318,119,naics_2022,"Other Aluminum Rolling, Drawing, and Extruding "
+335929,119,naics_2022,Other Communication and Energy Wire Manufacturing
+331420,119,naics_2022,"Copper Rolling, Drawing, Extruding, and Alloying"
+331513,120,naics_2022,Steel Foundries (except Investment)
+2431,120,ciiu_rev_4,Fundición de hierro y acero
+331512,120,naics_2022,Steel Investment Foundries
+331210,120,naics_2022,Iron and Steel Pipe and Tube Manufacturing from Purchased Steel
+331524,121,naics_2022,Aluminum Foundries (except Die-Casting)
+331529,121,naics_2022,Other Nonferrous Metal Foundries (except Die-Casting)
+331523,121,naics_2022,Nonferrous Metal Die-Casting Foundries 
+2432,121,ciiu_rev_4,Fundición de metales no ferrosos
+332323,122,naics_2022,Ornamental and Architectural Metal Work Manufacturing
+332321,122,naics_2022,Metal Window and Door Manufacturing
+2511,122,ciiu_rev_4,Fabricación de productos metálicos para uso estructural
+332311,122,naics_2022,Prefabricated Metal Building and Component Manufacturing
+333515,123,naics_2022,Cutting Tool and Machine Tool Accessory Manufacturing
+333511,123,naics_2022,Industrial Mold Manufacturing
+332510,123,naics_2022,Hardware Manufacturing
+2593,123,ciiu_rev_4,"Fabricación de artículos de cuchillería, herramientas de mano y artículos de ferretería"
+2821,124,ciiu_rev_4,Fabricación de maquinaria agropecuaria y forestal
+332216,124,naics_2022,Saw Blade and Handtool Manufacturing 
+333243,124,naics_2022,"Sawmill, Woodworking, and Paper Machinery Manufacturing "
+333111,124,naics_2022,Farm Machinery and Equipment Manufacturing
+333132,125,naics_2022,Oil and Gas Field Machinery and Equipment Manufacturing
+333922,125,naics_2022,Conveyor and Conveying Equipment Manufacturing
+333120,125,naics_2022,Construction Machinery Manufacturing
+2824,125,ciiu_rev_4,Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción
+333131,126,naics_2022,Mining Machinery and Equipment Manufacturing
+333923,126,naics_2022,"Overhead Traveling Crane, Hoist, and Monorail System Manufacturing"
+3020,126,ciiu_rev_4,Fabricación de locomotoras y material rodante
+336510,126,naics_2022,Railroad Rolling Stock Manufacturing
+334118,127,naics_2022,Computer Terminal and Other Computer Peripheral Equipment Manufacturing 
+334112,127,naics_2022,Computer Storage Device Manufacturing
+334111,127,naics_2022,Electronic Computer Manufacturing
+2620,127,ciiu_rev_4,Fabricación de ordenadores (computadoras) y equipo periférico
+333612,128,naics_2022,"Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing"
+332991,128,naics_2022,Ball and Roller Bearing Manufacturing
+333613,128,naics_2022,Mechanical Power Transmission Equipment Manufacturing
+2814,128,ciiu_rev_4,"Fabricación de cojinetes, engranajes, trenes de engranajes y piezas de transmisión"
+4329,129,ciiu_rev_4,Otras instalaciones para obras de construcción
+3320,129,ciiu_rev_4,Instalación de maquinaria y equipo industriales
+331,129,ciiu_rev_4,331
+238290,129,naics_2022,Other Building Equipment Contractors
+488510,130,naics_2022,Freight Transportation Arrangement
+5229,130,ciiu_rev_4,Otras actividades de apoyo al transporte
+488991,130,naics_2022,Packing and Crating
+488390,130,naics_2022,Other Support Activities for Water Transportation
+3700,131,ciiu_rev_4,Evacuación de aguas residuales
+562991,131,naics_2022,Septic Tank and Related Services
+221320,131,naics_2022,Sewage Treatment Facilities
+562998,131,naics_2022,All Other Miscellaneous Waste Management Services
+441120,132,naics_2022,Used Car Dealers
+4510,132,ciiu_rev_4,Venta de vehículos automotores
+441227,132,naics_2022,"Motorcycle, ATV, and All Other Motor Vehicle Dealers"
+441110,132,naics_2022,New Car Dealers
+424310,133,naics_2022,"Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers"
+424350,133,naics_2022,Clothing and Clothing Accessories Merchant Wholesalers
+4641,133,ciiu_rev_4,"Venta al por mayor de productos textiles, prendas de vestir y calzado"
+424340,133,naics_2022,Footwear Merchant Wholesalers
+485310,134,naics_2022,Taxi and Ridesharing Services
+5221,134,ciiu_rev_4,Actividades de servicios vinculadas al transporte terrestre
+812930,134,naics_2022,Parking Lots and Garages
+488410,134,naics_2022,Motor Vehicle Towing
+483114,135,naics_2022,Coastal and Great Lakes Passenger Transportation
+5011,135,ciiu_rev_4,Transporte de pasajeros marítimo y de cabotaje
+487210,135,naics_2022,"Scenic and Sightseeing Transportation, Water"
+483112,135,naics_2022,Deep Sea Passenger Transportation
+927110,136,naics_2022,Space Research and Technology
+5120,136,ciiu_rev_4,Transporte de carga por vía aérea
+481212,136,naics_2022,Nonscheduled Chartered Freight Air Transportation
+481112,136,naics_2022,Scheduled Freight Air Transportation
+713210,137,naics_2022,Casinos (except Casino Hotels)
+9200,137,ciiu_rev_4,Actividades de juegos de azar y apuestas
+713290,137,naics_2022,Other Gambling Industries
+721120,137,naics_2022,Casino Hotels
+6120,138,ciiu_rev_4,Actividades de telecomunicaciones inalámbricas
+516110,138,naics_2022,Radio Broadcasting Stations 
+517112,138,naics_2022,Wireless Telecommunications Carriers (except Satellite)
+516120,138,naics_2022,Television Broadcasting Stations
+522210,139,naics_2022,Credit Card Issuing
+522291,139,naics_2022,Consumer Lending
+522292,139,naics_2022,Real Estate Credit
+6492,139,ciiu_rev_4,Otras actividades de concesión de crédito
+522320,140,naics_2022,"Financial Transactions Processing, Reserve, and Clearinghouse Activities"
+523991,140,naics_2022,"Trust, Fiduciary, and Custody Activities"
+522310,140,naics_2022,Mortgage and Nonmortgage Loan Brokers
+6619,140,ciiu_rev_4,Otras actividades auxiliares de las actividades de servicios financieros
+524292,141,naics_2022,Pharmacy Benefit Management and Other Third Party Administration of Insurance and Pension Funds 
+541612,141,naics_2022,Human Resources Consulting Services 
+524298,141,naics_2022,All Other Insurance Related Activities
+6629,141,ciiu_rev_4,Otras actividades auxiliares de las actividades de seguros y fondos de pensiones
+7020,142,ciiu_rev_4,Actividades de consultoría de gestión
+541820,142,naics_2022,Public Relations Agencies
+541611,142,naics_2022,Administrative Management and General Management Consulting Services
+541613,142,naics_2022,Marketing Consulting Services
+7210,143,ciiu_rev_4,Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería
+541714,143,naics_2022,Research and Development in Biotechnology (except Nanobiotechnology)
+541713,143,naics_2022,Research and Development in Nanotechnology
+541715,143,naics_2022,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)"
+7710,144,ciiu_rev_4,Alquiler y arrendamiento de vehículos automotores
+532111,144,naics_2022,Passenger Car Rental
+532112,144,naics_2022,Passenger Car Leasing
+532120,144,naics_2022,"Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing"
+926110,145,naics_2022,Administration of General Economic Programs
+7990,145,ciiu_rev_4,Otros servicios de reservas y actividades conexas
+561599,145,naics_2022,All Other Travel Arrangement and Reservation Services
+561591,145,naics_2022,Convention and Visitors Bureaus
+8610,146,ciiu_rev_4,Actividades de hospitales
+622210,146,naics_2022,Psychiatric and Substance Abuse Hospitals
+622310,146,naics_2022,Specialty (except Psychiatric and Substance Abuse) Hospitals
+622110,146,naics_2022,General Medical and Surgical Hospitals
+812112,147,naics_2022,Beauty Salons
+9602,147,ciiu_rev_4,Peluquería y otros tratamientos de belleza
+812111,147,naics_2022,Barber Shops
+812113,147,naics_2022,Nail Salons
+812910,148,naics_2022,Pet Care (except Veterinary) Services
+812199,148,naics_2022,Other Personal Care Services
+9609,148,ciiu_rev_4,Otras actividades de servicios personales n.c.p.
+812191,148,naics_2022,Diet and Weight Reducing Centers
+127,149,ciiu_rev_4,Cultivo de plantas con las que se preparan bebidas
+122,149,ciiu_rev_4,Cultivo de frutas tropicales y subtropicales
+111339,149,naics_2022,Other Noncitrus Fruit Farming
+123,150,ciiu_rev_4,Cultivo de cítricos
+111310,150,naics_2022,Orange Groves
+111320,150,naics_2022,Citrus (except Orange) Groves
+111333,151,naics_2022,Strawberry Farming
+111334,151,naics_2022,Berry (except Strawberry) Farming
+125,151,ciiu_rev_4,Cultivo de otros frutos y nueces de árboles y arbustos
+111421,152,naics_2022,Nursery and Tree Production
+130,152,ciiu_rev_4,Propagación de plantas
+129,152,ciiu_rev_4,Cultivo de otras plantas perennes
+112410,153,naics_2022,Sheep Farming
+112420,153,naics_2022,Goat Farming
+144,153,ciiu_rev_4,Cría de ovejas y cabras
+112930,154,naics_2022,Fur-Bearing Animal and Rabbit Production
+112910,154,naics_2022,Apiculture
+149,154,ciiu_rev_4,Cría de otros animales
+212230,155,naics_2022,"Copper, Nickel, Lead, and Zinc Mining"
+212220,155,naics_2022,Gold Ore and Silver Ore Mining
+729,155,ciiu_rev_4,Extracción de otros minerales metalíferos no ferrosos
+1072,156,ciiu_rev_4,Elaboración de azúcar
+311313,156,naics_2022,Beet Sugar Manufacturing
+311314,156,naics_2022,Cane Sugar Manufacturing
+1080,157,ciiu_rev_4,Elaboración de alimentos preparados para animales
+311119,157,naics_2022,Other Animal Food Manufacturing
+311111,157,naics_2022,Dog and Cat Food Manufacturing
+1103,158,ciiu_rev_4,Elaboración de malta y licores de malta
+312120,158,naics_2022,Breweries
+311213,158,naics_2022,Malt Manufacturing
+312112,159,naics_2022,Bottled Water Manufacturing
+1104,159,ciiu_rev_4,Elaboración de bebidas no alcohólicas; producción de aguas minerales y otras aguas embotelladas
+312111,159,naics_2022,Soft Drink Manufacturing
+313110,160,naics_2022,"Fiber, Yarn, and Thread Mills"
+314999,160,naics_2022,All Other Miscellaneous Textile Product Mills
+1311,160,ciiu_rev_4,Preparación e hilatura de fibras textiles
+313310,161,naics_2022,Textile and Fabric Finishing Mills
+323113,161,naics_2022,Commercial Screen Printing
+1313,161,ciiu_rev_4,Acabado de productos textiles
+339999,162,naics_2022,All Other Miscellaneous Manufacturing
+315210,162,naics_2022,Cut and Sew Apparel Contractors
+1410,162,ciiu_rev_4,"Fabricación de prendas de vestir, excepto prendas de piel"
+321114,163,naics_2022,Wood Preservation
+321999,163,naics_2022,All Other Miscellaneous Wood Product Manufacturing
+1610,163,ciiu_rev_4,Aserrado y acepilladura de madera
+339950,164,naics_2022,Sign Manufacturing
+321912,164,naics_2022,"Cut Stock, Resawing Lumber, and Planing"
+1629,164,ciiu_rev_4,"Fabricación de otros productos de madera; fabricación de artículos de corcho, paja y materiales trenzables"
+322110,165,naics_2022,Pulp Mills
+322299,165,naics_2022,All Other Converted Paper Product Manufacturing
+1701,165,ciiu_rev_4,"Fabricación de pasta de madera, papel y cartón"
+2680,166,ciiu_rev_4,Fabricación de soportes magnéticos y ópticos
+334610,166,naics_2022,Manufacturing and Reproducing Magnetic and Optical Media
+1820,166,ciiu_rev_4,Reproducción de grabaciones
+325510,167,naics_2022,Paint and Coating Manufacturing
+2022,167,ciiu_rev_4,"Fabricación de pinturas, barnices y productos de revestimiento similares, tintas de imprenta y masillas"
+325910,167,naics_2022,Printing Ink Manufacturing
+2393,168,ciiu_rev_4,Fabricación de otros productos de porcelana y de cerámica
+327110,168,naics_2022,"Pottery, Ceramics, and Plumbing Fixture Manufacturing "
+2392,168,ciiu_rev_4,Fabricación de materiales de construcción de arcilla
+336612,169,naics_2022,Boat Building
+3012,169,ciiu_rev_4,Construcción de embarcaciones de recreo y de deporte
+332312,169,naics_2022,Fabricated Structural Metal Manufacturing
+332313,170,naics_2022,Plate Work Manufacturing
+3011,170,ciiu_rev_4,Construcción de buques y estructuras flotantes
+336611,170,naics_2022,Ship Building and Repairing
+334290,171,naics_2022,Other Communications Equipment Manufacturing
+334210,171,naics_2022,Telephone Apparatus Manufacturing
+2630,171,ciiu_rev_4,Fabricación de equipo de comunicaciones
+334517,172,naics_2022,Irradiation Apparatus Manufacturing
+334510,172,naics_2022,Electromedical and Electrotherapeutic Apparatus Manufacturing
+2660,172,ciiu_rev_4,Fabricación de equipo de irradiación y equipo electrónico de uso médico y terapéutico
+335931,173,naics_2022,Current-Carrying Wiring Device Manufacturing
+335932,173,naics_2022,Noncurrent-Carrying Wiring Device Manufacturing
+2733,173,ciiu_rev_4,Fabricación de dispositivos de cableado
+2740,174,ciiu_rev_4,Fabricación de equipo eléctrico de iluminación
+335132,174,naics_2022,"Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing"
+335131,174,naics_2022,Residential Electric Lighting Fixture Manufacturing
+335210,175,naics_2022,Small Electrical Appliance Manufacturing
+335220,175,naics_2022,Major Household Appliance Manufacturing
+2750,175,ciiu_rev_4,Fabricación de aparatos de uso doméstico
+3091,176,ciiu_rev_4,Fabricación de motocicletas
+336991,176,naics_2022,"Motorcycle, Bicycle, and Parts Manufacturing"
+333618,176,naics_2022,Other Engine Equipment Manufacturing
+811412,177,naics_2022,Appliance Repair and Maintenance 
+9522,177,ciiu_rev_4,Reparación de aparatos de uso doméstico y equipo doméstico y de jardinería
+811411,177,naics_2022,Home and Garden Equipment Repair and Maintenance 
+488111,178,naics_2022,Air Traffic Control
+5223,178,ciiu_rev_4,Actividades de servicios vinculadas al transporte aéreo
+488190,178,naics_2022,Other Support Activities for Air Transportation
+312113,179,naics_2022,Ice Manufacturing
+221330,179,naics_2022,Steam and Air-Conditioning Supply
+3530,179,ciiu_rev_4,Suministro de vapor y de aire acondicionado
+3811,180,ciiu_rev_4,Recolección de desechos no peligrosos
+562111,180,naics_2022,Solid Waste Collection
+562119,180,naics_2022,Other Waste Collection
+237310,181,naics_2022,"Highway, Street, and Bridge Construction"
+4321,181,ciiu_rev_4,Instalaciones eléctricas
+238210,181,naics_2022,Electrical Contractors and Other Wiring Installation Contractors
+237130,182,naics_2022,Power and Communication Line and Related Structures Construction
+4220,182,ciiu_rev_4,Construcción de proyectos de servicio público
+237110,182,naics_2022,Water and Sewer Line and Related Structures Construction
+4290,183,ciiu_rev_4,Construcción de otras obras de ingeniería civil
+237210,183,naics_2022,Land Subdivision 
+237120,183,naics_2022,Oil and Gas Pipeline and Related Structures Construction
+4661,184,ciiu_rev_4,"Venta al por mayor de combustibles sólidos, líquidos y gaseosos y productos conexos"
+424720,184,naics_2022,Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals)
+424710,184,naics_2022,Petroleum Bulk Stations and Terminals
+423520,185,naics_2022,Coal and Other Mineral and Ore Merchant Wholesalers 
+4662,185,ciiu_rev_4,Venta al por mayor de metales y minerales metalíferos
+423510,185,naics_2022,Metal Service Centers and Other Metal Merchant Wholesalers
+4711,186,ciiu_rev_4,"Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco"
+457110,186,naics_2022,Gasoline Stations with Convenience Stores
+445110,186,naics_2022,Supermarkets and Other Grocery Retailers (except Convenience Retailers)
+482112,187,naics_2022,Short Line Railroads
+482111,187,naics_2022,Line-Haul Railroads
+4912,187,ciiu_rev_4,Transporte de carga por ferrocarril
+5012,188,ciiu_rev_4,Transporte de carga marítimo y de cabotaje
+483113,188,naics_2022,Coastal and Great Lakes Freight Transportation
+483111,188,naics_2022,Deep Sea Freight Transportation 
+5222,189,ciiu_rev_4,Actividades de servicios vinculadas al transporte acuático
+488330,189,naics_2022,Navigational Services to Shipping
+488310,189,naics_2022,Port and Harbor Operations
+492210,190,naics_2022,Local Messengers and Local Delivery
+492110,190,naics_2022,Couriers and Express Delivery Services
+5320,190,ciiu_rev_4,Actividades de mensajería
+721191,191,naics_2022,Bed-and-Breakfast Inns
+721199,191,naics_2022,All Other Traveler Accommodation
+5510,191,ciiu_rev_4,Actividades de alojamiento para estancias cortas
+5590,192,ciiu_rev_4,Otras actividades de alojamiento
+721310,192,naics_2022,"Rooming and Boarding Houses, Dormitories, and Workers' Camps"
+721110,192,naics_2022,Hotels (except Casio Hotels) and Motels
+721214,193,naics_2022,Recreational and Vacation Camps (except Campgrounds)
+5520,193,ciiu_rev_4,"Actividades de campamentos, parques de vehículos recreativos y parques de caravanas"
+721211,193,naics_2022,RV (Recreational Vehicle) Parks and Campgrounds
+722410,194,naics_2022,Drinking Places (Alcoholic Beverages)
+5630,194,ciiu_rev_4,Actividades de servicio de bebidas
+722330,194,naics_2022,Mobile Food Services
+513199,195,naics_2022,All Other Publishers 
+513130,195,naics_2022,Book Publishers
+5811,195,ciiu_rev_4,Edición de libros
+513110,196,naics_2022,Newspaper Publishers
+513120,196,naics_2022,Periodical Publishers
+5813,196,ciiu_rev_4,"Edición de periódicos, revistas y otras publicaciones periódicas"
+512191,197,naics_2022,Teleproduction and Other Postproduction Services
+5912,197,ciiu_rev_4,"Actividades de postproducción de películas cinematográficas, videos y programas de televisión"
+512199,197,naics_2022,Other Motion Picture and Video Industries
+5914,198,ciiu_rev_4,Actividades de exhibición de películas cinematográficas y cintas de video
+512131,198,naics_2022,Motion Picture Theaters (except Drive-Ins)
+512132,198,naics_2022,Drive-In Motion Picture Theaters
+6202,199,ciiu_rev_4,Consultoría de informática y gestión de instalaciones informáticas
+541512,199,naics_2022,Computer Systems Design Services
+541513,199,naics_2022,Computer Facilities Management Services
+6411,200,ciiu_rev_4,Banca central
+521110,200,naics_2022,Monetary Authorities-Central Bank
+522299,200,naics_2022,"International, Secondary Market, and All Other Nondepository Credit Intermediation"
+6420,201,ciiu_rev_4,Actividades de sociedades de cartera
+551111,201,naics_2022,Offices of Bank Holding Companies
+551112,201,naics_2022,Offices of Other Holding Companies
+7810,202,ciiu_rev_4,Actividades de agencias de empleo
+561311,202,naics_2022,Employment Placement Agencies
+561312,202,naics_2022,Executive Search Services
+561612,203,naics_2022,Security Guards and Patrol Services
+561613,203,naics_2022,Armored Car Services
+8010,203,ciiu_rev_4,Actividades de seguridad privada
+561622,204,naics_2022,Locksmiths
+561621,204,naics_2022,Security Systems Services (except Locksmiths)
+8020,204,ciiu_rev_4,Actividades de servicios de sistemas de seguridad
+561421,205,naics_2022,Telephone Answering Services
+561422,205,naics_2022,Telemarketing Bureaus and Other Contact Centers
+8220,205,ciiu_rev_4,Actividades de centros de llamadas
+928120,206,naics_2022,International Affairs
+8421,206,ciiu_rev_4,Relaciones exteriores
+9900,206,ciiu_rev_4,Actividades de organizaciones y órganos extraterritoriales
+611210,207,naics_2022,Junior Colleges
+611310,207,naics_2022,"Colleges, Universities, and Professional Schools"
+8530,207,ciiu_rev_4,Enseñanza superior
+611699,208,naics_2022,All Other Miscellaneous Schools and Instruction
+611620,208,naics_2022,Sports and Recreation Instruction
+8541,208,ciiu_rev_4,Enseñanza deportiva y recreativa
+623210,209,naics_2022,Residential Intellectual and Developmental Disability Facilities
+8720,209,ciiu_rev_4,"Actividades de atención en instituciones para personas con retraso mental, enfermos mentales y toxicómanos"
+623220,209,naics_2022,Residential Mental Health and Substance Abuse Facilities
+8730,210,ciiu_rev_4,Actividades de atención en instituciones para personas de edad y personas con discapacidad
+623311,210,naics_2022,Continuing Care Retirement Communities
+623312,210,naics_2022,Assisted Living Facilities for the Elderly 
+9102,211,ciiu_rev_4,Actividades de museos y conservación de lugares y edificios históricos
+712120,211,naics_2022,Historical Sites
+712110,211,naics_2022,Museums
+9103,212,ciiu_rev_4,Actividades de jardines botánicos y zoológicos y de reservas naturales
+712190,212,naics_2022,Nature Parks and Other Similar Institutions
+712130,212,naics_2022,Zoos and Botanical Gardens
+9319,213,ciiu_rev_4,Otras actividades deportivas
+813990,213,naics_2022,"Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)"
+711219,213,naics_2022,Other Spectator Sports
+812220,214,naics_2022,Cemeteries and Crematories
+9603,214,ciiu_rev_4,Pompas fúnebres y actividades conexas
+812210,214,naics_2022,Funeral Homes and Funeral Services
+111160,215,naics_2022,Rice Farming
+112,215,ciiu_rev_4,Cultivo de arroz
+111419,216,naics_2022,Other Food Crops Grown Under Cover
+128,216,ciiu_rev_4,"Cultivo de especias y de plantas aromáticas, medicinales y farmacéuticas"
+114,217,ciiu_rev_4,Cultivo de caña de azúcar
+111930,217,naics_2022,Sugarcane Farming
+111910,218,naics_2022,Tobacco Farming
+115,218,ciiu_rev_4,Cultivo de tabaco
+116,219,ciiu_rev_4,Cultivo de plantas para fibras textiles
+111920,219,naics_2022,Cotton Farming
+111336,220,naics_2022,Fruit and Tree Nut Combination Farming
+12,220,ciiu_rev_4,12
+111332,221,naics_2022,Grape Vineyards
+121,221,ciiu_rev_4,Cultivo de uva
+111331,222,naics_2022,Apple Orchards
+124,222,ciiu_rev_4,Cultivo de frutas de pepita y de hueso
+126,223,ciiu_rev_4,Cultivo de frutos oleaginosos
+111335,223,naics_2022,Tree Nut Farming
+112920,224,naics_2022,Horses and Other Equine Production
+142,224,ciiu_rev_4,Cría de caballos y otros équidos
+145,225,ciiu_rev_4,Cría de cerdos
+112210,225,naics_2022,Hog and Pig Farming
+115210,226,naics_2022,Support Activities for Animal Production
+162,226,ciiu_rev_4,Actividades de apoyo a la ganadería
+114210,227,naics_2022,Hunting and Trapping
+170,227,ciiu_rev_4,Caza ordinaria y mediante trampas y actividades de servicios conexas
+113310,228,naics_2022,Logging
+220,228,ciiu_rev_4,Tala de árboles
+115310,229,naics_2022,Support Activities for Forestry
+240,229,ciiu_rev_4,Servicios de apoyo a la silvicultura
+211130,230,naics_2022,Natural Gas Extraction
+620,230,ciiu_rev_4,Extracción de gas natural
+211120,231,naics_2022,Crude Petroleum Extraction
+610,231,ciiu_rev_4,Extracción de petróleo crudo
+212210,232,naics_2022,Iron Ore Mining
+710,232,ciiu_rev_4,Extracción de minerales de hierro
+721,233,ciiu_rev_4,Extracción de minerales de uranio y torio
+212290,233,naics_2022,Other Metal Ore Mining
+1101,234,ciiu_rev_4,"Destilación, rectificación y mezcla de bebidas alcohólicas"
+312140,234,naics_2022,Distilleries
+312130,235,naics_2022,Wineries
+1102,235,ciiu_rev_4,Elaboración de vinos
+1200,236,ciiu_rev_4,Elaboración de productos de tabaco
+312230,236,naics_2022,Tobacco Manufacturing
+1312,237,ciiu_rev_4,Tejedura de productos textiles
+313210,237,naics_2022,Broadwoven Fabric Mills
+1391,238,ciiu_rev_4,Fabricación de tejidos de punto y ganchillo
+313240,238,naics_2022,Knit Fabric Mills
+314110,239,naics_2022,Carpet and Rug Mills
+1393,239,ciiu_rev_4,Fabricación de tapices y alfombras
+1394,240,ciiu_rev_4,"Fabricación de cuerdas, cordeles, bramantes y redes"
+314994,240,naics_2022,"Rope, Cordage, Twine, Tire Cord, and Tire Fabric Mills"
+1420,241,ciiu_rev_4,Fabricación de artículos de piel
+315250,241,naics_2022,Cut and Sew Apparel Manufacturing (except Contractors)
+316990,242,naics_2022,Other Leather and Allied Product Manufacturing
+1512,242,ciiu_rev_4,"Fabricación de maletas, bolsos de mano y artículos similares, y de artículos de talabartería y guarnicionería"
+1430,243,ciiu_rev_4,Fabricación de artículos de punto y ganchillo
+315120,243,naics_2022,Apparel Knitting Mills
+316110,244,naics_2022,Leather and Hide Tanning and Finishing
+1511,244,ciiu_rev_4,Curtido y adobo de cueros; adobo y teñido de pieles
+316210,245,naics_2022,Footwear Manufacturing
+1520,245,ciiu_rev_4,Fabricación de calzado
+321920,246,naics_2022,Wood Container and Pallet Manufacturing
+1623,246,ciiu_rev_4,Fabricación de recipientes de madera
+1811,247,ciiu_rev_4,Impresión
+323117,247,naics_2022,Books Printing
+323120,248,naics_2022,Support Activities for Printing
+1812,248,ciiu_rev_4,Actividades de servicios relacionadas con la impresión
+325194,249,naics_2022,"Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing"
+1910,249,ciiu_rev_4,Fabricación de productos de hornos de coque
+2021,250,ciiu_rev_4,Fabricación de plaguicidas y otros productos químicos de uso agropecuario
+325320,250,naics_2022,Pesticide and Other Agricultural Chemical Manufacturing
+325220,251,naics_2022,Artificial and Synthetic Fibers and Filaments Manufacturing
+2030,251,ciiu_rev_4,Fabricación de fibras artificiales
+326212,252,naics_2022,Tire Retreading
+2211,252,ciiu_rev_4,"Fabricación de llantas y tubos de hule, reconstrucción y revitalizado de llantas de hule"
+2391,253,ciiu_rev_4,Fabricación de productos refractarios
+327120,253,naics_2022,Clay Building Material and Refractories Manufacturing 
+2396,254,ciiu_rev_4,"Corte, talla y acabado de la piedra"
+327991,254,naics_2022,Cut Stone and Stone Product Manufacturing
+332410,255,naics_2022,Power Boiler and Heat Exchanger Manufacturing
+2513,255,ciiu_rev_4,"Fabricación de generadores de vapor, excepto calderas de agua caliente para calefacción central"
+332994,256,naics_2022,"Small Arms, Ordnance, and Ordnance Accessories Manufacturing "
+2520,256,ciiu_rev_4,Fabricación de armas y municiones
+334310,257,naics_2022,Audio and Video Equipment Manufacturing
+2640,257,ciiu_rev_4,Fabricación de aparatos electrónicos de consumo
+335910,258,naics_2022,Battery Manufacturing
+2720,258,ciiu_rev_4,"Fabricación de pilas, baterías y acumuladores"
+335921,259,naics_2022,Fiber Optic Cable Manufacturing
+2731,259,ciiu_rev_4,Fabricación de cables de fibra óptica
+2811,260,ciiu_rev_4,"Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas"
+333611,260,naics_2022,Turbine and Turbine Generator Set Units Manufacturing
+2815,261,ciiu_rev_4,"Fabricación de hornos, hogares y quemadores"
+333994,261,naics_2022,Industrial Process Furnace and Oven Manufacturing
+2818,262,ciiu_rev_4,Fabricación de herramientas de mano motorizadas
+333991,262,naics_2022,Power-Driven Handtool Manufacturing
+2825,263,ciiu_rev_4,"Fabricación de maquinaria para la elaboración de alimentos, bebidas y tabaco"
+333241,263,naics_2022,Food Product Machinery Manufacturing 
+2829,264,ciiu_rev_4,Fabricación de otros tipos de maquinaria de uso especial
+333242,264,naics_2022,Semiconductor Machinery Manufacturing 
+336992,265,naics_2022,"Military Armored Vehicle, Tank, and Tank Component Manufacturing"
+3040,265,ciiu_rev_4,Fabricación de vehículos militares de combate
+3220,266,ciiu_rev_4,Fabricación de instrumentos de música
+339992,266,naics_2022,Musical Instrument Manufacturing
+4763,267,ciiu_rev_4,Venta al por menor de equipo de deporte en comercios especializados
+441222,267,naics_2022,Boat Dealers
+238220,268,naics_2022,"Plumbing, Heating, and Air-Conditioning Contractors"
+4322,268,ciiu_rev_4,"Instalaciones de fontanería, calefacción y aire acondicionado"
+3520,269,ciiu_rev_4,Fabricación de gas; distribución de combustibles gaseosos por tuberías
+221210,269,naics_2022,Natural Gas Distribution
+3600,270,ciiu_rev_4,"Captación, tratamiento y distribución de agua"
+221310,270,naics_2022,Water Supply and Irrigation Systems
+3812,271,ciiu_rev_4,Recolección de desechos peligrosos
+562112,271,naics_2022,Hazardous Waste Collection
+3822,272,ciiu_rev_4,Tratamiento y eliminación de desechos peligrosos
+562211,272,naics_2022,Hazardous Waste Treatment and Disposal
+562920,273,naics_2022,Materials Recovery Facilities
+3830,273,ciiu_rev_4,Recuperación de materiales
+562910,274,naics_2022,Remediation Services
+3900,274,ciiu_rev_4,Actividades de remediación y otros servicios de gestión de desechos
+238990,275,naics_2022,All Other Specialty Trade Contractors
+4210,275,ciiu_rev_4,Construcción de carreteras y vías de ferrocarril
+423990,276,naics_2022,Other Miscellaneous Durable Goods Merchant Wholesalers
+4690,276,ciiu_rev_4,Venta al por mayor no especializada
+423430,277,naics_2022,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers
+4651,277,ciiu_rev_4,"Venta al por mayor de ordenadores (computadoras), equipo periférico y programas de informática"
+423690,278,naics_2022,Other Electronic Parts and Equipment Merchant Wholesalers
+4652,278,ciiu_rev_4,"Venta al por mayor de equipo, partes y piezas electrónicos y de telecomunicaciones"
+423820,279,naics_2022,Farm and Garden Machinery and Equipment Merchant Wholesalers
+4653,279,ciiu_rev_4,"Venta al por mayor de maquinaria, equipo y materiales agropecuarios"
+4730,280,ciiu_rev_4,Venta al por menor de combustibles para vehículos automotores en comercios especializados
+457120,280,naics_2022,Other Gasoline Stations
+4911,281,ciiu_rev_4,Transporte interurbano de pasajeros por ferrocarril
+487110,281,naics_2022,"Scenic and Sightseeing Transportation, Land"
+5021,282,ciiu_rev_4,Transporte de pasajeros por vías de navegación interiores
+483212,282,naics_2022,Inland Water Passenger Transportation
+483211,283,naics_2022,Inland Water Freight Transportation
+5022,283,ciiu_rev_4,Transporte de carga por vías de navegación interiores
+5310,284,ciiu_rev_4,Actividades postales
+491110,284,naics_2022,Postal Service
+5621,285,ciiu_rev_4,Suministro de comidas por encargo
+722320,285,naics_2022,Caterers
+5629,286,ciiu_rev_4,Otras actividades de servicio de comidas
+722310,286,naics_2022,Food Service Contractors
+5812,287,ciiu_rev_4,Edición de directorios y listas de correo
+513140,287,naics_2022,Directory and Mailing List Publishers
+5819,288,ciiu_rev_4,Otras actividades de edición
+513191,288,naics_2022,Greeting Card Publishers 
+513210,289,naics_2022,Software Publishers
+5820,289,ciiu_rev_4,Edición de programas informáticos
+5911,290,ciiu_rev_4,"Actividades de producción de películas cinematográficas, videos y programas de televisión"
+512110,290,naics_2022,Motion Picture and Video Production
+512120,291,naics_2022,Motion Picture and Video Distribution
+5913,291,ciiu_rev_4,"Actividades de distribución de películas cinematográficas, videos y programas de televisión"
+517111,292,naics_2022,Wired Telecommunications Carriers
+6130,292,ciiu_rev_4,Actividades de telecomunicaciones por satélite
+541511,293,naics_2022,Custom Computer Programming Services
+6201,293,ciiu_rev_4,Programación informática
+541519,294,naics_2022,Other Computer Related Services
+6209,294,ciiu_rev_4,Otras actividades de tecnología de la información y de servicios informáticos
+6311,295,ciiu_rev_4,"Procesamiento de datos, hospedaje y actividades conexas"
+518210,295,naics_2022,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services"
+6491,296,ciiu_rev_4,Arrendamiento financiero
+522220,296,naics_2022,Sales Financing
+6511,297,ciiu_rev_4,Seguros de vida
+524113,297,naics_2022,Direct Life Insurance Carriers
+6520,298,ciiu_rev_4,Reaseguros
+524130,298,naics_2022,Reinsurance Carriers
+6530,299,ciiu_rev_4,Fondos de pensiones
+525110,299,naics_2022,Pension Funds
+6611,300,ciiu_rev_4,Administración de mercados financieros
+523210,300,naics_2022,Securities and Commodity Exchanges
+6630,301,ciiu_rev_4,Actividades de gestión de fondos
+523940,301,naics_2022,Portfolio Management and Investment Advice
+524291,302,naics_2022,Claims Adjusting
+6621,302,ciiu_rev_4,Evaluación de riesgos y daños
+524210,303,naics_2022,Insurance Agencies and Brokerages
+6622,303,ciiu_rev_4,Actividades de agentes y corredores de seguros
+7010,304,ciiu_rev_4,Actividades de oficinas principales
+551114,304,naics_2022,"Corporate, Subsidiary, and Regional Managing Offices"
+541380,305,naics_2022,Testing Laboratories and Services
+7120,305,ciiu_rev_4,Ensayos y análisis técnicos
+7220,306,ciiu_rev_4,Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades
+541720,306,naics_2022,Research and Development in the Social Sciences and Humanities
+7320,307,ciiu_rev_4,Estudios de mercado y encuestas de opinión pública
+541910,307,naics_2022,Marketing Research and Public Opinion Polling
+7500,308,ciiu_rev_4,Actividades veterinarias
+541940,308,naics_2022,Veterinary Services
+7721,309,ciiu_rev_4,Alquiler y arrendamiento de equipo recreativo y deportivo
+532284,309,naics_2022,Recreational Goods Rental
+532282,310,naics_2022,Video Tape and Disc Rental
+7722,310,ciiu_rev_4,Alquiler de cintas de video y discos
+7740,311,ciiu_rev_4,"Arrendamiento de propiedad intelectual y productos similares, excepto obras protegidas por derechos de autor"
+533110,311,naics_2022,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)
+561320,312,naics_2022,Temporary Help Services
+7820,312,ciiu_rev_4,Actividades de agencias de empleo temporal
+7830,313,ciiu_rev_4,Otras actividades de dotación de recursos humanos
+561330,313,naics_2022,Professional Employer Organizations
+561510,314,naics_2022,Travel Agencies
+7911,314,ciiu_rev_4,Actividades de agencias de viajes
+561520,315,naics_2022,Tour Operators
+7912,315,ciiu_rev_4,Actividades de operadores turísticos
+561611,316,naics_2022,Investigation and Personal Background Check Services 
+8030,316,ciiu_rev_4,Actividades de investigación
+561210,317,naics_2022,Facilities Support Services
+8110,317,ciiu_rev_4,Actividades combinadas de apoyo a instalaciones
+8121,318,ciiu_rev_4,Limpieza general de edificios
+561720,318,naics_2022,Janitorial Services
+8130,319,ciiu_rev_4,Actividades de paisajismo y servicios de mantenimiento conexos
+561730,319,naics_2022,Landscaping Services
+8211,320,ciiu_rev_4,Actividades combinadas de servicios administrativos de oficina
+561110,320,naics_2022,Office Administrative Services
+561920,321,naics_2022,Convention and Trade Show Organizers
+8230,321,ciiu_rev_4,Organización de convenciones y exposiciones comerciales
+8291,322,ciiu_rev_4,Actividades de agencias de cobro y agencias de calificación crediticia
+561450,322,naics_2022,Credit Bureaus
+561910,323,naics_2022,Packaging and Labeling Services
+8292,323,ciiu_rev_4,Actividades de envasado y empaquetado
+923130,324,naics_2022,"Administration of Human Resource Programs (except Education, Public Health, and Veterans' Affairs Programs)"
+8430,324,ciiu_rev_4,Actividades de planes de seguridad social de afiliación obligatoria
+928110,325,naics_2022,National Security
+8422,325,ciiu_rev_4,Actividades de defensa
+8510,326,ciiu_rev_4,Enseñanza preescolar y primaria
+611691,326,naics_2022,Exam Preparation and Tutoring
+8521,327,ciiu_rev_4,Enseñanza secundaria de formación general
+611110,327,naics_2022,Elementary and Secondary Schools
+8542,328,ciiu_rev_4,Enseñanza cultural
+611610,328,naics_2022,Fine Arts Schools
+8550,329,ciiu_rev_4,Actividades de apoyo a la enseñanza
+611710,329,naics_2022,Educational Support Services
+623110,330,naics_2022,Nursing Care Facilities (Skilled Nursing Facilities) 
+8710,330,ciiu_rev_4,Actividades de atención de enfermería en instituciones
+623990,331,naics_2022,Other Residential Care Facilities
+8790,331,ciiu_rev_4,Otras actividades de atención en instituciones
+8810,332,ciiu_rev_4,Actividades de asistencia social sin alojamiento para personas de edad y personas con discapacidad
+624120,332,naics_2022,Services for the Elderly and Persons with Disabilities
+9312,333,ciiu_rev_4,Actividades de clubes deportivos
+711211,333,naics_2022,Sports Teams and Clubs
+9321,334,ciiu_rev_4,Actividades de parques de atracciones y parques temáticos
+713110,334,naics_2022,Amusement and Theme Parks
+9411,335,ciiu_rev_4,Actividades de asociaciones empresariales y de empleadores
+813910,335,naics_2022,Business Associations
+9412,336,ciiu_rev_4,Actividades de asociaciones profesionales
+813920,336,naics_2022,Professional Organizations
+813930,337,naics_2022,Labor Unions and Similar Labor Organizations
+9420,337,ciiu_rev_4,Actividades de sindicatos
+9491,338,ciiu_rev_4,Actividades de organizaciones religiosas
+813110,338,naics_2022,Religious Organizations
+813940,339,naics_2022,Political Organizations
+9492,339,ciiu_rev_4,Actividades de organizaciones políticas
+811430,340,naics_2022,Footwear and Leather Goods Repair
+9523,340,ciiu_rev_4,Reparación de calzado y de artículos de cuero
+9524,341,ciiu_rev_4,Reparación de muebles y accesorios domésticos
+811420,341,naics_2022,Reupholstery and Furniture Repair
+814110,342,naics_2022,Private Households
+9700,342,ciiu_rev_4,Actividades de los hogares como empleadores de personal doméstico
