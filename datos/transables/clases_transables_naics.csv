@@ -1,0 +1,677 @@
+cluster,clase
+Aerospace,334511
+Aerospace,336411
+Aerospace,336412
+Aerospace,336413
+Aerospace,336414
+Aerospace,336415
+Aerospace,336419
+Agricultural ,115111
+Agricultural ,115112
+Agricultural ,115113
+Agricultural ,115114
+Agricultural ,115115
+Agricultural ,115116
+Agricultural ,115210
+Agricultural ,325311
+Agricultural ,325314
+Apparel,314999
+Apparel,315210
+Apparel,315220
+Apparel,315240
+Apparel,315280
+Apparel,315990
+Auto,331511
+Auto,331512
+Auto,331513
+Auto,331523
+Auto,331524
+Auto,331529
+Auto,332114
+Auto,336111
+Auto,336112
+Auto,336120
+Auto,336211
+Auto,336310
+Auto,336320
+Auto,336330
+Auto,336340
+Auto,336350
+Auto,336360
+Auto,336370
+Auto,336390
+Auto,336992
+Auto,336999
+Biopharma,325411
+Biopharma,325412
+Biopharma,325413
+Biopharma,325414
+Business Svcs,485310
+Business Svcs,485320
+Business Svcs,485999
+Business Svcs,518210
+Business Svcs,532112
+Business Svcs,533110
+Business Svcs,541199
+Business Svcs,541214
+Business Svcs,541310
+Business Svcs,541320
+Business Svcs,541330
+Business Svcs,541340
+Business Svcs,541511
+Business Svcs,541512
+Business Svcs,541513
+Business Svcs,541519
+Business Svcs,541611
+Business Svcs,541612
+Business Svcs,541614
+Business Svcs,541618
+Business Svcs,541690
+Business Svcs,541930
+Business Svcs,541990
+Business Svcs,551111
+Business Svcs,551112
+Business Svcs,551114
+Business Svcs,561210
+Business Svcs,561311
+Business Svcs,561312
+Business Svcs,561330
+Business Svcs,561421
+Business Svcs,561422
+Business Svcs,561920
+Coal Mining,212111
+Coal Mining,212112
+Coal Mining,212113
+Coal Mining,213113
+Commcns,334210
+Commcns,334220
+Commcns,334290
+Commcns,335912
+Commcns,515210
+Commcns,517312
+Commcns,517410
+Commcns,517919
+Construction,221310
+Construction,221330
+Construction,236210
+Construction,237120
+Construction,237130
+Construction,237990
+Construction,324121
+Construction,324122
+Construction,327310
+Construction,327331
+Construction,327332
+Construction,327410
+Construction,327420
+Construction,327991
+Construction,327993
+Construction,327999
+Construction,332410
+Construction,332420
+Construction,332913
+Construction,332996
+Distribution & eCommerce,423210
+Distribution & eCommerce,423220
+Distribution & eCommerce,423410
+Distribution & eCommerce,423420
+Distribution & eCommerce,423430
+Distribution & eCommerce,423440
+Distribution & eCommerce,423450
+Distribution & eCommerce,423460
+Distribution & eCommerce,423490
+Distribution & eCommerce,423510
+Distribution & eCommerce,423520
+Distribution & eCommerce,423610
+Distribution & eCommerce,423620
+Distribution & eCommerce,423690
+Distribution & eCommerce,423720
+Distribution & eCommerce,423810
+Distribution & eCommerce,423820
+Distribution & eCommerce,423830
+Distribution & eCommerce,423840
+Distribution & eCommerce,423850
+Distribution & eCommerce,423860
+Distribution & eCommerce,423910
+Distribution & eCommerce,423920
+Distribution & eCommerce,423940
+Distribution & eCommerce,424110
+Distribution & eCommerce,424120
+Distribution & eCommerce,424130
+Distribution & eCommerce,424210
+Distribution & eCommerce,424310
+Distribution & eCommerce,424320
+Distribution & eCommerce,424330
+Distribution & eCommerce,424340
+Distribution & eCommerce,424440
+Distribution & eCommerce,424460
+Distribution & eCommerce,424470
+Distribution & eCommerce,424480
+Distribution & eCommerce,424590
+Distribution & eCommerce,424610
+Distribution & eCommerce,424690
+Distribution & eCommerce,424710
+Distribution & eCommerce,424720
+Distribution & eCommerce,424820
+Distribution & eCommerce,424910
+Distribution & eCommerce,424920
+Distribution & eCommerce,424930
+Distribution & eCommerce,424940
+Distribution & eCommerce,424950
+Distribution & eCommerce,424990
+Distribution & eCommerce,425110
+Distribution & eCommerce,425120
+Distribution & eCommerce,454110
+Distribution & eCommerce,493110
+Distribution & eCommerce,493120
+Distribution & eCommerce,493130
+Distribution & eCommerce,493190
+Distribution & eCommerce,532411
+Distribution & eCommerce,532412
+Distribution & eCommerce,532420
+Distribution & eCommerce,532490
+Distribution & eCommerce,561499
+Distribution & eCommerce,561910
+Downstream Chemical,324191
+Downstream Chemical,325130
+Downstream Chemical,325510
+Downstream Chemical,325520
+Downstream Chemical,325611
+Downstream Chemical,325612
+Downstream Chemical,325613
+Downstream Chemical,325620
+Downstream Chemical,325920
+Downstream Chemical,325991
+Downstream Chemical,325992
+Downstream Chemical,325998
+Downstream Metal,332215
+Downstream Metal,332216
+Downstream Metal,332311
+Downstream Metal,332312
+Downstream Metal,332321
+Downstream Metal,332323
+Downstream Metal,332431
+Downstream Metal,332439
+Downstream Metal,332510
+Downstream Metal,332992
+Downstream Metal,332993
+Downstream Metal,332994
+Downstream Metal,332999
+Education,541713
+Education,541715
+Education,541720
+Education,611210
+Education,611310
+Education,611410
+Education,611420
+Education,611430
+Education,611512
+Education,611513
+Education,611630
+Education,611691
+Education,611699
+Education,611710
+Education,813920
+Electric Power,221111
+Electric Power,221112
+Electric Power,221113
+Electric Power,221114
+Electric Power,221115
+Electric Power,221116
+Electric Power,221117
+Electric Power,221118
+Electric Power,221121
+Environmental,562112
+Environmental,562119
+Environmental,562211
+Environmental,562213
+Environmental,562219
+Environmental,562920
+Environmental,562998
+Financial Svcs,521110
+Financial Svcs,522120
+Financial Svcs,522190
+Financial Svcs,522210
+Financial Svcs,522220
+Financial Svcs,522291
+Financial Svcs,522292
+Financial Svcs,522293
+Financial Svcs,522294
+Financial Svcs,522298
+Financial Svcs,522310
+Financial Svcs,522320
+Financial Svcs,522390
+Financial Svcs,523110
+Financial Svcs,523120
+Financial Svcs,523130
+Financial Svcs,523140
+Financial Svcs,523210
+Financial Svcs,523910
+Financial Svcs,523920
+Financial Svcs,523930
+Financial Svcs,523991
+Financial Svcs,523999
+Financial Svcs,525910
+Financial Svcs,525990
+Financial Svcs,561450
+Fishing,114111
+Fishing,114112
+Fishing,114119
+Fishing,311710
+Food Processing,311111
+Food Processing,311119
+Food Processing,311211
+Food Processing,311212
+Food Processing,311213
+Food Processing,311221
+Food Processing,311224
+Food Processing,311225
+Food Processing,311230
+Food Processing,311313
+Food Processing,311314
+Food Processing,311340
+Food Processing,311351
+Food Processing,311352
+Food Processing,311411
+Food Processing,311412
+Food Processing,311421
+Food Processing,311422
+Food Processing,311423
+Food Processing,311511
+Food Processing,311512
+Food Processing,311513
+Food Processing,311514
+Food Processing,311520
+Food Processing,311813
+Food Processing,311821
+Food Processing,311824
+Food Processing,311830
+Food Processing,311911
+Food Processing,311919
+Food Processing,311920
+Food Processing,311930
+Food Processing,311941
+Food Processing,311942
+Food Processing,311991
+Food Processing,311999
+Food Processing,312111
+Food Processing,312112
+Food Processing,312113
+Food Processing,312120
+Food Processing,312130
+Food Processing,312140
+Food Processing,327213
+Food Processing,424510
+Footwear,316110
+Footwear,316210
+Forestry,113110
+Forestry,113210
+Forestry,113310
+Forestry,115310
+Furniture,321991
+Furniture,321999
+Furniture,337110
+Furniture,337121
+Furniture,337122
+Furniture,337124
+Furniture,337125
+Furniture,337127
+Furniture,337211
+Furniture,337214
+Furniture,337215
+Furniture,337910
+Hospitality & Tourism,114210
+Hospitality & Tourism,453920
+Hospitality & Tourism,487110
+Hospitality & Tourism,487210
+Hospitality & Tourism,487990
+Hospitality & Tourism,532284
+Hospitality & Tourism,561510
+Hospitality & Tourism,561520
+Hospitality & Tourism,561591
+Hospitality & Tourism,561599
+Hospitality & Tourism,711211
+Hospitality & Tourism,711212
+Hospitality & Tourism,711219
+Hospitality & Tourism,712110
+Hospitality & Tourism,712120
+Hospitality & Tourism,712130
+Hospitality & Tourism,712190
+Hospitality & Tourism,713110
+Hospitality & Tourism,713120
+Hospitality & Tourism,713210
+Hospitality & Tourism,713290
+Hospitality & Tourism,713920
+Hospitality & Tourism,713930
+Hospitality & Tourism,713990
+Hospitality & Tourism,721110
+Hospitality & Tourism,721120
+Hospitality & Tourism,721191
+Hospitality & Tourism,721199
+Hospitality & Tourism,721211
+Hospitality & Tourism,721214
+Hospitality & Tourism,721310
+IT & Analytical Instruments,333242
+IT & Analytical Instruments,333316
+IT & Analytical Instruments,334111
+IT & Analytical Instruments,334112
+IT & Analytical Instruments,334118
+IT & Analytical Instruments,334310
+IT & Analytical Instruments,334412
+IT & Analytical Instruments,334413
+IT & Analytical Instruments,334416
+IT & Analytical Instruments,334417
+IT & Analytical Instruments,334418
+IT & Analytical Instruments,334419
+IT & Analytical Instruments,334510
+IT & Analytical Instruments,334512
+IT & Analytical Instruments,334513
+IT & Analytical Instruments,334514
+IT & Analytical Instruments,334515
+IT & Analytical Instruments,334516
+IT & Analytical Instruments,334517
+IT & Analytical Instruments,334519
+IT & Analytical Instruments,334613
+IT & Analytical Instruments,334614
+IT & Analytical Instruments,511210
+Insurance,524113
+Insurance,524114
+Insurance,524126
+Insurance,524127
+Insurance,524128
+Insurance,524130
+Insurance,524291
+Insurance,524298
+Jewelry & Precious Metals,339910
+Leather and Related Products,314910
+Leather and Related Products,316992
+Leather and Related Products,316998
+Lighting & Electrical Equip,335110
+Lighting & Electrical Equip,335121
+Lighting & Electrical Equip,335122
+Lighting & Electrical Equip,335129
+Lighting & Electrical Equip,335311
+Lighting & Electrical Equip,335312
+Lighting & Electrical Equip,335313
+Lighting & Electrical Equip,335314
+Lighting & Electrical Equip,335911
+Lighting & Electrical Equip,335921
+Lighting & Electrical Equip,335929
+Lighting & Electrical Equip,335931
+Lighting & Electrical Equip,335932
+Lighting & Electrical Equip,335991
+Lighting & Electrical Equip,335999
+Livestock Processing,311611
+Livestock Processing,311612
+Livestock Processing,311613
+Livestock Processing,311615
+Livestock Processing,424520
+"Marketing, Design, & Publishing",511120
+"Marketing, Design, & Publishing",511130
+"Marketing, Design, & Publishing",511140
+"Marketing, Design, & Publishing",511199
+"Marketing, Design, & Publishing",519110
+"Marketing, Design, & Publishing",519120
+"Marketing, Design, & Publishing",519130
+"Marketing, Design, & Publishing",519190
+"Marketing, Design, & Publishing",541410
+"Marketing, Design, & Publishing",541420
+"Marketing, Design, & Publishing",541430
+"Marketing, Design, & Publishing",541490
+"Marketing, Design, & Publishing",541613
+"Marketing, Design, & Publishing",541810
+"Marketing, Design, & Publishing",541820
+"Marketing, Design, & Publishing",541830
+"Marketing, Design, & Publishing",541840
+"Marketing, Design, & Publishing",541850
+"Marketing, Design, & Publishing",541860
+"Marketing, Design, & Publishing",541870
+"Marketing, Design, & Publishing",541890
+"Marketing, Design, & Publishing",541910
+Medical Devices,333314
+Medical Devices,339112
+Medical Devices,339113
+Medical Devices,339114
+Medical Devices,339115
+Metal Mining,212210
+Metal Mining,212221
+Metal Mining,212222
+Metal Mining,212230
+Metal Mining,212291
+Metal Mining,212299
+Metal Mining,213114
+Metalworking Technology,327910
+Metalworking Technology,332216
+Metalworking Technology,332313
+Metalworking Technology,332721
+Metalworking Technology,332722
+Metalworking Technology,332811
+Metalworking Technology,332812
+Metalworking Technology,332813
+Metalworking Technology,333511
+Metalworking Technology,333514
+Metalworking Technology,333515
+Metalworking Technology,333517
+Metalworking Technology,333519
+Metalworking Technology,333991
+Metalworking Technology,333992
+Music & Sound Recording,512230
+Music & Sound Recording,512240
+Music & Sound Recording,512250
+Music & Sound Recording,512290
+Nonmetal Mining,212311
+Nonmetal Mining,212312
+Nonmetal Mining,212313
+Nonmetal Mining,212319
+Nonmetal Mining,212321
+Nonmetal Mining,212322
+Nonmetal Mining,212324
+Nonmetal Mining,212325
+Nonmetal Mining,212391
+Nonmetal Mining,212392
+Nonmetal Mining,212393
+Nonmetal Mining,212399
+Nonmetal Mining,213115
+Oil & Gas,211120
+Oil & Gas,211130
+Oil & Gas,213111
+Oil & Gas,213112
+Oil & Gas,324110
+Oil & Gas,324199
+Oil & Gas,333132
+Oil & Gas,486110
+Oil & Gas,486210
+Oil & Gas,486910
+Oil & Gas,486990
+Oil & Gas,541360
+Paper & Packaging,322110
+Paper & Packaging,322121
+Paper & Packaging,322122
+Paper & Packaging,322130
+Paper & Packaging,322211
+Paper & Packaging,322212
+Paper & Packaging,322219
+Paper & Packaging,322220
+Paper & Packaging,322230
+Paper & Packaging,322291
+Paper & Packaging,322299
+Performing Arts,711110
+Performing Arts,711120
+Performing Arts,711130
+Performing Arts,711190
+Performing Arts,711310
+Performing Arts,711320
+Performing Arts,711410
+Performing Arts,711510
+Plastics,325211
+Plastics,326111
+Plastics,326112
+Plastics,326113
+Plastics,326121
+Plastics,326122
+Plastics,326130
+Plastics,326140
+Plastics,326150
+Plastics,326160
+Plastics,326191
+Plastics,326199
+Plastics,333249
+Plastics,339994
+Printing,323111
+Printing,323113
+Printing,323117
+Printing,323120
+Printing,325910
+Printing,511191
+Prod Tech & Heavy Machinery,332911
+Prod Tech & Heavy Machinery,332912
+Prod Tech & Heavy Machinery,332919
+Prod Tech & Heavy Machinery,332991
+Prod Tech & Heavy Machinery,332999
+Prod Tech & Heavy Machinery,333111
+Prod Tech & Heavy Machinery,333112
+Prod Tech & Heavy Machinery,333120
+Prod Tech & Heavy Machinery,333131
+Prod Tech & Heavy Machinery,333241
+Prod Tech & Heavy Machinery,333243
+Prod Tech & Heavy Machinery,333244
+Prod Tech & Heavy Machinery,333249
+Prod Tech & Heavy Machinery,333318
+Prod Tech & Heavy Machinery,333413
+Prod Tech & Heavy Machinery,333414
+Prod Tech & Heavy Machinery,333415
+Prod Tech & Heavy Machinery,333611
+Prod Tech & Heavy Machinery,333612
+Prod Tech & Heavy Machinery,333613
+Prod Tech & Heavy Machinery,333618
+Prod Tech & Heavy Machinery,333912
+Prod Tech & Heavy Machinery,333914
+Prod Tech & Heavy Machinery,333921
+Prod Tech & Heavy Machinery,333922
+Prod Tech & Heavy Machinery,333923
+Prod Tech & Heavy Machinery,333924
+Prod Tech & Heavy Machinery,333993
+Prod Tech & Heavy Machinery,333994
+Prod Tech & Heavy Machinery,333995
+Prod Tech & Heavy Machinery,333996
+Prod Tech & Heavy Machinery,333997
+Prod Tech & Heavy Machinery,333999
+Prod Tech & Heavy Machinery,336510
+Prod Tech & Heavy Machinery,339991
+Recreational & Small Electronic,333316
+Recreational & Small Electronic,333318
+Recreational & Small Electronic,335210
+Recreational & Small Electronic,336991
+Recreational & Small Electronic,337920
+Recreational & Small Electronic,339920
+Recreational & Small Electronic,339930
+Recreational & Small Electronic,339940
+Recreational & Small Electronic,339992
+Recreational & Small Electronic,339993
+Recreational & Small Electronic,339999
+Textile Manufacturing,313110
+Textile Manufacturing,313210
+Textile Manufacturing,313220
+Textile Manufacturing,313230
+Textile Manufacturing,313240
+Textile Manufacturing,313310
+Textile Manufacturing,313320
+Textile Manufacturing,314110
+Textile Manufacturing,314120
+Textile Manufacturing,314994
+Textile Manufacturing,315110
+Textile Manufacturing,315190
+Textile Manufacturing,325220
+Tobacco,312230
+"Trailers, Motor Homes & Applian",335210
+"Trailers, Motor Homes & Applian",335220
+"Trailers, Motor Homes & Applian",336212
+"Trailers, Motor Homes & Applian",336213
+"Trailers, Motor Homes & Applian",336214
+"Trailers, Motor Homes & Applian",339995
+Transportation & Logistics,481111
+Transportation & Logistics,481112
+Transportation & Logistics,481211
+Transportation & Logistics,481212
+Transportation & Logistics,481219
+Transportation & Logistics,484121
+Transportation & Logistics,484230
+Transportation & Logistics,485210
+Transportation & Logistics,485510
+Transportation & Logistics,488111
+Transportation & Logistics,488119
+Transportation & Logistics,488190
+Transportation & Logistics,488210
+Transportation & Logistics,488490
+Transportation & Logistics,488510
+Transportation & Logistics,488991
+Transportation & Logistics,488999
+Upstream Chemical Prod,325110
+Upstream Chemical Prod,325120
+Upstream Chemical Prod,325180
+Upstream Chemical Prod,325193
+Upstream Chemical Prod,325194
+Upstream Chemical Prod,325199
+Upstream Chemical Prod,325212
+Upstream Chemical Prod,325312
+Upstream Chemical Prod,325320
+Upstream Metal Manufacturing,331110
+Upstream Metal Manufacturing,331210
+Upstream Metal Manufacturing,331221
+Upstream Metal Manufacturing,331222
+Upstream Metal Manufacturing,331313
+Upstream Metal Manufacturing,331314
+Upstream Metal Manufacturing,331315
+Upstream Metal Manufacturing,331318
+Upstream Metal Manufacturing,331410
+Upstream Metal Manufacturing,331420
+Upstream Metal Manufacturing,331491
+Upstream Metal Manufacturing,331492
+Upstream Metal Manufacturing,332111
+Upstream Metal Manufacturing,332112
+Upstream Metal Manufacturing,332117
+Upstream Metal Manufacturing,332119
+Upstream Metal Manufacturing,332613
+Upstream Metal Manufacturing,332618
+Video Production & Distribution,334614
+Video Production & Distribution,512110
+Video Production & Distribution,512120
+Video Production & Distribution,512132
+Video Production & Distribution,512191
+Video Production & Distribution,512199
+Vulcanized & Fired Materials,326211
+Vulcanized & Fired Materials,326212
+Vulcanized & Fired Materials,326220
+Vulcanized & Fired Materials,326291
+Vulcanized & Fired Materials,326299
+Vulcanized & Fired Materials,327110
+Vulcanized & Fired Materials,327120
+Vulcanized & Fired Materials,327211
+Vulcanized & Fired Materials,327212
+Vulcanized & Fired Materials,327215
+Vulcanized & Fired Materials,327992
+Water Transportation,336611
+Water Transportation,336612
+Water Transportation,483111
+Water Transportation,483112
+Water Transportation,483113
+Water Transportation,483114
+Water Transportation,483211
+Water Transportation,483212
+Water Transportation,488310
+Water Transportation,488320
+Water Transportation,488330
+Water Transportation,488390
+Wood Products,321113
+Wood Products,321114
+Wood Products,321211
+Wood Products,321212
+Wood Products,321213
+Wood Products,321214
+Wood Products,321219
+Wood Products,321911
+Wood Products,321912
+Wood Products,321918
+Wood Products,321920
+Wood Products,321992
+Wood Products,321999
