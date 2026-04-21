@@ -42,3 +42,8 @@ uv run marimo edit complejidad_municipios.py
 ### Medidas de Complejidad con datos de OCDE Structural business statistics by size class and economic activity (ISIC Rev. 4)
 * Construye medidas de complejidad usando datos de OCDE Structural business statistics by size class and economic activity (ISIC Rev. 4) `oecd_data.py`.
 
+### Medidas de Complejidad Honduras (País-Departamento), Ecuador, USA (MSA)
+* Construye medidas de complejidad para Honduras (País), Ecuador (País) y Zonas Micro y Metropolitanas de USA :  `construye_datos_complejidad_usa_hnd_ecu.py`. 
+
+
+
