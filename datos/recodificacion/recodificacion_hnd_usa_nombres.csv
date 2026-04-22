@@ -1,0 +1,345 @@
+codigo_nuevo,nombre_actividad
+0,Venta al por menor 
+1,"Fabricación de vehículos automotores, partes, piezas y accesorios para vehículos automotores, otros tipos de equipo de transporte"
+2,"Elaboración de productos alimenticios (productos lácteos, conservación de frutas, legumbres y hortalizas)"
+3,"Fabricación de artículos confeccionados de materiales textiles, excepto prendas de vestir, y Fabricación de productos de plástico"
+4,Otras actividades de atención de la salud humana
+5,Extracción de minerales
+6,"Venta al por mayor de alimentos, bebidas y tabaco"
+7,"Venta al por mayor de materiales de construcción, artículos de ferretería y equipo y materiales de fontanería y calefacción"
+8,Venta al por mayor de otros tipos de maquinaria y equipo
+9,"Generación, transmisión y distribución de energía eléctrica"
+10,Otras actividades especializadas de construcción
+11,Actividades de mantenimiento del orden público y de seguridad
+12,"Cultivo de cereales (excepto arroz), leguminosas y semillas oleaginosas"
+13,Fabricación de otros productos elaborados de metal n.c.p.
+14,Fabricación de muebles
+15,"Venta de partes, piezas y accesorios para vehículos automotores y mantenimiento y reparación de motocicletas y sus partes, piezas y accesorios"
+16,"Venta al por mayor de desperdicios, desechos y chatarra y otros productos n.c.p."
+17,Otras actividades de asistencia social sin alojamiento
+18,"Fabricación de equipo de medición, prueba, navegación, control y relojes"
+19,"Actividades de apoyo para otras actividades de explotación de minas y canteras,preparación del terreno y demolición"
+20,Fabricación de partes y piezas de carpintería para edificios y construcciones
+21,"Fabricación de maquinaria para la elaboración de productos textiles, prendas de vestir, cueros, metalúrgica y de máquinas herramienta"
+22,"Fabricación de tanques, depósitos, recipientes de metal y carrocerías para vehículos automotores"
+23,"Fabricación de joyas,bisutería, artículos conexos y revestimiento de metales"
+24,"Fabricación de aeronaves, naves espaciales y maquinaria conexa"
+25,Otras actividades de transporte por vía terrestre
+26,Actividades de arquitectura e ingeniería y actividades conexas de consultoría técnica
+27,Publicidad
+28,Actividades de la administración pública en general
+29,Actividades de otras asociaciones n.c.p.
+30,"Pesca marítima y elaboración y conservación de pescado, crustáceos y moluscos"
+31,Elaboración de productos de panadería
+32,Otras industrias manufactureras n.c.p.
+33,Fabricación de otros productos minerales no metálicos n.c.p.
+34,"Fabricación de productos farmacéuticos, sustancias químicas medicinales y productos botánicos de uso farmacéutico"
+35,Fabricación de otros tipos de maquinaria de uso general
+36,Fabricación de instrumentos y materiales médicos y odontológicos
+37,Fabricación de componentes y tableros electrónicos
+38,"Reparación de equipo de transporte, maquinaria y de equipo electrico"
+39,Otras actividades de limpieza de edificios y de instalaciones industriales
+40,Terminación y acabado de edificios
+41,Mantenimiento y reparación de vehículos automotores
+42,Venta al por mayor de otros enseres domésticos
+43,Transporte de carga por carretera
+44,"Otras actividades profesionales, científicas y técnicas n.c.p."
+45,Actividades de médicos y odontólogos
+46,Cría de aves de corral
+47,Fabricación de otros productos de caucho
+48,Fabricación de otros productos químicos n.c.p.
+49,Fabricación de vidrio y productos de vidrio
+50,"Fabricación de artículos de hormigón, cemento y yeso"
+51,Fabricación de metales preciosos básicos y de otros metales no ferrosos
+52,"Forja, prensado, estampado y laminado de metales; pulvimetalurgia"
+53,Construcción de edificios
+54,Otras actividades de telecomunicaciones
+55,Fondos y sociedades de inversión y entidades financieras similares
+56,Actividades inmobiliarias realizadas con bienes propios o arrendados
+57,Actividades inmobiliarias realizadas a cambio de una retribución o por contrato
+58,Actividades jurídicas
+59,Alquiler y arrendamiento de otros efectos personales y enseres domésticos
+60,Otras actividades de esparcimiento y recreativas n.c.p.
+61,Otros tipos de enseñanza n.c.p.
+62,"Lavado y limpieza, incluida la limpieza en seco, de productos textiles y de piel"
+63,Cría de ganado bovino y búfalos
+64,Actividades de apoyo a la agricultura
+65,Acuicultura
+66,Elaboración de aceites y grasas de origen vegetal y animal
+67,Elaboración de comidas y platos preparados
+68,Fabricación de productos de la refinación del petróleo
+69,Fabricación de otros artículos de papel y cartón
+70,"Fotocopiado, preparación de documentos y otras actividades especializadas de apoyo de oficina"
+71,Fabricación de sustancias químicas básicas
+72,Fabricación de abonos y compuestos de nitrógeno
+73,"Fabricación de bicicletas, juegos y juguetes, artículos de deporte, vehículos de transporte para personas con discapacidad física"
+74,"Fabricación de motores, generadores y transformadores eléctricos y aparatos de distribución y control de la energía eléctrica"
+75,"Reparación de aparatos electrónicos de consumo, ordenadores (computadoras) y equipo periférico"
+75,"Reparación de equipo electrónico, óptico y de telecomunicaciones"
+76,Tratamiento y eliminación de desechos no peligrosos
+77,Venta al por mayor de materias primas agropecuarias y animales vivos
+78,Transporte urbano y suburbano de pasajeros por vía terrestre
+79,Transporte de pasajeros por vía aérea
+80,Transporte por tuberías
+81,Almacenamiento y depósito
+82,Actividades de restaurantes y de servicio móvil de comidas
+83,Actividades de grabación de sonido y edición de música
+84,"Actividades de agencias de noticias, transmición de radio, programación y transmisiones de televisión"
+85,"Portales web y actividades de librerías, archivos"
+86,Otros tipos de intermediación monetaria
+87,Corretaje de valores y de contratos de productos básicos
+88,Seguros generales
+89,"Actividades de contabilidad, teneduría de libros y auditoría; consultoría fiscal"
+90,Actividades especializadas de diseño
+91,Actividades de fotografía
+92,"Alquiler y arrendamiento de otros tipos de maquinaria, equipo y bienes tangibles"
+93,Otras actividades de servicios de apoyo a las empresas n.c.p.
+94,"Regulación de las actividades de organismos que prestan servicios sanitarios, educativos, culturales y otros servicios sociales, excepto servicios de seguridad social"
+95,Regulación y facilitación de la actividad económica
+96,Enseñanza secundaria técnica y vocacional
+97,"Actividades creativas, artísticas y de entretenimiento"
+98,Gestión de instalaciones deportivas
+99,"Cultivo de hortalizas y melones, raíces y tubérculos"
+100,Cultivo de otros productos agrícolas no perennes
+101,Cultivo de productos agrícolas en combinación con la cría de animales (explotación mixta)
+102,Tratamiento de semillas para propagación y poscosecha
+103,Silvicultura y otras actividades forestales
+104,Extracción de lignito y hulla
+105,Actividades de apoyo para la extracción de petróleo y gas natural
+106,Elaboración y conservación de carne
+107,Elaboración de productos de molienda
+108,Elaboración de cacao y chocolate y de productos de confitería
+109,Fabricación de otros productos textiles n.c.p.
+110,Fabricación de otros tipos de equipo eléctrico
+111,Fabricación de hojas de madera para enchapado y tableros a base de madera
+112,Fabricación de papel y cartón ondulado y de envases de papel y cartón
+113,Fabricación de plásticos y caucho sintético en formas primarias
+114,"Fabricación de jabones y detergentes, preparados para limpiar y pulir, perfumes y preparados de tocador"
+115,Fabricación  de maquinaria y equipo de oficina [excepto ordenadores (computadoras) y equipo periférico] y de instrumentos ópticos y equipo fotográfico
+116,"Fabricación de cemento, cal y yeso"
+117,Industrias básicas de hierro y acero
+118,Fabricación de equipo de propulsión de fluidos
+119,Fabricación de otros hilos y cables eléctricos
+120,Fundición de hierro y acero
+121,Fundición de metales no ferrosos
+122,Fabricación de productos metálicos para uso estructural
+123,"Fabricación de artículos de cuchillería, herramientas de mano y artículos de ferretería"
+124,Fabricación de maquinaria agropecuaria y forestal
+125,Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción
+126,Fabricación de locomotoras y material rodante
+127,Fabricación de ordenadores (computadoras) y equipo periférico
+128,"Fabricación de cojinetes, engranajes, trenes de engranajes y piezas de transmisión"
+129,Instalación de maquinaria y equipo industriales
+130,Otras actividades de apoyo al transporte
+131,Evacuación de aguas residuales
+132,Venta de vehículos automotores
+133,"Venta al por mayor de productos textiles, prendas de vestir y calzado"
+134,Actividades de servicios vinculadas al transporte terrestre
+135,Transporte de pasajeros marítimo y de cabotaje
+136,Transporte de carga por vía aérea
+137,Actividades de juegos de azar y apuestas
+138,Actividades de telecomunicaciones inalámbricas
+139,Otras actividades de concesión de crédito
+140,Otras actividades auxiliares de las actividades de servicios financieros
+141,Otras actividades auxiliares de las actividades de seguros y fondos de pensiones
+142,Actividades de consultoría de gestión
+143,Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería
+144,Alquiler y arrendamiento de vehículos automotores
+145,Otros servicios de reservas y actividades conexas
+146,Actividades de hospitales
+147,Peluquería y otros tratamientos de belleza
+148,Otras actividades de servicios personales n.c.p.
+149,Cultivo de de frutas tropicales y subtropicales y de plantas con las que se preparan bebidas
+150,Cultivo de cítricos
+151,Cultivo de otros frutos y nueces de árboles y arbustos
+152,Cultivo de otras plantas perennes
+153,Cría de ovejas y cabras
+154,Cría de otros animales
+155,Extracción de otros minerales metalíferos no ferrosos
+156,Elaboración de azúcar
+157,Elaboración de alimentos preparados para animales
+158,Elaboración de malta y licores de malta
+159,Elaboración de bebidas no alcohólicas
+160,Preparación e hilatura de fibras textiles
+161,Acabado de productos textiles
+162,"Fabricación de prendas de vestir, excepto prendas de piel"
+163,Aserrado y acepilladura de madera
+164,"Fabricación de otros productos de madera; fabricación de artículos de corcho, paja y materiales trenzables"
+165,"Fabricación de pasta de madera, papel y cartón"
+166,Fabricación de soportes magnéticos y ópticos
+167,"Fabricación de pinturas, barnices y productos de revestimiento similares, tintas de imprenta y masillas"
+168,Fabricación de materiales de construcción de arcilla y de otros productos de porcelana y de cerámica
+169,Construcción de embarcaciones de recreo y de deporte
+170,Construcción de buques y estructuras flotantes
+171,Fabricación de equipo de comunicaciones
+172,Fabricación de equipo de irradiación y equipo electrónico de uso médico y terapéutico
+173,Fabricación de dispositivos de cableado
+174,Fabricación de equipo eléctrico de iluminación
+175,Fabricación de aparatos de uso doméstico
+176,Fabricación de motocicletas
+177,Reparación de aparatos de uso doméstico y equipo doméstico y de jardinería
+178,Actividades de servicios vinculadas al transporte aéreo
+179,Suministro de vapor y de aire acondicionado
+180,Recolección de desechos no peligrosos
+181,Instalaciones eléctricas
+182,Construcción de proyectos de servicio público
+183,Construcción de otras obras de ingeniería civil
+184,"Venta al por mayor de combustibles sólidos, líquidos y gaseosos y productos conexos"
+185,Venta al por mayor de metales y minerales metalíferos
+186,"Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco"
+187,Transporte de carga por ferrocarril
+188,Transporte de carga marítimo y de cabotaje
+189,Actividades de servicios vinculadas al transporte acuático
+190,Actividades de mensajería
+191,Actividades de alojamiento para estancias cortas
+192,Otras actividades de alojamiento
+193,"Actividades de campamentos, parques de vehículos recreativos y parques de caravanas"
+194,Actividades de servicio de bebidas
+195,Edición de libros
+196,"Edición de periódicos, revistas y otras publicaciones periódicas"
+197,"Actividades de postproducción de películas cinematográficas, videos y programas de televisión"
+198,Actividades de exhibición de películas cinematográficas y cintas de video
+199,Consultoría de informática y gestión de instalaciones informáticas
+200,Banca central
+201,Actividades de sociedades de cartera
+202,Actividades de agencias de empleo
+203,Actividades de seguridad privada
+204,Actividades de servicios de sistemas de seguridad
+205,Actividades de centros de llamadas
+206,"Actividades de organizaciones, órganos extraterritoriales y relaciones exteriores"
+207,Enseñanza superior
+208,Enseñanza deportiva y recreativa
+209,"Actividades de atención en instituciones para personas con retraso mental, enfermos mentales y toxicómanos"
+210,Actividades de atención en instituciones para personas de edad y personas con discapacidad
+211,Actividades de museos y conservación de lugares y edificios históricos
+212,Actividades de jardines botánicos y zoológicos y de reservas naturales
+213,Otras actividades deportivas
+214,Pompas fúnebres y actividades conexas
+215,Cultivo de arroz
+216,"Cultivo de especias y de plantas aromáticas, medicinales y farmacéuticas"
+217,Cultivo de caña de azúcar
+218,Cultivo de tabaco
+219,Cultivo de plantas para fibras textiles
+220,Cultivos perennes
+221,Cultivo de uva
+222,Cultivo de frutas de pepita y de hueso
+223,Cultivo de frutos oleaginosos
+224,Cría de caballos y otros équidos
+225,Cría de cerdos
+226,Actividades de apoyo a la ganadería
+227,Caza ordinaria y mediante trampas y actividades de servicios conexas
+228,Tala de árboles
+229,Servicios de apoyo a la silvicultura
+230,Extracción de gas natural
+231,Extracción de petróleo crudo
+232,Extracción de minerales de hierro
+233,Extracción de minerales de uranio y torio
+234,"Destilación, rectificación y mezcla de bebidas alcohólicas"
+235,Elaboración de vinos
+236,Elaboración de productos de tabaco
+237,Tejedura de productos textiles
+238,Fabricación de tejidos de punto y ganchillo
+239,Fabricación de tapices y alfombras
+240,"Fabricación de cuerdas, cordeles, bramantes y redes"
+241,Fabricación de artículos de piel
+242,"Fabricación de maletas, bolsos de mano y artículos similares, y de artículos de talabartería y guarnicionería"
+243,Fabricación de artículos de punto y ganchillo
+244,Curtido y adobo de cueros
+245,Fabricación de calzado
+246,Fabricación de recipientes de madera
+247,Impresión
+248,Actividades de servicios relacionadas con la impresión
+249,Fabricación de productos de hornos de coque
+250,Fabricación de plaguicidas y otros productos químicos de uso agropecuario
+251,Fabricación de fibras artificiales
+252,"Fabricación de llantas y tubos de hule, reconstrucción y revitalizado de llantas de hule"
+253,Fabricación de productos refractarios
+254,"Corte, talla y acabado de la piedra"
+255,"Fabricación de generadores de vapor, excepto calderas de agua caliente para calefacción central"
+256,Fabricación de armas y municiones
+257,Fabricación de aparatos electrónicos de consumo
+258,"Fabricación de pilas, baterías y acumuladores"
+259,Fabricación de cables de fibra óptica
+260,"Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas"
+261,"Fabricación de hornos, hogares y quemadores"
+262,Fabricación de herramientas de mano motorizadas
+263,"Fabricación de maquinaria para la elaboración de alimentos, bebidas y tabaco"
+264,Fabricación de otros tipos de maquinaria de uso especial
+265,Fabricación de vehículos militares de combate
+266,Fabricación de instrumentos de música
+267,Venta al por menor de equipo de deporte en comercios especializados
+268,"Instalaciones de fontanería, calefacción y aire acondicionado"
+269,Fabricación de gas y  distribución de combustibles gaseosos por tuberías
+270,"Captación, tratamiento y distribución de agua"
+271,Recolección de desechos peligrosos
+272,Tratamiento y eliminación de desechos peligrosos
+273,Recuperación de materiales
+274,Actividades de remediación y otros servicios de gestión de desechos
+275,Construcción de carreteras y vías de ferrocarril
+276,Venta al por mayor no especializada
+277,"Venta al por mayor de ordenadores (computadoras), equipo periférico y programas de informática"
+278,"Venta al por mayor de equipo, partes y piezas electrónicos y de telecomunicaciones"
+279,"Venta al por mayor de maquinaria, equipo y materiales agropecuarios"
+280,Venta al por menor de combustibles para vehículos automotores en comercios especializados
+281,Transporte interurbano de pasajeros por ferrocarril
+282,Transporte de pasajeros por vías de navegación interiores
+283,Transporte de carga por vías de navegación interiores
+284,Actividades postales
+285,Suministro de comidas por encargo
+286,Otras actividades de servicio de comidas
+287,Edición de directorios y listas de correo
+288,Otras actividades de edición
+289,Edición de programas informáticos
+290,"Actividades de producción de películas cinematográficas, videos y programas de televisión"
+291,"Actividades de distribución de películas cinematográficas, videos y programas de televisión"
+292,Actividades de telecomunicaciones por satélite
+293,Programación informática
+294,Otras actividades de tecnología de la información y de servicios informáticos
+295,"Procesamiento de datos, hospedaje y actividades conexas"
+296,Arrendamiento financiero
+297,Seguros de vida
+298,Reaseguros
+299,Fondos de pensiones
+300,Administración de mercados financieros
+301,Actividades de gestión de fondos
+302,Evaluación de riesgos y daños
+303,Actividades de agentes y corredores de seguros
+304,Actividades de oficinas principales
+305,Ensayos y análisis técnicos
+306,Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades
+307,Estudios de mercado y encuestas de opinión pública
+308,Actividades veterinarias
+309,Alquiler y arrendamiento de equipo recreativo y deportivo
+310,Alquiler de cintas de video y discos
+311,"Arrendamiento de propiedad intelectual y productos similares, excepto obras protegidas por derechos de autor"
+312,Actividades de agencias de empleo temporal
+313,Otras actividades de dotación de recursos humanos
+314,Actividades de agencias de viajes
+315,Actividades de operadores turísticos
+316,Actividades de investigación
+317,Actividades combinadas de apoyo a instalaciones
+318,Limpieza general de edificios
+319,Actividades de paisajismo y servicios de mantenimiento conexos
+320,Actividades combinadas de servicios administrativos de oficina
+321,Organización de convenciones y exposiciones comerciales
+322,Actividades de agencias de cobro y agencias de calificación crediticia
+323,Actividades de envasado y empaquetado
+324,Actividades de planes de seguridad social de afiliación obligatoria
+325,Actividades de defensa
+326,Enseñanza preescolar y primaria
+327,Enseñanza secundaria de formación general
+328,Enseñanza cultural
+329,Actividades de apoyo a la enseñanza
+330,Actividades de atención de enfermería en instituciones
+331,Otras actividades de atención en instituciones
+332,Actividades de asistencia social sin alojamiento para personas de edad y personas con discapacidad
+333,Actividades de clubes deportivos
+334,Actividades de parques de atracciones y parques temáticos
+335,Actividades de asociaciones empresariales y de empleadores
+336,Actividades de asociaciones profesionales
+337,Actividades de sindicatos
+338,Actividades de organizaciones religiosas
+339,Actividades de organizaciones políticas
+340,Reparación de calzado y de artículos de cuero
+341,Reparación de muebles y accesorios domésticos
+342,Actividades de los hogares como empleadores de personal doméstico
