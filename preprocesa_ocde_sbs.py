@@ -165,6 +165,11 @@ def _(ciiu_transable, df, df_actividades_transables, pd):
 
 
 @app.cell
+def _():
+    return
+
+
+@app.cell
 def _(ecomplexity, insumos_complejidad, pl):
     # Calculate complexity
     trade_cols = {'time':"TIME_PERIOD", 'loc': "REF_AREA",  'prod': "ACTIVITY",  'val': "OBS_VALUE"}
@@ -356,18 +361,28 @@ def _(calcula_score, cdata_norm, df, mapp_ciiu, pl):
 
 
 @app.cell
-def _(alt, cdata):
+def _(alt, cdata, mapp_ciiu):
 
-    alt.Chart(cdata.filter(REF_AREA="HND")).mark_point().encode(
+    alt.Chart(cdata.filter(REF_AREA="HND").join(
+        mapp_ciiu,
+        left_on="ACTIVITY", 
+        right_on="codigo"
+    )
+             ).mark_point().encode(
         x=alt.X('density'),
         y=alt.Y('pci'),#.scale(type ="log"),
-        #tooltip=["REF_AREA"]
+        tooltip=["nombre_actividad"]
     )
     return
 
 
 @app.cell
-def _():
+def _(cdata, mapp_ciiu):
+    cdata.filter(REF_AREA="HND").join(
+        mapp_ciiu,
+        left_on="ACTIVITY", 
+        right_on="codigo"
+    ).select("nombre_actividad", "density").sort("density", descending=True)
     return
 
 
