@@ -84,7 +84,6 @@ def _(df, np, plt):
     ).agg({"OBS_VALUE" : "sum"}).reset_index().pivot(index = "TIME_PERIOD", columns = "seccion", values = "OBS_VALUE")
 
     plt.imshow(np.log(resumen_empleo_anios.to_numpy()))
-
     return
 
 
@@ -159,7 +158,23 @@ def _(ciiu_transable, df, df_actividades_transables, pd):
     hnd = hnd[["TIME_PERIOD", "REF_AREA", "ciiu", "OBS_VALUE"]]
     hnd = hnd.rename(columns={"ciiu" : "ACTIVITY"})
     hnd = hnd.query(f"ACTIVITY in {muestra_actividades}")
-    insumos_complejidad = pd.concat([insumos_complejidad, hnd])
+
+    ### Cargamos a El Salvador
+    slv = pd.read_csv("datos/SLV/slv_ciiu_2019.csv")
+    slv["ACTIVITY"] = slv["ACTIVITY"].astype(str)
+    slv = slv.query(f"ACTIVITY in {muestra_actividades}")
+
+    ### Cargamos USA
+    usa = pd.read_csv("datos/empleo_USA/usa_ciiu_raw.csv")
+    usa["codigo"] = usa["codigo"].astype(str)
+    usa = usa.query(f"codigo in {muestra_actividades}")
+    usa = usa[["codigo", "empleo"]]
+    usa["TIME_PERIOD"] = 2019
+    usa["REF_AREA"] = "USA"
+    usa = usa[["TIME_PERIOD", "REF_AREA", "codigo", "empleo"]]
+    usa.columns = ["TIME_PERIOD", "REF_AREA", "ACTIVITY", "OBS_VALUE"]
+
+    insumos_complejidad = pd.concat([insumos_complejidad, hnd, slv])
     insumos_complejidad
     return anio_analisis, insumos_complejidad
 
@@ -238,7 +253,6 @@ def _(anio_analisis, pd):
     )
     gdp["gdp_percapita"] = (gdp["gdp_mmm_usd"]/gdp["poblacion"])*1_000_000
     gdp
-
     return (gdp,)
 
 
@@ -257,7 +271,6 @@ def _(alt, atlas, eci_paises):
         y='eci_rank_hs12',
         tooltip=["REF_AREA"]
     )
-
     return
 
 
