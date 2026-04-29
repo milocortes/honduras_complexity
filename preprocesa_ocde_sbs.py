@@ -17,8 +17,9 @@ def _():
     import matplotlib.pyplot as plt
     import numpy as np
     from ecomplexity import ecomplexity
+    from ecomplexity import proximity
     import altair as alt
-    return alt, ecomplexity, np, pd, pl, plt
+    return alt, ecomplexity, np, pd, pl, plt, proximity
 
 
 @app.cell(hide_code=True)
@@ -244,7 +245,19 @@ def _(ecomplexity, insumos_complejidad, pl):
     trade_cols = {'time':"TIME_PERIOD", 'loc': "REF_AREA",  'prod': "ACTIVITY",  'val': "OBS_VALUE"}
     cdata = pl.from_pandas(ecomplexity(insumos_complejidad, trade_cols)).drop_nulls()
     cdata
-    return (cdata,)
+    return cdata, trade_cols
+
+
+@app.cell
+def _(insumos_complejidad, proximity, trade_cols):
+    ## Calcula matriz de proximidad
+    prox_df = proximity(insumos_complejidad, trade_cols)
+    prox_df = prox_df[["ACTIVITY_1", "ACTIVITY_2", "proximity"]]
+    prox_df = prox_df.pivot(index = "ACTIVITY_1", columns = "ACTIVITY_2", values = "proximity")
+    ## Guarda matriz de proximidad
+    prox_df.to_csv("output/proximidades/proximidades_ocde_data.csv", index = False)
+    prox_df
+    return
 
 
 @app.cell
