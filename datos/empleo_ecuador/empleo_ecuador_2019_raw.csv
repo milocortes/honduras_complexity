@@ -1,0 +1,423 @@
+CODIGO,DESCRIPCION,ENE-19,FEB-19,MAR-19,ABR-19,MAY-19,JUN-19,JUL-19,AGO-19,SEP-19,OCT-19,NOV-19,DIC-19
+A0111,"Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas.",2691,2737,2725,2657,2648,2575,2556,2544,2534,2557,2577,2594
+A0112,Cultivo de arroz.,1527,1502,1494,1496,1471,1467,1469,1469,1470,1462,1455,1444
+A0113,"Cultivo de hortalizas y melones, raíces y tubérculos.",2789,2784,2803,2800,2849,2879,2916,2860,2874,2875,2965,2938
+A0114,Cultivo de caña de azúcar.,3990,3803,3794,3802,3434,4041,4442,4358,4378,4265,4272,4167
+A0115,Cultivo de tabaco.,3826,2343,1932,1828,2122,2907,4727,6000,6406,6356,6211,5364
+A0116,Cultivo de plantas de fibras.,50,76,111,122,110,130,162,156,161,145,152,160
+A0119,Cultivo de otras plantas no perennes.,50877,49690,47211,49062,47912,46229,46183,45983,46202,46054,46125,46700
+A0121,Cultivo de uvas.,41,42,40,42,39,39,38,38,36,35,36,36
+A0122,Cultivo de frutas tropicales y subtropicales.,79037,78952,79198,79240,79342,79316,79402,79256,79388,79661,79264,78824
+A0123,Cultivo de cítricos.,76,76,79,78,80,81,80,81,82,82,84,85
+A0124,Cultivo de frutas con hueso y con pepa.,20,21,22,22,21,20,20,19,18,19,18,17
+A0125,Cultivo de otros frutos y nueces de árboles y arbustos.,231,229,232,233,242,256,258,267,278,275,274,267
+A0126,Cultivo de frutos oleaginosos.,8569,8475,8446,8467,8343,8177,8024,7880,7763,7718,7622,7542
+A0127,Cultivo de plantas con las que se preparan bebidas.,2644,2585,2602,2625,2623,2618,2597,2548,2568,2568,2571,2569
+A0128,"Cultivo de especias y de plantas aromáticas, medicinales y farmacéuticas.",246,241,245,241,228,229,235,233,229,225,218,216
+A0129,Cultivo de otras plantas perennes.,825,819,803,815,806,796,793,780,758,725,720,718
+A0130,Propagación de plantas.,1048,1047,1039,1033,1046,1031,1018,1029,1025,1009,1003,995
+A0141,Cría de ganado bovino y búfalos.,7861,7825,7840,7795,7790,7790,7784,7752,7696,7649,7596,7556
+A0142,Cría de caballos y otros equinos.,49,49,49,40,40,40,39,39,40,40,40,40
+A0143,Cría de camellos y otros camélidos.,1,1,1,1,1,1,1,1,1,1,1,1
+A0144,Cría de ovejas y cabras.,75,74,73,75,75,75,75,78,78,77,77,78
+A0145,Cría de cerdos.,1113,1149,1152,1148,1145,1154,1149,1145,1153,1150,1162,1179
+A0146,Cría de aves de corral.,7738,7745,7710,7712,7733,7692,7674,7662,7632,7604,7570,7528
+A0149,Cría de otros animales.,326,318,311,321,325,325,323,322,321,317,330,330
+A0150,Cultivo de productos agrícolas en combinación con la cría de animales (explotación mixta).,5347,5339,5274,5202,5093,5026,5055,5099,5064,5175,5233,5210
+A0161,Actividades de apoyo a la agricultura.,1702,1833,1951,1855,1615,1602,1592,1585,1601,1571,1602,1592
+A0162,Actividades de apoyo a la ganadería.,223,227,241,252,231,191,174,178,186,202,200,182
+A0163,Actividades poscosecha.,1906,1916,1907,1889,1881,1781,1744,1745,1809,2074,2083,2073
+A0164,Tratamiento de semillas para propagación.,116,116,122,121,142,146,139,135,164,160,157,148
+A0170,"Caza ordinaria, mediante trampas y actividades de servicios conexas.",5,5,5,5,5,5,5,5,5,5,5,5
+A0210,Silvicultura y otras actividades forestales.,1031,1037,1038,1032,1033,1038,1050,1022,1038,1045,1046,1043
+A0220,Extracción de madera.,373,367,374,377,376,380,381,397,401,399,428,438
+A0230,Recolección de productos forestales distintos de la madera.,0,0,0,0,0,0,0,0,0,0,0,0
+A0240,Servicios de apoyo a la silvicultura.,191,187,195,199,205,183,163,185,188,201,190,183
+A0311,Pesca marina.,7463,7450,7352,7311,7293,7291,7309,7253,7235,7396,7473,7130
+A0312,Pesca de agua dulce.,90,89,90,90,88,82,79,76,84,83,83,82
+A0321,Acuicultura marina.,31011,30827,31035,31345,31512,31767,31982,32340,32523,32416,32560,32685
+A0322,Acuicultura de agua dulce.,1232,1246,1255,1261,1256,1249,1267,1283,1289,1301,1312,1318
+B0510,Extracción de carbón de piedra.,97,90,92,97,99,101,103,105,107,111,108,112
+B0520,Extracción de lignito.,6,6,3,3,3,3,3,3,3,3,3,3
+B0610,Extracción de petróleo crudo.,7412,7364,7340,7290,7211,7148,7076,7141,7113,7112,7090,7090
+B0620,Extracción de gas natural.,78,74,74,73,70,67,68,67,65,64,64,62
+B0710,Extracción de minerales de hierro.,75,71,69,88,110,141,142,153,150,150,125,64
+B0721,Extracción de minerales de uranio y torio.,163,180,176,184,185,205,201,230,257,285,287,307
+B0729,Extracción de otros minerales metalíferos no ferrosos.,13310,13515,14104,14232,14419,14208,14266,14409,14721,14849,14703,14455
+B0810,"Extracción de piedra, arena y arcilla.",1903,1904,1938,1989,2013,2023,2014,2038,2035,1995,1971,1965
+B0891,Extracción de minerales para la fabricación de abonos y productos químicos.,8,10,16,16,17,16,13,11,12,12,12,12
+B0892,Extracción de turba.,0,0,0,0,0,0,0,0,0,0,0,0
+B0893,Extracción de sal.,25,23,23,24,22,21,20,20,19,20,21,19
+B0899,Explotación de otras minas y canteras n.c.p.,468,478,470,474,482,489,404,383,382,387,419,408
+B0910,Actividades de apoyo para la extracción de petróleo y gas natural.,10900,10573,10450,10543,10884,11121,11090,11084,11028,10737,10419,9982
+B0990,Actividades de apoyo para la explotación de otras minas y canteras.,1343,1324,1423,1518,1577,1600,1594,1615,1512,1482,1496,1485
+C1010,Elaboración y conservación de carne.,15084,14895,14843,14861,14941,15054,15128,15120,15134,15097,15359,15434
+C1020,"Elaboración y conservación de pescados, crustáceos y moluscos.",46965,47410,47387,48362,48527,48646,49538,49860,48842,48437,48486,47776
+C1030,"Elaboración y conservación de frutas, legumbres y hortalizas.",10628,10548,10519,10538,10363,10333,10362,10610,10710,10545,10319,10088
+C1040,Elaboración de aceites y grasas de origen vegetal y animal.,8081,8094,8093,8076,7966,7915,7869,7867,7808,7845,7917,7886
+C1050,Elaboración de productos lácteos.,9731,9738,9687,9646,9633,9627,9702,9728,9679,9628,9555,9465
+C1061,Elaboración de productos de molinería.,6916,6864,6845,6858,6867,6851,6841,6806,6852,6845,6832,6757
+C1062,Elaboración de almidones y productos derivados del almidón.,49,48,47,47,48,46,46,45,47,47,50,51
+C1071,Elaboración de productos de panadería.,15750,15672,15672,15624,15653,15638,15777,15779,15888,15905,15900,15794
+C1072,Elaboración de azúcar.,7625,7563,7379,6751,6179,6960,8653,8710,8864,9050,8984,8920
+C1073,"Elaboración de cacao, chocolate y productos de confitería.",3597,3552,3517,3523,3522,3476,3499,3564,3626,3647,3570,3372
+C1074,"Elaboración de macarrones, fideos, alcuzcuz y productos farináceos similares.",2736,2691,2688,2646,2637,2631,2626,2702,2747,2708,2706,2727
+C1075,Elaboración de comidas y platos preparados.,940,936,950,1012,1027,1032,1026,1031,1035,1050,1061,1058
+C1079,Elaboración de otros productos alimenticios n.c.p.,4853,4823,4834,4842,4825,4852,4898,4852,4826,4816,4822,4793
+C1080,Elaboración de alimentos preparados para animales.,5958,5984,6004,6029,5998,6005,6010,6052,6100,6087,6100,6119
+C1101,"Destilación, rectificación y mezcla de bebidas alcohólicas.",997,998,1000,997,990,977,972,971,980,913,930,918
+C1102,Elaboración de vinos.,281,278,277,285,282,280,296,290,293,295,296,293
+C1103,Elaboración de bebidas malteadas y de malta.,2142,1259,1219,1212,1149,1123,1116,1113,1116,1106,1118,1117
+C1104,Elaboración de bebidas no alcohólicas; producción de aguas minerales y otras aguas embotelladas.,7476,7456,7400,7438,7414,7385,7416,7442,7456,7441,7452,7415
+C1200,Elaboración de productos de tabaco.,89,78,53,51,50,49,49,48,47,47,46,46
+C1311,Preparación e hilatura de fibras textiles.,1701,1710,1707,1675,1713,1738,1805,1802,1790,1799,1770,1749
+C1312,Tejedura de productos textiles.,4296,4269,4244,4235,4164,4123,4057,4046,3979,3983,3943,3915
+C1313,Servicio de acabado de productos textiles.,686,683,683,715,711,714,721,714,706,699,690,690
+C1391,Fabricación de tejidos de punto y ganchillo.,154,156,154,155,155,154,151,152,153,152,149,146
+C1392,"Fabricación de artículos confeccionados de materiales textiles, excepto prendas de vestir.",3611,3583,3590,3601,3685,3616,3589,3582,3635,3561,3531,3492
+C1393,Fabricación de tapices y alfombras.,143,143,144,135,134,137,139,136,133,133,130,128
+C1394,"Fabricación de cuerdas, cordeles, bramantes y redes.",377,348,349,335,397,378,352,398,392,393,358,385
+C1399,Fabricación de otros productos textiles n.c.p.,774,778,776,768,760,762,761,761,756,753,758,748
+C1410,"Fabricación de prendas de vestir, excepto prendas de piel.",28967,28738,28792,29024,28600,28255,28318,28458,28368,28190,28207,27960
+C1420,Fabricación de artículos de piel.,78,76,75,74,72,69,72,69,69,69,67,68
+C1430,Fabricación de artículos de punto y ganchillo.,1885,1877,1859,1868,1857,1838,1827,1800,1791,1785,1793,1787
+C1511,Curtido y adobo de cueros; adobo y teñido de pieles.,523,524,516,513,509,501,498,489,483,474,462,456
+C1512,"Fabricación de maletas, bolsos de mano y artículos similares, artículos de talabartería y guarnicionería.",710,713,707,708,705,698,683,692,681,672,666,662
+C1520,Fabricación de calzado.,6150,6150,6117,6072,5992,6084,5994,5899,5857,5771,5694,5644
+C1610,Aserrado y acepilladura de madera.,2390,2297,2304,2320,2346,2390,2374,2370,2502,2587,2666,2588
+C1621,Fabricación de hojas de madera para enchapado y tableros a base de madera.,2748,2731,2731,2720,2747,2760,2729,2727,2716,2719,2752,2874
+C1622,Fabricación de partes y piezas de carpintería para edificios y construcciones.,3082,3094,3105,3042,3034,3030,3087,3095,3140,3066,3054,3002
+C1623,Fabricación de recipientes de madera.,496,488,468,466,465,465,470,464,468,449,444,451
+C1629,"Fabricación de otros productos de madera; fabricación de artículos de corcho, paja y materiales trenzables.",764,761,744,738,731,732,729,728,732,712,713,714
+C1701,"Fabricación de pasta de madera, papel y cartón.",324,323,333,327,333,347,347,342,345,346,347,348
+C1702,Fabricación de papel y cartón ondulado y de envases de papel y cartón.,5775,5739,5750,5773,5802,5840,5878,5902,5886,5898,5927,5921
+C1709,Fabricación de otros artículos del papel y cartón.,5037,5106,5117,5204,5162,5089,5066,4998,4994,4971,4879,4867
+C1811,Actividades de impresión.,11615,11622,11663,11698,11580,11365,11341,11353,11433,11333,11257,10932
+C1812,Actividades de servicios relacionados con la impresión.,3734,3722,3711,3689,3687,3659,3671,3693,3694,3670,3678,3630
+C1820,Reproducción de grabaciones.,80,78,79,79,77,70,72,74,78,76,77,74
+C1910,Fabricación de productos de horno de coque.,9,9,9,9,9,9,9,9,9,9,10,10
+C1920,Fabricación de productos de la refinación del petróleo.,5331,5289,5100,5012,5007,4994,5021,5030,5055,5047,5032,5004
+C2011,Fabricación de substancias químicas básicas.,1728,1720,1733,1715,1685,1696,1645,1653,1662,1660,1661,1647
+C2012,Fabricación de abonos y compuestos de nitrógeno.,1125,1123,1117,1113,1124,1128,1118,1125,1125,1126,1121,1132
+C2013,Fabricación de plásticos y cauchos sintéticos en formas primarias.,1259,1256,1241,1262,1261,1252,1267,1312,1361,1367,1337,1317
+C2021,Fabricación de plaguicidas y otros productos químicos de uso agropecuario.,1377,1362,1346,1347,1327,1322,1308,1290,1282,1277,1271,1274
+C2022,"Fabricación de pinturas, barnices y productos de revestimiento similares, tintas de imprenta y masillas.",2782,2786,2764,2754,2744,2751,2754,2776,2775,2746,2745,2724
+C2023,"Fabricación de jabones y detergentes, preparados para limpiar y pulir, perfumes y preparados de tocador.",4828,4817,4811,4819,4833,4864,4897,4886,4904,4871,4869,4865
+C2029,Fabricación de otros productos químicos n.c.p.,1285,1277,1289,1306,1284,1294,1297,1290,1313,1297,1280,1271
+C2030,Fabricación de fibras artificiales.,7,7,7,6,6,6,6,6,6,5,5,5
+C2100,"Fabricación de productos farmacéuticos, sustancias químicas medicinales y productos botánicos de uso farmacéutico.",6456,6438,6380,6382,6322,6348,6368,6363,6319,6327,6312,6270
+C2211,Fabricación de cubiertas y cámaras de caucho; recauchutado y renovación de cubiertas de caucho.,1494,1489,1488,1485,1487,1487,1487,1484,1465,1469,1425,1420
+C2219,Fabricación de otros productos de caucho.,934,949,935,930,925,923,901,885,831,820,794,788
+C2220,Fabricación de productos de plástico.,15502,15564,15581,15527,15403,15388,15465,15486,15454,15383,15442,15409
+C2310,Fabricación de vidrio y productos de vidrio.,2013,2021,2014,1989,1992,1994,1997,1992,1979,1907,1901,1881
+C2391,Fabricación de productos refractarios.,1234,1216,1210,1152,1120,1128,1131,1131,1112,1105,1098,1102
+C2392,Fabricación de materiales de construcción de arcilla.,2900,2887,2850,2875,2860,2863,2869,2840,2834,2829,2846,2836
+C2393,Fabricación de otros productos de porcelana y de cerámica.,657,666,660,660,657,658,665,661,672,671,662,659
+C2394,"Fabricación de cemento, cal y yeso.",2113,2094,2124,2117,2118,2083,2068,2061,2044,2020,2010,1986
+C2395,"Fabricación de artículos de hormigón, de cemento y yeso.",4036,3971,3951,3975,3927,3846,3760,3791,3721,3635,3637,3608
+C2396,"Corte, tallado y acabado de la piedra.",457,452,445,446,441,446,441,436,435,447,452,424
+C2399,Fabricación de otros productos minerales no metálicos n.c.p.,205,210,212,208,208,209,211,215,217,220,228,235
+C2410,Industrias básicas de hierro y acero.,5459,5449,5448,5413,5399,5355,5171,5126,5117,5104,5055,4997
+C2420,Fabricación de productos primarios de metales preciosos y metales no ferrosos.,2359,2342,2331,2343,2333,2329,2303,2295,2294,2316,2296,2311
+C2431,Fundición de hierro y acero.,308,314,313,313,314,314,313,314,311,314,312,316
+C2432,Fundición de metales no ferrosos.,108,105,101,104,113,113,113,110,111,110,99,95
+C2511,Fabricación de productos metálicos para uso estructural.,10062,10056,9976,9999,9930,9926,9884,9778,9761,9730,9639,9502
+C2512,"Fabricación de tanques, depósitos y recipientes de metal.",1326,1331,1272,1287,1278,1243,1260,1291,1292,1342,1319,1281
+C2513,"Fabricación de generadores de vapor, excepto calderas de agua caliente para calefacción central.",126,137,143,132,126,126,123,118,125,119,117,115
+C2520,Fabricación de armas y municiones.,4,4,4,4,6,9,9,9,9,9,8,8
+C2591,"Forja, prensado, estampado y laminado de metales; pulvimetalurgia.",555,532,538,554,525,519,512,551,551,515,505,505
+C2592,Tratamiento y revestimiento de metales; maquinado.,4318,4205,4340,4457,4369,4283,4307,4344,4396,4228,4234,4288
+C2593,"Fabricación de artículos de cuchillería, herramientas de mano y artículos de ferretería.",993,988,987,979,978,968,969,967,984,976,976,958
+C2599,Fabricación de otros productos elaborados de metal n.c.p.,3743,3754,3694,3706,3695,3660,3593,3532,3533,3470,3474,3483
+C2610,Fabricación de componentes y tableros electrónicos.,352,355,352,348,345,349,342,315,308,310,309,307
+C2620,Fabricación de computadoras y equipo periférico.,36,35,37,37,34,34,32,34,34,33,33,32
+C2630,Fabricación de equipo de comunicaciones.,141,146,146,149,146,149,146,152,150,149,147,146
+C2640,Fabricación de aparatos electrónicos de consumo.,530,455,449,468,449,494,484,478,499,494,495,480
+C2651,"Fabricación de equipos de medición, prueba, navegación, control y de relojes.",227,212,215,215,210,210,214,205,197,204,200,191
+C2652,Fabricación de relojes.,5,5,5,4,4,5,5,5,4,4,4,4
+C2660,"Fabricación de equipo de irradiación, y equipo electrónico de uso medico y terapéutico.",38,38,44,45,44,43,43,42,42,41,41,41
+C2670,Fabricación de instrumentos ópticos y equipo fotográficos.,101,100,100,98,98,100,96,100,102,106,106,104
+C2680,Fabricación de soportes magnéticos y ópticos.,0,0,0,0,0,0,0,0,0,0,0,0
+C2710,"Fabricación de motores, generadores, transformadores eléctricos y aparatos de distribución y control de la energía eléctrica.",1848,1861,1854,1891,1839,1874,1835,1836,1841,1823,1845,1835
+C2720,"Fabricación de pilas, baterías y acumuladores.",948,952,943,954,950,954,1031,1031,1031,1024,1018,1013
+C2731,Fabricación de cables de fibra óptica.,58,60,60,61,59,59,61,60,60,60,59,58
+C2732,Fabricación de otros hilos y cables eléctricos.,756,780,776,771,762,768,780,768,804,809,801,797
+C2733,Fabricación de dispositivos de cableado.,38,36,36,35,35,35,35,35,35,35,35,34
+C2740,Fabricación de equipo eléctrico de iluminación.,553,553,555,548,518,509,497,499,499,499,494,499
+C2750,Fabricación de aparatos de uso doméstico.,3601,3590,3581,3620,3591,3528,3373,3351,3370,3370,3408,3391
+C2790,Fabricación de otros tipos de equipo eléctrico.,143,150,149,145,148,147,146,147,144,144,147,150
+C2811,"Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas.",81,78,81,80,81,105,147,188,229,244,259,264
+C2812,Fabricación de equipo de propulsión de fluidos.,242,241,239,234,232,225,181,180,176,176,165,160
+C2813,"Fabricación de otras bombas, compresores, grifos y válvulas.",1422,1417,1399,1396,1396,1386,1377,1369,1372,1364,1354,1352
+C2814,"Fabricación de cojinetes, engranajes, trenes de engranajes y piezas de transmisión.",46,47,47,46,46,45,45,45,46,46,45,44
+C2815,Fabricación de hornos y quemadores.,136,131,130,136,135,137,148,141,137,127,125,124
+C2816,Fabricación de equipo de elevación y manipulación.,80,81,86,85,80,83,89,88,77,77,81,84
+C2817,Fabricación de maquinaria y equipo de oficina (excepto computadoras y equipo periférico).,37,33,32,33,33,32,51,52,49,47,44,42
+C2818,Fabricación de herramientas de mano motorizadas.,122,120,119,120,116,118,117,135,129,127,128,126
+C2819,Fabricación de otros tipos de maquinaria de uso general.,1987,2010,2008,2035,2027,1972,1966,2005,1981,1982,1996,2001
+C2821,Fabricación de maquinaria agropecuaria y forestal.,382,384,377,378,381,367,368,368,365,360,358,359
+C2822,Fabricación de maquinaria para la conformación de metales y de máquinas herramienta.,97,92,94,88,93,92,91,92,89,90,88,88
+C2823,Fabricación de maquinaria metalúrgica.,42,38,36,36,37,41,39,37,36,38,40,41
+C2824,Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción.,273,276,274,276,281,271,265,265,264,262,268,270
+C2825,"Fabricación de maquinaria para la elaboración de alimentos, bebidas y tabaco.",416,455,449,421,420,429,435,435,418,426,424,423
+C2826,"Fabricación de maquinaria para la elaboración de productos textiles, prendas de vestir y cueros.",105,104,102,99,100,97,97,97,93,92,92,89
+C2829,Fabricación de otros tipos de maquinaria de uso especial.,197,190,191,187,186,201,200,188,180,184,198,189
+C2910,Fabricación de vehículos automotores.,1331,1300,1297,1188,1175,1169,1133,1128,1068,1065,1059,1054
+C2920,Fabricación de carrocerías para vehículos automotores; fabricación de remolques y semirremolques.,2263,2217,2173,2152,2134,2108,2121,2091,2090,2058,2046,2011
+C2930,"Fabricación de partes, piezas y accesorios para vehículos automotores.",1292,1282,1268,1206,1179,1172,1157,1151,1149,1151,1133,1121
+C3011,Construcción de buques y estructuras flotantes.,789,770,786,761,750,763,755,750,741,735,747,777
+C3012,Construcción de embarcaciones de recreo y deporte.,108,106,105,112,110,101,97,96,141,119,121,124
+C3020,Fabricación de locomotoras y material rodante.,119,118,116,116,111,106,110,109,110,111,103,102
+C3030,Fabricación de aeronaves y naves especiales y maquinaria conexa.,3,3,3,2,2,2,3,3,3,3,3,3
+C3040,Fabricación de vehículos militares de combate.,9,15,14,13,10,8,8,8,8,8,8,8
+C3091,Fabricación de motocicletas.,912,913,912,905,898,879,878,860,868,873,901,906
+C3092,Fabricación de bicicletas y de sillas de ruedas para inválidos.,84,79,80,80,73,57,53,52,52,53,52,54
+C3099,Fabricación de otros tipos de equipo de transporte n.c.p.,0,0,0,0,0,0,0,0,0,0,0,0
+C3100,Fabricación de muebles.,12706,12275,12188,12225,12176,12129,12248,12264,12237,12094,11980,11849
+C3211,Fabricación de joyas y artículos conexos.,1275,1261,1244,1218,1190,1182,1173,1170,1162,1152,1140,1136
+C3212,Fabricación de bisutería y artículos conexos.,183,182,181,186,188,185,187,190,184,187,184,183
+C3220,Fabricación de instrumentos musicales.,52,52,52,53,51,49,50,52,52,51,48,48
+C3230,Fabricación de artículos de deporte.,123,127,123,117,108,105,104,102,100,101,104,107
+C3240,Fabricación de juegos y juguetes.,660,653,647,633,638,624,624,604,595,589,367,360
+C3250,Fabricación de instrumentos y materiales médicos y odontológicos.,1107,1112,1112,1119,1113,1118,1106,1118,1132,1121,1119,1115
+C3290,Otras industrias manufactureras n.c.p.,1331,1340,1342,1325,1319,1337,1318,1302,1297,1248,1245,1235
+C3311,Reparación de productos elaborados de metal.,1488,1470,1435,1506,1558,1517,1489,1592,1593,1615,1660,1602
+C3312,Reparación de maquinaria.,4404,4372,4316,4330,4381,4355,4362,4385,4377,4308,4439,4470
+C3313,Reparación de equipo electrónico y óptico.,1182,1177,1167,1181,1199,1207,1204,1181,1180,1180,1205,1197
+C3314,Reparación de equipo eléctrico.,2408,2420,2407,2285,2310,2317,2394,2464,2417,2318,2220,2105
+C3315,"Reparación de equipo de transporte, excepto vehículos automotores.",730,691,686,710,770,731,807,942,942,867,855,835
+C3319,Reparación de otros tipos de equipo.,9,8,8,8,9,13,12,10,22,31,35,31
+C3320,Instalación de maquinaria y equipo industriales.,2414,2403,2390,2444,2441,2472,2429,2409,2376,2289,2243,2276
+D3510,"Generación, transmisión y distribución de energía eléctrica.",18208,18338,18423,18313,18093,17893,17917,18020,18075,17845,17903,17653
+D3520,Fabricación de gas; distribución de combustibles gaseosos por tuberías.,59,55,56,53,51,51,51,53,53,50,49,50
+D3530,Suministro de vapor y de aire acondicionado.,902,907,913,929,936,939,943,950,941,914,917,909
+E3600,"Captación, tratamiento y distribución de agua.",11314,11315,11361,11369,11376,11471,11513,11635,11710,11721,11779,11750
+E3700,Evacuación de aguas residuales.,1001,1067,1051,1063,1079,1074,1090,985,1004,1020,1038,1044
+E3811,Recolección de desechos no peligrosos.,6466,6480,6574,6647,6651,6663,6543,6589,6672,6706,6865,6900
+E3812,Recolección de desechos peligrosos.,594,566,558,575,566,576,576,610,603,581,597,585
+E3821,Tratamiento y eliminación de desechos no peligrosos.,217,219,241,207,196,197,190,190,190,193,199,198
+E3822,Tratamiento y eliminación de desechos peligrosos.,142,156,155,153,151,148,147,143,142,141,153,150
+E3830,Recuperación de materiales.,625,641,622,609,609,624,629,622,600,606,649,643
+E3900,Actividades de descontaminación y otros servicios de  gestión de desechos.,239,244,245,251,265,275,285,276,276,269,271,275
+F4100,Construcción de edificios.,45079,44710,44777,45065,45101,44462,44644,43896,43407,42243,41820,40847
+F4210,Construcción de carreteras y líneas de ferrocarril.,23247,22624,22472,22542,22478,22297,22178,22127,21796,20987,20881,20696
+F4220,Construcción de proyectos de servicios públicos.,10997,10992,11013,11025,10973,10814,10868,10758,11012,10662,10423,10202
+F4290,Construcción de otras obras de ingeniería civil.,3902,3682,3629,3584,3591,3575,3534,3518,3488,3468,3459,3475
+F4311,Demolición.,17,21,21,17,14,16,15,15,16,16,20,19
+F4312,Preparación del terreno.,705,627,593,636,651,646,661,651,713,691,664,665
+F4321,Instalaciones eléctricas.,10310,10068,9803,9689,9745,9741,9804,9851,9927,9882,9982,9980
+F4322,"Fontanería (plomería, gasfitería) e instalación de calefacción y aire acondicionado.",3210,3195,3240,3301,3373,3407,3397,3383,3522,3499,3436,3285
+F4329,Otras instalaciones para obras de construcción.,1575,1538,1523,1514,1523,1540,1500,1550,1581,1574,1564,1520
+F4330,Terminación y acabado de edificios.,4119,4105,4087,4066,3991,4050,4100,4104,4116,4150,4009,3938
+F4390,Otras actividades especializadas de construcción.,2975,2964,2943,2923,2908,2945,2942,2818,2801,2766,2686,2648
+G4510,Venta de vehículos automotores.,16769,16879,16971,17102,17142,17232,17339,17387,17524,17536,17465,17346
+G4520,Mantenimiento y reparación de vehículos automotores.,23235,23206,23134,23121,23083,22986,23018,22974,22960,22843,22703,22503
+G4530,"Venta de partes, piezas y accesorios para vehículos automotores.",22189,22171,22184,22186,22144,22127,22189,22213,22176,22070,21963,21832
+G4540,"Venta, mantenimiento y reparación de motocicletas y de sus partes, piezas y accesorios.",2784,2816,2844,2879,2851,2880,2910,2953,2995,2969,2976,2978
+G4610,Venta al por mayor a cambio de una comisión o por contrato.,2511,2519,2529,2567,2509,2532,2483,2422,2478,2514,2549,2580
+G4620,Venta al por mayor de materias primas agropecuarias y animales vivos.,9771,9671,9674,9810,9866,9775,9823,9875,9908,9854,9900,9940
+G4630,"Venta al por mayor de alimentos, bebidas y tabaco.",37639,38518,38518,38733,38748,38691,38714,38659,38794,39098,39282,38978
+G4641,"Venta al por mayor de textiles, prendas de vestir y calzado.",7910,7867,7872,7883,7872,7850,7790,7726,7752,7699,7808,7919
+G4649,Venta al por mayor de otros enseres domésticos.,38796,38899,39192,39514,39428,39272,39407,39510,39512,39282,39240,39063
+G4651,"Venta al por mayor de computadoras, equipo y programas informáticos.",6408,6454,6476,6468,6542,6585,6592,6650,6662,6680,6709,6691
+G4652,"Venta al por mayor de equipo, partes y piezas electrónicos y de telecomunicaciones.",3688,3684,3679,3723,3674,3727,3774,3769,3664,3636,3636,3588
+G4653,"Venta al por mayor de maquinaria, equipo y materiales agropecuarios.",2739,2703,2709,2728,2739,2724,2731,2738,2735,2721,2667,2644
+G4659,Venta al por mayor de otros tipos de maquinaria y equipo.,20350,20456,20577,20638,20720,20756,20862,20885,20927,20816,20712,20421
+G4661,"Venta al por mayor de combustibles sólidos, líquidos y gaseosos y productos conexos.",4698,4708,4799,4794,4812,4798,4794,4779,4807,4776,4794,4773
+G4662,Venta al por mayor de metales y minerales metalíferos.,2659,2667,2656,2614,2597,2621,2625,2614,2673,2637,2635,2621
+G4663,"Venta al por mayor de materiales para la construcción, artículos de ferretería, equipo, materiales de fontanería (plomería o gasfitería) y calefacción.",23632,23609,23635,23734,23768,23732,23781,23906,23852,23923,23906,23759
+G4669,"Venta al por mayor de desperdicios, desechos, chatarra y otros productos n.c.p.",13102,13031,13046,13131,13166,13071,13008,13026,13017,13052,13014,12907
+G4690,Venta al por mayor de otros productos no especializado.,7230,7233,7257,7255,7283,7374,7408,7413,7411,7367,7365,7321
+G4711,"Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco.",61242,60445,60622,60874,60649,60388,60462,60503,60828,60960,62464,62842
+G4719,Otras actividades de venta al por menor en comercios no especializados.,21666,21514,21553,21519,21507,21438,21498,21518,21633,21750,22051,22091
+G4721,Venta al por menor de alimentos en comercios especializados.,19328,19331,19353,19422,19569,19612,19718,19823,19958,19900,19897,19815
+G4722,Venta al por menor de bebidas en comercios especializados.,2681,2683,2689,2714,2706,2733,2735,2710,2708,2717,2759,2738
+G4723,Venta al por menor de tabaco en comercios especializados.,12,14,15,15,15,17,17,17,18,16,17,18
+G4730,Venta al por menor de combustibles para vehículos automotores en comercios especializados.,18081,18156,18266,18340,18337,18335,18439,18447,18521,18480,18681,18628
+G4741,"Venta al por menor de computadores, equipo periférico, programas informáticos y equipo de telecomunicaciones en comercios especializados.",10155,10132,10114,10095,10178,10197,10267,10278,10300,10323,10370,10322
+G4742,Venta al por menor de equipo de sonido y vídeo en comercios especializados.,3580,3593,3613,3643,3631,3569,3565,3554,3584,3547,3559,3538
+G4751,Venta al por menor de productos textiles en comercios especializados.,2857,2826,2830,2821,2802,2811,2794,2792,2815,2825,2810,2788
+G4752,"Venta al por menor de artículos de ferretería, pinturas y productos de vidrio en comercios especializados.",24929,24899,24937,24822,24792,24749,24847,24935,24977,24878,24935,24859
+G4753,"Venta al por menor de tapices, alfombras y cubrimientos para paredes y pisos en comercios especializados.",646,642,643,633,618,619,617,625,626,628,625,624
+G4759,"Venta al por menor de aparatos eléctricos de uso doméstico, muebles, equipo de iluminación y otros enseres domésticos en comercios especializados.",20910,20752,20565,20798,20732,20560,20507,20450,20461,20663,21154,21079
+G4761,"Venta al por menor de libros, periódicos y artículos de papelería en comercios especializados.",7462,7463,7665,7783,7722,7510,7438,7703,7797,7399,7316,7290
+G4762,Venta al por menor de grabaciones de música y de vídeo en comercios especializados.,207,204,205,213,215,217,220,219,216,212,211,207
+G4763,Venta al por menor de equipo de deporte en comercios especializados.,715,703,711,715,710,713,722,730,728,715,719,718
+G4764,Venta al por menor de juegos y juguetes en comercios especializados.,388,389,398,393,395,399,396,398,405,397,398,396
+G4771,"Venta al por menor de prendas de vestir, calzado y artículos de cuero en comercios especializados.",25441,25052,25070,25249,25292,25262,25308,25614,25902,26574,28798,29107
+G4772,"Venta al por menor de productos farmacéuticos y medicinales, cosméticos y artículos de tocador en comercios especializados.",26352,26445,26653,26773,26775,26759,26628,26704,26950,27026,27104,27226
+G4773,Venta al por menor de otros productos nuevos en comercios especializados.,14238,14249,14317,14365,14436,14462,14500,14533,14598,14692,14706,14590
+G4774,Venta al por menor de artículos de segunda mano en comercios especializados.,88,90,88,91,92,90,91,87,87,86,83,83
+G4781,"Venta al por menor de alimentos, bebidas y tabaco en puestos de venta y mercados.",690,693,699,702,701,694,699,697,690,685,687,674
+G4782,"Venta al por menor de productos textiles, prendas de vestir y calzado en puestos de venta y mercados.",562,559,558,573,579,595,616,618,625,633,634,629
+G4789,Venta al por menor de otros productos en puestos de venta y mercados.,77,79,81,81,85,84,84,87,87,89,87,87
+G4791,Venta al por menor por correo y por internet.,900,896,889,880,882,892,911,894,893,908,929,934
+G4799,"Otras actividades de venta al por menor no realizadas en comercios, puestos de venta o mercados.",3621,3663,3715,3768,3915,3952,3989,4002,4009,4034,4045,4054
+H4911,Transporte interurbano de pasajeros por ferrocarril.,441,436,417,411,411,413,350,340,340,342,334,329
+H4912,Transporte de carga por ferrocarril.,8,8,8,9,8,9,8,8,9,9,9,9
+H4921,Transporte urbano y suburbano de pasajeros por vía terrestre.,28488,28354,28336,28405,28381,28437,28582,28500,28437,28214,28083,27894
+H4922,Otras actividades de transporte de pasajeros por vía terrestre.,25736,25801,25846,25839,25904,25860,25461,25444,25742,25676,25568,25454
+H4923,Transporte de carga por carretera.,49294,49357,49551,49546,49596,49603,49826,49799,49937,49943,50034,49868
+H4930,Transporte por tuberías.,283,283,286,287,291,291,299,305,308,307,305,304
+H5011,Transporte de pasajeros marítimo y de cabotaje.,1325,1333,1334,1396,1398,1368,1353,1369,1399,1412,1409,1397
+H5012,Transporte de carga marítimo y de cabotaje.,2836,2848,2856,2868,2859,2876,2873,2893,2928,2906,2916,2935
+H5021,Transporte de pasajeros por vías de navegación interiores.,127,126,120,126,126,129,127,131,138,135,135,132
+H5022,"Transporte de carga, por vías de navegación interiores.",393,405,415,427,440,435,446,447,448,474,479,481
+H5110,Transporte de pasajeros por vía aérea.,3752,3745,3681,3666,3637,3607,3612,3595,3521,3521,3463,3406
+H5120,Transporte de carga por vía aérea.,373,379,380,381,382,381,381,384,383,380,384,380
+H5210,Almacenamiento y depósito.,2245,2267,2287,2288,2299,2333,2191,1883,1866,1828,1824,1818
+H5221,Actividades de servicios vinculadas al transporte terrestre.,5749,5852,5839,5883,5914,5905,5855,5860,5868,5984,6166,6177
+H5222,Actividades de servicios vinculadas al transporte acuático.,1614,1632,1682,1736,1807,2002,2062,2075,2077,2080,2076,2074
+H5223,Actividades de servicios vinculadas al transporte aéreo.,3047,3034,3012,3011,3036,3032,3057,3075,3062,3031,3044,3097
+H5224,Manipulación de carga.,6494,6276,6605,6781,6895,6529,6651,6558,6687,6573,6621,6437
+H5229,Otras actividades de apoyo al transporte.,12024,12043,12045,12131,12053,12113,12097,12111,12119,12130,12181,12222
+H5310,Actividades postales.,4127,4098,4070,4075,4044,4034,4010,3991,3940,3917,3899,3877
+H5320,Actividades de mensajería.,3429,3455,3437,3461,3461,3504,3552,3562,3569,3540,3562,3570
+I5510,Actividades de alojamiento para estancias cortas.,25486,25324,25370,25383,25483,25359,25431,25233,25197,25067,24970,24997
+I5520,"Actividades de campamentos, parques de vehículos de recreo y parques de caravanas.",105,102,104,106,103,103,94,90,89,88,92,92
+I5590,Otras actividades de alojamiento.,234,235,233,234,231,234,238,237,239,237,232,233
+I5610,Actividades de restaurantes y de servicio móvil de comidas.,78388,78227,78395,78795,79013,79080,79744,79926,80279,80152,80338,80176
+I5621,Suministro de comidas por encargo.,7279,7187,7127,7114,7123,7170,7061,7109,7187,7063,7061,7004
+I5629,Otras actividades de servicio de comidas.,4409,4445,4468,4541,4568,4574,4657,4647,4658,4628,4568,4596
+I5630,Actividades de servicio de bebidas.,5008,4989,4931,4914,4940,4940,4947,4883,4867,4856,4832,4762
+J5811,"Publicación de libros, periódicos y otras actividades de publicación.",226,232,232,235,233,231,232,229,226,227,228,225
+J5812,Publicación de directorios y de listas de correo.,2,2,2,2,2,2,2,2,2,2,1,1
+J5813,"Publicación de periódicos, diarios y revistas.",861,853,843,844,846,854,860,850,852,842,834,825
+J5819,Otras publicaciones.,259,265,258,256,257,253,253,248,247,247,246,235
+J5820,Publicación de programas informáticos.,377,377,388,396,398,401,410,411,414,409,439,429
+J5911,"Actividades de producción de películas cinematográficas, vídeos y programas de televisión.",690,690,690,690,691,680,676,670,664,662,656,654
+J5912,"Actividades de postproducción de películas cinematográficas, vídeos y programas de televisión.",82,78,77,75,83,84,83,83,81,79,76,73
+J5913,"Actividades de distribución de películas cinematográficas, vídeos y programas de televisión.",14,14,14,14,14,14,14,14,13,14,14,14
+J5914,Actividades de exhibición de películas cinematográficas y cintas de vídeo.,1803,1790,1789,1950,1929,1893,1913,1888,1868,1890,1884,1870
+J5920,Actividades de grabación de sonido y edición de música.,197,191,192,192,192,193,188,187,183,185,185,187
+J6010,Transmisiones de radio.,1398,1401,1401,1403,1402,1395,1380,1377,1362,1351,1345,1338
+J6020,Programación y transmisiones de televisión.,3516,3489,3453,3436,3420,3388,3325,3320,3256,3227,3198,3171
+J6110,Actividades de telecomunicaciones alámbrica.,16000,16056,16075,15974,15449,15222,15072,14997,15019,15039,15080,15143
+J6120,Actividades de telecomunicaciones inalámbricas.,7341,7302,7318,7332,7351,7374,7430,7495,7590,7571,7537,7451
+J6130,Actividades de telecomunicaciones por satélite.,1258,1270,1287,1299,1313,1316,1357,1374,1380,1352,1370,1377
+J6190,Otras actividades de telecomunicaciones.,6511,6533,6555,6520,6517,6517,6524,6482,6375,6351,6376,6379
+J6201,Actividades de programación informática.,5038,5101,5140,5184,5186,5178,5151,5166,5212,5208,5200,5150
+J6202,Actividades de consultoría de informática y de gestión de instalaciones informáticas.,5336,5363,5361,5297,5309,5247,5281,5241,5263,5314,5302,5285
+J6203,Actividades de diseño y desarrollo de soluciones basadas en tecnología Blockchain (Cadenas de bloques).,0,0,0,0,0,0,0,0,0,0,0,0
+J6209,Otras actividades de tecnología de la información y de servicios informáticos.,506,505,514,499,518,524,528,525,519,516,513,516
+J6311,"Procesamiento de datos, hospedaje y actividades conexas.",1330,1301,1366,1363,1251,1252,1142,1104,1053,1007,977,981
+J6312,Portales web.,181,184,198,205,193,193,221,235,236,244,256,254
+J6391,Actividades de agencias de noticias.,56,56,56,57,56,60,62,63,63,63,64,63
+J6399,Otras actividades de servicios de información n.c.p.,83,86,89,89,89,88,84,88,85,85,83,83
+K6411,Banca central.,1,1,1,1,1,1,1,1,1,1,1,1
+K6419,Otros tipos de intermediación monetaria.,42869,43180,43360,43617,43780,43918,44106,44279,44505,44568,44702,44817
+K6420,Actividades de sociedades de cartera.,114,121,124,139,139,136,147,155,160,156,155,155
+K6430,Fondos y sociedades de inversión y entidades financieras similares.,1320,1328,1339,1365,1400,1446,1466,1518,1522,1505,1522,1525
+K6491,Arrendamiento financiero.,0,0,0,0,0,0,0,0,0,0,0,0
+K6492,Otras actividades de concesión de crédito.,3208,3230,3233,3237,3248,3282,3304,3308,3333,3334,3339,3361
+K6499,"Otras actividades de servicios financieros, excepto las de seguros y fondos de pensiones, n.c.p.",2890,2935,2953,3030,3081,3163,3290,3230,3234,3122,3111,3138
+K6511,Seguros de vida.,1776,1793,1772,1741,1786,1820,1807,1839,1824,1851,1838,1837
+K6512,Seguros generales.,6551,6567,6599,6636,6680,6706,6768,6791,6832,6840,6831,6822
+K6520,Reaseguros.,79,80,80,81,78,81,80,79,80,80,79,80
+K6530,Fondos de pensión.,372,378,373,364,362,358,355,361,330,324,303,303
+K6611,Administración de mercados financieros.,247,251,247,249,244,242,246,242,251,249,251,247
+K6612,Corretaje de valores y de contratos de productos básicos.,131,133,130,125,127,124,125,125,128,127,124,123
+K6613,Administración de activos virtuales.,0,0,0,0,0,0,0,0,0,0,0,0
+K6614,"Servicios de asesoramiento, gestión y operación de mercados virtuales.",0,0,0,0,0,0,0,0,0,0,0,0
+K6619,Otras actividades auxiliares a las actividades de servicios financieros.,3247,3262,3186,3202,3190,3188,3160,3204,3183,3289,3330,3347
+K6621,Evaluación de riesgos y daños.,525,534,539,534,541,545,556,548,540,533,548,541
+K6622,Actividades de los agentes y corredores de seguro.,3952,3964,3978,3986,3997,4026,4057,4072,4072,4045,3995,3967
+K6629,Otras actividades auxiliares de seguros y fondos de pensiones.,77,78,77,75,69,66,70,70,68,71,73,72
+K6630,Actividades de gestión de fondos.,2172,2156,2199,2163,2142,2175,2188,2192,2171,2160,2181,2196
+L6810,Actividades inmobiliarias realizadas con bienes propios o arrendados.,12260,12169,12175,12136,12041,12132,12209,12265,12293,12240,12227,12204
+L6820,Actividades inmobiliarias realizadas a cambio de una retribución o por contrato.,25810,25711,25602,25588,25648,25576,25547,25649,25710,25678,25703,25694
+M6910,Actividades jurídicas.,15542,15536,15550,15599,15531,15578,15606,15649,15623,15586,15491,15397
+M6920,"Actividades de contabilidad, teneduría de libros y auditorias; consultoría fiscal.",17630,17750,17919,17896,17851,17774,17745,17798,17749,17741,17831,17772
+M7010,Actividades de oficinas principales.,3413,3458,3488,3511,3517,3539,3694,3714,3716,3703,3692,3667
+M7020,Actividades de consultoría de gestión.,16408,16372,16405,16457,16531,16546,16625,16598,16747,16801,17115,17035
+M7110,Actividades de arquitectura e ingeniería y actividades conexas de consultoría técnica.,46623,47677,47053,45565,44635,44013,43615,42914,42867,42426,42091,41400
+M7120,Ensayos y análisis técnicos.,4053,4053,4047,4070,4094,4096,4087,4078,4112,4102,4086,4071
+M7210,Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería.,2554,2544,2524,2533,2592,2591,2464,2459,2436,2409,2408,2385
+M7220,Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades.,681,673,692,686,689,724,739,774,759,736,725,697
+M7310,Publicidad.,11116,10985,11155,11399,11399,11378,11453,11622,11688,11649,11751,11613
+M7320,Estudios de mercado y encuestas de opinión pública.,1664,1470,1557,1585,1566,1833,1831,1832,1826,1986,2098,2046
+M7410,Actividades especializadas de diseño.,1725,1707,1698,1719,1711,1786,1804,1807,1828,1802,1809,1809
+M7420,Actividades de fotografía.,982,979,987,987,984,981,978,965,979,970,969,963
+M7490,"Otras actividades profesionales, científicas y técnicas n.c.p.",17722,17885,18315,18178,18241,18369,18571,18794,18936,19091,19092,19152
+M7500,Actividades veterinarias.,1818,1829,1827,1837,1841,1825,1807,1801,1815,1808,1811,1815
+N7710,Alquiler de vehículos automotores.,1351,1362,1348,1330,1324,1319,1316,1309,1300,1301,1289,1278
+N7721,Alquiler de equipo recreativo y deportivo.,60,60,63,61,60,58,58,59,60,60,57,58
+N7722,Alquiler de cintas de video y discos.,184,180,179,164,164,162,160,157,159,160,159,160
+N7729,Alquiler otros efectos personales y artículos de uso domésticos.,1103,1083,1081,1078,1063,1049,1044,1043,1050,1040,1030,1012
+N7730,"Alquiler de otros tipos de maquinaria, equipo y bienes tangibles.",6883,6806,6803,6742,6635,6627,6698,6802,6840,6826,6900,6839
+N7740,"Arrendamiento de propiedad intelectual y productos similares, excepto obras protegidas por derechos de autor.",71,70,66,67,70,78,80,79,78,80,80,79
+N7810,Actividades de agencias de empleo.,337,329,335,337,340,343,359,342,341,345,342,338
+N7820,Actividades de agencias de empleo temporal.,864,857,849,824,862,892,914,859,882,829,797,766
+N7830,Otras actividades de dotación de recursos humanos.,536,525,545,514,499,542,464,410,448,465,513,468
+N7911,Actividades de agencias de viajes.,6056,6072,6092,6083,6110,6086,6111,6113,6134,6107,6062,5992
+N7912,Actividades de operadores turísticos.,3324,3351,3400,3416,3442,3461,3509,3528,3528,3562,3532,3549
+N7990,Otros servicios de reservas y actividades conexas.,1500,1488,1505,1515,1472,1449,1473,1475,1481,1471,1478,1485
+N8010,Actividades de seguridad privada.,79266,78094,78059,78602,78939,78846,79340,79396,79152,79329,79678,79762
+N8020,Actividades de servicios de sistemas de seguridad.,1939,1934,1916,1931,1921,1913,1920,1919,1906,1893,1880,1888
+N8030,Actividades de investigación.,524,521,496,511,503,509,511,516,522,566,562,536
+N8110,Actividades combinadas de apoyo a instalaciones.,1885,1868,1902,1889,1891,1927,1949,1910,1989,2038,2020,1993
+N8121,Limpieza general de edificios.,21181,20941,20887,21605,21655,21702,21734,21428,21792,21860,22063,21955
+N8129,Otras actividades de limpieza de edificios e instalaciones industriales.,6020,5745,5695,6052,6097,6169,6100,5964,5726,5390,5329,5271
+N8130,Actividades de paisajismo y servicios de mantenimiento conexos.,1606,1614,1644,1760,1860,1871,1903,1854,1831,1793,1864,1809
+N8211,Actividades combinadas de servicios administrativos de oficina.,1334,1332,1321,1374,1405,1392,1321,1369,1403,1410,1423,1450
+N8219,"Fotocopiado, preparación de documentos y otras actividades especializadas de apoyo de oficina.",1381,1356,1352,1336,1335,1321,1327,1329,1325,1311,1296,1283
+N8220,Actividades de centros de llamadas.,8602,8304,8054,8107,8128,8271,8568,8528,8667,8614,8644,8733
+N8230,Organización de convenciones y exposiciones comerciales.,2483,2497,2534,2546,2586,2569,2553,2539,2560,2530,2585,2498
+N8291,Actividades de agencias de cobro y agencias de calificación crediticia.,2990,2997,3023,3053,3055,3050,3108,3100,3121,3114,3201,3154
+N8292,Actividades de envasado y empaquetado.,1207,1209,1279,1323,1369,1351,1317,1335,1547,1716,1779,1638
+N8299,Otras actividades de servicios de apoyo a empresas n.c.p.,331,332,340,366,360,368,373,368,378,377,372,371
+O8411,Actividades de la administración pública en general.,139943,142484,143942,142549,146481,139901,140099,140835,142186,142753,143421,143255
+O8412,"Regulación de las actividades de organismos que prestan servicios sanitarios, educativos, culturales y otros servicios sociales, excepto servicios de seguridad social.",264242,263571,262199,260037,257994,258029,257808,253697,258071,259106,259355,259398
+O8413,Regulación y facilitación de la actividad económica.,12306,12340,12253,12118,12131,12052,12027,12099,12012,11959,11982,11960
+O8421,Relaciones exteriores.,2908,2890,2841,2695,2676,2670,2653,2653,2606,2604,2574,2556
+O8422,Actividades de defensa.,7952,7892,7936,8074,8025,7649,7700,7649,7516,7433,7671,7529
+O8423,Actividades de mantenimiento del orden público y de seguridad.,35062,34754,34609,34510,34706,34735,34863,34786,34524,34626,35264,35168
+O8430,Actividades de planes de seguridad social de afiliación obligatoria.,7488,7504,7752,7754,7711,7659,7580,7643,7611,7586,7510,7464
+P8510,Enseñanza preprimaria y primaria.,31050,29704,28680,29930,31268,31527,30927,30450,31941,32027,32065,31889
+P8521,Enseñanza secundaria de formación general.,32283,31912,31305,32170,32675,32714,32312,32071,32917,32944,32947,32844
+P8522,Enseñanza de formación técnica y profesional.,1903,1903,1860,1882,1874,1893,1920,1897,1933,1925,1931,1904
+P8530,Enseñanza superior.,53368,53519,52334,52545,53802,54297,54273,53448,53151,53913,54426,54391
+P8541,Enseñanza deportiva y recreativa.,678,684,690,679,670,678,680,691,685,682,688,687
+P8542,Enseñanza cultural.,645,637,634,630,618,617,615,608,604,602,593,568
+P8549,Otros tipos de enseñanza n.c.p.,10021,10033,9973,10039,10029,10021,9933,9870,9958,9980,9972,9873
+P8550,Actividades de apoyo a la enseñanza.,416,413,418,416,424,441,403,406,429,428,436,418
+Q8610,Actividades de hospitales y clínicas.,88300,88390,88230,87304,87999,87735,87559,87180,87554,87191,87334,87203
+Q8620,Actividades de médicos y odontólogos.,36941,37015,37152,37145,37310,37459,37572,37660,37914,38128,38223,38245
+Q8690,Otras actividades de atención de la salud humana.,9666,9713,9761,9802,9835,9902,9979,10009,10002,9966,9971,9941
+Q8710,Actividades de atención de enfermería en instituciones.,814,841,827,815,815,818,816,805,817,818,827,801
+Q8720,"Actividades de atención en instituciones para personas con retraso mental, enfermos mentales y toxicómanos.",977,988,985,987,987,990,998,983,968,961,943,946
+Q8730,Actividades de atención en instituciones para personas de edad y personas con discapacidad.,1018,1073,1101,1115,1119,1105,1109,1122,1137,1123,1135,1132
+Q8790,Otras actividades de atención en instituciones.,4473,4572,4629,4681,4687,4630,4665,4640,4727,4758,4870,4895
+Q8810,Actividades de asistencia social sin alojamiento para personas de edad y personas con discapacidad.,2074,2163,2236,2290,2294,2292,2320,2296,2354,2361,2397,2397
+Q8890,Otras actividades de asistencia social sin alojamiento.,5018,5113,5219,5366,5379,5431,5481,5472,5570,5606,5657,5684
+R9000,"Actividades creativas, artísticas y de entretenimiento.",2112,2081,2100,2061,2071,2069,2062,2064,2079,2062,2052,2055
+R9101,Actividades de bibliotecas y archivos.,1373,1386,1393,1386,1384,1389,1419,1431,1451,1447,1466,1459
+R9102,Actividades de museos y gestión de lugares y edificios históricos.,499,512,509,505,514,510,509,509,508,500,503,502
+R9103,Actividades de jardines botánicos y zoológicos y reservas naturales.,448,442,443,446,443,446,442,441,433,432,430,428
+R9200,Actividades de juegos de azar y apuestas.,372,371,380,384,377,377,382,378,383,392,390,378
+R9311,Explotación de instalaciones deportivas.,3033,3025,3044,3045,3073,3131,3141,3166,3178,3128,3126,3086
+R9312,Actividades de clubes deportivos.,3753,3962,4106,4431,4460,4505,4547,4375,4278,4130,3975,3756
+R9319,Otras actividades deportivas.,2554,2414,2398,2404,2374,2296,2319,2301,2265,2255,2390,2511
+R9321,Actividades de parques de atracciones y parques temáticos.,956,943,950,966,958,920,991,986,985,985,946,922
+R9329,Otras actividades de esparcimiento y recreativas n.c.p.,1090,1124,1129,1094,1093,1091,1089,1078,1067,1063,1049,1009
+S9411,Actividades de asociaciones empresariales y de empleadores.,3084,3122,3094,3204,3236,3300,3362,3346,3267,3295,3325,3435
+S9412,Actividades de asociaciones profesionales.,414,440,431,438,455,436,415,410,419,411,407,372
+S9420,Actividades de sindicatos.,5438,5479,5446,5513,5480,5536,5569,5521,5487,5386,5383,5322
+S9491,Actividades de organizaciones religiosas.,11192,11176,11094,11186,11193,11167,11043,10834,10891,10885,10903,10865
+S9492,Actividades de organizaciones políticas.,73,78,79,74,73,75,66,67,66,62,54,53
+S9499,Actividades de otras asociaciones n.c.p.,3984,3999,4067,4263,4334,4354,4258,4281,4296,4311,4358,4275
+S9511,Reparación de computadoras y equipo periférico.,2157,2161,2171,2179,2173,2202,2209,2233,2249,2229,2210,2224
+S9512,Reparación de equipo de comunicaciones.,429,423,420,421,426,427,425,429,451,447,442,440
+S9521,Reparación de aparatos electrónicos de consumo.,458,463,459,460,457,455,457,461,469,465,472,468
+S9522,Reparación de aparatos de uso doméstico y equipo doméstico y de jardinería.,1483,1500,1493,1479,1481,1491,1489,1505,1511,1503,1508,1503
+S9523,Reparación de calzado y artículos de cuero.,577,573,577,573,573,571,582,580,577,573,558,548
+S9524,Reparación de muebles y accesorios domésticos.,142,142,146,144,153,158,152,170,173,175,175,165
+S9529,Reparación de otros bienes personales y enseres domésticos.,639,632,637,631,622,620,617,617,615,609,613,607
+S9601,"Lavado y limpieza, incluida la limpieza en seco, de productos textiles y de piel.",3134,3167,3155,3167,3167,3142,3202,3176,3183,3198,3217,3116
+S9602,Actividades de peluquería y otros tratamientos de belleza.,10981,10942,10937,10941,10940,10950,10925,10922,10974,10987,10944,10907
+S9603,Pompas fúnebres y actividades conexas.,3629,3670,3685,3732,3710,3726,3748,3725,3737,3716,3688,3645
+S9609,Otras actividades de servicios personales n.c.p.,14481,14630,15337,15039,15046,15356,15583,15552,15719,16016,16413,16431
+T9700,Actividades de los hogares como empleadores de personal doméstico.,0,0,0,0,0,0,0,0,0,0,0,0
+T9810,Actividades no diferenciadas de los hogares como productores de bienes y servicios para uso propio.,0,0,0,0,0,0,0,0,0,0,0,0
+T9820,Actividades no diferenciadas de los hogares como productores de servicios para uso propio.,0,0,0,0,0,0,0,0,0,0,0,0
+U9900,Actividades de organizaciones y órganos extraterritoriales.,442,441,442,444,444,434,442,436,441,439,437,443

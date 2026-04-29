@@ -95,6 +95,24 @@ def _(df):
 
 
 @app.cell
+def _(pd):
+    ### Cargamos selección de industrias de Pedro
+    ciiu_pedro = pd.read_csv(
+                    "datos/recodificacion/seleccion_pedro.csv"
+                    ).query("incluye==1")[
+                        ["clase_codigo", "clase_titulo"]
+                    ]
+    ### Formato de clave ciiu 04d
+    ciiu_pedro["clase_codigo"] = ciiu_pedro["clase_codigo"].apply(lambda x : f"{x:04}")
+
+    ### Lista de Actividades CIIU a considerar
+    ciiu_seleccion_pedro = ciiu_pedro["clase_codigo"].to_list()
+
+    ciiu_pedro
+    return (ciiu_seleccion_pedro,)
+
+
+@app.cell
 def _(df, pd, pl):
     ### Consulta para verificar la cantidad de actividades en 2019 con valores mayores a 0
     ### CONSIDERANDO ACTIVIDADES TRANSABLES
@@ -111,7 +129,20 @@ def _(df, pd, pl):
     ciiu_transable = recod.query("clasificador =='ciiu_rev_4'")["codigo"].unique()
     ciiu_transable = [f"{i:04}" for i in ciiu_transable]
 
-    df_actividades_transables = df.query("TIME_PERIOD == 2019").query(f"ACTIVITY in {ciiu_transable}").query("OBS_VALUE>0").groupby(["REF_AREA", "ACTIVITY"]).agg({"OBS_VALUE" : "sum"}).reset_index().groupby("REF_AREA").agg({"ACTIVITY" : "count"})
+    ## Nos quedamos con las actividades transables
+    df_actividades_transables = (
+                            df
+                            .query("TIME_PERIOD == 2019")
+                            .query(f"ACTIVITY in {ciiu_transable}")
+                            .query("OBS_VALUE>0")
+                            .groupby(["REF_AREA", "ACTIVITY"])
+                            .agg({"OBS_VALUE" : "sum"})
+                            .reset_index()
+                            .groupby("REF_AREA")
+                            .agg({"ACTIVITY" : "count"})    
+    )
+
+
 
     df_actividades_transables["ACTIVITY"] = df_actividades_transables["ACTIVITY"]/len(ciiu_transable)
 
@@ -126,7 +157,7 @@ def _(df_actividades_transables):
 
 
 @app.cell
-def _(ciiu_transable, df, df_actividades_transables, pd):
+def _(ciiu_seleccion_pedro, ciiu_transable, df, df_actividades_transables, pd):
     ### Haremos el análisis de complejidad modificando la muestra de paises de acuerdo al umbral de la razón de actividades que reportan empleo vs total de actividades transables
 
     ### Que actividades no tenemos datos para los paises?
@@ -134,15 +165,33 @@ def _(ciiu_transable, df, df_actividades_transables, pd):
         #"6420", "6430", "6491", "6492", "6499", "6511", "6512", "6611", "6612", "6619", "6621", "6629", 
         #"0161", "0162", "0163", "0164", "0210", "0220", "0230", "0240", "0311", "0312", "0610", "0620", 
         "8510", "8522", "8530", "8541", "8549", "8550", "9000", "9102", "9103", "9200", "9311", "9312", "9319", "9321", "9329", "9412", 
-        "6411" # Banca central
+        "6411", # Banca central
+        "1910"
     ]
 
+    ### Define umbral para la selección de la muestra de países
     umbral = 0.65
     anio_analisis = 2019
 
+    ### Obten países por encima del umbral
     paises_muestra = df_actividades_transables.reset_index().query(f"ACTIVITY>{umbral}")["REF_AREA"].to_list()
 
-    insumos_complejidad = df.query(f"TIME_PERIOD == {anio_analisis}").query(f"ACTIVITY in {ciiu_transable}").query(f"REF_AREA in {paises_muestra}").query(f"ACTIVITY not in {ciiu_na}")
+    ### Filtra los datos que cumplen con el criterio
+    insumos_complejidad = (
+                    df
+                        # Filtra periodo de análisis
+                        .query(f"TIME_PERIOD == {anio_analisis}")
+                        # Filta selección de Pedro
+                        .query(f"ACTIVITY in {ciiu_seleccion_pedro}")
+                        # Filtra por actividades transables
+                        .query(f"ACTIVITY in {ciiu_transable}")
+                        # Filtra países muestra
+                        .query(f"REF_AREA in {paises_muestra}")
+                        # Excluye industrias seleccionadas manualmente
+                        .query(f"ACTIVITY not in {ciiu_na}")    
+    )
+
+
 
 
     insumos_complejidad = insumos_complejidad[["TIME_PERIOD", "REF_AREA", "ACTIVITY", "OBS_VALUE"]]
@@ -150,19 +199,20 @@ def _(ciiu_transable, df, df_actividades_transables, pd):
     muestra_actividades = list(insumos_complejidad["ACTIVITY"].unique())
 
     ### Cargamos Honduras
-    hnd = pd.read_csv("datos/empleo_honduras/empleo_honduras.csv")
-    hnd["variable"] = hnd["variable"].apply(lambda x : f"{x:04}")
-    hnd.columns = ["REF_AREA", "ciiu", "OBS_VALUE"]
-    hnd["REF_AREA"] = "HND"
-    hnd["TIME_PERIOD"] = anio_analisis
-    hnd = hnd[["TIME_PERIOD", "REF_AREA", "ciiu", "OBS_VALUE"]]
-    hnd = hnd.rename(columns={"ciiu" : "ACTIVITY"})
+    hnd = pd.read_csv("datos/empleo_honduras/empleo_honduras_2019.csv")
+    hnd["ACTIVITY"] = hnd["ACTIVITY"].apply(lambda x : f"{x:04}")
     hnd = hnd.query(f"ACTIVITY in {muestra_actividades}")
 
     ### Cargamos a El Salvador
     slv = pd.read_csv("datos/SLV/slv_ciiu_2019.csv")
     slv["ACTIVITY"] = slv["ACTIVITY"].astype(str)
     slv = slv.query(f"ACTIVITY in {muestra_actividades}")
+
+    ### Cargamos a Ecuador
+    ecu = pd.read_csv("datos/empleo_ecuador/empleo_ecuador_2019.csv")
+    ecu["ACTIVITY"] = ecu["ACTIVITY"].astype(str)
+    ecu = ecu.query(f"ACTIVITY in {muestra_actividades}")
+
 
     ### Cargamos USA
     usa = pd.read_csv("datos/empleo_USA/usa_ciiu_raw.csv")
@@ -174,7 +224,11 @@ def _(ciiu_transable, df, df_actividades_transables, pd):
     usa = usa[["TIME_PERIOD", "REF_AREA", "codigo", "empleo"]]
     usa.columns = ["TIME_PERIOD", "REF_AREA", "ACTIVITY", "OBS_VALUE"]
 
-    insumos_complejidad = pd.concat([insumos_complejidad, hnd, slv])
+    ### Concatenamos datos de paises no considerados en los datos de OCDE 
+    insumos_complejidad = pd.concat([insumos_complejidad, hnd, slv, ecu])
+
+    ### Los datos repetidos los sumamos
+    insumos_complejidad = insumos_complejidad.groupby(["TIME_PERIOD", "REF_AREA", "ACTIVITY"]).sum().reset_index()
     insumos_complejidad
     return anio_analisis, insumos_complejidad
 
@@ -315,9 +369,9 @@ def _(np, pl):
 
         df_portafolios_score = df_portafolios.with_columns(
             df_portafolios.select(
-                pl.struct("density_norm", "pci", "cog").map_elements(
+                pl.struct("density", "pci", "cog").map_elements(
                     lambda s: np.average(
-                        a = [s["density_norm"], s["pci"], s["cog"]],
+                        a = [s["density"], s["pci"], s["cog"]],
                         weights = [
                             product_selection_criteria[mapp_portafolios[portafolio]]["density"],
                             product_selection_criteria[mapp_portafolios[portafolio]]["pci"], 
