@@ -165,13 +165,17 @@ def _(ciiu_seleccion_pedro, ciiu_transable, df, df_actividades_transables, pd):
     ciiu_na = [
         #"6420", "6430", "6491", "6492", "6499", "6511", "6512", "6611", "6612", "6619", "6621", "6629", 
         #"0161", "0162", "0163", "0164", "0210", "0220", "0230", "0240", "0311", "0312", "0610", "0620", 
-        "8510", "8522", "8530", "8541", "8549", "8550", "9000", "9102", "9103", "9200", "9311", "9312", "9319", "9321", "9329", "9412", 
+        #"8510", "8522", "8530", "8541", "8549", "8550", "9000", "9102", "9103", "9200", "9311", "9312", "9319", "9321", "9329", "9412", 
         "6411", # Banca central
-        "1910"
+        "1910", # Fabricación de productos de hornos de coque
+        #"0810" , # Extracción de piedra, arena y arcilla
+        #"0899", # Explotación de otras minas y canteras n.c.p
+        #"0910", # Actividades de apoyo para la extracción de petróleo y de gas natural
+        #"0990", # Actividades de apoyo para otras actividades de explotación de minas y canteras
     ]
 
     ### Define umbral para la selección de la muestra de países
-    umbral = 0.65
+    umbral = 0.69
     anio_analisis = 2019
 
     ### Obten países por encima del umbral
@@ -190,6 +194,8 @@ def _(ciiu_seleccion_pedro, ciiu_transable, df, df_actividades_transables, pd):
                         .query(f"REF_AREA in {paises_muestra}")
                         # Excluye industrias seleccionadas manualmente
                         .query(f"ACTIVITY not in {ciiu_na}")    
+                        # Filtramos por el total de la actividad
+                        .query(f"SIZE_CLASS == '_T'")      
     )
 
 
@@ -214,29 +220,13 @@ def _(ciiu_seleccion_pedro, ciiu_transable, df, df_actividades_transables, pd):
     ecu["ACTIVITY"] = ecu["ACTIVITY"].astype(str)
     ecu = ecu.query(f"ACTIVITY in {muestra_actividades}")
 
-
-    ### Cargamos USA
-    usa = pd.read_csv("datos/empleo_USA/usa_ciiu_raw.csv")
-    usa["codigo"] = usa["codigo"].astype(str)
-    usa = usa.query(f"codigo in {muestra_actividades}")
-    usa = usa[["codigo", "empleo"]]
-    usa["TIME_PERIOD"] = 2019
-    usa["REF_AREA"] = "USA"
-    usa = usa[["TIME_PERIOD", "REF_AREA", "codigo", "empleo"]]
-    usa.columns = ["TIME_PERIOD", "REF_AREA", "ACTIVITY", "OBS_VALUE"]
-
     ### Concatenamos datos de paises no considerados en los datos de OCDE 
     insumos_complejidad = pd.concat([insumos_complejidad, hnd, slv, ecu])
 
     ### Los datos repetidos los sumamos
-    insumos_complejidad = insumos_complejidad.groupby(["TIME_PERIOD", "REF_AREA", "ACTIVITY"]).sum().reset_index()
+    #insumos_complejidad = insumos_complejidad.groupby(["TIME_PERIOD", "REF_AREA", "ACTIVITY"]).sum().reset_index()
     insumos_complejidad
-    return anio_analisis, insumos_complejidad
-
-
-@app.cell
-def _():
-    return
+    return anio_analisis, ciiu_na, insumos_complejidad, paises_muestra
 
 
 @app.cell
@@ -255,7 +245,7 @@ def _(insumos_complejidad, proximity, trade_cols):
     prox_df = prox_df[["ACTIVITY_1", "ACTIVITY_2", "proximity"]]
     prox_df = prox_df.pivot(index = "ACTIVITY_1", columns = "ACTIVITY_2", values = "proximity")
     ## Guarda matriz de proximidad
-    prox_df.to_csv("output/proximidades/proximidades_ocde_data.csv", index = False)
+    prox_df.to_csv("output/proximidades/proximidades_ocde_data.csv")
     prox_df
     return
 
@@ -338,6 +328,16 @@ def _(alt, atlas, eci_paises):
         y='eci_rank_hs12',
         tooltip=["REF_AREA"]
     )
+    return (eci_paises_atlas,)
+
+
+@app.cell
+def _(alt, eci_paises_atlas):
+    alt.Chart(eci_paises_atlas).mark_point().encode(
+        x='eci',
+        y='eci_hs12',
+        tooltip=["REF_AREA"]
+    )
     return
 
 
@@ -351,8 +351,8 @@ def _(alt, eci_paises, gdp, pl):
     )
 
     alt.Chart(eci_paises_gdp).mark_point().encode(
-        y=alt.Y('eci'),
-        x=alt.X('gdp_percapita'),#.scale(type ="log"),
+        y=alt.Y('gdp_percapita'),#.scale(type ="log"),
+        x=alt.X('eci'),
         tooltip=["REF_AREA"]
     )
     return
@@ -457,12 +457,85 @@ def _(alt, cdata, mapp_ciiu):
 
 
 @app.cell
-def _(cdata, mapp_ciiu):
-    cdata.filter(REF_AREA="HND").join(
+def _(cdata, mapp_ciiu, pl):
+    cdata.filter(
+        (pl.col("REF_AREA")=="HND") , 
+        (pl.col("mcp")==1)
+    ).join(
         mapp_ciiu,
         left_on="ACTIVITY", 
         right_on="codigo"
-    ).select("nombre_actividad", "density").sort("density", descending=True)
+    ).select("ACTIVITY", "nombre_actividad", "pci", "rca", "density").sort("density", descending=True)#.filter(ACTIVITY='2930')
+    return
+
+
+@app.cell
+def _(cdata, mapp_ciiu, pl):
+    cdata.filter(
+        (pl.col("REF_AREA")=="HND") , 
+        (pl.col("mcp")==0)
+    ).join(
+        mapp_ciiu,
+        left_on="ACTIVITY", 
+        right_on="codigo"
+    ).select("nombre_actividad", "pci", "rca", "density").plot.point(
+        x = "density", 
+        y = "rca"
+    )
+    return
+
+
+@app.cell
+def _(
+    anio_analisis,
+    ciiu_na,
+    ciiu_seleccion_pedro,
+    ciiu_transable,
+    df,
+    paises_muestra,
+    pl,
+):
+    ## Test duplicados Datos OCDE
+    insumos_complejidad_test_duplicados = pl.from_pandas(
+                    df
+                        # Filtra periodo de análisis
+                        .query(f"TIME_PERIOD == {anio_analisis}")
+                        # Filta selección de Pedro
+                        .query(f"ACTIVITY in {ciiu_seleccion_pedro}")
+                        # Filtra por actividades transables
+                        .query(f"ACTIVITY in {ciiu_transable}")
+                        # Filtra países muestra
+                        .query(f"REF_AREA in {paises_muestra}")
+                        # Excluye industrias seleccionadas manualmente
+                        .query(f"ACTIVITY not in {ciiu_na}")  
+                        # Filtramos por el total de la actividad
+                        #.query(f"SIZE_CLASS == '_T'")  
+    )
+
+    insumos_complejidad_test_duplicados.filter(
+        pl.struct(["TIME_PERIOD", "REF_AREA", "ACTIVITY"]).is_duplicated()
+    )#["SIZE_CLASS"].unique()
+    return
+
+
+@app.cell
+def _(insumos_complejidad):
+    insumos_complejidad.query("ACTIVITY=='2930'")
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _():
     return
 
 
