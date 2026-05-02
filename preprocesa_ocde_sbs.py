@@ -19,7 +19,9 @@ def _():
     from ecomplexity import ecomplexity
     from ecomplexity import proximity
     import altair as alt
-    return alt, ecomplexity, np, pd, pl, plt, proximity
+    from great_tables import GT, html
+    import polars.selectors as cs
+    return alt, cs, ecomplexity, np, pd, pl, plt, proximity
 
 
 @app.cell(hide_code=True)
@@ -252,6 +254,7 @@ def _(insumos_complejidad, proximity, trade_cols):
 
 @app.cell
 def _(cdata, pl):
+    ### Ranking de Países de acuerdo a ECI
     eci_paises = cdata.select("REF_AREA", "eci").unique().sort("eci", descending=True)
     eci_paises = eci_paises.with_columns(
         eci_rank = pl.col("eci").rank("ordinal", descending=True)
@@ -323,7 +326,13 @@ def _(alt, atlas, eci_paises):
     )
 
 
-    alt.Chart(eci_paises_atlas).mark_point().encode(
+    alt.Chart(eci_paises_atlas).mark_circle(
+        opacity=0.99,
+        stroke='black',
+        strokeWidth=1.2,
+        strokeOpacity=0.9, 
+        size=180                
+    ).encode(
         x='eci_rank',
         y='eci_rank_hs12',
         tooltip=["REF_AREA"]
@@ -333,7 +342,13 @@ def _(alt, atlas, eci_paises):
 
 @app.cell
 def _(alt, eci_paises_atlas):
-    alt.Chart(eci_paises_atlas).mark_point().encode(
+    alt.Chart(eci_paises_atlas).mark_circle(
+        opacity=0.99,
+        stroke='black',
+        strokeWidth=1.2,
+        strokeOpacity=0.9, 
+        size=180     
+    ).encode(
         x='eci',
         y='eci_hs12',
         tooltip=["REF_AREA"]
@@ -350,11 +365,215 @@ def _(alt, eci_paises, gdp, pl):
         right_on = "iso_code3"
     )
 
-    alt.Chart(eci_paises_gdp).mark_point().encode(
-        y=alt.Y('gdp_percapita'),#.scale(type ="log"),
-        x=alt.X('eci'),
+    gdp_vs_eci = alt.Chart(eci_paises_gdp).mark_circle(
+        opacity=0.99,
+        stroke='black',
+        strokeWidth=1.2,
+        strokeOpacity=0.9, 
+        size=180,     
+    ).encode(
+        x=alt.X('gdp_percapita').title("GDP Per Cápita"),
+        y=alt.Y('eci').title("ECI"),
+        color = alt.ColorValue("red"),
         tooltip=["REF_AREA"]
+    ).properties(
+        title=alt.TitleParams(
+            "GDP percapita vs ECI",
+            subtitle="Datos de Empleo de OECD SBS 2019",
+            subtitleColor="gray"
+        )
     )
+
+    gdp_vs_eci_reg_line = gdp_vs_eci.transform_regression(
+            'gdp_percapita', 'eci'
+        ).mark_line(size = 5).transform_calculate(
+                Fit='"LinReg"'
+            ).encode(
+                stroke='Fit:N', 
+            )
+
+
+    labels_iso_code3 = gdp_vs_eci.mark_text(
+        align='left',
+        baseline='middle',
+        dx=10  # Offset text to the right
+    ).encode(
+        text='REF_AREA', # Column to use for label
+        color = alt.ColorValue("black"),
+   
+    )
+
+    gdp_vs_eci_chart = gdp_vs_eci + gdp_vs_eci_reg_line + labels_iso_code3 
+
+    gdp_vs_eci_chart.configure_legend(
+        strokeColor='gray',
+        fillColor='#EEEEEE',
+        padding=10,
+        cornerRadius=10,
+        orient='top-left')
+    return (eci_paises_gdp,)
+
+
+@app.cell
+def _(alt, atlas, cs, eci_paises_gdp, gdp, pl):
+    ### Dibujemos los puntos de acuerdo al GDP y el ECI de empleo y del atlas
+    ## Pegamos ECI del atlas
+    eci_paises_gdp_empleo_atlas = eci_paises_gdp.select(
+        "REF_AREA", "eci"
+    ).rename(
+        {"REF_AREA"  : "country_iso3_code", "eci" : "ECI Empleo OECD SBS"}
+    ).join(
+        atlas.select("country_iso3_code", "eci_hs12").rename({"eci_hs12" : "ECI Atlas"}), 
+        on = "country_iso3_code"
+    ).unpivot(
+        cs.numeric(), index="country_iso3_code").join(
+        pl.from_pandas(gdp).select("iso_code3", "gdp_percapita").rename({"iso_code3" : "country_iso3_code"}),
+        on = "country_iso3_code"
+    )
+
+    # 1. Define the base chart with encodings
+    base = alt.Chart(eci_paises_gdp_empleo_atlas).encode(
+        x=alt.X('gdp_percapita:Q').title("GDP Percapita"),
+        y=alt.Y('value:Q').title("ECI"),
+        color=alt.Color('variable:N').title("Datos")  # This provides the grouping color
+    ).properties(
+        title=alt.TitleParams(
+            "GDP percapita vs ECI",
+            subtitle="Datos de Empleo de OECD SBS 2019 y Atlas de Complejidad",
+            subtitleColor="gray"
+        )
+    )
+
+
+    # 2. Layer points and regression lines
+    chart = base.mark_circle(
+        opacity=0.99,
+        stroke='black',
+        strokeWidth=1.2,
+        strokeOpacity=0.9, 
+        size=180,  
+    ) + base.transform_regression(
+        'gdp_percapita', 'value', groupby=['variable']
+    ).mark_line()
+
+
+    labels_iso_code3_eci = base.mark_text(
+        align='left',
+        baseline='middle',
+        dx=10  # Offset text to the right
+    ).encode(
+        text='country_iso3_code', # Column to use for label
+        color = alt.ColorValue("black"),
+   
+    )
+
+    all_chart = chart + labels_iso_code3_eci
+    all_chart.configure_legend(
+        strokeColor='gray',
+        fillColor='#EEEEEE',
+        padding=10,
+        cornerRadius=10,
+        orient='top-left')
+    return
+
+
+@app.cell
+def _(ecomplexity, paises_muestra, pd, pl):
+    ### Cacularemos las medidas de complejidad usando los datos del Atlas
+    ### PARA LA MUESTRA DE 21 PAISES
+    atlas_export = pd.read_parquet("datos/atlas_datos/hs92_country_product_year_4.parquet")
+    atlas_export = atlas_export.query(f"country_iso3_code in {paises_muestra + ['HND', 'ECU', 'SLV']}")
+    # Calculate complexity
+    trade_cols_export = {'time':"year", 'loc': "country_iso3_code",  'prod': "product_hs92_code",  'val': "export_value"}
+    cdata_export = pl.from_pandas(ecomplexity(atlas_export, trade_cols_export)).drop_nulls()
+    cdata_export = cdata_export.select("country_iso3_code", "eci").unique().rename({"eci" : "eci_atlas"})
+    cdata_export
+    return (cdata_export,)
+
+
+@app.cell
+def _(alt, cdata, cdata_export, pl):
+    ### Reunimos los datos
+    cdata_atlas_estimado = cdata.select(
+        "REF_AREA", "eci"
+    ).unique().rename(
+        {"REF_AREA" : "country_iso3_code"}
+    ).with_columns(
+        eci_rank = pl.col("eci").rank("ordinal", descending=True)
+    ).join(
+        cdata_export.with_columns(
+        eci_rank_atlas = pl.col("eci_atlas").rank("ordinal", descending=True)
+    ), 
+        on = "country_iso3_code"
+    )
+
+    ### Dibujamos la figura
+    base_rankings = alt.Chart(cdata_atlas_estimado).mark_circle(
+        opacity=0.99,
+        stroke='black',
+        strokeWidth=1.2,
+        strokeOpacity=0.9, 
+        size=220     
+    ).encode(
+        x=alt.X('eci_rank').title("Ranking ECI OECD SBS"),
+        y=alt.Y('eci_rank_atlas').title("Ranking ECI Atlas"),
+        color = alt.ColorValue("red"),
+        tooltip=["country_iso3_code"]
+    ).properties(
+        title=alt.TitleParams(
+            "Comparación de Rankings de Paises",
+            subtitle="Datos de Empleo de OECD SBS y Atlas de Complejidad 2019",
+            subtitleColor="gray"
+        )
+    )
+
+    base_rankings_reg_line = base_rankings.transform_regression(
+            'eci_rank', 'eci_rank_atlas'
+        ).mark_line(size = 5).transform_calculate(
+                Fit='"LinReg"'
+            ).encode(
+                stroke='Fit:N', 
+            )
+
+
+    labels_iso_code3_rankings = base_rankings.mark_text(
+        align='left',
+        baseline='middle',
+        dx=10  # Offset text to the right
+    ).encode(
+        text='country_iso3_code', # Column to use for label
+        color = alt.ColorValue("black"),
+   
+    )
+
+    line_red = alt.Chart().mark_rule(color='red', size = 5).transform_calculate(
+                Fit='"Identidad f(x) = x"'
+            ).encode(
+        x=alt.value(0),
+        x2=alt.value('width'),
+        y=alt.value('height'),
+        y2=alt.value(0), 
+        stroke='Fit:N', 
+    )
+
+    gdp_vs_eci_chart_rankings = base_rankings + line_red + labels_iso_code3_rankings 
+
+    gdp_vs_eci_chart_rankings.configure_legend(
+        strokeColor='gray',
+        fillColor='#EEEEEE',
+        padding=10,
+        cornerRadius=10,
+        orient='top-left')
+
+
+
+
+    return (cdata_atlas_estimado,)
+
+
+@app.cell
+def _(cdata_atlas_estimado):
+    cdata_atlas_estimado
     return
 
 
@@ -441,17 +660,89 @@ def _(calcula_score, cdata_norm, df, mapp_ciiu, pl):
 
 
 @app.cell
-def _(alt, cdata, mapp_ciiu):
+def _(alt, cdata, mapp_ciiu, pl):
 
-    alt.Chart(cdata.filter(REF_AREA="HND").join(
+    alt.Chart(cdata.filter(
+        (pl.col("REF_AREA")=="HND") & 
+        (pl.col("rca")>0)
+
+    ).join(
         mapp_ciiu,
         left_on="ACTIVITY", 
         right_on="codigo"
     )
-             ).mark_point().encode(
-        x=alt.X('density'),
-        y=alt.Y('pci'),#.scale(type ="log"),
-        tooltip=["nombre_actividad"]
+             ).mark_circle(
+                opacity=0.99,
+                stroke='black',
+                strokeWidth=1.2,
+                strokeOpacity=0.9, 
+                size=180,     
+             ).encode(
+        x=alt.X('density').scale(zero=False).title("Densidad"),
+        y=alt.Y('pci').title("PCI"),#.scale(type ="log"),
+        shape = alt.Shape("mcp:N").title("M"),
+        color = alt.Color("rca").scale(type ="log", scheme='redblue', domainMid=1.0).title("RCA"),
+        size = alt.Size("rca").scale(type ="log"),
+        tooltip=["nombre_actividad","rca"]
+    ).properties(
+        title=alt.TitleParams(
+            "Diagrama Densidad-PCI",
+            subtitle="Honduras. Datos de Empleo de OECD SBS 2019",
+            subtitleColor="gray"
+        )
+    ).configure_legend(
+        strokeColor='gray',
+        fillColor='white',
+        padding=10,
+        cornerRadius=10,
+        orient='bottom-left', 
+        titleFontSize=18,
+        labelFontSize=16,
+
+    )
+
+    return
+
+
+@app.cell
+def _(alt, cdata, mapp_ciiu, pl):
+    alt.Chart(cdata.filter(
+        (pl.col("REF_AREA")=="DEU") & 
+        (pl.col("rca")>0)
+
+    ).join(
+        mapp_ciiu,
+        left_on="ACTIVITY", 
+        right_on="codigo"
+    )
+             ).mark_circle(
+                opacity=0.99,
+                stroke='black',
+                strokeWidth=1.2,
+                strokeOpacity=0.9, 
+                size=180,     
+             ).encode(
+        x=alt.X('density').scale(zero=False).title("Densidad"),
+        y=alt.Y('pci').title("PCI"),#.scale(type ="log"),
+        shape = alt.Shape("mcp:N").title("M"),
+        color = alt.Color("rca").scale(type ="log", scheme='redblue', domainMid=1.0).title("RCA"),
+        size = alt.Size("rca").scale(type ="log"),
+        tooltip=["nombre_actividad","rca"]
+    ).properties(
+        title=alt.TitleParams(
+            "Diagrama Densidad-PCI",
+            subtitle="Alemania. Datos de Empleo de OECD SBS 2019",
+            subtitleColor="gray"
+        )
+    ).configure_legend(
+        strokeColor='gray',
+        fillColor='white',
+        padding=10,
+        cornerRadius=10,
+        orient='bottom-right', 
+        titleFontSize=18,
+        labelFontSize=18,
+
     )
     return
 
@@ -525,7 +816,8 @@ def _(insumos_complejidad):
 
 
 @app.cell
-def _():
+def _(cdata):
+    cdata
     return
 
 
