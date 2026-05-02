@@ -372,7 +372,7 @@ def _(alt, eci_paises, gdp, pl):
         strokeOpacity=0.9, 
         size=180,     
     ).encode(
-        x=alt.X('gdp_percapita').title("GDP Per Cápita"),
+        x=alt.X('gdp_percapita').title("GDP Per Cápita [Miles de Dólares por persona]"),
         y=alt.Y('eci').title("ECI"),
         color = alt.ColorValue("red"),
         tooltip=["REF_AREA"]
@@ -400,7 +400,7 @@ def _(alt, eci_paises, gdp, pl):
     ).encode(
         text='REF_AREA', # Column to use for label
         color = alt.ColorValue("black"),
-   
+
     )
 
     gdp_vs_eci_chart = gdp_vs_eci + gdp_vs_eci_reg_line + labels_iso_code3 
@@ -433,7 +433,7 @@ def _(alt, atlas, cs, eci_paises_gdp, gdp, pl):
 
     # 1. Define the base chart with encodings
     base = alt.Chart(eci_paises_gdp_empleo_atlas).encode(
-        x=alt.X('gdp_percapita:Q').title("GDP Percapita"),
+        x=alt.X('gdp_percapita:Q').title("GDP Percapita [Miles de Dólares por persona]"),
         y=alt.Y('value:Q').title("ECI"),
         color=alt.Color('variable:N').title("Datos")  # This provides the grouping color
     ).properties(
@@ -464,7 +464,7 @@ def _(alt, atlas, cs, eci_paises_gdp, gdp, pl):
     ).encode(
         text='country_iso3_code', # Column to use for label
         color = alt.ColorValue("black"),
-   
+
     )
 
     all_chart = chart + labels_iso_code3_eci
@@ -543,7 +543,7 @@ def _(alt, cdata, cdata_export, pl):
     ).encode(
         text='country_iso3_code', # Column to use for label
         color = alt.ColorValue("black"),
-   
+
     )
 
     line_red = alt.Chart().mark_rule(color='red', size = 5).transform_calculate(
@@ -564,7 +564,6 @@ def _(alt, cdata, cdata_export, pl):
         padding=10,
         cornerRadius=10,
         orient='top-left')
-
 
 
 
@@ -700,7 +699,6 @@ def _(alt, cdata, mapp_ciiu, pl):
         labelFontSize=16,
 
     )
-
     return
 
 
@@ -822,7 +820,8 @@ def _(cdata):
 
 
 @app.cell
-def _():
+def _(eci_paises_gdp):
+    eci_paises_gdp
     return
 
 
