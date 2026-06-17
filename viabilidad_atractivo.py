@@ -546,6 +546,23 @@ def _(mo):
     return
 
 
+@app.cell
+def _(pl):
+    ## Cargamos datos de complejidad y nos quedamos con los registros de honduras
+    cdata = pl.read_csv("datos/viabilidad_atractivo/cdata.csv")
+
+    ## Analizamos solo los pares
+    ## Calculamos el rca promedio entre los pares
+    rca_peers = cdata.filter(
+        pl.col("REF_AREA").is_in(["SLV", "ECU"])
+    ).group_by("ACTIVITY").agg(
+        pl.col("rca").mean().alias("rca_peers")
+    ).rename({"ACTIVITY" : "ciiu"})
+
+    rca_peers
+    return cdata, rca_peers
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -553,16 +570,6 @@ def _(mo):
 
     Además de los datos del Atlas, usaremos los datos de [AI-generated Production Network - AIPNET](https://aipnet.io/) para identificar la cadena de producción de los productos.
     """)
-    return
-
-
-@app.cell
-def _():
-    return
-
-
-@app.cell
-def _():
     return
 
 
@@ -834,16 +841,16 @@ def _(
 
 
 @app.cell
-def _(pl):
+def _(cdata):
     ## Cargamos datos de complejidad y nos quedamos con los registros de honduras
-    cdata = pl.read_csv("datos/viabilidad_atractivo/cdata.csv").filter(REF_AREA="HND")
-    cdata
-    return (cdata,)
+    cdata_hnd = cdata.filter(REF_AREA="HND")
+    cdata_hnd
+    return (cdata_hnd,)
 
 
 @app.cell
 def _(
-    cdata,
+    cdata_hnd,
     ciiu_china_intensiveness_final,
     ciiu_insumos_presentes_final,
     ciiu_razon_electricidad_gasto_total_final,
@@ -857,10 +864,11 @@ def _(
     industry_growth_rate_exports_final,
     industry_growth_rate_final,
     pl,
+    rca_peers,
     share_energy_final,
 ):
     ## Obtenemos las actividades CIIU a analizar
-    ciiu_analiza = cdata.select("ACTIVITY").rename({"ACTIVITY" : "ciiu"})
+    ciiu_analiza = cdata_hnd.select("ACTIVITY").rename({"ACTIVITY" : "ciiu"})
 
     ## Concatena con los indicadores calculados
     factores = pl.concat(
@@ -876,12 +884,13 @@ def _(
             industry_growth_rate_exports_final,
             ciiu_china_intensiveness_final,
             employment_elasticity_final,
+            rca_peers,
             ciiu_insumos_presentes_final,
             share_energy_final,
             ciiu_razon_electricidad_gasto_total_final
         ], how="align"
     ).filter(
-        pl.col("ciiu").is_in(cdata["ACTIVITY"])
+        pl.col("ciiu").is_in(cdata_hnd["ACTIVITY"])
     )
     factores
     return (factores,)
@@ -973,6 +982,7 @@ def _(mo):
 def _(TOPSIS, factores_imputados, np, rrankdata):
     # TOPSIS Viabilidad
     viabilidad_factores = [
+        "rca_peers",
         "razon_insumos_presentes", 
         "share_energy",
         "razon_electricidad_gasto_total",
@@ -984,7 +994,7 @@ def _(TOPSIS, factores_imputados, np, rrankdata):
     weights_viabilidad = np.array([1/len(viabilidad_factores)]*len(viabilidad_factores))
 
     # Define criteria types (1 for profit, -1 for cost)
-    types_viabilidad = np.array([1, -1, -1])
+    types_viabilidad = np.array([1, 1, -1, -1])
 
     # Create object of the method
     # Note, that default normalization method for TOPSIS is minmax
@@ -1021,7 +1031,18 @@ def _(pd, pl):
     ciiu_pedro_2 = pl.from_pandas(
         pd.read_csv("datos/viabilidad_atractivo/seleccion_pedro.csv").query("incluye==1")
     )
-    return ciiu_pedro_2, mapp_ciiu
+
+    ### Resultados finales Intensivo
+    resultados_finales_intensivo = pd.read_excel("datos/viabilidad_atractivo/Resultados Complexity_final.xlsx", sheet_name="Intensivo")
+
+    ### Resultados finales Extensivo
+    resultados_finales_extensivo = pd.read_excel("datos/viabilidad_atractivo/Resultados Complexity_final.xlsx", sheet_name="Extensivo")
+    return (
+        ciiu_pedro_2,
+        mapp_ciiu,
+        resultados_finales_extensivo,
+        resultados_finales_intensivo,
+    )
 
 
 @app.cell(hide_code=True)
@@ -1033,10 +1054,18 @@ def _(mo):
 
 
 @app.cell
-def _(cdata, ciiu_pedro_2, mapp_ciiu, pd, pl, scores_viabilidad_atractivo):
+def _(
+    cdata_hnd,
+    ciiu_pedro_2,
+    mapp_ciiu,
+    pd,
+    pl,
+    resultados_finales_intensivo,
+    scores_viabilidad_atractivo,
+):
     import altair as alt 
 
-    cdata_intensivo = cdata.filter(
+    cdata_intensivo = cdata_hnd.filter(
         (pl.col("REF_AREA")=="HND") & 
         (pl.col("rca")>0) & 
         (pl.col("mcp")==1)
@@ -1055,6 +1084,8 @@ def _(cdata, ciiu_pedro_2, mapp_ciiu, pd, pl, scores_viabilidad_atractivo):
         scores_viabilidad_atractivo, 
         left_on="ACTIVITY", 
         right_on="ciiu"
+    ).filter(
+        pl.col("ACTIVITY").is_in(resultados_finales_intensivo["ciiu4_cod"])
     )
 
 
@@ -1113,14 +1144,15 @@ def _(mo):
 @app.cell
 def _(
     alt,
-    cdata,
+    cdata_hnd,
     ciiu_pedro_2,
     mapp_ciiu,
     pd,
     pl,
+    resultados_finales_extensivo,
     scores_viabilidad_atractivo,
 ):
-    cdata_extensivo = cdata.filter(
+    cdata_extensivo = cdata_hnd.filter(
         (pl.col("REF_AREA")=="HND") & 
         (pl.col("rca")>0) & 
         (pl.col("mcp")==0)
@@ -1139,6 +1171,8 @@ def _(
         scores_viabilidad_atractivo, 
         left_on="ACTIVITY", 
         right_on="ciiu"
+    ).filter(
+        pl.col("ACTIVITY").is_in(resultados_finales_extensivo["ciiu4_cod"])
     )
 
 
@@ -1183,6 +1217,11 @@ def _(
 @app.cell
 def _(cdata_extensivo):
     cdata_extensivo.select("clase_titulo", "topsis_atractivo", "topsis_viabilidad")
+    return
+
+
+@app.cell
+def _():
     return
 
 
