@@ -64,7 +64,7 @@ def _(pd, pl):
     ### Define consulta tipo lazy para el acceso a los datos
     def obten_datos(dataset : str) -> pd.DataFrame: 
         #q = pl.scan_csv('datos/viabilidad_atractivo/oecd_sbp_produccion_gasto_insumos.csv').select("ACTIVITY", "OBS_VALUE", "MEASURE", "TIME_PERIOD").group_by("ACTIVITY", "TIME_PERIOD", "MEASURE").sum()
-        q = pl.scan_csv(f'datos/viabilidad_atractivo/{dataset}.parquet').select("ACTIVITY", "OBS_VALUE", "MEASURE", "TIME_PERIOD").group_by("ACTIVITY", "TIME_PERIOD", "MEASURE").sum()
+        q = pl.scan_parquet(f'datos/viabilidad_atractivo/{dataset}.parquet').select("ACTIVITY", "OBS_VALUE", "MEASURE", "TIME_PERIOD").group_by("ACTIVITY", "TIME_PERIOD", "MEASURE").sum()
         ### Recolectamos la informacion
         df = q.collect()
 
