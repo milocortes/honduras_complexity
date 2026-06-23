@@ -1,0 +1,1372 @@
+anio,actividad,K000A Total de gastos por consumo de bienes y servicios (millones de pesos),K412A Gasto por consumo de energía eléctrica (millones de pesos)
+2023,Rama 1125 Acuicultura,6070.664,358.427
+2023,Rama 1141 Pesca,18602.199,712.312
+2023,Rama 1151 Servicios relacionados con la agricultura,4522.769,170.686
+2023,Rama 1152 Servicios relacionados con la cría y explotación de animales,310.264,20.628
+2023,Rama 1153 Servicios relacionados con el aprovechamiento forestal,58.535,0.583
+2023,Rama 2111 Extracción de petróleo y gas,31583.062,15.918
+2023,Rama 2121 Minería de carbón mineral,3328.521,264.537
+2023,Rama 2122 Minería de minerales metálicos,110427.165,21954.765
+2023,Rama 2123 Minería de minerales no metálicos,21491.894,4877.641
+2023,Rama 2131 Servicios relacionados con la minería,24064.439,7053.368
+2023,"Rama 2211 Generación, transmisión, distribución y comercialización de energía eléctrica",1098208.827,1842.258
+2023,Rama 2212 Suministro de gas natural por ductos al consumidor final,24943.076,15.211
+2023,"Rama 2213 Captación, tratamiento y suministro de agua",54663.938,20873.389
+2023,Rama 2361 Edificación residencial,97688.4,350.229
+2023,Rama 2362 Edificación no residencial,124763.915,411.062
+2023,"Rama 2371 Construcción de obras para el suministro de agua, petróleo, gas, energía eléctrica y telecomunicaciones",120032.892,238.456
+2023,Rama 2372 División de terrenos y construcción de obras de urbanización,23804.474,69.432
+2023,Rama 2373 Construcción de vías de comunicación,50875.895,146.762
+2023,Rama 2379 Otras construcciones de ingeniería civil,188190.588,68.321
+2023,"Rama 2381 Cimentaciones, montaje de estructuras prefabricadas y trabajos en exteriores",9573.716,43.545
+2023,Rama 2382 Instalaciones y equipamiento en construcciones,22347.28,105.647
+2023,Rama 2383 Trabajos de acabados en edificaciones,2889.594,26.738
+2023,Rama 2389 Otros trabajos especializados para la construcción,12172.859,52.347
+2023,Rama 3111 Elaboración de alimentos balanceados para animales,140226.136,1883.134
+2023,Rama 3112 Molienda de granos y de semillas y obtención de aceites y grasas,267824.075,3158.457
+2023,"Rama 3113 Elaboración de azúcares, chocolates, dulces y similares",146114.285,1941.405
+2023,"Rama 3114 Conservación de frutas, verduras, guisos y otros alimentos preparados",86828.987,1789.603
+2023,Rama 3115 Elaboración de productos lácteos,159367.861,2289.838
+2023,"Rama 3116 Matanza, empacado y procesamiento de carne de ganado, aves y otros animales comestibles",181564.498,3218.665
+2023,Rama 3117 Preparación y envasado de pescados y mariscos,19641.046,531.771
+2023,Rama 3118 Elaboración de productos de panadería y tortillas,203005.588,2809.074
+2023,Rama 3119 Otras industrias alimentarias,172219.279,1833.898
+2023,Rama 3121 Industria de las bebidas,369867.04,5625.977
+2023,Rama 3122 Industria del tabaco,9027.476,76.911
+2023,"Rama 3131 Preparación e hilado de fibras textiles, y fabricación de hilos",13795.906,1017.794
+2023,Rama 3132 Fabricación de telas,36636.808,1873.971
+2023,Rama 3133 Acabado de productos textiles y fabricación de telas recubiertas,12237.146,308.818
+2023,"Rama 3141 Confección de alfombras, blancos y similares",9666.43,345.794
+2023,"Rama 3149 Fabricación de otros productos textiles, excepto prendas de vestir",13090.377,614.015
+2023,Rama 3151 Fabricación de prendas de vestir de tejido de punto,10593.308,307.092
+2023,Rama 3152 Confección de prendas de vestir,55629.371,1868.258
+2023,Rama 3159 Confección de accesorios de vestir y otras prendas de vestir no clasificados en otra parte,2036.981,29.636
+2023,Rama 3161 Curtido y acabado de cuero y piel,12480.321,356.811
+2023,Rama 3162 Fabricación de calzado,43463.987,800.72
+2023,"Rama 3169 Fabricación de otros productos de cuero, piel y materiales sucedáneos",2919.588,34.765
+2023,Rama 3211 Aserrado y conservación de la madera,4257.679,70.239
+2023,Rama 3212 Fabricación de laminados y aglutinados de madera,4994.833,323.64
+2023,Rama 3219 Fabricación de otros productos de madera,30600.141,401.341
+2023,"Rama 3221 Fabricación de pulpa, papel y cartón",83757.939,3140.924
+2023,Rama 3222 Fabricación de productos de cartón y papel,177068.524,4211.3
+2023,Rama 3231 Impresión e industrias conexas,64908.634,1409.241
+2023,Rama 3241 Fabricación de productos derivados del petróleo y del carbón,1031151.355,1250.65
+2023,Rama 3251 Fabricación de productos químicos básicos,241048.137,3115.619
+2023,"Rama 3252 Fabricación de resinas y hules sintéticos, y fibras químicas",104556.406,2603.573
+2023,"Rama 3253 Fabricación de fertilizantes, plaguicidas y otros agroquímicos",53678.297,656.481
+2023,Rama 3254 Fabricación de productos farmacéuticos,126566.121,2068.507
+2023,"Rama 3255 Fabricación de pinturas, recubrimientos y adhesivos",67452.271,621.248
+2023,"Rama 3256 Fabricación de jabones, limpiadores y preparaciones de tocador",119824.606,1628.351
+2023,Rama 3259 Fabricación de otros productos químicos,38558.831,811.886
+2023,Rama 3261 Fabricación de productos de plástico,374856.648,17034.17
+2023,Rama 3262 Fabricación de productos de hule,74341.86,2973.601
+2023,Rama 3271 Fabricación de productos a base de arcillas y minerales refractarios,38747.028,1770.426
+2023,Rama 3272 Fabricación de vidrio y productos de vidrio,82307.774,3885.847
+2023,"Rama 3273 Fabricación de cemento, concreto y sus productos",145802.098,2967.877
+2023,"Rama 3274 Fabricación de cal, yeso y productos de yeso",13569.383,490.606
+2023,Rama 3279 Fabricación de otros productos a base de minerales no metálicos,13522.708,388.546
+2023,Rama 3311 Industria básica del hierro y del acero,113031.487,7674.602
+2023,Rama 3312 Fabricación de productos de hierro y acero,293312.143,5831.55
+2023,Rama 3313 Industria básica del aluminio,46438.12,1125.308
+2023,"Rama 3314 Industrias de metales no ferrosos, excepto aluminio",120852.046,4468.36
+2023,Rama 3315 Moldeo por fundición de piezas metálicas,39596.574,2710.979
+2023,Rama 3321 Fabricación de productos metálicos forjados y troquelados,22628.2,466.936
+2023,Rama 3322 Fabricación de herramientas de mano sin motor y utensilios de cocina metálicos,46049.911,1026.489
+2023,Rama 3323 Fabricación de estructuras metálicas y productos de herrería,64932.699,1093.037
+2023,"Rama 3324 Fabricación de calderas, tanques y envases metálicos",44303.663,853.195
+2023,Rama 3325 Fabricación de herrajes y cerraduras,12051.557,374.111
+2023,"Rama 3326 Fabricación de alambre, productos de alambre y resortes",37572.294,908.153
+2023,Rama 3327 Maquinado de piezas y fabricación de tornillos,36978.911,896.081
+2023,Rama 3328 Recubrimientos y terminados metálicos,77605.904,1858.928
+2023,Rama 3329 Fabricación de otros productos metálicos,55696.689,1455.459
+2023,"Rama 3331 Fabricación de maquinaria y equipo agropecuario, para la construcción y para la industria extractiva",33935.088,1441.277
+2023,"Rama 3332 Fabricación de maquinaria y equipo para las industrias manufactureras, excepto la metalmecánica",11736.389,168.55
+2023,Rama 3333 Fabricación de maquinaria y equipo para el comercio y los servicios,4238.448,130.933
+2023,"Rama 3334 Fabricación de equipo de aire acondicionado, calefacción, y de refrigeración industrial y comercial",72554.566,1626.589
+2023,Rama 3335 Fabricación de maquinaria y equipo para la industria metalmecánica,11376.672,239.197
+2023,"Rama 3336 Fabricación de motores de combustión interna, turbinas y transmisiones",27320.722,718.57
+2023,Rama 3339 Fabricación de otra maquinaria y equipo para la industria en general,52185.7,959.407
+2023,Rama 3341 Fabricación de computadoras y equipo periférico,22066.054,933.597
+2023,Rama 3342 Fabricación de equipo de comunicación,14791.471,1278.951
+2023,Rama 3343 Fabricación de equipo de audio y de video,14914.405,2043.757
+2023,Rama 3344 Fabricación de componentes electrónicos,58363.405,5432.045
+2023,"Rama 3345 Fabricación de instrumentos de medición, control, navegación, y equipo médico electrónico",18051.254,670.831
+2023,Rama 3346 Fabricación y reproducción de medios magnéticos y ópticos,4081.301,74.515
+2023,Rama 3351 Fabricación de accesorios de iluminación,8011.881,545.466
+2023,Rama 3352 Fabricación de aparatos eléctricos de uso doméstico,107741.88,1593.401
+2023,Rama 3353 Fabricación de equipo de generación y distribución de energía eléctrica,68664.502,2586.419
+2023,Rama 3359 Fabricación de otros equipos y accesorios eléctricos,110276.854,4053.811
+2023,Rama 3361 Fabricación de automóviles y camiones,1478909.133,4984.664
+2023,Rama 3362 Fabricación de carrocerías y remolques,38077.307,860.636
+2023,Rama 3363 Fabricación de partes para vehículos automotores,1139409.533,28550.505
+2023,Rama 3364 Fabricación de equipo aeroespacial,21895.862,989.297
+2023,Rama 3365 Fabricación de equipo ferroviario,46051.035,596.974
+2023,Rama 3366 Fabricación de embarcaciones,5844.505,88.529
+2023,Rama 3369 Fabricación de otro equipo de transporte,26231.951,372.77
+2023,"Rama 3371 Fabricación de muebles, excepto de oficina y estantería",33624.549,611.719
+2023,Rama 3372 Fabricación de muebles de oficina y estantería,15330.016,226.526
+2023,"Rama 3379 Fabricación de colchones, persianas y cortineros",12621.841,193.086
+2023,Rama 4311 Comercio al por mayor de abarrotes y alimentos,1132800.288,6352.325
+2023,"Rama 4312 Comercio al por mayor de bebidas, hielo y tabaco",508185.915,1720.034
+2023,Rama 4321 Comercio al por mayor de productos textiles y calzado,79620.161,505.108
+2023,Rama 4331 Comercio al por mayor de productos farmacéuticos,168027.853,247.705
+2023,"Rama 4332 Comercio al por mayor de artículos de perfumería, cosméticos y joyería",26335.292,128.664
+2023,"Rama 4333 Comercio al por mayor de grabaciones de audio y video en medios físicos, juguetes y artículos deportivos",20428.652,38.501
+2023,"Rama 4334 Comercio al por mayor de artículos de papelería, libros, revistas y periódicos",32129.283,94.929
+2023,Rama 4335 Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,80858.17,628.544
+2023,Rama 4341 Comercio al por mayor de materias primas agropecuarias y forestales,222929.089,735.533
+2023,Rama 4342 Comercio al por mayor de materias primas para la industria,2832595.784,8038.734
+2023,Rama 4343 Comercio al por mayor de materiales de desecho,75559.554,497.179
+2023,"Rama 4351 Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca",57655.172,324.556
+2023,Rama 4352 Comercio al por mayor de maquinaria y equipo para la industria,176469.81,476.368
+2023,Rama 4353 Comercio al por mayor de maquinaria y equipo para los servicios y para actividades comerciales,235781.893,1340.606
+2023,"Rama 4354 Comercio al por mayor de mobiliario y equipo de cómputo y de oficina, y de otra maquinaria y equipo de uso general",198040.742,658.924
+2023,"Rama 4361 Comercio al por mayor de camiones y de partes y refacciones nuevas para automóviles, camionetas y camiones",143565.217,473.806
+2023,Rama 4373 Intermediación de comercio al por mayor,1286.541,22.914
+2023,Rama 4611 Comercio al por menor de abarrotes y alimentos,764732.842,13178.562
+2023,"Rama 4612 Comercio al por menor de bebidas, hielo y tabaco",84284.898,1262.117
+2023,Rama 4621 Comercio al por menor en tiendas de autoservicio,1742929.015,16034.914
+2023,Rama 4622 Comercio al por menor en tiendas departamentales,292595.58,3093.414
+2023,"Rama 4631 Comercio al por menor de productos textiles, excepto ropa",27616.852,330.93
+2023,"Rama 4632 Comercio al por menor de ropa, bisutería y accesorios de vestir",197000.968,2870.794
+2023,Rama 4633 Comercio al por menor de calzado,68049.817,697.68
+2023,Rama 4641 Comercio al por menor de artículos para el cuidado de la salud,311561.575,3163.18
+2023,Rama 4651 Comercio al por menor de artículos de perfumería y joyería,52366.674,478.031
+2023,Rama 4652 Comercio al por menor de artículos para el esparcimiento,90008.933,688.111
+2023,"Rama 4653 Comercio al por menor de artículos de papelería, libros, revistas y periódicos",56080.395,727.575
+2023,"Rama 4659 Comercio al por menor de mascotas y sus accesorios, regalos, artículos religiosos, desechables, artesanías y otros artículos de uso personal",71549.37,971.986
+2023,Rama 4661 Comercio al por menor de muebles para el hogar y otros enseres domésticos,136960.029,1468.706
+2023,"Rama 4662 Comercio al por menor de mobiliario, equipo y accesorios de cómputo, teléfonos y otros aparatos de comunicación",156685.292,706.386
+2023,Rama 4663 Comercio al por menor de artículos para la decoración de interiores,30822.658,356.109
+2023,Rama 4664 Comercio al por menor de artículos usados,6648.454,98.94
+2023,"Rama 4671 Comercio al por menor de artículos de ferretería, tlapalería y vidrios",375501.193,1838.529
+2023,Rama 4681 Comercio al por menor de automóviles y camionetas,646513.709,1516.298
+2023,"Rama 4682 Comercio al por menor de partes y refacciones para automóviles, camionetas y camiones",223372.115,1058.889
+2023,Rama 4683 Comercio al por menor de motocicletas y otros vehículos de motor,39808.454,213.087
+2023,"Rama 4684 Comercio al por menor de combustibles, aceites y grasas lubricantes",1233050.163,3117.206
+2023,"Rama 4691 Intermediación de comercio al por menor, y comercio al por menor a través de catálogos impresos, televisión y similares",9583.667,663.469
+2023,Rama 4811 Transporte aéreo regular,99686.122,62.372
+2023,Rama 4812 Transporte aéreo no regular,6867.064,19.717
+2023,Rama 4821 Transporte por ferrocarril,,
+2023,Rama 4831 Transporte marítimo,25211.686,233.05
+2023,Rama 4832 Transporte por aguas interiores,364.418,4.751
+2023,Rama 4841 Autotransporte de carga general,86225.996,1776.62
+2023,Rama 4842 Autotransporte de carga especializado,56016.366,898.984
+2023,Rama 4851 Transporte colectivo urbano y suburbano de pasajeros de ruta fija,26559.874,418.049
+2023,Rama 4852 Transporte colectivo foráneo de pasajeros de ruta fija,41718.168,207.144
+2023,Rama 4853 Servicio de taxis y limusinas,1081.28,39.295
+2023,Rama 4854 Transporte escolar y de personal,7525.418,175.189
+2023,Rama 4855 Alquiler de autobuses con chofer,2930.579,45.37
+2023,Rama 4859 Otro transporte terrestre de pasajeros,1489.089,10.839
+2023,Rama 4862 Transporte de gas natural por ductos,,
+2023,Rama 4869 Transporte por ductos de otros productos,,
+2023,Rama 4871 Transporte turístico por tierra,1109.609,16.51
+2023,Rama 4872 Transporte turístico por agua,2441.911,56.005
+2023,Rama 4879 Otro transporte turístico,180.115,0.346
+2023,Rama 4881 Servicios relacionados con el transporte aéreo,10886.021,958.541
+2023,Rama 4882 Servicios relacionados con el transporte por ferrocarril,705.603,13.155
+2023,Rama 4883 Servicios relacionados con el transporte por agua,8934.243,791.829
+2023,Rama 4884 Servicios relacionados con el transporte por carretera,12476.135,172.541
+2023,Rama 4885 Servicios de intermediación para el transporte de carga,91988.752,1568.491
+2023,Rama 4889 Otros servicios relacionados con el transporte,769.683,43.939
+2023,Rama 4911 Servicios postales,,
+2023,Rama 4921 Servicios de mensajería y paquetería foránea,12279.747,272.428
+2023,Rama 4922 Servicios de mensajería y paquetería local,1281.939,45.346
+2023,Rama 4931 Servicios de almacenamiento,13183.689,396.939
+2023,Rama 5121 Industria fílmica y del video,27921.82,863.875
+2023,Rama 5122 Industria del sonido,617.044,7.245
+2023,"Rama 5131 Edición de periódicos, revistas, libros, directorios y otros materiales",9926.408,104.104
+2023,Rama 5132 Edición de software,1733.991,8.58
+2023,Rama 5161 Estaciones de transmisión de programas de radio y televisión,27007.611,184.792
+2023,"Rama 5162 Servicios de distribución de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisión y otros proveedores de contenido",631.123,8.99
+2023,Rama 5173 Operadores de servicios de telecomunicaciones alámbricas e inalámbricas,379441.549,3646.108
+2023,Rama 5174 Operadores de servicios de telecomunicaciones vía satélite,1676.286,6.92
+2023,Rama 5179 Otros servicios de telecomunicaciones,4785.509,78.7
+2023,"Rama 5182 Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados",5515.8,37.819
+2023,"Rama 5192 Bibliotecas, archivos, portales de búsqueda en la red y otros servicios de suministro de información",776.95,6.967
+2023,Rama 5211 Banca central,5785.762,38.163
+2023,Rama 5221 Banca múltiple,170271.769,2314.247
+2023,Rama 5222 Instituciones financieras de fomento económico,12923.095,303.022
+2023,Rama 5223 Uniones de crédito e instituciones de ahorro,30595.497,450.776
+2023,Rama 5224 Otras instituciones de intermediación crediticia y financiera no bursátil,122388.087,880.712
+2023,Rama 5225 Servicios relacionados con la intermediación crediticia no bursátil,7457.398,18.267
+2023,"Rama 5231 Casas de bolsa, casas de cambio y centros cambiarios",16203.01,93.115
+2023,Rama 5232 Bolsa de valores,508.231,21.142
+2023,Rama 5239 Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,2390.278,15.353
+2023,Rama 5241 Compañías de seguros y fianzas,23010.227,184.762
+2023,"Rama 5242 Servicios relacionados con los seguros y las fianzas, y administración de fondos para el retiro",14776.626,140.482
+2023,Rama 5311 Alquiler sin intermediación de bienes raíces,20907.944,1611.198
+2023,Rama 5312 Inmobiliarias y corredores de bienes raíces,38104.817,1774.445
+2023,Rama 5313 Servicios relacionados con los servicios inmobiliarios,16520.488,1294.104
+2023,"Rama 5321 Alquiler de automóviles, camiones y otros transportes terrestres",14589.208,189.283
+2023,Rama 5322 Alquiler de artículos para el hogar y personales,3547.499,81.074
+2023,Rama 5323 Centros generales de alquiler,1152.045,25.528
+2023,"Rama 5324 Alquiler de maquinaria y equipo agropecuario, pesquero, industrial, comercial y de servicios",24183.089,522.646
+2023,"Rama 5331 Servicios de alquiler de marcas registradas, patentes y franquicias",590.17,1.115
+2023,Rama 5411 Servicios legales,15255.225,379.654
+2023,"Rama 5412 Servicios de contabilidad, auditoría y servicios relacionados",12118.387,295.61
+2023,"Rama 5413 Servicios de arquitectura, ingeniería y actividades relacionadas",22755.91,304.557
+2023,Rama 5414 Diseño especializado,4557.023,86.062
+2023,Rama 5415 Servicios de diseño de sistemas de cómputo y servicios relacionados,20219.898,178.111
+2023,"Rama 5416 Servicios de consultoría administrativa, científica y técnica",19204.202,261.581
+2023,Rama 5417 Servicios de investigación científica y desarrollo,1461.282,52.937
+2023,Rama 5418 Servicios de publicidad y actividades relacionadas,11908.088,166.242
+2023,"Rama 5419 Otros servicios profesionales, científicos y técnicos",8802.97,222.839
+2023,Rama 5511 Dirección y administración de grupos empresariales o corporativos,85451.471,2682.313
+2023,Rama 5611 Servicios de administración de negocios,27664.016,1145.012
+2023,Rama 5612 Servicios integrales de apoyo a los negocios en instalaciones,3781.673,163.734
+2023,Rama 5613 Servicios de empleo,17136.129,467.606
+2023,"Rama 5614 Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",23610.611,2494.033
+2023,Rama 5615 Agencias de viajes y servicios de reservaciones,21130.627,268.755
+2023,"Rama 5616 Servicios de investigación, protección y seguridad",37746.094,583.325
+2023,Rama 5617 Servicios de limpieza,7178.872,60.465
+2023,Rama 5619 Otros servicios de apoyo a los negocios,8505.277,160.323
+2023,Rama 5621 Recolección de residuos,8980.132,73.671
+2023,Rama 5622 Tratamiento y disposición final de residuos,2925.715,278.328
+2023,"Rama 5629 Servicios de remediación, recuperación, y otros servicios de manejo de residuos",4655.505,43.139
+2023,"Rama 6111 Escuelas de educación básica, media y para necesidades especiales",26894.738,1276.375
+2023,Rama 6112 Escuelas de educación técnica superior,394.36,12.551
+2023,Rama 6113 Escuelas de educación superior,39227.276,1242.775
+2023,"Rama 6114 Escuelas comerciales, de computación y de capacitación para ejecutivos",782.991,27.435
+2023,Rama 6115 Escuelas de oficios,964.4,45.265
+2023,Rama 6116 Otros servicios educativos,5549.281,252.326
+2023,Rama 6117 Servicios de apoyo a la educación,183.542,5.866
+2023,Rama 6211 Consultorios médicos,20295.023,690.107
+2023,Rama 6212 Consultorios dentales,16310.523,581.462
+2023,Rama 6213 Otros consultorios para el cuidado de la salud,8109.021,272.422
+2023,Rama 6214 Centros para la atención de pacientes que no requieren hospitalización,4871.315,115.873
+2023,Rama 6215 Laboratorios médicos y de diagnóstico,20046.979,612.862
+2023,Rama 6216 Servicios de enfermería a domicilio,214.736,2.621
+2023,"Rama 6219 Servicios de ambulancias, de bancos de órganos y otros servicios auxiliares al tratamiento médico",1355.558,33.042
+2023,Rama 6221 Hospitales generales,41047.856,554.086
+2023,Rama 6222 Hospitales psiquiátricos y para el tratamiento por adicción,107.963,3.126
+2023,Rama 6223 Hospitales de otras especialidades médicas,10154.126,164.261
+2023,"Rama 6231 Residencias con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",83.083,3.876
+2023,"Rama 6232 Residencias para el cuidado de personas con problemas de retardo mental, trastorno mental y adicciones",554.024,28.651
+2023,Rama 6233 Asilos y otras residencias para el cuidado de ancianos,1157.344,53.209
+2023,Rama 6239 Orfanatos y otras residencias de asistencia social,769.537,36.223
+2023,Rama 6241 Servicios de orientación y trabajo social,1306.28,70.24
+2023,"Rama 6242 Servicios comunitarios de alimentación, refugio y emergencia",338.443,12.988
+2023,"Rama 6243 Servicios de capacitación para el trabajo para personas desempleadas, subempleadas o con discapacidad",25.042,0.663
+2023,Rama 6244 Guarderías,3228.841,114.869
+2023,Rama 7111 Compañías y grupos de espectáculos artísticos y culturales,603.986,10.995
+2023,Rama 7112 Deportistas y equipos deportivos profesionales,7116.331,121.07
+2023,"Rama 7113 Promotores de espectáculos artísticos, culturales, deportivos y similares",6552.25,127.572
+2023,"Rama 7114 Agentes y representantes de artistas, deportistas y similares",216.5,4.571
+2023,"Rama 7115 Artistas, escritores y técnicos independientes",138.023,2.778
+2023,"Rama 7121 Museos, sitios históricos, zoológicos y similares",2040.749,173.027
+2023,Rama 7131 Parques con instalaciones recreativas y casas de juegos electrónicos,7121.475,410.076
+2023,"Rama 7132 Casinos, loterías y otros juegos de azar",13431.688,879.848
+2023,Rama 7139 Otros servicios recreativos,21971.976,1588.561
+2023,"Rama 7211 Hoteles, moteles y similares",129765.296,6774.653
+2023,Rama 7212 Campamentos y albergues recreativos,342.741,17.155
+2023,"Rama 7213 Pensiones y casas de huéspedes, y departamentos y casas amueblados con servicios de hotelería",1507.836,126.032
+2023,Rama 7223 Servicios de preparación de alimentos por encargo,9475.525,150.189
+2023,"Rama 7224 Centros nocturnos, bares, cantinas y similares",19844.928,630.65
+2023,Rama 7225 Servicios de preparación de alimentos y bebidas alcohólicas y no alcohólicas,396663.936,10236.856
+2023,Rama 8111 Reparación y mantenimiento de automóviles y camiones,65921.269,1603.568
+2023,Rama 8112 Reparación y mantenimiento de equipo electrónico y de equipo de precisión,8334.493,142.04
+2023,"Rama 8113 Reparación y mantenimiento de maquinaria y equipo agropecuario, industrial, comercial y de servicios",22704.456,310.627
+2023,Rama 8114 Reparación y mantenimiento de artículos para el hogar y personales,12721.712,275.797
+2023,"Rama 8121 Salones y clínicas de belleza, baños públicos y bolerías",29908.482,1285.629
+2023,Rama 8122 Lavanderías y tintorerías,8188.136,626.389
+2023,Rama 8123 Servicios funerarios y administración de cementerios,7748.673,206.663
+2023,Rama 8124 Estacionamientos y pensiones para vehículos automotores,5063.334,148.647
+2023,Rama 8129 Servicios de revelado e impresión de fotografías y otros servicios personales,1536.25,60.12
+2023,"Rama 8131 Asociaciones y organizaciones comerciales, laborales, profesionales y recreativas",7166.426,216.464
+2023,"Rama 8132 Asociaciones y organizaciones religiosas, políticas y civiles",6346.097,441.493
+2018,Rama 1125 Acuicultura,7044.728,156.529
+2018,Rama 1141 Pesca,13216.553,168.351
+2018,Rama 1151 Servicios relacionados con la agricultura,4150.886,126.329
+2018,Rama 1152 Servicios relacionados con la cría y explotación de animales,,
+2018,Rama 1153 Servicios relacionados con el aprovechamiento forestal,,
+2018,Rama 2111 Extracción de petróleo y gas,137261.231,862.128
+2018,Rama 2121 Minería de carbón mineral,6780.084,532.713
+2018,Rama 2122 Minería de minerales metálicos,109291.742,16788.492
+2018,Rama 2123 Minería de minerales no metálicos,15094.729,1046.427
+2018,Rama 2131 Servicios relacionados con la minería,18972.072,1297.131
+2018,"Rama 2211 Generación, transmisión, distribución y comercialización de energía eléctrica",593493.88,32603.91
+2018,Rama 2212 Suministro de gas natural por ductos al consumidor final,15569.946,16.465
+2018,"Rama 2213 Captación, tratamiento y suministro de agua",34943.958,15516.533
+2018,Rama 2361 Edificación residencial,72212.069,268.995
+2018,Rama 2362 Edificación no residencial,97838.931,273.72
+2018,"Rama 2371 Construcción de obras para el suministro de agua, petróleo, gas, energía eléctrica y telecomunicaciones",49283.379,158.413
+2018,Rama 2372 División de terrenos y construcción de obras de urbanización,23207.873,67.968
+2018,Rama 2373 Construcción de vías de comunicación,54918.774,145.269
+2018,Rama 2379 Otras construcciones de ingeniería civil,7661.346,20.243
+2018,"Rama 2381 Cimentaciones, montaje de estructuras prefabricadas y trabajos en exteriores",6531.529,38.3
+2018,Rama 2382 Instalaciones y equipamiento en construcciones,19435.831,62.938
+2018,Rama 2383 Trabajos de acabados en edificaciones,2731.529,12.235
+2018,Rama 2389 Otros trabajos especializados para la construcción,12646.704,49.646
+2018,Rama 3111 Elaboración de alimentos balanceados para animales,131523.404,1250.357
+2018,Rama 3112 Molienda de granos y de semillas y obtención de aceites y grasas,194241.094,3325.464
+2018,"Rama 3113 Elaboración de azúcares, chocolates, dulces y similares",116157.535,1384.968
+2018,"Rama 3114 Conservación de frutas, verduras, guisos y otros alimentos preparados",70128.152,1300.593
+2018,Rama 3115 Elaboración de productos lácteos,162533.013,2841.809
+2018,"Rama 3116 Matanza, empacado y procesamiento de carne de ganado, aves y otros animales comestibles",162472.927,2169.735
+2018,Rama 3117 Preparación y envasado de pescados y mariscos,16810.051,304.948
+2018,Rama 3118 Elaboración de productos de panadería y tortillas,131013.843,3813.609
+2018,Rama 3119 Otras industrias alimentarias,125507.763,1441.527
+2018,Rama 3121 Industria de las bebidas,235247.644,4238.866
+2018,Rama 3122 Industria del tabaco,6154.035,34.797
+2018,"Rama 3131 Preparación e hilado de fibras textiles, y fabricación de hilos",12416.174,1164.205
+2018,Rama 3132 Fabricación de telas,35905.944,2504.771
+2018,Rama 3133 Acabado de productos textiles y fabricación de telas recubiertas,11381.374,300.916
+2018,"Rama 3141 Confección de alfombras, blancos y similares",9355.131,156.537
+2018,"Rama 3149 Fabricación de otros productos textiles, excepto prendas de vestir",12574.951,523.485
+2018,Rama 3151 Fabricación de prendas de vestir de tejido de punto,12401.509,255.266
+2018,Rama 3152 Confección de prendas de vestir,60292.255,1512.594
+2018,Rama 3159 Confección de accesorios de vestir y otras prendas de vestir no clasificados en otra parte,1297.101,24.934
+2018,Rama 3161 Curtido y acabado de cuero y piel,12959.872,278.328
+2018,Rama 3162 Fabricación de calzado,31906.168,519.745
+2018,"Rama 3169 Fabricación de otros productos de cuero, piel y materiales sucedáneos",2325.052,45.978
+2018,Rama 3211 Aserrado y conservación de la madera,3054.378,66.958
+2018,Rama 3212 Fabricación de laminados y aglutinados de madera,4982.945,176.595
+2018,Rama 3219 Fabricación de otros productos de madera,20220.601,355.229
+2018,"Rama 3221 Fabricación de pulpa, papel y cartón",67402.771,2544.185
+2018,Rama 3222 Fabricación de productos de cartón y papel,136690.169,2507.71
+2018,Rama 3231 Impresión e industrias conexas,50829.187,1175.028
+2018,Rama 3241 Fabricación de productos derivados del petróleo y del carbón,842929.094,9874.9
+2018,Rama 3251 Fabricación de productos químicos básicos,294138.996,3203.831
+2018,"Rama 3252 Fabricación de resinas y hules sintéticos, y fibras químicas",120570.142,2789.304
+2018,"Rama 3253 Fabricación de fertilizantes, plaguicidas y otros agroquímicos",44387.878,996.036
+2018,Rama 3254 Fabricación de productos farmacéuticos,117983.66,1833.739
+2018,"Rama 3255 Fabricación de pinturas, recubrimientos y adhesivos",52729.267,593.639
+2018,"Rama 3256 Fabricación de jabones, limpiadores y preparaciones de tocador",97782.567,1118.523
+2018,Rama 3259 Fabricación de otros productos químicos,33603.373,972.857
+2018,Rama 3261 Fabricación de productos de plástico,288829.108,10526.511
+2018,Rama 3262 Fabricación de productos de hule,56852.841,1754.68
+2018,Rama 3271 Fabricación de productos a base de arcillas y minerales refractarios,31031.358,1480.64
+2018,Rama 3272 Fabricación de vidrio y productos de vidrio,62601.601,2879.873
+2018,"Rama 3273 Fabricación de cemento, concreto y sus productos",85493.686,1943.228
+2018,"Rama 3274 Fabricación de cal, yeso y productos de yeso",11633.532,415.651
+2018,Rama 3279 Fabricación de otros productos a base de minerales no metálicos,13322.027,373.492
+2018,Rama 3311 Industria básica del hierro y del acero,157923.973,5806.881
+2018,Rama 3312 Fabricación de productos de hierro y acero,159076.653,4709.979
+2018,Rama 3313 Industria básica del aluminio,38203.194,654.556
+2018,"Rama 3314 Industrias de metales no ferrosos, excepto aluminio",128329.218,2222.905
+2018,Rama 3315 Moldeo por fundición de piezas metálicas,36607.284,1297.659
+2018,Rama 3321 Fabricación de productos metálicos forjados y troquelados,16325.358,476.116
+2018,Rama 3322 Fabricación de herramientas de mano sin motor y utensilios de cocina metálicos,32275.693,478.021
+2018,Rama 3323 Fabricación de estructuras metálicas y productos de herrería,40941.112,678.628
+2018,"Rama 3324 Fabricación de calderas, tanques y envases metálicos",34519.51,1106.694
+2018,Rama 3325 Fabricación de herrajes y cerraduras,13000.387,311.363
+2018,"Rama 3326 Fabricación de alambre, productos de alambre y resortes",22935.011,1007.265
+2018,Rama 3327 Maquinado de piezas y fabricación de tornillos,25122.854,715.883
+2018,Rama 3328 Recubrimientos y terminados metálicos,33626.497,1200.369
+2018,Rama 3329 Fabricación de otros productos metálicos,46221.106,1355.335
+2018,"Rama 3331 Fabricación de maquinaria y equipo agropecuario, para la construcción y para la industria extractiva",44318.02,2280.072
+2018,"Rama 3332 Fabricación de maquinaria y equipo para las industrias manufactureras, excepto la metalmecánica",9735.457,133.802
+2018,Rama 3333 Fabricación de maquinaria y equipo para el comercio y los servicios,3687.04,82.445
+2018,"Rama 3334 Fabricación de equipo de aire acondicionado, calefacción, y de refrigeración industrial y comercial",64113.421,1097.706
+2018,Rama 3335 Fabricación de maquinaria y equipo para la industria metalmecánica,7240.989,181.395
+2018,"Rama 3336 Fabricación de motores de combustión interna, turbinas y transmisiones",24616.685,1026.111
+2018,Rama 3339 Fabricación de otra maquinaria y equipo para la industria en general,42513.34,770.778
+2018,Rama 3341 Fabricación de computadoras y equipo periférico,14220.852,856.632
+2018,Rama 3342 Fabricación de equipo de comunicación,15512.815,1183.188
+2018,Rama 3343 Fabricación de equipo de audio y de video,11181.738,1062.446
+2018,Rama 3344 Fabricación de componentes electrónicos,40731.023,3259.038
+2018,"Rama 3345 Fabricación de instrumentos de medición, control, navegación, y equipo médico electrónico",14992.875,380.616
+2018,Rama 3346 Fabricación y reproducción de medios magnéticos y ópticos,4281.62,88.639
+2018,Rama 3351 Fabricación de accesorios de iluminación,7088.936,412.156
+2018,Rama 3352 Fabricación de aparatos eléctricos de uso doméstico,109423.226,1473.985
+2018,Rama 3353 Fabricación de equipo de generación y distribución de energía eléctrica,43327.681,1606.412
+2018,Rama 3359 Fabricación de otros equipos y accesorios eléctricos,79010.404,2429.321
+2018,Rama 3361 Fabricación de automóviles y camiones,1273269.995,10502.193
+2018,Rama 3362 Fabricación de carrocerías y remolques,25030.282,763.207
+2018,Rama 3363 Fabricación de partes para vehículos automotores,977485.722,25690.564
+2018,Rama 3364 Fabricación de equipo aeroespacial,17984.7,957.658
+2018,Rama 3365 Fabricación de equipo ferroviario,31979.319,922.492
+2018,Rama 3366 Fabricación de embarcaciones,7839.497,82.582
+2018,Rama 3369 Fabricación de otro equipo de transporte,10899.096,149.581
+2018,"Rama 3371 Fabricación de muebles, excepto de oficina y estantería",28512.265,580.491
+2018,Rama 3372 Fabricación de muebles de oficina y estantería,11305.233,245.532
+2018,"Rama 3379 Fabricación de colchones, persianas y cortineros",9995.184,140.402
+2018,Rama 4311 Comercio al por mayor de abarrotes y alimentos,613090.207,3762.398
+2018,"Rama 4312 Comercio al por mayor de bebidas, hielo y tabaco",233092.318,685.41
+2018,Rama 4321 Comercio al por mayor de productos textiles y calzado,62740.789,195.852
+2018,Rama 4331 Comercio al por mayor de productos farmacéuticos,126797.932,383.713
+2018,"Rama 4332 Comercio al por mayor de artículos de perfumería, cosméticos y joyería",23810.539,95.066
+2018,"Rama 4333 Comercio al por mayor de grabaciones de audio y video en medios físicos, juguetes y artículos deportivos",13891.939,33.075
+2018,"Rama 4334 Comercio al por mayor de artículos de papelería, libros, revistas y periódicos",28091.509,126.335
+2018,Rama 4335 Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,61099.917,37.479
+2018,Rama 4341 Comercio al por mayor de materias primas agropecuarias y forestales,157379.05,333.31
+2018,Rama 4342 Comercio al por mayor de materias primas para la industria,2624687.673,3003.321
+2018,Rama 4343 Comercio al por mayor de materiales de desecho,57500.045,346.622
+2018,"Rama 4351 Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca",41446.267,102.011
+2018,Rama 4352 Comercio al por mayor de maquinaria y equipo para la industria,97774.293,324.46
+2018,Rama 4353 Comercio al por mayor de maquinaria y equipo para los servicios y para actividades comerciales,152520.027,432.136
+2018,"Rama 4354 Comercio al por mayor de mobiliario y equipo de cómputo y de oficina, y de otra maquinaria y equipo de uso general",140471.58,374.59
+2018,"Rama 4361 Comercio al por mayor de camiones y de partes y refacciones nuevas para automóviles, camionetas y camiones",69410.639,357.531
+2018,Rama 4373 Intermediación de comercio al por mayor,558.138,17.884
+2018,Rama 4611 Comercio al por menor de abarrotes y alimentos,442969.806,9630.056
+2018,"Rama 4612 Comercio al por menor de bebidas, hielo y tabaco",60620.23,1423.623
+2018,Rama 4621 Comercio al por menor en tiendas de autoservicio,1091760.513,15111.012
+2018,Rama 4622 Comercio al por menor en tiendas departamentales,218152.457,2632.226
+2018,"Rama 4631 Comercio al por menor de productos textiles, excepto ropa",26076.32,334.145
+2018,"Rama 4632 Comercio al por menor de ropa, bisutería y accesorios de vestir",134365.763,1551.994
+2018,Rama 4633 Comercio al por menor de calzado,59594.26,621.51
+2018,Rama 4641 Comercio al por menor de artículos para el cuidado de la salud,220737.662,2317.369
+2018,Rama 4651 Comercio al por menor de artículos de perfumería y joyería,37148.087,320.931
+2018,Rama 4652 Comercio al por menor de artículos para el esparcimiento,75527.009,443.38
+2018,"Rama 4653 Comercio al por menor de artículos de papelería, libros, revistas y periódicos",47615.172,675.946
+2018,"Rama 4659 Comercio al por menor de mascotas y sus accesorios, regalos, artículos religiosos, desechables, artesanías y otros artículos de uso personal",41348.747,438.15
+2018,Rama 4661 Comercio al por menor de muebles para el hogar y otros enseres domésticos,124593.406,1217.646
+2018,"Rama 4662 Comercio al por menor de mobiliario, equipo y accesorios de cómputo, teléfonos y otros aparatos de comunicación",107811.384,454.051
+2018,Rama 4663 Comercio al por menor de artículos para la decoración de interiores,23597.82,241.305
+2018,Rama 4664 Comercio al por menor de artículos usados,7057.8,52.113
+2018,"Rama 4671 Comercio al por menor de artículos de ferretería, tlapalería y vidrios",275231.431,1562.247
+2018,Rama 4681 Comercio al por menor de automóviles y camionetas,439288.23,945.499
+2018,"Rama 4682 Comercio al por menor de partes y refacciones para automóviles, camionetas y camiones",155727.421,759.018
+2018,Rama 4683 Comercio al por menor de motocicletas y otros vehículos de motor,18010.616,67.521
+2018,"Rama 4684 Comercio al por menor de combustibles, aceites y grasas lubricantes",710413.024,1446.767
+2018,"Rama 4691 Intermediación de comercio al por menor, y comercio al por menor a través de catálogos impresos, televisión y similares",1399.587,12.568
+2018,Rama 4811 Transporte aéreo regular,85915.863,37.729
+2018,Rama 4812 Transporte aéreo no regular,4915.752,8.621
+2018,Rama 4821 Transporte por ferrocarril,,
+2018,Rama 4831 Transporte marítimo,5512.548,46.233
+2018,Rama 4832 Transporte por aguas interiores,387.478,1.004
+2018,Rama 4841 Autotransporte de carga general,71449.906,177.877
+2018,Rama 4842 Autotransporte de carga especializado,38707.982,133.708
+2018,Rama 4851 Transporte colectivo urbano y suburbano de pasajeros de ruta fija,32056.528,2913.571
+2018,Rama 4852 Transporte colectivo foráneo de pasajeros de ruta fija,35391.743,27.796
+2018,Rama 4853 Servicio de taxis y limusinas,179.318,0.215
+2018,Rama 4854 Transporte escolar y de personal,5156.781,3.488
+2018,Rama 4855 Alquiler de autobuses con chofer,2506.31,10.256
+2018,Rama 4859 Otro transporte terrestre de pasajeros,1265.577,7.116
+2018,Rama 4862 Transporte de gas natural por ductos,,
+2018,Rama 4869 Transporte por ductos de otros productos,,
+2018,Rama 4871 Transporte turístico por tierra,,
+2018,Rama 4872 Transporte turístico por agua,589.941,3.25
+2018,Rama 4879 Otro transporte turístico,,
+2018,Rama 4881 Servicios relacionados con el transporte aéreo,9728.478,110.215
+2018,Rama 4882 Servicios relacionados con el transporte por ferrocarril,316.232,2.636
+2018,Rama 4883 Servicios relacionados con el transporte por agua,6916.17,47.016
+2018,Rama 4884 Servicios relacionados con el transporte por carretera,11391.589,67.803
+2018,Rama 4885 Servicios de intermediación para el transporte de carga,67507.51,464.354
+2018,Rama 4889 Otros servicios relacionados con el transporte,1279.527,5.412
+2018,Rama 4911 Servicios postales,,
+2018,Rama 4921 Servicios de mensajería y paquetería foránea,11473.984,71.15
+2018,Rama 4922 Servicios de mensajería y paquetería local,149.38,1.86
+2018,Rama 4931 Servicios de almacenamiento,11778.965,174.214
+2018,Rama 5121 Industria fílmica y del video,28458.333,718.974
+2018,Rama 5122 Industria del sonido,1550.144,20.12
+2018,"Rama 5131 Edición de periódicos, revistas, libros, directorios y otros materiales",11543.86,150.733
+2018,Rama 5132 Edición de software,2149.572,7.949
+2018,Rama 5161 Estaciones de transmisión de programas de radio y televisión,26389.868,212.546
+2018,"Rama 5162 Servicios de distribución de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisión y otros proveedores de contenido",1163.059,13.474
+2018,Rama 5173 Operadores de servicios de telecomunicaciones alámbricas e inalámbricas,344107.624,4248.436
+2018,Rama 5174 Operadores de servicios de telecomunicaciones vía satélite,950.008,11.916
+2018,Rama 5179 Otros servicios de telecomunicaciones,5816.383,55.723
+2018,"Rama 5182 Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados",5021.645,63.035
+2018,"Rama 5192 Bibliotecas, archivos, portales de búsqueda en la red y otros servicios de suministro de información",974.95,9.703
+2018,Rama 5211 Banca central,3201.507,31.155
+2018,Rama 5221 Banca múltiple,151012.979,2201.383
+2018,Rama 5222 Instituciones financieras de fomento económico,11043.229,137.802
+2018,Rama 5223 Uniones de crédito e instituciones de ahorro,30742.205,222.334
+2018,Rama 5224 Otras instituciones de intermediación crediticia y financiera no bursátil,109476.612,1089.921
+2018,Rama 5225 Servicios relacionados con la intermediación crediticia no bursátil,10102.785,15.7
+2018,"Rama 5231 Casas de bolsa, casas de cambio y centros cambiarios",7244.191,86.391
+2018,Rama 5232 Bolsa de valores,597.473,14.749
+2018,Rama 5239 Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,2519.712,34.526
+2018,Rama 5241 Compañías de seguros y fianzas,21918.785,923.417
+2018,"Rama 5242 Servicios relacionados con los seguros y las fianzas, y administración de fondos para el retiro",12961.074,204.22
+2018,Rama 5311 Alquiler sin intermediación de bienes raíces,15422.489,516.66
+2018,Rama 5312 Inmobiliarias y corredores de bienes raíces,29794.557,458.781
+2018,Rama 5313 Servicios relacionados con los servicios inmobiliarios,17726.702,468.825
+2018,"Rama 5321 Alquiler de automóviles, camiones y otros transportes terrestres",10815.063,58.638
+2018,Rama 5322 Alquiler de artículos para el hogar y personales,2193.502,62.066
+2018,Rama 5323 Centros generales de alquiler,667.931,12.28
+2018,"Rama 5324 Alquiler de maquinaria y equipo agropecuario, pesquero, industrial, comercial y de servicios",17292.407,165.029
+2018,"Rama 5331 Servicios de alquiler de marcas registradas, patentes y franquicias",507.079,2.262
+2018,Rama 5411 Servicios legales,12773.397,339.914
+2018,"Rama 5412 Servicios de contabilidad, auditoría y servicios relacionados",11379.33,299.974
+2018,"Rama 5413 Servicios de arquitectura, ingeniería y actividades relacionadas",19584.229,219.822
+2018,Rama 5414 Diseño especializado,3481.298,55.066
+2018,Rama 5415 Servicios de diseño de sistemas de cómputo y servicios relacionados,19159.505,230.546
+2018,"Rama 5416 Servicios de consultoría administrativa, científica y técnica",25573.904,278.245
+2018,Rama 5417 Servicios de investigación científica y desarrollo,1589.556,38.883
+2018,Rama 5418 Servicios de publicidad y actividades relacionadas,14215.27,161.225
+2018,"Rama 5419 Otros servicios profesionales, científicos y técnicos",7747.312,180.793
+2018,Rama 5511 Dirección y administración de grupos empresariales o corporativos,97256.177,540.742
+2018,Rama 5611 Servicios de administración de negocios,40953.417,421.94
+2018,Rama 5612 Servicios integrales de apoyo a los negocios en instalaciones,4425.588,54.961
+2018,Rama 5613 Servicios de empleo,67310.237,658.211
+2018,"Rama 5614 Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",19120.225,565.933
+2018,Rama 5615 Agencias de viajes y servicios de reservaciones,23273.752,269.662
+2018,"Rama 5616 Servicios de investigación, protección y seguridad",29363.712,331.668
+2018,Rama 5617 Servicios de limpieza,6909.614,71.127
+2018,Rama 5619 Otros servicios de apoyo a los negocios,14892.609,216.616
+2018,Rama 5621 Recolección de residuos,6129.465,54.093
+2018,Rama 5622 Tratamiento y disposición final de residuos,2357.579,24.904
+2018,"Rama 5629 Servicios de remediación, recuperación, y otros servicios de manejo de residuos",1744.629,19.265
+2018,"Rama 6111 Escuelas de educación básica, media y para necesidades especiales",24480.823,1144.495
+2018,Rama 6112 Escuelas de educación técnica superior,453.339,13.208
+2018,Rama 6113 Escuelas de educación superior,33006.443,1073.234
+2018,"Rama 6114 Escuelas comerciales, de computación y de capacitación para ejecutivos",915.251,29.641
+2018,Rama 6115 Escuelas de oficios,887.987,35.208
+2018,Rama 6116 Otros servicios educativos,5032.281,203.702
+2018,Rama 6117 Servicios de apoyo a la educación,213.255,5.628
+2018,Rama 6211 Consultorios médicos,12028.516,490.592
+2018,Rama 6212 Consultorios dentales,9291.943,387.384
+2018,Rama 6213 Otros consultorios para el cuidado de la salud,4280.883,160.818
+2018,Rama 6214 Centros para la atención de pacientes que no requieren hospitalización,3701.144,60.363
+2018,Rama 6215 Laboratorios médicos y de diagnóstico,13538.733,399.591
+2018,Rama 6216 Servicios de enfermería a domicilio,167.032,4.986
+2018,"Rama 6219 Servicios de ambulancias, de bancos de órganos y otros servicios auxiliares al tratamiento médico",1733.411,23.596
+2018,Rama 6221 Hospitales generales,43724.398,893.493
+2018,Rama 6222 Hospitales psiquiátricos y para el tratamiento por adicción,98.583,1.157
+2018,Rama 6223 Hospitales de otras especialidades médicas,7763.619,193.217
+2018,"Rama 6231 Residencias con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",82.063,3.455
+2018,"Rama 6232 Residencias para el cuidado de personas con problemas de retardo mental, trastorno mental y adicciones",165.576,10.357
+2018,Rama 6233 Asilos y otras residencias para el cuidado de ancianos,738.555,42.772
+2018,Rama 6239 Orfanatos y otras residencias de asistencia social,594.566,37.737
+2018,Rama 6241 Servicios de orientación y trabajo social,1027.43,51.338
+2018,"Rama 6242 Servicios comunitarios de alimentación, refugio y emergencia",270.748,11.061
+2018,"Rama 6243 Servicios de capacitación para el trabajo para personas desempleadas, subempleadas o con discapacidad",61.423,1.414
+2018,Rama 6244 Guarderías,2414.381,104.108
+2018,Rama 7111 Compañías y grupos de espectáculos artísticos y culturales,747.354,9.694
+2018,Rama 7112 Deportistas y equipos deportivos profesionales,8570.098,74.75
+2018,"Rama 7113 Promotores de espectáculos artísticos, culturales, deportivos y similares",4236.967,76.546
+2018,"Rama 7114 Agentes y representantes de artistas, deportistas y similares",627.301,2.082
+2018,"Rama 7115 Artistas, escritores y técnicos independientes",180,3.836
+2018,"Rama 7121 Museos, sitios históricos, zoológicos y similares",2856.05,120.266
+2018,Rama 7131 Parques con instalaciones recreativas y casas de juegos electrónicos,5631.65,276.956
+2018,"Rama 7132 Casinos, loterías y otros juegos de azar",21695.021,4321.184
+2018,Rama 7139 Otros servicios recreativos,18943.891,890.687
+2018,"Rama 7211 Hoteles, moteles y similares",129438.647,3107.922
+2018,Rama 7212 Campamentos y albergues recreativos,297.881,11.295
+2018,"Rama 7213 Pensiones y casas de huéspedes, y departamentos y casas amueblados con servicios de hotelería",1214.698,101.773
+2018,Rama 7223 Servicios de preparación de alimentos por encargo,6522.741,71.886
+2018,"Rama 7224 Centros nocturnos, bares, cantinas y similares",15401.77,598.479
+2018,Rama 7225 Servicios de preparación de alimentos y bebidas alcohólicas y no alcohólicas,259957.732,7478.816
+2018,Rama 8111 Reparación y mantenimiento de automóviles y camiones,45805.053,1224.23
+2018,Rama 8112 Reparación y mantenimiento de equipo electrónico y de equipo de precisión,9043.451,125.687
+2018,"Rama 8113 Reparación y mantenimiento de maquinaria y equipo agropecuario, industrial, comercial y de servicios",25169.605,332.067
+2018,Rama 8114 Reparación y mantenimiento de artículos para el hogar y personales,11858.986,212.538
+2018,"Rama 8121 Salones y clínicas de belleza, baños públicos y bolerías",17153.502,854.697
+2018,Rama 8122 Lavanderías y tintorerías,6439.828,567.037
+2018,Rama 8123 Servicios funerarios y administración de cementerios,5096.92,125.901
+2018,Rama 8124 Estacionamientos y pensiones para vehículos automotores,5494.703,107.623
+2018,Rama 8129 Servicios de revelado e impresión de fotografías y otros servicios personales,1583.596,38.825
+2018,"Rama 8131 Asociaciones y organizaciones comerciales, laborales, profesionales y recreativas",6958.082,227.515
+2018,"Rama 8132 Asociaciones y organizaciones religiosas, políticas y civiles",6217.558,323.185
+2013,Rama 1125 Acuicultura,3423.381,60.918
+2013,Rama 1141 Pesca,7747.784,69.364
+2013,Rama 1151 Servicios relacionados con la agricultura,679.804,27.181
+2013,Rama 1152 Servicios relacionados con la cría y explotación de animales,,
+2013,Rama 1153 Servicios relacionados con el aprovechamiento forestal,,
+2013,Rama 2111 Extracción de petróleo y gas,140420.044,421.99
+2013,Rama 2121 Minería de carbón mineral,3971.151,384.491
+2013,Rama 2122 Minería de minerales metálicos,61193.057,7483.57
+2013,Rama 2123 Minería de minerales no metálicos,9746.594,1106.991
+2013,Rama 2131 Servicios relacionados con la minería,6757.316,83.052
+2013,"Rama 2211 Generación, transmisión, distribución y comercialización de energía eléctrica",199794.429,0
+2013,Rama 2212 Suministro de gas natural por ductos al consumidor final,11558.708,11.209
+2013,"Rama 2213 Captación, tratamiento y suministro de agua",24935.301,9845.36
+2013,Rama 2361 Edificación residencial,49276.5,282.175
+2013,Rama 2362 Edificación no residencial,60897.459,182.085
+2013,"Rama 2371 Construcción de obras para el suministro de agua, petróleo, gas, energía eléctrica y telecomunicaciones",47148.182,328.637
+2013,Rama 2372 División de terrenos y construcción de obras de urbanización,14171.148,59.679
+2013,Rama 2373 Construcción de vías de comunicación,49504.039,201.372
+2013,Rama 2379 Otras construcciones de ingeniería civil,5474.974,21.034
+2013,"Rama 2381 Cimentaciones, montaje de estructuras prefabricadas y trabajos en exteriores",2987.648,16.26
+2013,Rama 2382 Instalaciones y equipamiento en construcciones,4051.104,37.558
+2013,Rama 2383 Trabajos de acabados en edificaciones,1166.787,14.655
+2013,Rama 2389 Otros trabajos especializados para la construcción,4726.017,14.059
+2013,Rama 3111 Elaboración de alimentos balanceados para animales,71726.24,695.395
+2013,Rama 3112 Molienda de granos y de semillas y obtención de aceites y grasas,133524.038,2094.319
+2013,"Rama 3113 Elaboración de azúcares, chocolates, dulces y similares",60706.453,820.882
+2013,"Rama 3114 Conservación de frutas, verduras, guisos y otros alimentos preparados",48706.972,1160.834
+2013,Rama 3115 Elaboración de productos lácteos,105019.068,1483.684
+2013,"Rama 3116 Matanza, empacado y procesamiento de carne de ganado, aves y otros animales comestibles",82781.524,1344.102
+2013,Rama 3117 Preparación y envasado de pescados y mariscos,11134.374,200.047
+2013,Rama 3118 Elaboración de productos de panadería y tortillas,91707.162,2052.177
+2013,Rama 3119 Otras industrias alimentarias,69662.411,965.878
+2013,Rama 3121 Industria de las bebidas,167909.13,3298.176
+2013,Rama 3122 Industria del tabaco,6258.637,91.952
+2013,"Rama 3131 Preparación e hilado de fibras textiles, y fabricación de hilos",9811.209,811.639
+2013,Rama 3132 Fabricación de telas,25772.548,1911.812
+2013,Rama 3133 Acabado de productos textiles y fabricación de telas recubiertas,7204.245,226.05
+2013,"Rama 3141 Confección de alfombras, blancos y similares",5372.546,65.546
+2013,"Rama 3149 Fabricación de otros productos textiles, excepto prendas de vestir",6245.046,330.818
+2013,Rama 3151 Fabricación de prendas de vestir de tejido de punto,7612.242,265.194
+2013,Rama 3152 Confección de prendas de vestir,49152.87,1031.017
+2013,Rama 3159 Confección de accesorios de vestir y otras prendas de vestir no clasificados en otra parte,608.022,17.038
+2013,Rama 3161 Curtido y acabado de cuero y piel,10498.058,257.701
+2013,Rama 3162 Fabricación de calzado,27510.859,462.699
+2013,"Rama 3169 Fabricación de otros productos de cuero, piel y materiales sucedáneos",1834.217,50.42
+2013,Rama 3211 Aserrado y conservación de la madera,1654.489,38.955
+2013,Rama 3212 Fabricación de laminados y aglutinados de madera,3373.75,185.386
+2013,Rama 3219 Fabricación de otros productos de madera,8398.187,215.171
+2013,"Rama 3221 Fabricación de pulpa, papel y cartón",40722.948,2552.725
+2013,Rama 3222 Fabricación de productos de cartón y papel,85212.294,1677.11
+2013,Rama 3231 Impresión e industrias conexas,39606.566,1024.756
+2013,Rama 3241 Fabricación de productos derivados del petróleo y del carbón,901656.627,1065.248
+2013,Rama 3251 Fabricación de productos químicos básicos,253364.719,2890.331
+2013,"Rama 3252 Fabricación de resinas y hules sintéticos, y fibras químicas",85448.18,1790.855
+2013,"Rama 3253 Fabricación de fertilizantes, plaguicidas y otros agroquímicos",29346.648,673.032
+2013,Rama 3254 Fabricación de productos farmacéuticos,123090.682,1166.088
+2013,"Rama 3255 Fabricación de pinturas, recubrimientos y adhesivos",38102.063,352.524
+2013,"Rama 3256 Fabricación de jabones, limpiadores y preparaciones de tocador",94955.238,898.354
+2013,Rama 3259 Fabricación de otros productos químicos,28187.678,334.068
+2013,Rama 3261 Fabricación de productos de plástico,157681.524,7624.929
+2013,Rama 3262 Fabricación de productos de hule,32736.328,1109.086
+2013,Rama 3271 Fabricación de productos a base de arcillas y minerales refractarios,25070.297,1230.547
+2013,Rama 3272 Fabricación de vidrio y productos de vidrio,37373.11,1713.138
+2013,"Rama 3273 Fabricación de cemento, concreto y sus productos",75687.963,1715.879
+2013,"Rama 3274 Fabricación de cal, yeso y productos de yeso",7160.329,311.91
+2013,Rama 3279 Fabricación de otros productos a base de minerales no metálicos,8270.769,254.263
+2013,Rama 3311 Industria básica del hierro y del acero,97955.863,7621.856
+2013,Rama 3312 Fabricación de productos de hierro y acero,95538.766,2786.039
+2013,Rama 3313 Industria básica del aluminio,14082.821,725.646
+2013,"Rama 3314 Industrias de metales no ferrosos, excepto aluminio",89147.581,2661.352
+2013,Rama 3315 Moldeo por fundición de piezas metálicas,16250.615,707.334
+2013,Rama 3321 Fabricación de productos metálicos forjados y troquelados,12262.962,275.267
+2013,Rama 3322 Fabricación de herramientas de mano sin motor y utensilios de cocina metálicos,14776.705,515.473
+2013,Rama 3323 Fabricación de estructuras metálicas y productos de herrería,32412.541,596.513
+2013,"Rama 3324 Fabricación de calderas, tanques y envases metálicos",27092.91,669.548
+2013,Rama 3325 Fabricación de herrajes y cerraduras,6723.076,187.483
+2013,"Rama 3326 Fabricación de alambre, productos de alambre y resortes",19625.334,757.9
+2013,Rama 3327 Maquinado de piezas y fabricación de tornillos,15292.925,684.132
+2013,Rama 3328 Recubrimientos y terminados metálicos,24125.849,886.263
+2013,Rama 3329 Fabricación de otros productos metálicos,41245.752,1641.024
+2013,"Rama 3331 Fabricación de maquinaria y equipo agropecuario, para la construcción y para la industria extractiva",23295.503,388.893
+2013,"Rama 3332 Fabricación de maquinaria y equipo para las industrias manufactureras, excepto la metalmecánica",7059.05,159.456
+2013,Rama 3333 Fabricación de maquinaria y equipo para el comercio y los servicios,3525.741,104.14
+2013,"Rama 3334 Fabricación de equipo de aire acondicionado, calefacción, y de refrigeración industrial y comercial",31857.375,253.509
+2013,Rama 3335 Fabricación de maquinaria y equipo para la industria metalmecánica,3163.704,77.7
+2013,"Rama 3336 Fabricación de motores de combustión interna, turbinas y transmisiones",16290.505,293.851
+2013,Rama 3339 Fabricación de otra maquinaria y equipo para la industria en general,22188.439,431.816
+2013,Rama 3341 Fabricación de computadoras y equipo periférico,13170.635,237.981
+2013,Rama 3342 Fabricación de equipo de comunicación,12362.018,462.825
+2013,Rama 3343 Fabricación de equipo de audio y de video,9513.759,583.129
+2013,Rama 3344 Fabricación de componentes electrónicos,21093.949,1243.47
+2013,"Rama 3345 Fabricación de instrumentos de medición, control, navegación, y equipo médico electrónico",4645.917,161.222
+2013,Rama 3346 Fabricación y reproducción de medios magnéticos y ópticos,4805.376,64.491
+2013,Rama 3351 Fabricación de accesorios de iluminación,5061.067,194.667
+2013,Rama 3352 Fabricación de aparatos eléctricos de uso doméstico,51721.691,1284.806
+2013,Rama 3353 Fabricación de equipo de generación y distribución de energía eléctrica,30548.103,1139.983
+2013,Rama 3359 Fabricación de otros equipos y accesorios eléctricos,55159.361,1172.638
+2013,Rama 3361 Fabricación de automóviles y camiones,632975.546,1337.176
+2013,Rama 3362 Fabricación de carrocerías y remolques,16427.663,191.336
+2013,Rama 3363 Fabricación de partes para vehículos automotores,459700.663,9731.366
+2013,Rama 3364 Fabricación de equipo aeroespacial,9045.783,564.285
+2013,Rama 3365 Fabricación de equipo ferroviario,14810.273,53.5
+2013,Rama 3366 Fabricación de embarcaciones,4650.042,56.285
+2013,Rama 3369 Fabricación de otro equipo de transporte,4396.775,116.839
+2013,"Rama 3371 Fabricación de muebles, excepto de oficina y estantería",18884.737,606.97
+2013,Rama 3372 Fabricación de muebles de oficina y estantería,8116.6,227.278
+2013,"Rama 3379 Fabricación de colchones, persianas y cortineros",6247.644,83.834
+2013,Rama 4311 Comercio al por mayor de abarrotes y alimentos,614722.233,2150.36
+2013,"Rama 4312 Comercio al por mayor de bebidas, hielo y tabaco",174101.633,914.723
+2013,Rama 4321 Comercio al por mayor de productos textiles y calzado,32385.44,149.32
+2013,Rama 4331 Comercio al por mayor de productos farmacéuticos,100908.425,81.99
+2013,"Rama 4332 Comercio al por mayor de artículos de perfumería, cosméticos y joyería",21765.349,54.23
+2013,"Rama 4333 Comercio al por mayor de grabaciones de audio y video en medios físicos, juguetes y artículos deportivos",8379.314,21.954
+2013,"Rama 4334 Comercio al por mayor de artículos de papelería, libros, revistas y periódicos",26368.67,150.966
+2013,Rama 4335 Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,40582.742,34.036
+2013,Rama 4341 Comercio al por mayor de materias primas agropecuarias y forestales,85934.378,205.263
+2013,Rama 4342 Comercio al por mayor de materias primas para la industria,461870.292,1278.928
+2013,Rama 4343 Comercio al por mayor de materiales de desecho,39184.608,445.706
+2013,"Rama 4351 Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca",20264.256,58.925
+2013,Rama 4352 Comercio al por mayor de maquinaria y equipo para la industria,47290.599,104.668
+2013,Rama 4353 Comercio al por mayor de maquinaria y equipo para los servicios y para actividades comerciales,72270.798,198.301
+2013,"Rama 4354 Comercio al por mayor de mobiliario y equipo de cómputo y de oficina, y de otra maquinaria y equipo de uso general",141017.561,280.751
+2013,"Rama 4361 Comercio al por mayor de camiones y de partes y refacciones nuevas para automóviles, camionetas y camiones",40254.18,88.935
+2013,Rama 4373 Intermediación de comercio al por mayor,3148.729,23.429
+2013,Rama 4611 Comercio al por menor de abarrotes y alimentos,288366.851,6496.225
+2013,"Rama 4612 Comercio al por menor de bebidas, hielo y tabaco",38271.664,1000.404
+2013,Rama 4621 Comercio al por menor en tiendas de autoservicio,773909.849,10019.006
+2013,Rama 4622 Comercio al por menor en tiendas departamentales,136240.331,2020.809
+2013,"Rama 4631 Comercio al por menor de productos textiles, excepto ropa",13129.184,206.515
+2013,"Rama 4632 Comercio al por menor de ropa, bisutería y accesorios de vestir",76348.026,1123.471
+2013,Rama 4633 Comercio al por menor de calzado,37573.088,491.776
+2013,Rama 4641 Comercio al por menor de artículos para el cuidado de la salud,141419.215,1469.295
+2013,Rama 4651 Comercio al por menor de artículos de perfumería y joyería,21733.041,212.372
+2013,Rama 4652 Comercio al por menor de artículos para el esparcimiento,23005.191,231.553
+2013,"Rama 4653 Comercio al por menor de artículos de papelería, libros, revistas y periódicos",36209.442,513.746
+2013,"Rama 4659 Comercio al por menor de mascotas y sus accesorios, regalos, artículos religiosos, desechables, artesanías y otros artículos de uso personal",19687.164,267.958
+2013,Rama 4661 Comercio al por menor de muebles para el hogar y otros enseres domésticos,70947.572,878.641
+2013,"Rama 4662 Comercio al por menor de mobiliario, equipo y accesorios de cómputo, teléfonos y otros aparatos de comunicación",63202.973,280.382
+2013,Rama 4663 Comercio al por menor de artículos para la decoración de interiores,11879.866,165.191
+2013,Rama 4664 Comercio al por menor de artículos usados,2216.726,35.096
+2013,"Rama 4671 Comercio al por menor de artículos de ferretería, tlapalería y vidrios",142442.762,911.894
+2013,Rama 4681 Comercio al por menor de automóviles y camionetas,261069.125,469.044
+2013,"Rama 4682 Comercio al por menor de partes y refacciones para automóviles, camionetas y camiones",98964.89,908.449
+2013,Rama 4683 Comercio al por menor de motocicletas y otros vehículos de motor,9479.556,26.116
+2013,"Rama 4684 Comercio al por menor de combustibles, aceites y grasas lubricantes",487686.85,1212.189
+2013,"Rama 4691 Intermediación de comercio al por menor, y comercio al por menor a través de catálogos impresos, televisión y similares",2315.743,8.027
+2013,Rama 4811 Transporte aéreo regular,74510.502,36.991
+2013,Rama 4812 Transporte aéreo no regular,2659.426,4.913
+2013,Rama 4821 Transporte por ferrocarril,,
+2013,Rama 4831 Transporte marítimo,3034.25,33.204
+2013,Rama 4832 Transporte por aguas interiores,213.068,1.546
+2013,Rama 4841 Autotransporte de carga general,52407.729,504.325
+2013,Rama 4842 Autotransporte de carga especializado,34305.353,218.067
+2013,Rama 4851 Transporte colectivo urbano y suburbano de pasajeros de ruta fija,21579.523,2443.922
+2013,Rama 4852 Transporte colectivo foráneo de pasajeros de ruta fija,37933.651,301.362
+2013,Rama 4853 Servicio de taxis y limusinas,,
+2013,Rama 4854 Transporte escolar y de personal,,
+2013,Rama 4855 Alquiler de autobuses con chofer,1456.564,31.416
+2013,Rama 4859 Otro transporte terrestre de pasajeros,1142.083,28.324
+2013,Rama 4862 Transporte de gas natural por ductos,,
+2013,Rama 4869 Transporte por ductos de otros productos,,
+2013,Rama 4871 Transporte turístico por tierra,,
+2013,Rama 4872 Transporte turístico por agua,293.669,2.503
+2013,Rama 4879 Otro transporte turístico,,
+2013,Rama 4881 Servicios relacionados con el transporte aéreo,3061.811,172.249
+2013,Rama 4882 Servicios relacionados con el transporte por ferrocarril,915.661,9.522
+2013,Rama 4883 Servicios relacionados con el transporte por agua,5356.441,101.379
+2013,Rama 4884 Servicios relacionados con el transporte por carretera,6965.741,135.72
+2013,Rama 4885 Servicios de intermediación para el transporte de carga,18607.201,531.241
+2013,Rama 4889 Otros servicios relacionados con el transporte,207.503,7.973
+2013,Rama 4911 Servicios postales,,
+2013,Rama 4921 Servicios de mensajería y paquetería foránea,6195.459,77.333
+2013,Rama 4922 Servicios de mensajería y paquetería local,389.723,3.407
+2013,Rama 4931 Servicios de almacenamiento,6609.064,204.318
+2013,Rama 5121 Industria fílmica y del video,18835.096,748.186
+2013,Rama 5122 Industria del sonido,874.316,32.745
+2013,"Rama 5131 Edición de periódicos, revistas, libros, directorios y otros materiales",17333.587,216.77
+2013,Rama 5132 Edición de software,1279.772,10.792
+2013,Rama 5161 Estaciones de transmisión de programas de radio y televisión,56694.208,488.576
+2013,"Rama 5162 Servicios de distribución de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisión y otros proveedores de contenido",394.842,5.687
+2013,Rama 5173 Operadores de servicios de telecomunicaciones alámbricas e inalámbricas,296186.303,3596.792
+2013,Rama 5174 Operadores de servicios de telecomunicaciones vía satélite,491.44,5.637
+2013,Rama 5179 Otros servicios de telecomunicaciones,9098.719,33.694
+2013,"Rama 5182 Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados",3078.62,39.38
+2013,"Rama 5192 Bibliotecas, archivos, portales de búsqueda en la red y otros servicios de suministro de información",1428.523,23.622
+2013,Rama 5211 Banca central,1536.824,0
+2013,Rama 5221 Banca múltiple,107521.472,1821.728
+2013,Rama 5222 Instituciones financieras de fomento económico,6926.336,111.817
+2013,Rama 5223 Uniones de crédito e instituciones de ahorro,7624.314,328.114
+2013,Rama 5224 Otras instituciones de intermediación crediticia y financiera no bursátil,24866.652,429.265
+2013,Rama 5225 Servicios relacionados con la intermediación crediticia no bursátil,1468.173,48.757
+2013,"Rama 5231 Casas de bolsa, casas de cambio y centros cambiarios",8037.453,84.334
+2013,Rama 5232 Bolsa de valores,678.832,13.164
+2013,Rama 5239 Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,1214.537,4.659
+2013,Rama 5241 Compañías de seguros y fianzas,14831.273,182.017
+2013,"Rama 5242 Servicios relacionados con los seguros y las fianzas, y administración de fondos para el retiro",7663.073,105.053
+2013,Rama 5311 Alquiler sin intermediación de bienes raíces,6487.904,462.368
+2013,Rama 5312 Inmobiliarias y corredores de bienes raíces,15908.447,459.115
+2013,Rama 5313 Servicios relacionados con los servicios inmobiliarios,6632.849,638.263
+2013,"Rama 5321 Alquiler de automóviles, camiones y otros transportes terrestres",5979.296,28.98
+2013,Rama 5322 Alquiler de artículos para el hogar y personales,3306.391,189.71
+2013,Rama 5323 Centros generales de alquiler,632.804,19.222
+2013,"Rama 5324 Alquiler de maquinaria y equipo agropecuario, pesquero, industrial, comercial y de servicios",12630.218,193.706
+2013,"Rama 5331 Servicios de alquiler de marcas registradas, patentes y franquicias",227.517,2.217
+2013,Rama 5411 Servicios legales,7479.371,263.647
+2013,"Rama 5412 Servicios de contabilidad, auditoría y servicios relacionados",5547.49,246.523
+2013,"Rama 5413 Servicios de arquitectura, ingeniería y actividades relacionadas",27768.452,672.197
+2013,Rama 5414 Diseño especializado,1726.762,26.977
+2013,Rama 5415 Servicios de diseño de sistemas de cómputo y servicios relacionados,15014.719,103.837
+2013,"Rama 5416 Servicios de consultoría administrativa, científica y técnica",7876.048,177.41
+2013,Rama 5417 Servicios de investigación científica y desarrollo,882.995,20.111
+2013,Rama 5418 Servicios de publicidad y actividades relacionadas,16805.451,183.64
+2013,"Rama 5419 Otros servicios profesionales, científicos y técnicos",5382.122,135.471
+2013,Rama 5511 Dirección y administración de grupos empresariales o corporativos,84733.204,1187.113
+2013,Rama 5611 Servicios de administración de negocios,14724.548,312.702
+2013,Rama 5612 Servicios integrales de apoyo a los negocios en instalaciones,3801.51,64.344
+2013,Rama 5613 Servicios de empleo,36945.918,1332.261
+2013,"Rama 5614 Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",10154.959,610.669
+2013,Rama 5615 Agencias de viajes y servicios de reservaciones,11765.388,147.425
+2013,"Rama 5616 Servicios de investigación, protección y seguridad",17742.875,697.871
+2013,Rama 5617 Servicios de limpieza,2479.295,29.684
+2013,Rama 5619 Otros servicios de apoyo a los negocios,6658.861,91.567
+2013,Rama 5621 Recolección de residuos,4359.45,57.129
+2013,"Rama 6111 Escuelas de educación básica, media y para necesidades especiales",19239.147,1108.379
+2013,Rama 6112 Escuelas de educación técnica superior,249.826,6.979
+2013,Rama 6113 Escuelas de educación superior,29107.413,1357.298
+2013,"Rama 6114 Escuelas comerciales, de computación y de capacitación para ejecutivos",1371.819,68.487
+2013,Rama 6115 Escuelas de oficios,614.014,37.446
+2013,Rama 6116 Otros servicios educativos,3351.766,169.46
+2013,Rama 6117 Servicios de apoyo a la educación,250.838,4.704
+2013,Rama 6211 Consultorios médicos,8425.506,377.804
+2013,Rama 6212 Consultorios dentales,4973.348,242.524
+2013,Rama 6213 Otros consultorios para el cuidado de la salud,2024.612,85.338
+2013,Rama 6214 Centros para la atención de pacientes que no requieren hospitalización,1379.635,52.929
+2013,Rama 6215 Laboratorios médicos y de diagnóstico,7213.127,245.67
+2013,Rama 6216 Servicios de enfermería a domicilio,362.56,12.921
+2013,"Rama 6219 Servicios de ambulancias, de bancos de órganos y otros servicios auxiliares al tratamiento médico",432.368,15.543
+2013,Rama 6221 Hospitales generales,23171.929,557.581
+2013,Rama 6222 Hospitales psiquiátricos y para el tratamiento por adicción,64.862,2.39
+2013,Rama 6223 Hospitales de otras especialidades médicas,6749.138,244.206
+2013,"Rama 6231 Residencias con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",40.957,2.176
+2013,"Rama 6232 Residencias para el cuidado de personas con problemas de retardo mental, trastorno mental y adicciones",34.937,1.914
+2013,Rama 6233 Asilos y otras residencias para el cuidado de ancianos,433.333,27.607
+2013,Rama 6239 Orfanatos y otras residencias de asistencia social,526.493,38.596
+2013,Rama 6241 Servicios de orientación y trabajo social,1066.384,60.235
+2013,"Rama 6242 Servicios comunitarios de alimentación, refugio y emergencia",328.05,10.664
+2013,"Rama 6243 Servicios de capacitación para el trabajo para personas desempleadas, subempleadas o con discapacidad",159.774,8.657
+2013,Rama 6244 Guarderías,2968.757,132.498
+2013,Rama 7111 Compañías y grupos de espectáculos artísticos y culturales,332.015,5.935
+2013,Rama 7112 Deportistas y equipos deportivos profesionales,5516.747,96.48
+2013,"Rama 7113 Promotores de espectáculos artísticos, culturales, deportivos y similares",1614.564,56.847
+2013,"Rama 7114 Agentes y representantes de artistas, deportistas y similares",220.453,0.804
+2013,"Rama 7115 Artistas, escritores y técnicos independientes",103.834,2.025
+2013,"Rama 7121 Museos, sitios históricos, zoológicos y similares",1733.593,72.152
+2013,Rama 7131 Parques con instalaciones recreativas y casas de juegos electrónicos,3280.328,167.78
+2013,"Rama 7132 Casinos, loterías y otros juegos de azar",13642.86,569.747
+2013,Rama 7139 Otros servicios recreativos,11935.232,806.387
+2013,"Rama 7211 Hoteles, moteles y similares",69398.082,5151.309
+2013,Rama 7212 Campamentos y albergues recreativos,56.258,9.113
+2013,"Rama 7213 Pensiones y casas de huéspedes, y departamentos y casas amueblados con servicios de hotelería",756.27,90.216
+2013,Rama 7223 Servicios de preparación de alimentos por encargo,7848.746,61.855
+2013,"Rama 7224 Centros nocturnos, bares, cantinas y similares",9315.616,443.469
+2013,Rama 7225 Servicios de preparación de alimentos y bebidas alcohólicas y no alcohólicas,145226.714,4986.154
+2013,Rama 8111 Reparación y mantenimiento de automóviles y camiones,29606.889,1009.684
+2013,Rama 8112 Reparación y mantenimiento de equipo electrónico y de equipo de precisión,4608.151,117.346
+2013,"Rama 8113 Reparación y mantenimiento de maquinaria y equipo agropecuario, industrial, comercial y de servicios",14781.468,227.088
+2013,Rama 8114 Reparación y mantenimiento de artículos para el hogar y personales,5318.509,184.097
+2013,"Rama 8121 Salones y clínicas de belleza, baños públicos y bolerías",8857.815,577.026
+2013,Rama 8122 Lavanderías y tintorerías,3732.318,357.563
+2013,Rama 8123 Servicios funerarios y administración de cementerios,3059.493,95.543
+2013,Rama 8124 Estacionamientos y pensiones para vehículos automotores,13187.399,332.122
+2013,Rama 8129 Servicios de revelado e impresión de fotografías y otros servicios personales,767.675,36.338
+2013,"Rama 8131 Asociaciones y organizaciones comerciales, laborales, profesionales y recreativas",5663.284,242.812
+2013,"Rama 8132 Asociaciones y organizaciones religiosas, políticas y civiles",3642.132,199.961
+2008,Rama 1125 Acuicultura,3028.636,67.249
+2008,Rama 1141 Pesca,4683.118,40.43
+2008,Rama 1151 Servicios relacionados con la agricultura,774.719,12.508
+2008,Rama 1152 Servicios relacionados con la cría y explotación de animales,90.411,0.235
+2008,Rama 1153 Servicios relacionados con el aprovechamiento forestal,0.449,0.001
+2008,Rama 2111 Extracción de petróleo y gas,243951.734,1601.111
+2008,Rama 2121 Minería de carbón mineral,7360.035,326.826
+2008,Rama 2122 Minería de minerales metálicos,24903.366,3373.234
+2008,Rama 2123 Minería de minerales no metálicos,6968.948,779.468
+2008,Rama 2131 Servicios relacionados con la minería,16203.738,46.421
+2008,"Rama 2211 Generación, transmisión, distribución y comercialización de energía eléctrica",,
+2008,Rama 2212 Suministro de gas natural por ductos al consumidor final,,
+2008,"Rama 2213 Captación, tratamiento y suministro de agua",17670.011,6556.436
+2008,Rama 2361 Edificación residencial,75801.164,313.662
+2008,Rama 2362 Edificación no residencial,68984.069,203.366
+2008,"Rama 2371 Construcción de obras para el suministro de agua, petróleo, gas, energía eléctrica y telecomunicaciones",45306.119,210.824
+2008,Rama 2372 División de terrenos y construcción de obras de urbanización,16319.421,47.919
+2008,Rama 2373 Construcción de vías de comunicación,53124.595,196.995
+2008,Rama 2379 Otras construcciones de ingeniería civil,7114.007,9.235
+2008,"Rama 2381 Cimentaciones, montaje de estructuras prefabricadas y trabajos en exteriores",3728.353,14.229
+2008,Rama 2382 Instalaciones y equipamiento en construcciones,8108.923,56.848
+2008,Rama 2383 Trabajos de acabados en edificaciones,2501.779,14.237
+2008,Rama 2389 Otros trabajos especializados para la construcción,3870.552,13.021
+2008,Rama 3111 Elaboración de alimentos balanceados para animales,57114.927,508.475
+2008,Rama 3112 Molienda de granos y de semillas y obtención de aceites y grasas,105264.21,1582.792
+2008,"Rama 3113 Elaboración de azúcares, chocolates, dulces y similares",44188.26,717.731
+2008,"Rama 3114 Conservación de frutas, verduras, guisos y otros alimentos preparados",35540.551,845.395
+2008,Rama 3115 Elaboración de productos lácteos,78742.288,1127.911
+2008,"Rama 3116 Matanza, empacado y procesamiento de carne de ganado, aves y otros animales comestibles",47860.716,884.834
+2008,Rama 3117 Preparación y envasado de pescados y mariscos,6424.767,178.332
+2008,Rama 3118 Elaboración de productos de panadería y tortillas,61770.605,1760.858
+2008,Rama 3119 Otras industrias alimentarias,63620.712,768.053
+2008,Rama 3121 Industria de las bebidas,133937.987,2280.64
+2008,Rama 3122 Industria del tabaco,6020.612,51.044
+2008,"Rama 3131 Preparación e hilado de fibras textiles, y fabricación de hilos",6194.556,668.697
+2008,Rama 3132 Fabricación de telas,23961.042,2088.383
+2008,Rama 3133 Acabado de productos textiles y fabricación de telas recubiertas,3290.163,171.517
+2008,"Rama 3141 Confección de alfombras, blancos y similares",6999.058,237.228
+2008,"Rama 3149 Fabricación de otros productos textiles, excepto prendas de vestir",6400.716,389.494
+2008,Rama 3151 Fabricación de prendas de vestir de tejido de punto,5844.155,247.054
+2008,Rama 3152 Confección de prendas de vestir,36102.221,882.2
+2008,Rama 3159 Confección de accesorios de vestir y otras prendas de vestir no clasificados en otra parte,594.327,20.333
+2008,Rama 3161 Curtido y acabado de cuero y piel,6464.216,159.923
+2008,Rama 3162 Fabricación de calzado,16504.109,355.079
+2008,"Rama 3169 Fabricación de otros productos de cuero, piel y materiales sucedáneos",1765.722,46.282
+2008,Rama 3211 Aserrado y conservación de la madera,1360.441,42.894
+2008,Rama 3212 Fabricación de laminados y aglutinados de madera,3377.782,122.341
+2008,Rama 3219 Fabricación de otros productos de madera,7488.128,171.029
+2008,"Rama 3221 Fabricación de pulpa, papel y cartón",39276.338,3893.819
+2008,Rama 3222 Fabricación de productos de cartón y papel,57860.376,1450.576
+2008,Rama 3231 Impresión e industrias conexas,24477.252,820.9
+2008,Rama 3241 Fabricación de productos derivados del petróleo y del carbón,547447.783,587.322
+2008,Rama 3251 Fabricación de productos químicos básicos,311255.136,3944.568
+2008,"Rama 3252 Fabricación de resinas y hules sintéticos, y fibras químicas",58459.876,1859.686
+2008,"Rama 3253 Fabricación de fertilizantes, plaguicidas y otros agroquímicos",22804.723,495.981
+2008,Rama 3254 Fabricación de productos farmacéuticos,84746.901,969.02
+2008,"Rama 3255 Fabricación de pinturas, recubrimientos y adhesivos",23932.186,210.472
+2008,"Rama 3256 Fabricación de jabones, limpiadores y preparaciones de tocador",58471.015,750.883
+2008,Rama 3259 Fabricación de otros productos químicos,22039.992,288.257
+2008,Rama 3261 Fabricación de productos de plástico,112614.947,5595.664
+2008,Rama 3262 Fabricación de productos de hule,21600.526,1058.22
+2008,Rama 3271 Fabricación de productos a base de arcillas y minerales refractarios,20810.666,1386.502
+2008,Rama 3272 Fabricación de vidrio y productos de vidrio,25426.358,1974.536
+2008,"Rama 3273 Fabricación de cemento, concreto y sus productos",44559.346,4596.338
+2008,"Rama 3274 Fabricación de cal, yeso y productos de yeso",4290.699,342.567
+2008,Rama 3279 Fabricación de otros productos a base de minerales no metálicos,6802.323,272.652
+2008,Rama 3311 Industria básica del hierro y del acero,82104.647,6711.703
+2008,Rama 3312 Fabricación de productos de hierro y acero,85854.25,3230.413
+2008,Rama 3313 Industria básica del aluminio,10675.366,355.665
+2008,"Rama 3314 Industrias de metales no ferrosos, excepto aluminio",79433.57,1896.873
+2008,Rama 3315 Moldeo por fundición de piezas metálicas,8903.042,529.465
+2008,Rama 3321 Fabricación de productos metálicos forjados y troquelados,9475.192,238.124
+2008,Rama 3322 Fabricación de herramientas de mano sin motor y utensilios de cocina metálicos,9917.66,213.934
+2008,Rama 3323 Fabricación de estructuras metálicas y productos de herrería,25339.729,509.988
+2008,"Rama 3324 Fabricación de calderas, tanques y envases metálicos",19505.029,474.929
+2008,Rama 3325 Fabricación de herrajes y cerraduras,2419.004,104.812
+2008,"Rama 3326 Fabricación de alambre, productos de alambre y resortes",13335.529,461.527
+2008,Rama 3327 Maquinado de piezas y fabricación de tornillos,8143.297,316.401
+2008,Rama 3328 Recubrimientos y terminados metálicos,21994.514,824.397
+2008,Rama 3329 Fabricación de otros productos metálicos,23544.549,812.98
+2008,"Rama 3331 Fabricación de maquinaria y equipo agropecuario, para la construcción y para la industria extractiva",16655.961,295.285
+2008,"Rama 3332 Fabricación de maquinaria y equipo para las industrias manufactureras, excepto la metalmecánica",3999.048,90.424
+2008,Rama 3333 Fabricación de maquinaria y equipo para el comercio y los servicios,1846.943,44.822
+2008,"Rama 3334 Fabricación de equipo de aire acondicionado, calefacción, y de refrigeración industrial y comercial",15599.108,250.392
+2008,Rama 3335 Fabricación de maquinaria y equipo para la industria metalmecánica,1846.807,45.855
+2008,"Rama 3336 Fabricación de motores de combustión interna, turbinas y transmisiones",11907.733,256.915
+2008,Rama 3339 Fabricación de otra maquinaria y equipo para la industria en general,13627.277,339.538
+2008,Rama 3341 Fabricación de computadoras y equipo periférico,18384.116,673.593
+2008,Rama 3342 Fabricación de equipo de comunicación,7816.183,367.136
+2008,Rama 3343 Fabricación de equipo de audio y de video,13021.036,537.874
+2008,Rama 3344 Fabricación de componentes electrónicos,16945.866,1089.252
+2008,"Rama 3345 Fabricación de instrumentos de medición, control, navegación, y equipo médico electrónico",1981.048,117.934
+2008,Rama 3346 Fabricación y reproducción de medios magnéticos y ópticos,2979.465,109.242
+2008,Rama 3351 Fabricación de accesorios de iluminación,4677.742,172.911
+2008,Rama 3352 Fabricación de aparatos eléctricos de uso doméstico,32644.854,897.116
+2008,Rama 3353 Fabricación de equipo de generación y distribución de energía eléctrica,27603.313,844.6
+2008,Rama 3359 Fabricación de otros equipos y accesorios eléctricos,35549.582,1271.748
+2008,Rama 3361 Fabricación de automóviles y camiones,343716.513,1298.521
+2008,Rama 3362 Fabricación de carrocerías y remolques,11155.914,188.178
+2008,Rama 3363 Fabricación de partes para vehículos automotores,218893.097,6618.166
+2008,Rama 3364 Fabricación de equipo aeroespacial,2472.427,142.574
+2008,Rama 3365 Fabricación de equipo ferroviario,6405.106,94
+2008,Rama 3366 Fabricación de embarcaciones,844.902,47.681
+2008,Rama 3369 Fabricación de otro equipo de transporte,1941.278,34.74
+2008,"Rama 3371 Fabricación de muebles, excepto de oficina y estantería",16786.999,442.74
+2008,Rama 3372 Fabricación de muebles de oficina y estantería,4709.389,104.161
+2008,"Rama 3379 Fabricación de colchones, persianas y cortineros",4446.901,67.192
+2008,Rama 4311 Comercio al por mayor de abarrotes y alimentos,483542.361,1431.086
+2008,"Rama 4312 Comercio al por mayor de bebidas, hielo y tabaco",147006.866,483.007
+2008,Rama 4321 Comercio al por mayor de productos textiles y calzado,28045.787,94.843
+2008,Rama 4331 Comercio al por mayor de productos farmacéuticos,90333.218,107.013
+2008,"Rama 4332 Comercio al por mayor de artículos de perfumería, cosméticos y joyería",16826.589,28.699
+2008,"Rama 4333 Comercio al por mayor de grabaciones de audio y video en medios físicos, juguetes y artículos deportivos",10960.932,23.092
+2008,"Rama 4334 Comercio al por mayor de artículos de papelería, libros, revistas y periódicos",24017.788,81.678
+2008,Rama 4335 Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,48507.914,53
+2008,Rama 4341 Comercio al por mayor de materias primas agropecuarias y forestales,51993.433,145.016
+2008,Rama 4342 Comercio al por mayor de materias primas para la industria,1424858.067,2183.226
+2008,Rama 4343 Comercio al por mayor de materiales de desecho,26597.561,117.906
+2008,"Rama 4351 Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca",17019.148,39.924
+2008,Rama 4352 Comercio al por mayor de maquinaria y equipo para la industria,37527.552,74.748
+2008,Rama 4353 Comercio al por mayor de maquinaria y equipo para los servicios y para actividades comerciales,65190.975,142.597
+2008,"Rama 4354 Comercio al por mayor de mobiliario y equipo de cómputo y de oficina, y de otra maquinaria y equipo de uso general",150404.149,257.487
+2008,"Rama 4361 Comercio al por mayor de camiones y de partes y refacciones nuevas para automóviles, camionetas y camiones",28902.863,40.046
+2008,Rama 4373 Intermediación de comercio al por mayor,2066.567,12.115
+2008,Rama 4611 Comercio al por menor de abarrotes y alimentos,307802.371,6322.929
+2008,"Rama 4612 Comercio al por menor de bebidas, hielo y tabaco",30342.065,764.871
+2008,Rama 4621 Comercio al por menor en tiendas de autoservicio,565987.577,8493.424
+2008,Rama 4622 Comercio al por menor en tiendas departamentales,99512.139,1738.061
+2008,"Rama 4631 Comercio al por menor de productos textiles, excepto ropa",17144.792,192.386
+2008,"Rama 4632 Comercio al por menor de ropa, bisutería y accesorios de vestir",64967.645,964.336
+2008,Rama 4633 Comercio al por menor de calzado,26365.622,319.444
+2008,Rama 4641 Comercio al por menor de artículos para el cuidado de la salud,106875.433,1169.493
+2008,Rama 4651 Comercio al por menor de artículos de perfumería y joyería,19682.25,209.331
+2008,Rama 4652 Comercio al por menor de artículos para el esparcimiento,20824.653,192.53
+2008,"Rama 4653 Comercio al por menor de artículos de papelería, libros, revistas y periódicos",35711.939,465.477
+2008,"Rama 4659 Comercio al por menor de mascotas y sus accesorios, regalos, artículos religiosos, desechables, artesanías y otros artículos de uso personal",19982.136,249.377
+2008,Rama 4661 Comercio al por menor de muebles para el hogar y otros enseres domésticos,82545.487,823.303
+2008,"Rama 4662 Comercio al por menor de mobiliario, equipo y accesorios de cómputo, teléfonos y otros aparatos de comunicación",58103.375,219.684
+2008,Rama 4663 Comercio al por menor de artículos para la decoración de interiores,12327.057,135.391
+2008,Rama 4664 Comercio al por menor de artículos usados,2430.984,37.637
+2008,"Rama 4671 Comercio al por menor de artículos de ferretería, tlapalería y vidrios",134816.968,740.255
+2008,Rama 4681 Comercio al por menor de automóviles y camionetas,236171.339,803.181
+2008,"Rama 4682 Comercio al por menor de partes y refacciones para automóviles, camionetas y camiones",103922.144,430.082
+2008,Rama 4683 Comercio al por menor de motocicletas y otros vehículos de motor,11099.561,37.808
+2008,"Rama 4684 Comercio al por menor de combustibles, aceites y grasas lubricantes",316614.809,976.334
+2008,"Rama 4691 Intermediación de comercio al por menor, y comercio al por menor a través de catálogos impresos, televisión y similares",557.312,2.892
+2008,Rama 4811 Transporte aéreo regular,54076.502,102.744
+2008,Rama 4812 Transporte aéreo no regular,5090.634,11.787
+2008,Rama 4821 Transporte por ferrocarril,,
+2008,Rama 4831 Transporte marítimo,6553.149,48.972
+2008,Rama 4832 Transporte por aguas interiores,60.134,0.581
+2008,Rama 4841 Autotransporte de carga general,30836.687,180.906
+2008,Rama 4842 Autotransporte de carga especializado,24659.15,147.87
+2008,Rama 4851 Transporte colectivo urbano y suburbano de pasajeros de ruta fija,17948.776,1880.132
+2008,Rama 4852 Transporte colectivo foráneo de pasajeros de ruta fija,23823.8,109.9
+2008,Rama 4853 Servicio de taxis y limusinas,29.986,1.459
+2008,Rama 4854 Transporte escolar y de personal,1649.993,14.927
+2008,Rama 4855 Alquiler de autobuses con chofer,212.997,2.633
+2008,Rama 4859 Otro transporte terrestre de pasajeros,624.146,4.183
+2008,Rama 4861 Transporte de petróleo crudo por ductos,,
+2008,Rama 4862 Transporte de gas natural por ductos,1258.554,34.354
+2008,Rama 4869 Transporte por ductos de otros productos,,
+2008,Rama 4871 Transporte turístico por tierra,,
+2008,Rama 4872 Transporte turístico por agua,515.629,8.101
+2008,Rama 4879 Otro transporte turístico,,
+2008,Rama 4881 Servicios relacionados con el transporte aéreo,6235.807,487.69
+2008,Rama 4882 Servicios relacionados con el transporte por ferrocarril,524.649,7.929
+2008,Rama 4883 Servicios relacionados con el transporte por agua,7694.389,78.42
+2008,Rama 4884 Servicios relacionados con el transporte por carretera,9156.511,171.801
+2008,Rama 4885 Servicios de intermediación para el transporte de carga,15161.343,158.858
+2008,Rama 4889 Otros servicios relacionados con el transporte,874.131,4.641
+2008,Rama 4911 Servicios postales,,
+2008,Rama 4921 Servicios de mensajería y paquetería foránea,8951.181,74.962
+2008,Rama 4922 Servicios de mensajería y paquetería local,1279.871,9.513
+2008,Rama 4931 Servicios de almacenamiento,4388.871,155.538
+2008,Rama 5121 Industria fílmica y del video,13897.41,448.882
+2008,Rama 5122 Industria del sonido,436.862,17.964
+2008,"Rama 5131 Edición de periódicos, revistas, libros, directorios y otros materiales",16382.451,190.222
+2008,Rama 5132 Edición de software,1714.069,4.504
+2008,Rama 5161 Estaciones de transmisión de programas de radio y televisión,20059.599,516.898
+2008,"Rama 5162 Servicios de distribución de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisión y otros proveedores de contenido",390.68,8.052
+2008,Rama 5173 Operadores de servicios de telecomunicaciones alámbricas e inalámbricas,214791.527,4028.025
+2008,Rama 5174 Operadores de servicios de telecomunicaciones vía satélite,743.636,5.75
+2008,Rama 5179 Otros servicios de telecomunicaciones,12825.857,31.121
+2008,"Rama 5182 Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados",2033.12,57.445
+2008,"Rama 5192 Bibliotecas, archivos, portales de búsqueda en la red y otros servicios de suministro de información",748.339,13.265
+2008,Rama 5211 Banca central,16615,29
+2008,Rama 5221 Banca múltiple,101208.421,1654.025
+2008,Rama 5222 Instituciones financieras de fomento económico,11318.837,139.999
+2008,Rama 5223 Uniones de crédito e instituciones de ahorro,4727.436,148.618
+2008,Rama 5224 Otras instituciones de intermediación crediticia y financiera no bursátil,31444.289,361.26
+2008,Rama 5225 Servicios relacionados con la intermediación crediticia no bursátil,521.548,2.807
+2008,"Rama 5231 Casas de bolsa, casas de cambio y centros cambiarios",5523.538,82.115
+2008,Rama 5232 Bolsa de valores,701.554,11.573
+2008,Rama 5239 Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,2456.583,9.157
+2008,Rama 5241 Compañías de seguros y fianzas,15007.84,190.017
+2008,"Rama 5242 Servicios relacionados con los seguros y las fianzas, y administración de fondos para el retiro",8201.509,77.787
+2008,Rama 5311 Alquiler sin intermediación de bienes raíces,4153.895,470.88
+2008,Rama 5312 Inmobiliarias y corredores de bienes raíces,22885.354,482.553
+2008,Rama 5313 Servicios relacionados con los servicios inmobiliarios,6426.45,425.709
+2008,"Rama 5321 Alquiler de automóviles, camiones y otros transportes terrestres",2447.827,24.692
+2008,Rama 5322 Alquiler de artículos para el hogar y personales,3332.665,121.73
+2008,Rama 5323 Centros generales de alquiler,665.961,7.005
+2008,"Rama 5324 Alquiler de maquinaria y equipo agropecuario, pesquero, industrial, comercial y de servicios",10252.46,95.133
+2008,"Rama 5331 Servicios de alquiler de marcas registradas, patentes y franquicias",1879.826,2.612
+2008,Rama 5411 Servicios legales,6965.697,263.65
+2008,"Rama 5412 Servicios de contabilidad, auditoría y servicios relacionados",7698.058,236.448
+2008,"Rama 5413 Servicios de arquitectura, ingeniería y actividades relacionadas",17239.209,126.169
+2008,Rama 5414 Diseño especializado,2836.132,43.059
+2008,Rama 5415 Servicios de diseño de sistemas de cómputo y servicios relacionados,9670.459,95.3
+2008,"Rama 5416 Servicios de consultoría administrativa, científica y técnica",7584.679,122.35
+2008,Rama 5417 Servicios de investigación científica y desarrollo,603.829,21.073
+2008,Rama 5418 Servicios de publicidad y actividades relacionadas,15124.192,217.3
+2008,"Rama 5419 Otros servicios profesionales, científicos y técnicos",5514.753,136.911
+2008,Rama 5511 Dirección y administración de grupos empresariales o corporativos,21595.003,371.278
+2008,Rama 5611 Servicios de administración de negocios,13186.076,339.524
+2008,Rama 5612 Servicios integrales de apoyo a los negocios en instalaciones,2341.912,44.202
+2008,Rama 5613 Servicios de empleo,18566.612,726.819
+2008,"Rama 5614 Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",8016.418,576.041
+2008,Rama 5615 Agencias de viajes y servicios de reservaciones,11542.072,136.594
+2008,"Rama 5616 Servicios de investigación, protección y seguridad",7973.345,135.629
+2008,Rama 5617 Servicios de limpieza,2807.774,29.673
+2008,Rama 5619 Otros servicios de apoyo a los negocios,4826.085,107.151
+2008,Rama 5621 Recolección de residuos,2965.206,38.144
+2008,"Rama 6111 Escuelas de educación básica, media y para necesidades especiales",13247.106,717.545
+2008,Rama 6112 Escuelas de educación técnica superior,181.034,6.012
+2008,Rama 6113 Escuelas de educación superior,13604.332,1110.281
+2008,"Rama 6114 Escuelas comerciales, de computación y de capacitación para ejecutivos",1659.532,118.162
+2008,Rama 6115 Escuelas de oficios,477.093,16.191
+2008,Rama 6116 Otros servicios educativos,2892.339,146.778
+2008,Rama 6117 Servicios de apoyo a la educación,95.45,2.605
+2008,Rama 6211 Consultorios médicos,5843.14,305.431
+2008,Rama 6212 Consultorios dentales,3681.941,196.582
+2008,Rama 6213 Otros consultorios para el cuidado de la salud,1292.967,59.418
+2008,Rama 6214 Centros para la atención de pacientes que no requieren hospitalización,688.577,14.408
+2008,Rama 6215 Laboratorios médicos y de diagnóstico,4368.816,150.783
+2008,Rama 6216 Servicios de enfermería a domicilio,53.538,0.463
+2008,"Rama 6219 Servicios de ambulancias, de bancos de órganos y otros servicios auxiliares al tratamiento médico",252.011,10.355
+2008,Rama 6221 Hospitales generales,15383.083,566.238
+2008,Rama 6222 Hospitales psiquiátricos y para el tratamiento por adicción,57.241,2.609
+2008,Rama 6223 Hospitales de otras especialidades médicas,5412.358,222.448
+2008,"Rama 6231 Residencias con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",24.148,1.399
+2008,"Rama 6232 Residencias para el cuidado de personas con problemas de retardo mental, trastorno mental y adicciones",26.343,1.646
+2008,Rama 6233 Asilos y otras residencias para el cuidado de ancianos,182.05,14.301
+2008,Rama 6239 Orfanatos y otras residencias de asistencia social,577.552,78.418
+2008,Rama 6241 Servicios de orientación y trabajo social,715.348,36.564
+2008,"Rama 6242 Servicios comunitarios de alimentación, refugio y emergencia",144.456,6.948
+2008,"Rama 6243 Servicios de capacitación para el trabajo para personas desempleadas, subempleadas o con discapacidad",21.847,1.159
+2008,Rama 6244 Guarderías,1407.572,81.293
+2008,Rama 7111 Compañías y grupos de espectáculos artísticos y culturales,399.723,6.516
+2008,Rama 7112 Deportistas y equipos deportivos profesionales,2356.771,23.042
+2008,"Rama 7113 Promotores de espectáculos artísticos, culturales, deportivos y similares",1398.23,31.912
+2008,"Rama 7114 Agentes y representantes de artistas, deportistas y similares",173.54,1.313
+2008,"Rama 7115 Artistas, escritores y técnicos independientes",49.175,1.292
+2008,"Rama 7121 Museos, sitios históricos, zoológicos y similares",724.88,44.353
+2008,Rama 7131 Parques con instalaciones recreativas y casas de juegos electrónicos,3438.637,236.74
+2008,"Rama 7132 Casinos, loterías y otros juegos de azar",10469.344,264.159
+2008,Rama 7139 Otros servicios recreativos,7053.719,578.63
+2008,"Rama 7211 Hoteles, moteles y similares",59061.134,4321.526
+2008,Rama 7212 Campamentos y albergues recreativos,81.965,10.582
+2008,"Rama 7213 Pensiones y casas de huéspedes, y departamentos y casas amueblados con servicios de hotelería",303.24,44.228
+2008,Rama 7223 Servicios de preparación de alimentos por encargo,5498.909,54.639
+2008,"Rama 7224 Centros nocturnos, bares, cantinas y similares",8332.759,399.856
+2008,Rama 7225 Servicios de preparación de alimentos y bebidas alcohólicas y no alcohólicas,105202.498,4106.046
+2008,Rama 8111 Reparación y mantenimiento de automóviles y camiones,25460.426,880.917
+2008,Rama 8112 Reparación y mantenimiento de equipo electrónico y de equipo de precisión,3579.076,85.41
+2008,"Rama 8113 Reparación y mantenimiento de maquinaria y equipo agropecuario, industrial, comercial y de servicios",9775.151,138.652
+2008,Rama 8114 Reparación y mantenimiento de artículos para el hogar y personales,4219.457,140.113
+2008,"Rama 8121 Salones y clínicas de belleza, baños públicos y bolerías",6722.659,420.745
+2008,Rama 8122 Lavanderías y tintorerías,2846.718,293.153
+2008,Rama 8123 Servicios funerarios y administración de cementerios,3691.304,89.712
+2008,Rama 8124 Estacionamientos y pensiones para vehículos automotores,15378.306,2500.079
+2008,Rama 8129 Servicios de revelado e impresión de fotografías y otros servicios personales,943.196,44.389
+2008,"Rama 8131 Asociaciones y organizaciones comerciales, laborales, profesionales y recreativas",11686.653,275.896
+2008,"Rama 8132 Asociaciones y organizaciones religiosas, políticas y civiles",1756.841,85.432
+2003,Rama 1125 Acuicultura,1339.886,23.098
+2003,Rama 1141 Pesca,4486.389,33.066
+2003,Rama 2111 Extracción de petróleo y gas,8474.296,404.819
+2003,Rama 2121 Minería de carbón mineral,2025.597,147.58
+2003,Rama 2122 Minería de minerales metálicos,9097.727,1789.695
+2003,Rama 2123 Minería de minerales no metálicos,4834.522,462.149
+2003,Rama 2131 Servicios relacionados con la minería,2560.542,5.767
+2003,"Rama 2211 Generación, transmisión, distribución y comercialización de energía eléctrica",,
+2003,Rama 2212 Suministro de gas natural por ductos al consumidor final,,
+2003,"Rama 2213 Captación, tratamiento y suministro de agua",13094.316,3563.205
+2003,Rama 2361 Edificación residencial,36136.319,107.153
+2003,Rama 2362 Edificación no residencial,24806.58,67.304
+2003,"Rama 2371 Construcción de obras para el suministro de agua, petróleo, gas, energía eléctrica y telecomunicaciones",22524.924,88.356
+2003,Rama 2372 División de terrenos y construcción de obras de urbanización,7097.553,24.43
+2003,Rama 2373 Construcción de vías de comunicación,19820.008,91.655
+2003,Rama 2379 Otras construcciones de ingeniería civil,1191.455,5.723
+2003,"Rama 2381 Cimentaciones, montaje de estructuras prefabricadas y trabajos en exteriores",1638.976,8.565
+2003,Rama 2382 Instalaciones y equipamiento en construcciones,4165.301,39.025
+2003,Rama 2383 Trabajos de acabados en edificaciones,821.688,4.619
+2003,Rama 2389 Otros trabajos especializados para la construcción,1099.04,4.706
+2003,Rama 3111 Elaboración de alimentos balanceados para animales,29896.113,263.42
+2003,Rama 3112 Molienda de granos y de semillas y obtención de aceites y grasas,50200.535,998.962
+2003,"Rama 3113 Elaboración de azúcares, chocolates, dulces y similares",35096.647,333.997
+2003,"Rama 3114 Conservación de frutas, verduras, guisos y otros alimentos preparados",19789.084,334.639
+2003,Rama 3115 Elaboración de productos lácteos,54608.069,634.981
+2003,"Rama 3116 Matanza, empacado y procesamiento de carne de ganado, aves y otros animales comestibles",28934.746,432.736
+2003,Rama 3117 Preparación y envasado de pescados y mariscos,5134.246,101.358
+2003,Rama 3118 Elaboración de productos de panadería y tortillas,37587.653,1054.086
+2003,Rama 3119 Otras industrias alimentarias,34371.286,329.354
+2003,Rama 3121 Industria de las bebidas,97330.699,1186.504
+2003,Rama 3122 Industria del tabaco,4871.096,42.184
+2003,"Rama 3131 Preparación e hilado de fibras textiles, y fabricación de hilos",7014.034,496.372
+2003,Rama 3132 Fabricación de telas,16493.228,1133.547
+2003,Rama 3133 Acabado de productos textiles y fabricación de telas recubiertas,3052.993,137.643
+2003,"Rama 3141 Confección de alfombras, blancos y similares",4849.557,112.647
+2003,"Rama 3149 Fabricación de otros productos textiles, excepto prendas de vestir",3433.541,159.191
+2003,Rama 3151 Fabricación de prendas de vestir de tejido de punto,4110.303,116.819
+2003,Rama 3152 Confección de prendas de vestir,35360.752,651.328
+2003,Rama 3159 Confección de accesorios de vestir y otras prendas de vestir no clasificados en otra parte,486.464,9.898
+2003,Rama 3161 Curtido y acabado de cuero y piel,4515.337,76.533
+2003,Rama 3162 Fabricación de calzado,11591.625,160.491
+2003,"Rama 3169 Fabricación de otros productos de cuero, piel y materiales sucedáneos",1436.314,31.331
+2003,Rama 3211 Aserrado y conservación de la madera,1581.46,29.306
+2003,Rama 3212 Fabricación de laminados y aglutinados de madera,1843.846,116.229
+2003,Rama 3219 Fabricación de otros productos de madera,4382.512,95.169
+2003,"Rama 3221 Fabricación de pulpa, papel y cartón",22841.237,1736.464
+2003,Rama 3222 Fabricación de productos de cartón y papel,36810.965,744.179
+2003,Rama 3231 Impresión e industrias conexas,16683.142,348.072
+2003,Rama 3241 Fabricación de productos derivados del petróleo y del carbón,192487.99,401.928
+2003,Rama 3251 Fabricación de productos químicos básicos,175992.776,1932.164
+2003,"Rama 3252 Fabricación de resinas y hules sintéticos, y fibras químicas",28713.745,880.411
+2003,"Rama 3253 Fabricación de fertilizantes, plaguicidas y otros agroquímicos",6171.123,135.877
+2003,Rama 3254 Fabricación de productos farmacéuticos,52530.042,526.021
+2003,"Rama 3255 Fabricación de pinturas, recubrimientos y adhesivos",14042.29,110.451
+2003,"Rama 3256 Fabricación de jabones, limpiadores y preparaciones de tocador",29525.284,296.766
+2003,Rama 3259 Fabricación de otros productos químicos,10294.083,137.351
+2003,Rama 3261 Fabricación de productos de plástico,57577.816,2445.777
+2003,Rama 3262 Fabricación de productos de hule,10276.559,350.668
+2003,Rama 3271 Fabricación de productos a base de arcillas y minerales refractarios,11707.098,602.563
+2003,Rama 3272 Fabricación de vidrio y productos de vidrio,16724.939,922.535
+2003,"Rama 3273 Fabricación de cemento, concreto y sus productos",26532.062,1972
+2003,"Rama 3274 Fabricación de cal, yeso y productos de yeso",2769.086,140.058
+2003,Rama 3279 Fabricación de otros productos a base de minerales no metálicos,3261.998,130.669
+2003,Rama 3311 Industria básica del hierro y del acero,24294.72,2485.319
+2003,Rama 3312 Fabricación de productos de hierro y acero,32649.139,1734.156
+2003,Rama 3313 Industria básica del aluminio,4528.948,152.211
+2003,"Rama 3314 Industrias de metales no ferrosos, excepto aluminio",26588.919,1312.962
+2003,Rama 3315 Moldeo por fundición de piezas metálicas,3363.779,221.206
+2003,Rama 3321 Fabricación de productos metálicos forjados y troquelados,3142.745,94.34
+2003,Rama 3322 Fabricación de herramientas de mano sin motor y utensilios de cocina metálicos,3755.367,72.27
+2003,Rama 3323 Fabricación de estructuras metálicas y productos de herrería,12649.264,241.498
+2003,"Rama 3324 Fabricación de calderas, tanques y envases metálicos",9664.825,234
+2003,Rama 3325 Fabricación de herrajes y cerraduras,1603.979,58.032
+2003,"Rama 3326 Fabricación de alambre, productos de alambre y resortes",5906.877,163.514
+2003,Rama 3327 Maquinado de piezas y fabricación de tornillos,5378.617,144.698
+2003,Rama 3328 Recubrimientos y terminados metálicos,7733.35,265.544
+2003,Rama 3329 Fabricación de otros productos metálicos,11508.377,321.758
+2003,"Rama 3331 Fabricación de maquinaria y equipo agropecuario, para la construcción y para la industria extractiva",7485.313,142.934
+2003,"Rama 3332 Fabricación de maquinaria y equipo para las industrias manufactureras, excepto la metalmecánica",2085.531,45.448
+2003,Rama 3333 Fabricación de maquinaria y equipo para el comercio y los servicios,3299.419,59.176
+2003,"Rama 3334 Fabricación de equipo de aire acondicionado, calefacción, y de refrigeración industrial y comercial",11424.111,185.061
+2003,Rama 3335 Fabricación de maquinaria y equipo para la industria metalmecánica,666.4,19.868
+2003,"Rama 3336 Fabricación de motores de combustión interna, turbinas y transmisiones",5353.691,127.555
+2003,Rama 3339 Fabricación de otra maquinaria y equipo para la industria en general,6536.334,142.746
+2003,Rama 3341 Fabricación de computadoras y equipo periférico,46105.035,305.06
+2003,Rama 3342 Fabricación de equipo de comunicación,7847.051,234.818
+2003,Rama 3343 Fabricación de equipo de audio y de video,11630.49,490.292
+2003,Rama 3344 Fabricación de componentes electrónicos,11582.164,803.228
+2003,"Rama 3345 Fabricación de instrumentos de medición, control, navegación, y equipo médico electrónico",3159,56.918
+2003,Rama 3346 Fabricación y reproducción de medios magnéticos y ópticos,1889.094,108.528
+2003,Rama 3351 Fabricación de accesorios de iluminación,2561.365,61.203
+2003,Rama 3352 Fabricación de aparatos eléctricos de uso doméstico,20128.71,359.916
+2003,Rama 3353 Fabricación de equipo de generación y distribución de energía eléctrica,11365.36,315.883
+2003,Rama 3359 Fabricación de otros equipos y accesorios eléctricos,17092.332,685.115
+2003,Rama 3361 Fabricación de automóviles y camiones,237523.799,665.852
+2003,Rama 3362 Fabricación de carrocerías y remolques,3744.684,68.726
+2003,Rama 3363 Fabricación de partes para vehículos automotores,123160.101,3171.883
+2003,Rama 3364 Fabricación de equipo aeroespacial,907.54,45.658
+2003,Rama 3365 Fabricación de equipo ferroviario,1222.78,13.446
+2003,Rama 3366 Fabricación de embarcaciones,59.199,6.552
+2003,Rama 3369 Fabricación de otro equipo de transporte,1463.459,11.715
+2003,"Rama 3371 Fabricación de muebles, excepto de oficina y estantería",12681.302,268.813
+2003,Rama 3372 Fabricación de muebles de oficina y estantería,2457.108,48.627
+2003,"Rama 3379 Fabricación de colchones, persianas y cortineros",2818.961,34.382
+2003,Rama 4311 Comercio al por mayor de abarrotes y alimentos,330569.853,816.571
+2003,"Rama 4312 Comercio al por mayor de bebidas, hielo y tabaco",103113.872,394.751
+2003,Rama 4321 Comercio al por mayor de productos textiles y calzado,29290.051,68.751
+2003,Rama 4331 Comercio al por mayor de productos farmacéuticos,75655.079,226.991
+2003,"Rama 4332 Comercio al por mayor de artículos de perfumería, cosméticos y joyería",17231.338,19.591
+2003,"Rama 4333 Comercio al por mayor de grabaciones de audio y video en medios físicos, juguetes y artículos deportivos",6908.261,13.052
+2003,"Rama 4334 Comercio al por mayor de artículos de papelería, libros, revistas y periódicos",19268.975,45.682
+2003,Rama 4335 Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,27125.387,29.278
+2003,Rama 4341 Comercio al por mayor de materias primas agropecuarias y forestales,43758.103,107.975
+2003,Rama 4342 Comercio al por mayor de materias primas para la industria,262855.034,1448.607
+2003,Rama 4343 Comercio al por mayor de materiales de desecho,8933.924,44.882
+2003,"Rama 4351 Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca",9209.192,21.677
+2003,Rama 4352 Comercio al por mayor de maquinaria y equipo para la industria,19437.076,44.927
+2003,Rama 4353 Comercio al por mayor de maquinaria y equipo para los servicios y para actividades comerciales,31905.539,260.263
+2003,"Rama 4354 Comercio al por mayor de mobiliario y equipo de cómputo y de oficina, y de otra maquinaria y equipo de uso general",72685.411,115.324
+2003,"Rama 4361 Comercio al por mayor de camiones y de partes y refacciones nuevas para automóviles, camionetas y camiones",10715.715,12.437
+2003,Rama 4373 Intermediación de comercio al por mayor,9243.506,12.553
+2003,Rama 4611 Comercio al por menor de abarrotes y alimentos,173618.798,3821.506
+2003,"Rama 4612 Comercio al por menor de bebidas, hielo y tabaco",23273.366,448.218
+2003,Rama 4621 Comercio al por menor en tiendas de autoservicio,304608.655,3953.299
+2003,Rama 4622 Comercio al por menor en tiendas departamentales,59096.678,616.389
+2003,"Rama 4631 Comercio al por menor de productos textiles, excepto ropa",12221.807,110.681
+2003,"Rama 4632 Comercio al por menor de ropa, bisutería y accesorios de vestir",42071.582,635.075
+2003,Rama 4633 Comercio al por menor de calzado,17295.258,217.805
+2003,Rama 4641 Comercio al por menor de artículos para el cuidado de la salud,65508.472,530.768
+2003,Rama 4651 Comercio al por menor de artículos de perfumería y joyería,12026.579,122.354
+2003,Rama 4652 Comercio al por menor de artículos para el esparcimiento,16266.798,114.099
+2003,"Rama 4653 Comercio al por menor de artículos de papelería, libros, revistas y periódicos",23531.593,286.491
+2003,"Rama 4659 Comercio al por menor de mascotas y sus accesorios, regalos, artículos religiosos, desechables, artesanías y otros artículos de uso personal",13852.764,197.706
+2003,Rama 4661 Comercio al por menor de muebles para el hogar y otros enseres domésticos,62107.515,443.891
+2003,"Rama 4662 Comercio al por menor de mobiliario, equipo y accesorios de cómputo, teléfonos y otros aparatos de comunicación",35017.978,146.171
+2003,Rama 4663 Comercio al por menor de artículos para la decoración de interiores,8081.569,84.938
+2003,Rama 4664 Comercio al por menor de artículos usados,1198.84,14.152
+2003,"Rama 4671 Comercio al por menor de artículos de ferretería, tlapalería y vidrios",86052.785,377.433
+2003,Rama 4681 Comercio al por menor de automóviles y camionetas,143980.139,226.216
+2003,"Rama 4682 Comercio al por menor de partes y refacciones para automóviles, camionetas y camiones",78190.943,315.214
+2003,Rama 4683 Comercio al por menor de motocicletas y otros vehículos de motor,4341.044,15.078
+2003,"Rama 4684 Comercio al por menor de combustibles, aceites y grasas lubricantes",239989.197,462.486
+2003,"Rama 4691 Intermediación de comercio al por menor, y comercio al por menor a través de catálogos impresos, televisión y similares",5441.897,18.123
+2003,Rama 4811 Transporte aéreo regular,29176.476,77.56
+2003,Rama 4812 Transporte aéreo no regular,3083.583,6.173
+2003,Rama 4821 Transporte por ferrocarril,,
+2003,Rama 4831 Transporte marítimo,8451.054,30.185
+2003,Rama 4832 Transporte por aguas interiores,71.229,0.961
+2003,Rama 4841 Autotransporte de carga general,24062.59,139.703
+2003,Rama 4842 Autotransporte de carga especializado,13641.598,52.988
+2003,Rama 4851 Transporte colectivo urbano y suburbano de pasajeros de ruta fija,12761.072,946.017
+2003,Rama 4852 Transporte colectivo foráneo de pasajeros de ruta fija,14146.034,61.708
+2003,Rama 4853 Servicio de taxis y limusinas,48.752,0.202
+2003,Rama 4854 Transporte escolar y de personal,1209.524,6.944
+2003,Rama 4855 Alquiler de autobuses con chofer,63.873,0.333
+2003,Rama 4859 Otro transporte terrestre de pasajeros,461.49,0.251
+2003,Rama 4862 Transporte de gas natural por ductos,,
+2003,Rama 4869 Transporte por ductos de otros productos,,
+2003,Rama 4871 Transporte turístico por tierra,,
+2003,Rama 4872 Transporte turístico por agua,1059.372,8.092
+2003,Rama 4879 Otro transporte turístico,,
+2003,Rama 4881 Servicios relacionados con el transporte aéreo,7843.659,172.022
+2003,Rama 4882 Servicios relacionados con el transporte por ferrocarril,858.609,12.94
+2003,Rama 4883 Servicios relacionados con el transporte por agua,4374.632,65.98
+2003,Rama 4884 Servicios relacionados con el transporte por carretera,3450.107,119.008
+2003,Rama 4885 Servicios de intermediación para el transporte de carga,9557.428,81.645
+2003,Rama 4889 Otros servicios relacionados con el transporte,872.781,5.652
+2003,Rama 4911 Servicios postales,,
+2003,Rama 4921 Servicios de mensajería y paquetería foránea,3366.529,40.295
+2003,Rama 4922 Servicios de mensajería y paquetería local,961.247,4.833
+2003,Rama 4931 Servicios de almacenamiento,3463.92,73.161
+2003,Rama 5121 Industria fílmica y del video,12258.417,279.533
+2003,Rama 5122 Industria del sonido,771.054,13.24
+2003,"Rama 5131 Edición de periódicos, revistas, libros, directorios y otros materiales",9077.301,103.346
+2003,Rama 5132 Edición de software,327.024,1.831
+2003,Rama 5161 Estaciones de transmisión de programas de radio y televisión,9407.081,303.577
+2003,"Rama 5162 Servicios de distribución de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisión y otros proveedores de contenido",571.72,11.95
+2003,Rama 5173 Operadores de servicios de telecomunicaciones alámbricas e inalámbricas,81121.574,1340.428
+2003,Rama 5174 Operadores de servicios de telecomunicaciones vía satélite,408.012,2.444
+2003,Rama 5179 Otros servicios de telecomunicaciones,8764.951,20.274
+2003,"Rama 5182 Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados",1913.856,27.513
+2003,"Rama 5192 Bibliotecas, archivos, portales de búsqueda en la red y otros servicios de suministro de información",1291.893,14.674
+2003,Rama 5211 Banca central,288,18
+2003,Rama 5221 Banca múltiple,37439.599,762.072
+2003,Rama 5222 Instituciones financieras de fomento económico,7882.077,78.385
+2003,Rama 5223 Uniones de crédito e instituciones de ahorro,4410.085,27.5
+2003,Rama 5224 Otras instituciones de intermediación crediticia y financiera no bursátil,9199.713,58.978
+2003,Rama 5225 Servicios relacionados con la intermediación crediticia no bursátil,223.914,4.692
+2003,"Rama 5231 Casas de bolsa, casas de cambio y centros cambiarios",3043.895,45.617
+2003,Rama 5239 Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,5503.344,11.142
+2003,Rama 5241 Compañías de seguros y fianzas,7651.056,119.889
+2003,"Rama 5242 Servicios relacionados con los seguros y las fianzas, y administración de fondos para el retiro",6706.31,39.595
+2003,Rama 5311 Alquiler sin intermediación de bienes raíces,5245.093,285.652
+2003,Rama 5312 Inmobiliarias y corredores de bienes raíces,14536.494,127.582
+2003,Rama 5313 Servicios relacionados con los servicios inmobiliarios,3137.622,201.636
+2003,"Rama 5321 Alquiler de automóviles, camiones y otros transportes terrestres",2469.381,12.645
+2003,Rama 5322 Alquiler de artículos para el hogar y personales,2690.127,110.595
+2003,Rama 5323 Centros generales de alquiler,559.176,3.58
+2003,"Rama 5324 Alquiler de maquinaria y equipo agropecuario, pesquero, industrial, comercial y de servicios",4687.974,68.848
+2003,"Rama 5331 Servicios de alquiler de marcas registradas, patentes y franquicias",182.747,0.824
+2003,Rama 5411 Servicios legales,4823.935,129.217
+2003,"Rama 5412 Servicios de contabilidad, auditoría y servicios relacionados",7923.204,135.234
+2003,"Rama 5413 Servicios de arquitectura, ingeniería y actividades relacionadas",11471.652,69.171
+2003,Rama 5414 Diseño especializado,2705.556,30.028
+2003,Rama 5415 Servicios de diseño de sistemas de cómputo y servicios relacionados,7169.142,31.522
+2003,"Rama 5416 Servicios de consultoría administrativa, científica y técnica",7084.562,82.082
+2003,Rama 5417 Servicios de investigación científica y desarrollo,714.763,12.87
+2003,Rama 5418 Servicios de publicidad y actividades relacionadas,8964.338,92.745
+2003,"Rama 5419 Otros servicios profesionales, científicos y técnicos",3838.078,59.16
+2003,Rama 5511 Dirección y administración de grupos empresariales o corporativos,16627.644,244.088
+2003,Rama 5611 Servicios de administración de negocios,9391.883,156.647
+2003,Rama 5612 Servicios integrales de apoyo a los negocios en instalaciones,1030.149,155.567
+2003,Rama 5613 Servicios de empleo,10686.088,119.594
+2003,"Rama 5614 Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",4255.641,210.934
+2003,Rama 5615 Agencias de viajes y servicios de reservaciones,10670.407,68.425
+2003,"Rama 5616 Servicios de investigación, protección y seguridad",5831.124,70.322
+2003,Rama 5617 Servicios de limpieza,1932.336,14.393
+2003,Rama 5619 Otros servicios de apoyo a los negocios,1852.427,48.46
+2003,Rama 5621 Recolección de residuos,3374.405,28.12
+2003,"Rama 6111 Escuelas de educación básica, media y para necesidades especiales",9313.925,344.391
+2003,Rama 6112 Escuelas de educación técnica superior,195.411,3.171
+2003,Rama 6113 Escuelas de educación superior,6349.947,225.569
+2003,"Rama 6114 Escuelas comerciales, de computación y de capacitación para ejecutivos",875.853,51.803
+2003,Rama 6115 Escuelas de oficios,243.519,11.606
+2003,Rama 6116 Otros servicios educativos,1378.393,51.932
+2003,Rama 6117 Servicios de apoyo a la educación,89.345,2.652
+2003,Rama 6211 Consultorios médicos,3780.31,175.605
+2003,Rama 6212 Consultorios dentales,2223.292,103.985
+2003,Rama 6213 Otros consultorios para el cuidado de la salud,702.729,25.698
+2003,Rama 6214 Centros para la atención de pacientes que no requieren hospitalización,279.878,6.713
+2003,Rama 6215 Laboratorios médicos y de diagnóstico,2833.919,70.478
+2003,Rama 6216 Servicios de enfermería a domicilio,61.392,0.22
+2003,"Rama 6219 Servicios de ambulancias, de bancos de órganos y otros servicios auxiliares al tratamiento médico",129.614,3.4
+2003,Rama 6221 Hospitales generales,6911.013,139.251
+2003,Rama 6222 Hospitales psiquiátricos y para el tratamiento por adicción,44.944,1.018
+2003,Rama 6223 Hospitales de otras especialidades médicas,3193.446,57.129
+2003,"Rama 6231 Residencias con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",68.794,1.635
+2003,"Rama 6232 Residencias para el cuidado de personas con problemas de retardo mental, trastorno mental y adicciones",39.434,1.876
+2003,Rama 6233 Asilos y otras residencias para el cuidado de ancianos,146.89,8.155
+2003,Rama 6239 Orfanatos y otras residencias de asistencia social,102.749,6.347
+2003,Rama 6241 Servicios de orientación y trabajo social,520.194,18.326
+2003,"Rama 6242 Servicios comunitarios de alimentación, refugio y emergencia",100.239,1.962
+2003,"Rama 6243 Servicios de capacitación para el trabajo para personas desempleadas, subempleadas o con discapacidad",39.661,0.639
+2003,Rama 6244 Guarderías,423.308,18.78
+2003,Rama 7111 Compañías y grupos de espectáculos artísticos y culturales,377.931,8.816
+2003,Rama 7112 Deportistas y equipos deportivos profesionales,439.068,4.669
+2003,"Rama 7113 Promotores de espectáculos artísticos, culturales, deportivos y similares",1397.625,22.758
+2003,"Rama 7114 Agentes y representantes de artistas, deportistas y similares",287.68,0.884
+2003,"Rama 7115 Artistas, escritores y técnicos independientes",108.633,1.345
+2003,"Rama 7121 Museos, sitios históricos, zoológicos y similares",343.146,13.295
+2003,Rama 7131 Parques con instalaciones recreativas y casas de juegos electrónicos,1960.42,132.672
+2003,"Rama 7132 Casinos, loterías y otros juegos de azar",2135.17,25.824
+2003,Rama 7139 Otros servicios recreativos,5269.872,284.255
+2003,"Rama 7211 Hoteles, moteles y similares",26755.915,1882.637
+2003,Rama 7212 Campamentos y albergues recreativos,54.364,12.678
+2003,"Rama 7213 Pensiones y casas de huéspedes, y departamentos y casas amueblados con servicios de hotelería",451.457,25.027
+2003,Rama 7223 Servicios de preparación de alimentos por encargo,3783.627,34.346
+2003,"Rama 7224 Centros nocturnos, bares, cantinas y similares",5150.837,228.377
+2003,Rama 7225 Servicios de preparación de alimentos y bebidas alcohólicas y no alcohólicas,62099.553,2013.221
+2003,Rama 8111 Reparación y mantenimiento de automóviles y camiones,15845.879,525.51
+2003,Rama 8112 Reparación y mantenimiento de equipo electrónico y de equipo de precisión,3646.721,57.639
+2003,"Rama 8113 Reparación y mantenimiento de maquinaria y equipo agropecuario, industrial, comercial y de servicios",7917.762,97.375
+2003,Rama 8114 Reparación y mantenimiento de artículos para el hogar y personales,2955.405,96.965
+2003,"Rama 8121 Salones y clínicas de belleza, baños públicos y bolerías",4045.123,250.336
+2003,Rama 8122 Lavanderías y tintorerías,2213.995,180.993
+2003,Rama 8123 Servicios funerarios y administración de cementerios,2353.645,46.664
+2003,Rama 8124 Estacionamientos y pensiones para vehículos automotores,1112.532,67.316
+2003,Rama 8129 Servicios de revelado e impresión de fotografías y otros servicios personales,2079.766,56.627
+2003,"Rama 8131 Asociaciones y organizaciones comerciales, laborales, profesionales y recreativas",4773.44,95.035
+2003,"Rama 8132 Asociaciones y organizaciones religiosas, políticas y civiles",1931.394,56.676
