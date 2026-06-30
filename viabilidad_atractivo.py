@@ -338,13 +338,7 @@ def _(mo):
     mo.md(r"""
     ### Industry growth worldwide (past five years)
 
-    Calcularemos el crecimiento de la industria CIIU al calcular el crecimiento en exportaciones de los productos que componen a cada industria.
-
-    De acuerdo a la metodología podemos descomponer la industria CIIU por los productos que la intengra, ponderado por el peso relativo de cada producto en la industria.
-
-    Con tales ponderadores podemos crear con los datos del Atlas de Complejidad Económica un indicador del crecimiento exportador de la industria en el mundo.
-
-    Aquí podemos usar la suma de exportaciones e importaciones para cuantificar una medida de comercio global.
+    Calcularemos el crecimiento de la industria CIIU como el crecimiento en la producción.
     """)
     return
 
@@ -376,6 +370,13 @@ def _(df_produccion, pl):
 def _(mo):
     mo.md(r"""
     ### ⁠Industry growth worldwide (past five years-Atlas export growth)
+    Calcularemos el crecimiento de la industria CIIU al calcular el crecimiento en exportaciones de los productos que componen a cada industria.
+
+    De acuerdo a la metodología podemos descomponer la industria CIIU por los productos que la intengra, ponderado por el peso relativo de cada producto en la industria.
+
+    Con tales ponderadores podemos crear con los datos del Atlas de Complejidad Económica un indicador del crecimiento exportador de la industria en el mundo.
+
+    Aquí podemos usar la suma de exportaciones e importaciones para cuantificar una medida de comercio global.
     """)
     return
 
@@ -497,7 +498,7 @@ def _(df_empleo, pl):
         df_empleo[
             ["TIME_PERIOD", "ACTIVITY", "EMPN"]
         ].query(
-            f"TIME_PERIOD in {[2018, 2022]}"
+            f"TIME_PERIOD in {[2018, 2019]}"
         )
     ).sort(
         ["ACTIVITY", "TIME_PERIOD"]
@@ -600,6 +601,12 @@ def _(aipnet, ciiu_hs12):
 
 
 @app.cell
+def _(ciiu_hs12):
+    ciiu_hs12
+    return
+
+
+@app.cell
 def _(atlas_hs12, pl):
     ### Filtramos datos de HND
     atlas_hs12_hnd = atlas_hs12.filter(
@@ -613,22 +620,47 @@ def _(atlas_hs12, pl):
 @app.cell
 def _(aipnet_ciiu, atlas_hs12_hnd, pl):
     ## Creamos dataframe que contiene el porcentaje de insumos presentes para la producción del producto hs12
+    threshold_intensidad_importacion = 0.2 
+
     aipnet_ciiu_razon_insumos = aipnet_ciiu.join(
-        atlas_hs12_hnd.select("product_hs12_code", "export_rca"), 
+        atlas_hs12_hnd.select("product_hs12_code", "export_rca", "import_value"), 
         left_on="hs2012_code_downstream", 
         right_on="product_hs12_code", 
         how = "left"
     ).fill_null(0).with_columns(
+        ## Etiquetamos con 1 los productos que se exportan con ventaja comparativa
         M = pl.when(
             pl.col("export_rca")>=1
         ).then(
             pl.lit(1)
         ).otherwise(
             pl.lit(0)
+        ),
+        ## Calculamos el porcentaje de importación por producto que importa cada cada producto para el total de importación que implica su cadena de producción
+        razon_importacion = pl.col("import_value")/pl.col("import_value").sum().over("ciiu","hs12")
+    ).with_columns(
+        ## Variable que indica si el producto se importa con intensidad (el insumo representa el 20% de las importaciones totales con las que se produce el producto)
+        se_importa = pl.when(
+            pl.col("razon_importacion") >= threshold_intensidad_importacion
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            0
+        )
+    ).with_columns(
+        ## Un insumo está disponible por dos condiciones : 
+        ## 1) Lo exporta con ventaja comparativa o 
+        ## 2) lo importa con intensidad 
+        disponible = pl.when(
+            (pl.col("M")==1) | (pl.col("se_importa")==1)
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            pl.lit(0)
         )
     ).group_by("ciiu","hs12", "weight").agg(
-        pl.col("M").sum().alias("inputs_presentes"),
-        pl.col("M").count().alias("inputs_totales"),
+        pl.col("disponible").sum().alias("inputs_presentes"),
+        pl.col("disponible").count().alias("inputs_totales"),
     ).with_columns(
         razon_insumos_presentes = pl.col("inputs_presentes")/pl.col("inputs_totales")
     ).with_columns(
@@ -636,6 +668,11 @@ def _(aipnet_ciiu, atlas_hs12_hnd, pl):
     )
     aipnet_ciiu_razon_insumos
     return (aipnet_ciiu_razon_insumos,)
+
+
+@app.cell
+def _():
+    return
 
 
 @app.cell
