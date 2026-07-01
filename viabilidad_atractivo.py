@@ -1070,16 +1070,24 @@ def _(pd, pl):
     )
 
     ### Resultados finales Intensivo
-    resultados_finales_intensivo = pd.read_excel("datos/viabilidad_atractivo/Resultados Complexity_final.xlsx", sheet_name="Intensivo")
+    #resultados_finales_intensivo = pd.read_excel("datos/viabilidad_atractivo/Resultados Complexity_final.xlsx", sheet_name="Intensivo")
+    resultados_finales_intensivo = pd.read_excel("datos/viabilidad_atractivo/seleccion_final_complexity.xlsx", sheet_name="intensivo")
 
     ### Resultados finales Extensivo
-    resultados_finales_extensivo = pd.read_excel("datos/viabilidad_atractivo/Resultados Complexity_final.xlsx", sheet_name="Extensivo")
+    #resultados_finales_extensivo = pd.read_excel("datos/viabilidad_atractivo/Resultados Complexity_final.xlsx", sheet_name="Extensivo")
+    resultados_finales_extensivo = pd.read_excel("datos/viabilidad_atractivo/seleccion_final_complexity.xlsx", sheet_name="extensivo")
     return (
         ciiu_pedro_2,
         mapp_ciiu,
         resultados_finales_extensivo,
         resultados_finales_intensivo,
     )
+
+
+@app.cell
+def _(resultados_finales_intensivo):
+    resultados_finales_intensivo
+    return
 
 
 @app.cell(hide_code=True)
@@ -1102,10 +1110,21 @@ def _(
 ):
     import altair as alt 
 
+    color_cat = [
+      "C1 Manufactura avanzada y metalmecánica",
+      "C2 Química, materiales y farmacéutica",
+      "C3 Agroindustria y alimentos procesados",
+      "C4 Servicios empresariales intensivos en conocimiento (KIBS)",
+      "C5 Turismo, conectividad y logística",
+      "C6 Textiles, confección y materiales flexibles"
+    ]
+
+    color_hexa = ["#4E79A7", "#F28E2B", "#E15759", "#76B7B2", "#59A14F", "#EDC948"]
+
     cdata_intensivo = cdata_hnd.filter(
         (pl.col("REF_AREA")=="HND") & 
-        (pl.col("rca")>0) & 
-        (pl.col("mcp")==1)
+        (pl.col("rca")>0)  
+        #(pl.col("mcp")==1)
     )
     cdata_intensivo = cdata_intensivo.join(
         mapp_ciiu,
@@ -1123,8 +1142,11 @@ def _(
         right_on="ciiu"
     ).filter(
         pl.col("ACTIVITY").is_in(resultados_finales_intensivo["ciiu4_cod"])
+    ).join(
+        pl.from_pandas(resultados_finales_intensivo[["Clusters", "ciiu4_cod"]]) , 
+        left_on="ACTIVITY", 
+        right_on="ciiu4_cod"
     )
-
 
     plot_intensivo = alt.Chart(
         cdata_intensivo    
@@ -1137,7 +1159,10 @@ def _(
             ).encode(
         x=alt.X('topsis_viabilidad').scale(zero=False).title("Viabilidad"),
         y=alt.Y('topsis_atractivo').scale(zero=False).title("Atractivo"),#.scale(type ="log"),
-        color = alt.Color("seccion_titulo").title("Sección"),
+        color = alt.Color("Clusters", scale=alt.Scale(
+            domain=color_cat, 
+            range=color_hexa  
+        )).title("Cluster"),
         #size = alt.Size("OBS_VALUE").scale(type ="log").title("Empleo"),
         tooltip=[
 
@@ -1161,7 +1186,17 @@ def _(
                 subtitleColor="gray"
             )
     )
-    return alt, cdata_intensivo
+    return alt, cdata_intensivo, color_cat, color_hexa
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _():
+    return
 
 
 @app.cell
@@ -1183,6 +1218,8 @@ def _(
     alt,
     cdata_hnd,
     ciiu_pedro_2,
+    color_cat,
+    color_hexa,
     mapp_ciiu,
     pd,
     pl,
@@ -1210,6 +1247,10 @@ def _(
         right_on="ciiu"
     ).filter(
         pl.col("ACTIVITY").is_in(resultados_finales_extensivo["ciiu4_cod"])
+    ).join(
+        pl.from_pandas(resultados_finales_extensivo[["Clusters", "ciiu4_cod"]]) , 
+        left_on="ACTIVITY", 
+        right_on="ciiu4_cod"
     )
 
 
@@ -1224,7 +1265,10 @@ def _(
             ).encode(
         x=alt.X('topsis_viabilidad').scale(zero=False).title("Viabilidad"),
         y=alt.Y('topsis_atractivo').scale(zero=False).title("Atractivo"),#.scale(type ="log"),
-        color = alt.Color("seccion_titulo").title("Sección"),
+        color = alt.Color("Clusters", scale=alt.Scale(
+            domain=color_cat, 
+            range=color_hexa  
+        )).title("Cluster"),
         #size = alt.Size("OBS_VALUE").scale(type ="log").title("Empleo"),
         tooltip=[
 
