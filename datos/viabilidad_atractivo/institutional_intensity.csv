@@ -1,0 +1,29 @@
+ISIC,Industry Name,Institutional Intensity
+311,Food products,0.331
+313,Beverages,0.713
+314,Tobacco,0.317
+321,Textiles,0.376
+322,"Wearing apparel, except footwear",0.745
+323,Leather products,0.571
+324,"Footwear, except rubber or plastic",0.65
+331,"Wood products, except furniture",0.516
+332,"Furniture, except metal",0.568
+341,Paper and products,0.348
+342,Printing and publishing,0.713
+351,Industrial chemicals,0.24
+352,Other chemicals,0.49
+353,Petroleum refineries,0.058
+354,Misc. petroleum and coal products,0.395
+355,Rubber products,0.407
+356,Plastic products,0.408
+361,"Pottery, china, earthenware",0.329
+362,Glass and products,0.557
+369,Other non-metallic mineral products,0.377
+371,Iron and steel,0.242
+372,Non-ferrous metals,0.16
+381,Fabricated metal products,0.435
+382,"Machinery, except electrical",0.764
+383,"Machinery, electric",0.74
+384,Transport equipment,0.859
+385,Professional & scientific equipment,0.785
+390,Other manufactured products,0.547
