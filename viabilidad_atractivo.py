@@ -34,6 +34,7 @@ def _(mo):
     - ⁠⁠Availability of inputs (doble razor, let us talk) :rocket:
     - Reliance on a constraint or potential constraint (energy, security) :rocket:
     - Reliance on a constraint or potential constraint (electricity-SCIAN México) :rocket:
+    - Institutional Intensity :rocket:
     """)
     return
 
@@ -585,19 +586,21 @@ def _(pl):
 @app.cell
 def _(aipnet, ciiu_hs12):
     ## Reunimos datos de AIPNET con el crosswalk de CIIU-HS12
+    nodo_madre = "hs2012_code_upstream"
+    nodo_hijo = "hs2012_code_downstream"
     aipnet_ciiu = aipnet.join(
         ciiu_hs12, 
-        left_on="hs2012_code_upstream",
+        left_on=nodo_hijo,
         right_on="hs12",
     ).select(
-        "ciiu", "weight", "hs2012_code_upstream", "hs2012_code_downstream"
+        "ciiu", "weight", nodo_hijo, nodo_madre
     ).rename(
         {
-            "hs2012_code_upstream" : "hs12"
+            nodo_hijo : "hs12"
         }
     )
     aipnet_ciiu
-    return (aipnet_ciiu,)
+    return aipnet_ciiu, nodo_madre
 
 
 @app.cell
@@ -618,13 +621,13 @@ def _(atlas_hs12, pl):
 
 
 @app.cell
-def _(aipnet_ciiu, atlas_hs12_hnd, pl):
+def _(aipnet_ciiu, atlas_hs12_hnd, nodo_madre, pl):
     ## Creamos dataframe que contiene el porcentaje de insumos presentes para la producción del producto hs12
     threshold_intensidad_importacion = 0.2 
 
     aipnet_ciiu_razon_insumos = aipnet_ciiu.join(
         atlas_hs12_hnd.select("product_hs12_code", "export_rca", "import_value"), 
-        left_on="hs2012_code_downstream", 
+        left_on=nodo_madre, 
         right_on="product_hs12_code", 
         how = "left"
     ).fill_null(0).with_columns(
@@ -667,7 +670,12 @@ def _(aipnet_ciiu, atlas_hs12_hnd, pl):
         weight__insumos_presentes = pl.col("weight")*pl.col("razon_insumos_presentes")
     )
     aipnet_ciiu_razon_insumos
-    return (aipnet_ciiu_razon_insumos,)
+    return aipnet_ciiu_razon_insumos, threshold_intensidad_importacion
+
+
+@app.cell
+def _():
+    return
 
 
 @app.cell
@@ -677,6 +685,7 @@ def _():
 
 @app.cell
 def _(aipnet_ciiu_razon_insumos, pl):
+
     ### Calculamos la razón de insumos presentes para cada industria CIIU
     ciiu_insumos_presentes = aipnet_ciiu_razon_insumos.group_by(
         "ciiu"
@@ -776,6 +785,48 @@ def _(ciiu_naics, electricidad_share, pl):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ### Institutional Intensity
+    """)
+    return
+
+
+@app.cell
+def _(pl):
+    ## Cargamos correspondencia CIIU Rev 2 (3 Digitos) a CIIU Rev 4 (4 Dígitos)
+    cw_ciiu_rev_2_ciiu_rev_4 = pl.read_csv("datos/recodificacion/ciiu-rev-2_to_ciiu-rev-4.csv")
+
+    ## Calculamos el peso relativo de la actividad CIIU Rev 4 (4 Dígitos) en las correspondencias totales de actividades CIIU Rev 2 (3 Digitos) para posteriormente usarlas como pesos en el cálculo de la media ponderada de la actividad
+    cw_ciiu_rev_2_ciiu_rev_4 = cw_ciiu_rev_2_ciiu_rev_4.with_columns(
+        ( 
+            pl.col("weight")/pl.col("weight").sum().over("ciiu4")
+        ).alias("composicion")
+    )
+
+    ## Cargamos Datos de Institutional Intensity en CIIU Rev 2 (3 Digitos)
+    inst_intensity = pl.read_csv("datos/viabilidad_atractivo/institutional_intensity.csv")
+
+    ### Reunimos el valor de institutional intensity y el crosswalk CIIU-Rev-2-CIIU-Rev-4
+    ### y calculamos la media ponderada por industria CIIU
+    df_institutional_intensity = cw_ciiu_rev_2_ciiu_rev_4.join(
+        inst_intensity.select("ISIC", "Institutional Intensity"), 
+        left_on="ciiu2", 
+        right_on="ISIC", 
+        how="left"
+    ).group_by("ciiu4").agg(
+            institutional_intensity = (pl.col("Institutional Intensity") * pl.col("composicion")).sum() / pl.col("composicion").sum()
+        ).rename(
+        {
+            "ciiu4" : "ciiu"
+        }
+        )
+
+    df_institutional_intensity
+    return (df_institutional_intensity,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## Reunimos los datos
     """)
     return
@@ -860,6 +911,9 @@ def _(
     ciiu_razon_electricidad_gasto_total_final = ciiu_razon_electricidad_gasto_total.clone().with_columns(
         pl.col("ciiu").cast(pl.Int64)
     )
+
+    ## Institutional Intensity
+    #df_institutional_intensity
     return (
         ciiu_china_intensiveness_final,
         ciiu_insumos_presentes_final,
@@ -891,6 +945,7 @@ def _(
     ciiu_china_intensiveness_final,
     ciiu_insumos_presentes_final,
     ciiu_razon_electricidad_gasto_total_final,
+    df_institutional_intensity,
     elasticidad_empleo_fdi_final,
     elasticidad_lac_empleo_fdi_final,
     employment_elasticity_final,
@@ -924,7 +979,8 @@ def _(
             rca_peers,
             ciiu_insumos_presentes_final,
             share_energy_final,
-            ciiu_razon_electricidad_gasto_total_final
+            ciiu_razon_electricidad_gasto_total_final, 
+            df_institutional_intensity
         ], how="align"
     ).filter(
         pl.col("ciiu").is_in(cdata_hnd["ACTIVITY"])
@@ -961,7 +1017,7 @@ def _(mo):
 def _():
     import numpy as np
     from pymcdm.methods import TOPSIS
-    from pymcdm.helpers import rrankdata
+    from pymcdm.helpers import rrankdata, normalize_matrix
     return TOPSIS, np, rrankdata
 
 
@@ -1004,7 +1060,77 @@ def _(TOPSIS, factores_imputados, np, rrankdata):
     # Determine preferences and ranking for alternatives
     pref_atractivo = topsis_atractivo(alts_atractivo, weights_atractivo, types_atractivo)
     ranking_atractivo = rrankdata(pref_atractivo)
-    return (pref_atractivo,)
+
+    # If you want to inspect computation process in details
+    results_atractivo = topsis_atractivo(alts_atractivo, weights_atractivo, types_atractivo, verbose=True)
+    return atractivo_factores, pref_atractivo, results_atractivo
+
+
+@app.cell
+def _(atractivo_factores, factores_imputados, pd, results_atractivo):
+    # Construimos Normalized decision matrix
+    normalized_decision_matrix_atractivo =  results_atractivo.results[0].data
+    normalized_decision_matrix_atractivo = pd.DataFrame(
+        normalized_decision_matrix_atractivo, 
+        columns=atractivo_factores,
+        index = factores_imputados["ciiu"]
+
+    )
+    normalized_decision_matrix_atractivo.index.name = "ciiu"
+    normalized_decision_matrix_atractivo = normalized_decision_matrix_atractivo.reset_index()
+    normalized_decision_matrix_atractivo
+    return (normalized_decision_matrix_atractivo,)
+
+
+@app.cell
+def _(pd):
+    from typing import List
+
+    def build_radar_data(industrias : List[int], 
+                         criterios : List[str], 
+                         datos : pd.DataFrame):
+
+        indicator_data = [
+            {
+                "name" : criterio, 
+                "max" : 1.0
+            }
+            for criterio in criterios
+        ] 
+
+        data = [
+            {
+                "value" : datos.query(f"ciiu == {industria}")[criterios].to_numpy()[0], 
+                "name" : industria
+            }
+
+            for industria in industrias
+        ]
+
+        return indicator_data, data
+    return (build_radar_data,)
+
+
+@app.cell
+def _(build_radar_data, normalized_decision_matrix_atractivo):
+    factores_radar = ["cumulative_investment_world", "cumulative_investment_lac", "cagr_investment_world"]
+
+    build_radar_data(
+        [2731, 2750], factores_radar, normalized_decision_matrix_atractivo
+    )
+    return (factores_radar,)
+
+
+@app.cell
+def _(factores_radar, normalized_decision_matrix_atractivo):
+    normalized_decision_matrix_atractivo.query("ciiu in [2731, 2750]")[factores_radar]
+    return
+
+
+@app.cell
+def _(normalized_decision_matrix_atractivo):
+    normalized_decision_matrix_atractivo
+    return
 
 
 @app.cell(hide_code=True)
@@ -1023,6 +1149,7 @@ def _(TOPSIS, factores_imputados, np, rrankdata):
         "razon_insumos_presentes", 
         "share_energy",
         "razon_electricidad_gasto_total",
+        "institutional_intensity"
     ]
 
     alts_viabilidad = factores_imputados.select(viabilidad_factores).to_numpy()
@@ -1031,7 +1158,7 @@ def _(TOPSIS, factores_imputados, np, rrankdata):
     weights_viabilidad = np.array([1/len(viabilidad_factores)]*len(viabilidad_factores))
 
     # Define criteria types (1 for profit, -1 for cost)
-    types_viabilidad = np.array([1, 1, -1, -1])
+    types_viabilidad = np.array([1, 1, -1, -1, -1])
 
     # Create object of the method
     # Note, that default normalization method for TOPSIS is minmax
@@ -1228,7 +1355,7 @@ def _(
 ):
     cdata_extensivo = cdata_hnd.filter(
         (pl.col("REF_AREA")=="HND") & 
-        (pl.col("rca")>0) & 
+        #(pl.col("rca")>0) & 
         (pl.col("mcp")==0)
     )
     cdata_extensivo = cdata_extensivo.join(
@@ -1280,11 +1407,36 @@ def _(
     )
 
     # Create a horizontal line at y = -1.14
-    rule_extensivo_atractivo = alt.Chart(pd.DataFrame({'y': [cdata_extensivo["topsis_atractivo"].mean()]})).mark_rule(color='red').encode(y='y:Q')
-    rule_extensivo_viabilidad = alt.Chart(pd.DataFrame({'x': [cdata_extensivo["topsis_viabilidad"].mean()]})).mark_rule(color='red').encode(x='x:Q')
+    rule_extensivo_atractivo = alt.Chart(pd.DataFrame({'y': [cdata_extensivo["topsis_atractivo"].mean()]})).mark_rule(color='gray', strokeDash=[4,4],  strokeWidth=3).encode(y='y:Q')
+    rule_extensivo_viabilidad = alt.Chart(pd.DataFrame({'x': [cdata_extensivo["topsis_viabilidad"].mean()]})).mark_rule(color='gray', strokeDash=[4,4],  strokeWidth=3).encode(x='x:Q')
 
+    # 2. Quadrant labels dataframe with custom coordinates
+    # Change these values to position text exactly where you want it
+    quadrant_labels = pd.DataFrame({
+        'y_pos': [cdata_extensivo["topsis_atractivo"].max(), 
+                  cdata_extensivo["topsis_atractivo"].min(), 
+                  cdata_extensivo["topsis_atractivo"].max(),
+                 cdata_extensivo["topsis_atractivo"].min()],     # X coordinates for text
+        'x_pos': [cdata_extensivo["topsis_viabilidad"].max()*0.95,
+                  cdata_extensivo["topsis_viabilidad"].max()*0.95,
+                  cdata_extensivo["topsis_viabilidad"].min()*1.05,
+                 cdata_extensivo["topsis_viabilidad"].min()*1.05],     # Y coordinates for text
+        'label': ['Fase I', 'Fase II', 'Fase III', 'Fase IV'],
+        'align': ['right', 'left', 'left', 'right'] # Optional: aligns text inside boundaries
+    })
 
-    (plot_extensivo + rule_extensivo_atractivo + rule_extensivo_viabilidad).properties(
+    # 5. Quadrant text layer
+    text_layer = alt.Chart(quadrant_labels).mark_text(
+        size=14,
+        fontStyle='bold',
+        color='black'
+    ).encode(
+        x='x_pos:Q',
+        y='y_pos:Q',
+        text='label:N'
+    )
+
+    (plot_extensivo + rule_extensivo_atractivo + rule_extensivo_viabilidad + text_layer).properties(
     #plot_intensivo.properties(
             title=alt.TitleParams(
                 "Diagrama Viabilidad-Atractivo",
@@ -1297,12 +1449,333 @@ def _(
 
 @app.cell
 def _(cdata_extensivo):
+
     cdata_extensivo.select("clase_titulo", "topsis_atractivo", "topsis_viabilidad")
     return
 
 
 @app.cell
+def _(cdata_extensivo, pl):
+    ## Diccionario con condiciones de etiquetas
+    condiciones = {
+        "I" : 
+        (
+            (
+                pl.col("topsis_atractivo") >= pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") >= pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+        "II" : 
+        (
+            (
+                pl.col("topsis_atractivo") < pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") >= pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+        "III" : 
+        (
+            (
+                pl.col("topsis_atractivo") >= pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") < pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+        "IV" : 
+        (
+            (
+                pl.col("topsis_atractivo") < pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") < pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+    }
+
+    cdata_extensivo_fases = cdata_extensivo.with_columns(
+       fase = pl.coalesce(
+            pl.when(cond).then(pl.lit(val)) for val, cond in condiciones.items()
+        )
+    )
+    cdata_extensivo_fases
+    return (cdata_extensivo_fases,)
+
+
+@app.cell
 def _():
+
+    from great_tables import GT, md, html
+    from great_tables.data import islands
+    return GT, html, islands
+
+
+@app.cell
+def _(GT, cdata_extensivo_fases, html):
+    (
+        GT(
+        cdata_extensivo_fases.select(
+            ["fase", "Clusters", "ACTIVITY", "clase_titulo"]
+        ).sort("fase", "Clusters")
+          )
+        .tab_header(
+            title="New York Air Quality Measurements",
+            subtitle="Daily measurements in New York City (May 1-10, 1973)"
+        )
+        .tab_spanner(
+            label="",
+            columns=["fase", "Clusters", "ACTIVITY", "clase_titulo"]
+        )
+        .cols_move_to_start(columns = ["fase", "Clusters", "ACTIVITY", "clase_titulo"])
+        .cols_label(
+            fase = html("Fase"),
+            ACTIVITY = html("Clave CIIU4"),
+            clase_titulo = html("Actividad CIIU4")
+        )
+    )
+    return
+
+
+@app.cell
+def _(islands):
+    islands
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Árbol Disponibilidad de Insumos
+    """)
+    return
+
+
+@app.cell
+def _(pl):
+    hs12 = pl.read_csv(
+        "datos/viabilidad_atractivo/product_hs12.csv", ignore_errors=True
+    ).select(
+        "product_hs12_code", "product_name_short"
+    )
+    hs12
+    return (hs12,)
+
+
+@app.cell
+def _(
+    aipnet_ciiu,
+    aipnet_ciiu_razon_insumos,
+    atlas_hs12_hnd,
+    hs12,
+    mapp_ciiu,
+    nodo_madre,
+    pl,
+    threshold_intensidad_importacion,
+):
+    ## Creamos dataframe que contiene el porcentaje de insumos presentes para la producción del producto hs12
+    ## Con información más desagregada para poder construir arbol
+
+    arbol_insumos = aipnet_ciiu.join(
+        atlas_hs12_hnd.select("product_hs12_code", "export_rca", "import_value"), 
+        left_on=nodo_madre, 
+        right_on="product_hs12_code", 
+        how = "left"
+    ).fill_null(0).with_columns(
+        ## Etiquetamos con 1 los productos que se exportan con ventaja comparativa
+        M = pl.when(
+            pl.col("export_rca")>=1
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            pl.lit(0)
+        ),
+        ## Calculamos el porcentaje de importación por producto que importa cada cada producto para el total de importación que implica su cadena de producción
+        razon_importacion = pl.col("import_value")/pl.col("import_value").sum().over("ciiu","hs12")
+    ).with_columns(
+        ## Variable que indica si el producto se importa con intensidad (el insumo representa el 20% de las importaciones totales con las que se produce el producto)
+        se_importa = pl.when(
+            pl.col("razon_importacion") >= threshold_intensidad_importacion
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            0
+        )
+    ).with_columns(
+        ## Un insumo está disponible por dos condiciones : 
+        ## 1) Lo exporta con ventaja comparativa o 
+        ## 2) lo importa con intensidad 
+        disponible = pl.when(
+            (pl.col("M")==1) | (pl.col("se_importa")==1)
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            pl.lit(0)
+        )
+    ).select("ciiu", "hs12", nodo_madre, "M", "se_importa", "disponible")
+
+    ## Agregasmos Razon de Insumos Presentes
+    arbol_insumos = arbol_insumos.join(
+        aipnet_ciiu_razon_insumos.group_by(
+            "ciiu"
+        ).agg(
+            pl.col("weight__insumos_presentes").sum().alias("razon_insumos_presentes")
+        ).select("ciiu", "razon_insumos_presentes"), 
+        on = "ciiu"
+    ).join(
+        mapp_ciiu, 
+        left_on="ciiu", 
+        right_on="codigo"
+    ).join(
+        hs12, 
+        left_on="hs12", 
+        right_on="product_hs12_code"
+    ).rename(
+        {
+            "product_name_short" : "Producto (H12)"
+        }
+    ).join(
+        hs12, 
+        left_on=nodo_madre, 
+        right_on="product_hs12_code"
+    ).rename(
+        {
+            "product_name_short" : "Producto Downstream (H12)"
+        }
+    )
+
+    arbol_insumos = arbol_insumos.rename(
+        {
+          "ciiu" : "CIIU",
+          "hs12" : "hs2012_code",
+          "M" : "Se Exporta",
+          "se_importa" : "Se Importa",
+          "disponible" : "Disponible",
+          "razon_insumos_presentes" : "Razon Insumos Presentes",
+          "nombre_actividad" : "Actividad",
+        }
+    ).select(
+         'CIIU',
+         'Actividad', 
+         'Producto (H12)',
+         'Producto Downstream (H12)',
+         'Se Exporta',
+         'Se Importa',
+         'Disponible',
+         'Razon Insumos Presentes',
+         "hs2012_code", 
+         nodo_madre
+    ).join(
+        aipnet_ciiu_razon_insumos.select(
+            "ciiu", "hs12", "razon_insumos_presentes"
+        ).with_columns(
+            (pl.col("razon_insumos_presentes")*100).round(2)
+        ).rename(
+            {
+                "razon_insumos_presentes" : "Disponibilidad Producto (HS12)"
+            }
+        ), 
+        left_on=["CIIU", "hs2012_code"], 
+        right_on=["ciiu", "hs12"]
+
+    )
+
+    arbol_insumos
+    return (arbol_insumos,)
+
+
+@app.cell
+def _(arbol_insumos):
+    ## Guardamos datos 
+    arbol_insumos.write_parquet("/home/milo/Documents/egtp/iniciativas/priorizacion_hnd/datos/arbol_insumos_completo.parquet")
+    return
+
+
+@app.cell
+def _(arbol_insumos):
+    ciiu_arbol_insumos = {}
+
+    for ciiu_key in arbol_insumos["CIIU"].unique():
+        ciiu_arbol_insumos[ciiu_key] = arbol_insumos.filter(
+            CIIU=ciiu_key
+        ).select(
+            "Producto (H12)", 
+            "Producto Downstream (H12)", 
+            'Se Exporta', 'Se Importa', 'Disponible', "Disponibilidad Producto (HS12)"
+        ).to_pandas().groupby(
+            "Producto (H12)"
+        ).apply(lambda x: x[
+            ["Producto Downstream (H12)", 'Se Exporta', 'Se Importa', 'Disponible', "Disponibilidad Producto (HS12)"]
+        ].to_dict(orient="records")).to_dict()
+    return (ciiu_arbol_insumos,)
+
+
+@app.cell
+def _(ciiu_arbol_insumos):
+    import pickle
+
+    with open("/home/milo/Documents/egtp/iniciativas/priorizacion_hnd/datos/ciiu_arbol_insumos.pkl", "wb") as file:
+        pickle.dump(ciiu_arbol_insumos, file)
+    return
+
+
+@app.cell
+def _(ciiu_arbol_insumos):
+    [
+        {"name" : hs , 
+         "itemStyle": { "color": "red" if  hs_down[0]["Disponibilidad Producto (HS12)"] >= 50.0 else "gray"}, 
+         "value" : hs_down[0]["Disponibilidad Producto (HS12)"],
+         "collapse" : True,
+         "children" : [
+             { 
+                 "name" : v["Producto Downstream (H12)"], 
+                 "Se Exporta" : v["Se Exporta"],
+                 "Se Importa" : v["Se Importa"], 
+                 "Disponible" : v["Disponible"], 
+                 "itemStyle": { "color": "red" if  v["Disponible"] == 1 else "gray"}
+             }
+             for v in hs_down
+         ]
+        } for hs,hs_down in ciiu_arbol_insumos[5920].items() ]
+    return
+
+
+@app.function
+def build_tree(arbol) : 
+    return [
+        {"name" : hs , 
+         "itemStyle": { "color": "red" if  hs_down[0]["Disponibilidad Producto (HS12)"] >= 50.0 else "gray"}, 
+         "value" : hs_down[0]["Disponibilidad Producto (HS12)"],
+         "collapse" : True,
+         "children" : [
+             { 
+                 "name" : v["Producto Downstream (H12)"], 
+                 "Se Exporta" : v["Se Exporta"],
+                 "Se Importa" : v["Se Importa"], 
+                 "Disponible" : v["Disponible"], 
+                 "itemStyle": { "color": "red" if  v["Disponible"] == 1 else "gray"}
+             }
+             for v in hs_down
+         ]
+        } for hs,hs_down in arbol.items() ]
+
+
+@app.cell
+def _(arbol_insumos):
+    arbol_insumos
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _(arbol_insumos):
+    arbol_insumos.drop("CIIU", "Actividad", "Razon Insumos Presentes").unique().write_csv("/home/milo/Documents/egtp/iniciativas/honduras/datos/hs12_insumos_tree/hs12_insumos_tree.csv")
     return
 
 
