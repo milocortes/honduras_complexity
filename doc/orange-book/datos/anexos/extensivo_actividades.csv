@@ -1,0 +1,29 @@
+Clusters,Clave CIIU4,Actividad CIIU4,COG,PCI,Density
+C1 Manufactura avanzada y metalmecánica,2910,  Fabricación de vehículos automotores,1.49,6.96,0.12
+C1 Manufactura avanzada y metalmecánica,2816,  Fabricación de equipo de elevación y manipulación,1.92,6.85,0.16
+C1 Manufactura avanzada y metalmecánica,2829,  Fabricación de otros tipos de maquinaria de uso especial,1.92,6.85,0.16
+C1 Manufactura avanzada y metalmecánica,3040,  Fabricación de vehículos militares de combate,1.59,6.7,0.15
+C1 Manufactura avanzada y metalmecánica,2815,"  Fabricación de hornos, hogares y quemadores",1.63,5.7,0.13
+C1 Manufactura avanzada y metalmecánica,2811,"  Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas",1.49,5.32,0.13
+C1 Manufactura avanzada y metalmecánica,2819,  Fabricación de otros tipos de maquinaria de uso general,1.44,5.0,0.12
+C1 Manufactura avanzada y metalmecánica,2822,  Fabricación de maquinaria para la conformación de metales y de máquinas herramienta,1.44,5.0,0.12
+C1 Manufactura avanzada y metalmecánica,2591,"  Forja, prensado, estampado y laminado de metales; pulvimetalurgia",1.79,4.62,0.17
+C1 Manufactura avanzada y metalmecánica,2660,  Fabricación de equipo de irradiación y equipo electrónico de uso médico y terapéutico,1.75,4.57,0.17
+C1 Manufactura avanzada y metalmecánica,2420,  Fabricación de metales preciosos básicos y de otros metales no ferrosos,0.9,0.84,0.27
+"C2 Química, materiales y farmacéutica",2011,  Fabricación de sustancias químicas básicas,1.74,5.56,0.18
+"C2 Química, materiales y farmacéutica",2395,"  Fabricación de artículos de hormigón, cemento y yeso",0.74,0.58,0.28
+"C2 Química, materiales y farmacéutica",2012,  Fabricación de abonos y compuestos de nitrógeno,0.6,-0.02,0.29
+"C2 Química, materiales y farmacéutica",2021,  Fabricación de plaguicidas y otros productos químicos de uso agropecuario,0.34,-1.01,0.3
+"C2 Química, materiales y farmacéutica",1920,  Fabricación de productos de la refinación del petróleo,0.25,-1.68,0.3
+C3 Agroindustria y alimentos procesados,1075,  Elaboración de comidas y platos preparados,1.33,4.15,0.22
+C3 Agroindustria y alimentos procesados,1061,  Elaboración de productos de molienda,0.48,-0.45,0.29
+C3 Agroindustria y alimentos procesados,1101,"  Destilación, rectificación y mezcla de bebidas alcohólicas",0.27,-1.45,0.3
+C3 Agroindustria y alimentos procesados,1073,  Elaboración de cacao y chocolate y de productos de confitería,0.0,-2.68,0.32
+C4 Servicios empresariales intensivos en conocimiento (KIBS),7110,  Actividades de arquitectura e ingeniería y actividades conexas de consultoría técnica,1.46,3.69,0.23
+C4 Servicios empresariales intensivos en conocimiento (KIBS),8291,  Actividades de agencias de cobro y agencias de calificación crediticia,1.42,3.45,0.22
+C4 Servicios empresariales intensivos en conocimiento (KIBS),6910,  Actividades jurídicas,1.31,2.76,0.25
+C4 Servicios empresariales intensivos en conocimiento (KIBS),7020,  Actividades de consultoría de gestión,0.55,0.18,0.29
+C5 Turismo,5021,  Transporte de pasajeros por vías de navegación interiores,1.62,4.17,0.16
+C5 Turismo,5224,  Manipulación de la carga,0.61,0.45,0.28
+C5 Turismo,7911,  Actividades de agencias de viajes,0.22,-1.39,0.31
+C6 Industria textil y de confección,1394,"  Fabricación de cuerdas, cordeles, bramantes y redes",0.45,-0.25,0.3
