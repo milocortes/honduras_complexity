@@ -1002,7 +1002,7 @@ def _(factores, pd, pl):
         pd.DataFrame(imputer.fit_transform(factores.to_pandas()), columns=factores.columns)
     )
     factores_imputados
-    return (factores_imputados,)
+    return factores_imputados, imputer
 
 
 @app.cell(hide_code=True)
@@ -1063,7 +1063,12 @@ def _(TOPSIS, factores_imputados, np, rrankdata):
 
     # If you want to inspect computation process in details
     results_atractivo = topsis_atractivo(alts_atractivo, weights_atractivo, types_atractivo, verbose=True)
-    return atractivo_factores, pref_atractivo, results_atractivo
+    return (
+        atractivo_factores,
+        pref_atractivo,
+        results_atractivo,
+        topsis_atractivo,
+    )
 
 
 @app.cell
@@ -1167,7 +1172,7 @@ def _(TOPSIS, factores_imputados, np, rrankdata):
     # Determine preferences and ranking for alternatives
     pref_viabilidad = topsis_viabilidad(alts_viabilidad, weights_viabilidad, types_viabilidad)
     ranking_viabilidad = rrankdata(pref_viabilidad)
-    return (pref_viabilidad,)
+    return pref_viabilidad, topsis_viabilidad, viabilidad_factores
 
 
 @app.cell
@@ -1776,6 +1781,945 @@ def _():
 @app.cell
 def _(arbol_insumos):
     arbol_insumos.drop("CIIU", "Actividad", "Razon Insumos Presentes").unique().write_csv("/home/milo/Documents/egtp/iniciativas/honduras/datos/hs12_insumos_tree/hs12_insumos_tree.csv")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # Productos Textiles
+    ## Métricas de Viabilidad y Atractivo
+
+    **Attractiveness**:
+    - Capacidad para movilizar FDI (world and region) :rocket:
+    - ⁠Industry growth worldwide (past five years) :rocket:
+    - ⁠Industry growth worldwide (past five years-Atlas export growth) :rocket:
+    - ⁠Possibility to substitute US imports from Asia (China) :rocket:
+    - ⁠Capacity to create employment among specific groups (women, youth, low-skill) :rocket:
+
+    **Viability**:
+    - Strength in countries like Honduras (RCA in peer group)
+    - ⁠⁠Availability of inputs (doble razor, let us talk) :rocket:
+    - Reliance on a constraint or potential constraint (energy, security) :rocket:
+    - Reliance on a constraint or potential constraint (electricity-SCIAN México) :rocket:
+    - Institutional Intensity :rocket:
+    """)
+    return
+
+
+@app.cell
+def _(pl):
+    # Cargamos productos seleccionados de Textiles
+    textiles = pl.read_csv(
+                    "datos/productos_textiles/productos_textiles.csv"
+                ).with_columns(
+                    pl.col("HS12").cast(pl.String)
+                ).rename(
+                    {"HS12":"hs12"}
+                )
+    textiles
+    return (textiles,)
+
+
+@app.cell
+def _(pl):
+    # Cargamos CW de productos textiles
+    cw_textiles = pl.read_csv("datos/productos_textiles/productos_textiles_cw_hs12_ciiu4.csv")
+    cw_textiles
+    return (cw_textiles,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Attractiveness
+    """)
+    return
+
+
+@app.cell
+def _(cw_textiles, fdi_lac_capital_investment, pl):
+    ## Capacidad para movilizar FDI (LAC)
+    ## Agrupamos por actividad CIIU para tener el monto acumulado de inversión en capital y creacion de empleo entre 2019 y 2024
+    textiles_fdi_lac_capital_investment = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        pl.from_pandas(fdi_lac_capital_investment),
+        left_on="ISIC4", 
+        right_on="CIIU", 
+        how="left"
+    ).with_columns(
+        pl.col("Capital investment")*pl.col("weight"),
+        pl.col("Jobs created")*pl.col("weight"),
+    ).drop(
+        "ISIC4", "weight"
+    ).group_by("hs12").sum().with_columns(
+        pl.col("hs12").map_elements(lambda x : f"{x:04d}")
+    ).rename(
+        {"Capital investment" : "cumulative_investment_lac"}
+    )
+
+    textiles_fdi_lac_capital_investment
+    return (textiles_fdi_lac_capital_investment,)
+
+
+@app.cell
+def _(cw_textiles, fdi_lac_cagr_investment, pl):
+    ## Tasa de crecimiento compuesta para inversión de industrias en todo el mundo
+    textiles_fdi_lac_cagr_investment = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        fdi_lac_cagr_investment,
+        left_on="ISIC4", 
+        right_on="CIIU", 
+        how="left"
+    ).with_columns(
+        pl.col("beginning_val")*pl.col("weight"),
+        pl.col("ending_val")*pl.col("weight"),
+    ).group_by("hs12").agg(
+        pl.col("beginning_val").sum(),  
+        pl.col("ending_val").sum(),  
+        (pl.col("n_years").sum()/pl.col("n_years").count()).alias("n_years")
+    ).fill_nan(0.0).with_columns(
+        cagr_investment = ((pl.col("ending_val") / pl.col("beginning_val")) ** (1 / pl.col("n_years")) - 1)*100
+    ).select("hs12", "cagr_investment").with_columns(
+        pl.col("hs12").cast(pl.String)
+    )
+
+
+    textiles_fdi_lac_cagr_investment
+    return (textiles_fdi_lac_cagr_investment,)
+
+
+@app.cell
+def _(cw_textiles, fdi_lac_cagr_empleo, pl):
+    ## Tasa de crecimiento compuesta para inversión de industrias en lac
+    textiles_fdi_lac_cagr_empleo = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        fdi_lac_cagr_empleo,
+        left_on="ISIC4", 
+        right_on="CIIU", 
+        how="left"
+    ).with_columns(
+        pl.col("beginning_val")*pl.col("weight"),
+        pl.col("ending_val")*pl.col("weight"),
+    ).group_by("hs12").agg(
+        pl.col("beginning_val").sum(),  
+        pl.col("ending_val").sum(),  
+        (pl.col("n_years").sum()/pl.col("n_years").count()).alias("n_years")
+    ).fill_nan(0.0).with_columns(
+        cagr_empleo = ((pl.col("ending_val") / pl.col("beginning_val")) ** (1 / pl.col("n_years")) - 1)*100
+    ).select("hs12", "cagr_empleo").with_columns(
+        pl.col("hs12").cast(pl.String)
+    )
+
+    textiles_fdi_lac_cagr_empleo 
+    return (textiles_fdi_lac_cagr_empleo,)
+
+
+@app.cell
+def _(pl, textiles_fdi_lac_cagr_empleo, textiles_fdi_lac_cagr_investment):
+    textiles_elasticidad_lac_empleo_fdi = textiles_fdi_lac_cagr_investment.select("hs12", "cagr_investment").join(
+        textiles_fdi_lac_cagr_empleo.select("hs12", "cagr_empleo"), 
+        on = "hs12",
+    ).with_columns(
+        elasticidad = pl.col("cagr_empleo")/pl.col("cagr_investment")
+    ).select("hs12", "elasticidad")
+    textiles_elasticidad_lac_empleo_fdi
+    return (textiles_elasticidad_lac_empleo_fdi,)
+
+
+@app.cell
+def _(cw_textiles, industry_growth_rate, pl):
+    ## ⁠Industry growth worldwide (past five years)
+    textiles_industry_growth_rate = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        industry_growth_rate.drop("cagr_production"),
+        left_on="ISIC4", 
+        right_on="ACTIVITY", 
+        how="left"
+    ).with_columns(
+        pl.col("beginning_val")*pl.col("weight"),
+        pl.col("ending_val")*pl.col("weight"),
+    ).group_by("hs12").agg(
+        pl.col("beginning_val").sum(),  
+        pl.col("ending_val").sum(),  
+        (pl.col("n_years").sum()/pl.col("n_years").count()).alias("n_years")
+    ).fill_nan(0.0).with_columns(
+        cagr_production = ((pl.col("ending_val") / pl.col("beginning_val")) ** (1 / pl.col("n_years")) - 1)*100
+    ).select("hs12", "cagr_production").with_columns(
+        pl.col("hs12").cast(pl.String)
+    )
+    textiles_industry_growth_rate
+    return (textiles_industry_growth_rate,)
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _(exportaciones_hs, pl):
+    ## ⁠Industry growth worldwide (past five years-Atlas export growth)
+    textiles_industry_growth_rate_exports = exportaciones_hs.sort(
+        ["product_hs12_code", "year"]
+    ).group_by("product_hs12_code", maintain_order=True).agg(
+            beginning_val = pl.col("export_value").first(),
+            ending_val = pl.col("export_value").last(),
+            n_years = pl.col("year").max() - pl.col("year").min(),
+            #pl.col("PROD").pct_change().alias("Growth_Rate")
+        ).with_columns(
+        cagr_exports = ((pl.col("ending_val") / pl.col("beginning_val")) ** (1 / pl.col("n_years")) - 1)*100
+    ).with_columns(
+        pl.col("product_hs12_code").map_elements(lambda x : f"{x:04d}")
+    ).rename(
+        {"product_hs12_code" : "hs12"}
+    ).select("hs12", "cagr_exports")
+    textiles_industry_growth_rate_exports
+    return (textiles_industry_growth_rate_exports,)
+
+
+@app.cell
+def _(china_imports, pl):
+    ## ⁠Possibility to substitute US imports from Asia (China) 
+    textiles_china_imports = china_imports.with_columns(
+        pl.col("product_hs12_code").map_elements(lambda x : f"{x:04d}")
+    ).rename(
+        {"product_hs12_code" : "hs12"}
+    )
+    textiles_china_imports
+    return (textiles_china_imports,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Viability
+    """)
+    return
+
+
+@app.cell
+def _(atlas_hs12, pl):
+    ## Strength in countries like Honduras (RCA in peer group)
+    import polars.selectors as cs
+
+    textiles_rca_peers = atlas_hs12.filter(
+        (pl.col("country_iso3_code").is_in(["HND", "SLV", "ECU"])) &
+        (pl.col("year")==2024)
+    ).select(
+        "product_hs12_code", "country_iso3_code", "export_rca"
+    ).fill_null(0).with_columns(
+        ## Etiquetamos con 1 los productos que se exportan con ventaja comparativa
+        M = pl.when(
+            pl.col("export_rca")>=1
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            pl.lit(0)
+        ),
+    ).pivot(
+        index="product_hs12_code",
+        on="country_iso3_code",
+        values="M",
+        aggregate_function="sum",
+    ).with_columns(
+        (
+             pl.sum_horizontal(["HND", "SLV", "ECU"]).alias("rca_peers") / 3   
+        )
+        , 
+        pl.col("product_hs12_code").map_elements(lambda x : f"{x:04d}")
+    ).rename(
+        {
+            "product_hs12_code" : "hs12"
+        }
+    ).select("hs12", "rca_peers")
+    textiles_rca_peers
+    return (textiles_rca_peers,)
+
+
+@app.cell
+def _(
+    aipnet_ciiu,
+    atlas_hs12_hnd,
+    nodo_madre,
+    pl,
+    threshold_intensidad_importacion,
+):
+    ## Availability of inputs
+    textiles_availability_inputs = aipnet_ciiu.drop("ciiu", "weight").join(
+        atlas_hs12_hnd.select("product_hs12_code", "export_rca", "import_value"), 
+        left_on=nodo_madre, 
+        right_on="product_hs12_code", 
+        how = "left"
+    ).fill_null(0).with_columns(
+        ## Etiquetamos con 1 los productos que se exportan con ventaja comparativa
+        M = pl.when(
+            pl.col("export_rca")>=1
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            pl.lit(0)
+        ),
+        ## Calculamos el porcentaje de importación por producto que importa cada cada producto para el total de importación que implica su cadena de producción
+        razon_importacion = pl.col("import_value")/pl.col("import_value").sum().over("hs12")
+    ).with_columns(
+        ## Variable que indica si el producto se importa con intensidad (el insumo representa el 20% de las importaciones totales con las que se produce el producto)
+        se_importa = pl.when(
+            pl.col("razon_importacion") >= threshold_intensidad_importacion
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            0
+        )
+    ).with_columns(
+        ## Un insumo está disponible por dos condiciones : 
+        ## 1) Lo exporta con ventaja comparativa o 
+        ## 2) lo importa con intensidad 
+        disponible = pl.when(
+            (pl.col("M")==1) | (pl.col("se_importa")==1)
+        ).then(
+            pl.lit(1)
+        ).otherwise(
+            pl.lit(0)
+        )
+    ).group_by("hs12").agg(
+        pl.col("disponible").sum().alias("inputs_presentes"),
+        pl.col("disponible").count().alias("inputs_totales"),
+    ).with_columns(
+        razon_insumos_presentes = pl.col("inputs_presentes")/pl.col("inputs_totales")
+    ).select("hs12", "razon_insumos_presentes").with_columns(
+        pl.col("hs12").map_elements(lambda x : f"{x:04d}")
+    )
+    textiles_availability_inputs
+    return (textiles_availability_inputs,)
+
+
+@app.cell
+def _(cw_textiles, pl, share_energy):
+    ## Reliance on a constraint or potential constraint (energy, security)
+    textiles_share_energy = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        share_energy,
+        left_on="ISIC4", 
+        right_on="ACTIVITY", 
+        how="left"
+    ).group_by("hs12").agg(
+                share_energy = (pl.col("share_energy") * pl.col("weight")).sum() / pl.col("weight").sum()
+    ).with_columns(
+        pl.col("hs12").cast(pl.String)
+    )
+
+    textiles_share_energy
+    return (textiles_share_energy,)
+
+
+@app.cell
+def _(ciiu_razon_electricidad_gasto_total, cw_textiles, pl):
+    ## Reliance on a constraint or potential constraint (electricity-SCIAN México)
+    textiles_ciiu_razon_electricidad_gasto_total = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        ciiu_razon_electricidad_gasto_total.with_columns(
+            pl.col("ciiu").cast(pl.String)
+        ),
+        left_on="ISIC4", 
+        right_on="ciiu", 
+        how="left"
+    ).group_by("hs12").agg(
+                razon_electricidad_gasto_total = (pl.col("razon_electricidad_gasto_total") * pl.col("weight")).sum() / pl.col("weight").sum()
+    ).with_columns(
+        pl.col("hs12").cast(pl.String)
+    )
+    textiles_ciiu_razon_electricidad_gasto_total
+    return (textiles_ciiu_razon_electricidad_gasto_total,)
+
+
+@app.cell
+def _(cw_textiles, df_institutional_intensity, pl):
+    ## Institutional Intensity
+    textiles_df_institutional_intensity = cw_textiles.with_columns(
+        pl.col("ISIC4").cast(pl.String)
+    ).join(
+        df_institutional_intensity.with_columns(
+            pl.col("ciiu").cast(pl.String)
+        ),
+        left_on="ISIC4", 
+        right_on="ciiu", 
+        how="left"
+    ).group_by("hs12").agg(
+                institutional_intensity = (pl.col("institutional_intensity") * pl.col("weight")).sum() / pl.col("weight").sum()
+    ).with_columns(
+        pl.col("hs12").cast(pl.String)
+    )
+    textiles_df_institutional_intensity
+    return (textiles_df_institutional_intensity,)
+
+
+@app.cell
+def _(
+    imputer,
+    pd,
+    pl,
+    textiles,
+    textiles_availability_inputs,
+    textiles_china_imports,
+    textiles_ciiu_razon_electricidad_gasto_total,
+    textiles_df_institutional_intensity,
+    textiles_elasticidad_lac_empleo_fdi,
+    textiles_fdi_lac_cagr_empleo,
+    textiles_fdi_lac_cagr_investment,
+    textiles_fdi_lac_capital_investment,
+    textiles_industry_growth_rate,
+    textiles_industry_growth_rate_exports,
+    textiles_rca_peers,
+    textiles_share_energy,
+):
+    ## Consolidamos tablas
+
+    textiles_consolida = pl.concat([
+        textiles_fdi_lac_capital_investment, 
+        textiles_fdi_lac_cagr_investment, 
+        textiles_fdi_lac_cagr_empleo,
+        textiles_elasticidad_lac_empleo_fdi, 
+        textiles_industry_growth_rate, 
+        textiles_industry_growth_rate_exports, 
+        textiles_china_imports, 
+        textiles_rca_peers, 
+        textiles_availability_inputs, 
+        textiles_share_energy, 
+        textiles_ciiu_razon_electricidad_gasto_total, 
+        textiles_df_institutional_intensity
+    ],  how = "align")
+
+    textiles_factores = textiles.join(
+        textiles_consolida, 
+        on = "hs12",
+        how = "inner"
+    ).with_columns(
+        pl.col("hs12").cast(pl.Int32)
+    ).drop("Actividad")
+
+    ## Imputamos datos con Kmedias
+    # Fit and transform the data
+    textiles_factores_imputados = pl.from_pandas(
+        pd.DataFrame(imputer.fit_transform(textiles_factores.to_pandas()), columns=textiles_factores.columns)
+    )
+    textiles_factores_imputados
+
+    textiles_factores_imputados
+    return (textiles_factores_imputados,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # Topsis Textiles
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Atractivo
+    """)
+    return
+
+
+@app.cell
+def _(TOPSIS, np, rrankdata, textiles_factores_imputados, topsis_atractivo):
+    # TOPSIS atractivo
+    textiles_atractivo_factores = [
+        "cumulative_investment_lac",
+        "cagr_investment",
+        "elasticidad",
+        "cagr_production",
+        "cagr_exports",
+        "share_imports_china", 
+    ]
+    textiles_alts_atractivo = textiles_factores_imputados.select(textiles_atractivo_factores).to_numpy()
+
+    # Define criteria weights (should sum up to 1)
+    textiles_weights_atractivo = np.array([1/len(textiles_atractivo_factores)]*len(textiles_atractivo_factores))
+
+    # Define criteria types (1 for profit, -1 for cost)
+    textiles_types_atractivo = np.array([1]*len(textiles_atractivo_factores))
+
+    # Create object of the method
+    # Note, that default normalization method for TOPSIS is minmax
+    textiles_topsis_atractivo = TOPSIS()
+
+    # Determine preferences and ranking for alternatives
+    textiles_pref_atractivo = topsis_atractivo(textiles_alts_atractivo, textiles_weights_atractivo, textiles_types_atractivo)
+    textiles_ranking_atractivo = rrankdata(textiles_pref_atractivo)
+
+    # If you want to inspect computation process in details
+    textiles_results_atractivo = topsis_atractivo(textiles_alts_atractivo, textiles_weights_atractivo, textiles_types_atractivo, verbose=True)
+    return (textiles_pref_atractivo,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Viabilidad
+    """)
+    return
+
+
+@app.cell
+def _(
+    TOPSIS,
+    np,
+    rrankdata,
+    textiles_factores_imputados,
+    topsis_viabilidad,
+    viabilidad_factores,
+):
+    # TOPSIS Viabilidad
+    textiles_viabilidad_factores = [
+        "rca_peers",
+        "razon_insumos_presentes", 
+        "share_energy",
+        "razon_electricidad_gasto_total",
+        "institutional_intensity"
+    ]
+
+
+    textiles_alts_viabilidad = textiles_factores_imputados.select(viabilidad_factores).to_numpy()
+
+    # Define criteria weights (should sum up to 1)
+    textiles_weights_viabilidad = np.array([1/len(textiles_viabilidad_factores)]*len(textiles_viabilidad_factores))
+
+    # Define criteria types (1 for profit, -1 for cost)
+    textiles_types_viabilidad = np.array([1, 1, -1, -1, -1])
+
+    # Create object of the method
+    # Note, that default normalization method for TOPSIS is minmax
+    textiles_topsis_viabilidad = TOPSIS()
+
+    # Determine preferences and ranking for alternatives
+    textiles_pref_viabilidad = topsis_viabilidad(textiles_alts_viabilidad, textiles_weights_viabilidad, textiles_types_viabilidad)
+    textiles_ranking_viabilidad = rrankdata(textiles_pref_viabilidad)
+    return (textiles_pref_viabilidad,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Complejidad
+    """)
+    return
+
+
+@app.cell
+def _(TOPSIS, np, rrankdata, textiles_factores_imputados):
+    # TOPSIS Complejidad
+    complejidad_factores = [
+        "Distance",
+        "PCI", 
+        "Opportunity Gain"
+    ]
+
+
+    textiles_alts_complejidad = textiles_factores_imputados.select(complejidad_factores).to_numpy()
+
+    # Define criteria weights (should sum up to 1)
+    textiles_weights_complejidad = np.array([1/len(complejidad_factores)]*len(complejidad_factores))
+
+    # Define criteria types (1 for profit, -1 for cost)
+    textiles_types_complejidad = np.array([-1, 1, 1])
+
+    # Create object of the method
+    # Note, that default normalization method for TOPSIS is minmax
+    textiles_topsis_complejidad = TOPSIS()
+
+    # Determine preferences and ranking for alternatives
+    textiles_pref_complejidad = textiles_topsis_complejidad(textiles_alts_complejidad, textiles_weights_complejidad, textiles_types_complejidad)
+    textiles_ranking_complejidad = rrankdata(textiles_pref_complejidad)
+    return (textiles_pref_complejidad,)
+
+
+@app.cell
+def _(
+    pl,
+    textiles,
+    textiles_factores_imputados,
+    textiles_pref_atractivo,
+    textiles_pref_complejidad,
+    textiles_pref_viabilidad,
+):
+    ### Creamos data frame con los scores de viabilidad y atractivo
+    textiles_scores_viabilidad_atractivo = textiles_factores_imputados.select(
+        "hs12"
+        ).with_columns(
+            pl.col("hs12").cast(pl.Int32).cast(pl.String)
+        ).join(
+        textiles.select("hs12", "Actividad"),
+        on = "hs12"
+
+    ).with_columns(
+            topsis_atractivo = textiles_pref_atractivo, 
+            topsis_viabilidad = textiles_pref_viabilidad,
+            topsis_complejidad = textiles_pref_complejidad
+    )
+    textiles_scores_viabilidad_atractivo
+    return (textiles_scores_viabilidad_atractivo,)
+
+
+@app.cell
+def _(alt, textiles_scores_viabilidad_atractivo):
+    alt.Chart(
+            textiles_scores_viabilidad_atractivo
+            ).mark_circle(
+                opacity=0.99,
+                stroke='black',
+                strokeWidth=1.2,
+                strokeOpacity=0.9, 
+                size=180,     
+            ).encode(
+        x=alt.X('topsis_complejidad').scale(zero=False).title("Complejidad"),
+        y=alt.Y('topsis_viabilidad').scale(zero=False).title("Viabilidad"),#.scale(type ="log"),
+        color = alt.Color("topsis_atractivo").scale(scheme='inferno').title("Atractivo"),
+        size = alt.Size("topsis_atractivo"),
+        tooltip=[
+
+                alt.Tooltip('Actividad', title='Actividad'), 
+        ] 
+    ).properties(
+        title=alt.TitleParams(
+            "Diagrama Complejidad-Viabilidad-Atractivo",
+            #subtitle="Honduras. Datos de Empleo de OECD SBS 2019",
+            subtitleColor="gray"
+        )
+    )
+    return
+
+
+@app.cell
+def _(textiles_scores_viabilidad_atractivo):
+    textiles_scores_viabilidad_atractivo.sort(["topsis_complejidad", "topsis_viabilidad", "topsis_atractivo"], descending = True)
+    return
+
+
+@app.cell
+def _(pl):
+    ## Cargamos productos HS12
+    productos_hs12 = pl.read_csv("datos/atlas_datos/hs12/product_hs12.csv", ignore_errors=True)
+    productos_hs12
+    return (productos_hs12,)
+
+
+@app.cell
+def _(
+    pl,
+    productos_hs12,
+    textiles,
+    textiles_factores_imputados,
+    textiles_pref_complejidad,
+):
+    ## Guardamos factores imputados con topsis de complejidad
+
+    textiles_factores_imputados_topsis_complejidad = textiles_factores_imputados.with_columns(
+        topsis_complejidad = textiles_pref_complejidad
+    )
+    textiles_factores_imputados_topsis_complejidad = textiles_factores_imputados_topsis_complejidad.with_columns(
+        pl.col("hs12").map_elements(lambda x : str(x)[:2]).alias("hs_12_2d").cast(pl.Int32)
+    ).join(
+        productos_hs12.select("product_name_short", "product_hs12_code"), 
+        left_on="hs_12_2d", 
+        right_on="product_hs12_code"
+    )
+    textiles_factores_imputados_topsis_complejidad = textiles_factores_imputados_topsis_complejidad.with_columns(
+        pl.col("hs12").cast(pl.Int32).cast(pl.String)
+    ).join(
+            textiles.select("hs12", "Actividad"),
+            on = "hs12"
+        )
+    textiles_factores_imputados_topsis_complejidad
+    return (textiles_factores_imputados_topsis_complejidad,)
+
+
+@app.cell
+def _():
+    #textiles_factores_imputados_topsis_complejidad.write_csv("/home/milo/Documents/egtp/iniciativas/priorizacion_hnd/datos/textiles_factores_topsis_complejidad.csv")
+    return
+
+
+@app.cell
+def _(TOPSIS, np, pd, pl, rrankdata):
+    def textiles_topsis_viabilidad_atractivo(
+        data : pd.DataFrame, 
+        top_n : int
+        ) -> pl.DataFrame:
+
+        data = data.sort("topsis_complejidad", descending=True).head(top_n)
+
+        # TOPSIS atractivo
+        textiles_atractivo_factores = [
+            "cumulative_investment_lac",
+            "cagr_investment",
+            "elasticidad",
+            "cagr_production",
+            "cagr_exports",
+            "share_imports_china", 
+        ]
+        textiles_alts_atractivo = data.select(textiles_atractivo_factores).to_numpy()
+
+        # Define criteria weights (should sum up to 1)
+        textiles_weights_atractivo = np.array([1/len(textiles_atractivo_factores)]*len(textiles_atractivo_factores))
+
+        # Define criteria types (1 for profit, -1 for cost)
+        textiles_types_atractivo = np.array([1]*len(textiles_atractivo_factores))
+
+        # Create object of the method
+        # Note, that default normalization method for TOPSIS is minmax
+        textiles_topsis_atractivo = TOPSIS()
+
+        # Determine preferences and ranking for alternatives
+        textiles_pref_atractivo = textiles_topsis_atractivo(textiles_alts_atractivo, textiles_weights_atractivo, textiles_types_atractivo)
+        textiles_ranking_atractivo = rrankdata(textiles_pref_atractivo)
+
+        # If you want to inspect computation process in details
+        textiles_results_atractivo = textiles_topsis_atractivo(textiles_alts_atractivo, textiles_weights_atractivo, textiles_types_atractivo, verbose=True)
+
+        # TOPSIS Viabilidad
+        textiles_viabilidad_factores = [
+            "rca_peers",
+            "razon_insumos_presentes", 
+            #"share_energy",
+            "razon_electricidad_gasto_total",
+            "institutional_intensity"
+        ]
+
+
+        textiles_alts_viabilidad = data.select(textiles_viabilidad_factores).to_numpy()
+
+        # Define criteria weights (should sum up to 1)
+        textiles_weights_viabilidad = np.array([1/len(textiles_viabilidad_factores)]*len(textiles_viabilidad_factores))
+
+        # Define criteria types (1 for profit, -1 for cost)
+        textiles_types_viabilidad = np.array([1, 1, -1, -1])
+
+        # Create object of the method
+        # Note, that default normalization method for TOPSIS is minmax
+        textiles_topsis_viabilidad = TOPSIS()
+
+        # Determine preferences and ranking for alternatives
+        textiles_pref_viabilidad = textiles_topsis_viabilidad(textiles_alts_viabilidad, textiles_weights_viabilidad, textiles_types_viabilidad)
+        textiles_ranking_viabilidad = rrankdata(textiles_pref_viabilidad)
+
+        ### Creamos data frame con los scores de viabilidad y atractivo
+        data = data.select(
+            "hs12"
+            ).with_columns(
+                pl.col("hs12").cast(pl.Int32).cast(pl.String)
+            ).with_columns(
+                topsis_atractivo = textiles_pref_atractivo, 
+                topsis_viabilidad = textiles_pref_viabilidad,
+                topsis_complejidad = data["topsis_complejidad"],
+                cluster = data["product_name_short"], 
+                Actividad = data["Actividad"]
+        )
+
+        return data
+    return (textiles_topsis_viabilidad_atractivo,)
+
+
+@app.cell
+def _(alt, textiles_scores_viabilidad_atractivo):
+    alt.Chart(
+            textiles_scores_viabilidad_atractivo
+            ).mark_circle(
+                opacity=0.99,
+                stroke='black',
+                strokeWidth=1.2,
+                strokeOpacity=0.9, 
+                size=180,     
+            ).encode(
+        x=alt.X('topsis_complejidad').scale(zero=False).title("Complejidad"),
+        y=alt.Y('topsis_viabilidad').scale(zero=False).title("Viabilidad"),#.scale(type ="log"),
+        color = alt.Color("topsis_atractivo").scale(scheme='inferno').title("Atractivo"),
+        size = alt.Size("topsis_atractivo"),
+        tooltip=[
+
+                alt.Tooltip('Actividad', title='Actividad'), 
+        ] 
+    ).properties(
+        title=alt.TitleParams(
+            "Diagrama Complejidad-Viabilidad-Atractivo",
+            #subtitle="Honduras. Datos de Empleo de OECD SBS 2019",
+            subtitleColor="gray"
+        )
+    )
+    return
+
+
+@app.cell
+def _(mo):
+    dropdown = mo.ui.dropdown(options=[10, 15, 20], value=10, label="Escoge Top")
+    dropdown
+    return (dropdown,)
+
+
+@app.cell
+def _():
+
+
+    return
+
+
+@app.cell
+def _(
+    alt,
+    dropdown,
+    pd,
+    textiles_factores_imputados_topsis_complejidad,
+    textiles_topsis_viabilidad_atractivo,
+):
+    textiles_topsis = textiles_topsis_viabilidad_atractivo(textiles_factores_imputados_topsis_complejidad, dropdown.value)
+
+    plot_textiles = alt.Chart(
+            textiles_topsis
+            ).mark_circle(
+                opacity=0.99,
+                stroke='black',
+                strokeWidth=1.2,
+                strokeOpacity=0.9, 
+                size=180,     
+            ).encode(
+        y=alt.Y('topsis_atractivo').scale(zero=False).title("Atractivo"),
+        x=alt.X('topsis_viabilidad').scale(zero=False).title("Viabilidad"),#.scale(type ="log"),
+        color = alt.Color("cluster").title("Cluster"),
+        #size = alt.Size("topsis_atractivo"),
+        tooltip=[
+
+                alt.Tooltip('Actividad', title='Actividad'), 
+        ] 
+    ).properties(
+        title=alt.TitleParams(
+            "Diagrama Complejidad-Viabilidad-Atractivo",
+            #subtitle="Honduras. Datos de Empleo de OECD SBS 2019",
+            subtitleColor="gray"
+        )
+    )
+
+    # Create a horizontal line at y = -1.14
+    textiles_rule_atractivo = alt.Chart(pd.DataFrame({'y': [textiles_topsis["topsis_atractivo"].mean()]})).mark_rule(color='gray', strokeWidth=3, strokeDash=[4,4]).encode(y='y:Q')
+    textiles_rule_viabilidad = alt.Chart(pd.DataFrame({'x': [textiles_topsis["topsis_viabilidad"].mean()]})).mark_rule(color='gray', strokeWidth=3, strokeDash=[4,4]).encode(x='x:Q')
+
+    # 2. Quadrant labels dataframe with custom coordinates
+    # Change these values to position text exactly where you want it
+    textiles_quadrant_labels = pd.DataFrame({
+        'y_pos': [textiles_topsis["topsis_atractivo"].max(), 
+                textiles_topsis["topsis_atractivo"].min()*1.05, 
+                textiles_topsis["topsis_atractivo"].max(),
+                textiles_topsis["topsis_atractivo"].min()*1.05],     # X coordinates for text
+        'x_pos': [textiles_topsis["topsis_viabilidad"].max()*0.95,
+                textiles_topsis["topsis_viabilidad"].max()*0.95,
+                textiles_topsis["topsis_viabilidad"].min()*1.05,
+                textiles_topsis["topsis_viabilidad"].min()*1.05],     # Y coordinates for text
+        'label': ['Fase I', 'Fase II', 'Fase III', 'Fase IV'],
+        'align': ['right', 'left', 'left', 'right'] # Optional: aligns text inside boundaries
+    })
+
+    # 5. Quadrant text layer
+    textiles_text_layer = alt.Chart(textiles_quadrant_labels).mark_text(
+        size=16,
+        fontStyle='bold',
+        color='black'
+    ).encode(
+        x='x_pos:Q',
+        y='y_pos:Q',
+        text='label:N'
+    )
+
+    plot_textiles = (plot_textiles + textiles_rule_atractivo + textiles_rule_viabilidad + textiles_text_layer).properties(
+    #plot_intensivo.properties(
+            title=alt.TitleParams(
+                "Diagrama Viabilidad-Atractivo",
+                subtitle="Productos Textiles",
+                subtitleColor="gray"
+            )
+    )
+    plot_textiles
+    return (textiles_topsis,)
+
+
+@app.cell
+def _(pl):
+
+    ## Diccionario con condiciones de etiquetas de fases
+    condiciones_fases = {
+        "I" : 
+        (
+            (
+                pl.col("topsis_atractivo") >= pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") >= pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+        "II" : 
+        (
+            (
+                pl.col("topsis_atractivo") < pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") >= pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+        "III" : 
+        (
+            (
+                pl.col("topsis_atractivo") >= pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") < pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+        "IV" : 
+        (
+            (
+                pl.col("topsis_atractivo") < pl.col("topsis_atractivo").mean()
+            ) &
+            (
+                pl.col("topsis_viabilidad") < pl.col("topsis_viabilidad").mean()
+            ) 
+        ), 
+    }
+    return (condiciones_fases,)
+
+
+@app.cell
+def _(condiciones_fases, pl, textiles_topsis):
+    textiles_topsis_fases = textiles_topsis.with_columns(
+            Fase = pl.coalesce(
+                    pl.when(cond).then(pl.lit(val)) for val, cond in condiciones_fases.items()
+                )
+    ).rename(
+        {
+            "hs12" : "HS12", 
+            "topsis_atractivo" : "TOPSIS Atractivo",
+            "topsis_viabilidad" : "TOPSIS Viabilidad", 
+            "topsis_complejidad" : "TOPSIS Complejidad", 
+            "cluster" : "Cluster"
+        }
+    ).sort("Fase", "Cluster")
+    textiles_topsis_fases
+    return
+
+
+@app.cell
+def _(textiles_factores_imputados_topsis_complejidad):
+    list(
+        textiles_factores_imputados_topsis_complejidad.sort("topsis_complejidad", descending=True).head(20)["product_name_short"].unique()
+    )
+
     return
 
 
